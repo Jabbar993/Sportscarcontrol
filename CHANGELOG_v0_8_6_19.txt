@@ -1,0 +1,17 @@
+SCC v0.8.6.19 · Imola ACO hardfix
+
+Actual changes:
+- Added js/patch-v08619-imola-aco-hardfix.js.
+- Forces a clean WEC Imola 2026 working dataset at runtime so corrupted saved/imported copies cannot keep reappearing.
+- Keeps car numbers as exact strings: #007 and #7 are distinct, #009 and #9 are distinct.
+- Replaces the broken Imola seed/imported state with one row per car and no same-race duplicate drivers.
+- Removes the shown duplicate-driver cases in the active Imola race:
+  - Daniel/Dani Juncadella is not on both #19 and #33.
+  - Yasser Shahin is not on both #91 and another Team WRT car.
+  - Rui Andrade is not on both #79 and #34.
+  - Zacharie Robichon, Alex Riberas and Kobe Pauwels are not duplicated across Heart/Aston rows.
+- Clears only stale localStorage saved copies of wec-imola-2026, preserving other races/assets.
+- Validation now checks duplicate cars/drivers in the current race only.
+
+Important limitation:
+- This is not the promised full WEC 2012→ test sweep. It is a targeted correction for the specific Imola duplicate/#007 state shown in the screenshots.

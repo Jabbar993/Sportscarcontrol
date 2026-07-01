@@ -1,0 +1,11 @@
+SCC v0.8.6.21.1 · ACO Importer v2.1
+
+- ACO Importer v2.1 now separates inputs into:
+  - Race Classification PDF (single file)
+  - Fastest Laps PDF (single file, optional fallback from results)
+  - Qualifying / Hyperpole PDFs (1..N files)
+- Multiple qualifying/hyperpole PDFs are parsed and merged into performance.poles.
+- Qualifying class is auto-detected from filename/content where possible: HYP, LMGT3, LMP2, LMP2 P/A, LMP3, GTE Am.
+- Preview now shows a readiness checklist and the file groups used for Results, FL and PP.
+- Race Control remains manual.
+- app.js and existing race data were not changed.

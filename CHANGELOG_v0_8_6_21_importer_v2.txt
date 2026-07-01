@@ -1,0 +1,6 @@
+SCC v0.8.6.21 · ACO Importer v2 preview
+- Added preview-first ACO Importer v2 panel in Import tab.
+- Scope: Race Classification, Fastest Laps, Qualifying/Hyperpole PDFs.
+- Race Control remains manual.
+- Generates replaceRace({...}) code and can add preview to the in-browser archive.
+- No changes to app.js or existing race data.

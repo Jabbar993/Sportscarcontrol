@@ -1,0 +1,17 @@
+SCC v0.8.6.20.2 · Spa clean reference
+
+Base: v0.8.6.20.1 CLEAN from scratch.
+
+Changed:
+- Imola remains clean reference data: 35 cars, PP and FL intact.
+- Added Spa 2026 as clean reference data in js/data.js.
+- Spa has 35 entries, HYP + LMGT3 classes, FL and PP filled.
+- Calendar remains clean: Imola R1, Spa R2, Le Mans R3, São Paulo R4, COTA R5, Fuji R6, Qatar R7, Bahrain R8.
+- app.js interval logic computes Int from finish times/gaps where possible, including cars on the same lap/lap deficit group.
+
+Spa reference highlights:
+- Overall winner: #20 BMW M Team WRT.
+- HYP PP / Overall PP: #94 Peugeot TotalEnergies, Loïc Duval, 2:00.653.
+- LMGT3 PP: #78 Akkodis ASP Team, Hadrien David, 2:16.612.
+- Overall/HYP FL: #93 Peugeot TotalEnergies, Stoffel Vandoorne, 2:04.177.
+- LMGT3 FL: #21 Vista AF Corse, Alessio Rovera, 2:18.281.

@@ -1,0 +1,11 @@
+SCC v0.8.6.20
+
+Imola 2026 complete reference fix
+- Replaced the broken 24-car Imola seed with a complete 35-car race dataset.
+- Preserved #007 and #009 as string car numbers; they are not merged with #7/#9.
+- Corrected #19 Genesis: Paul-Loup Chatin / Mathieu Jaminet / Daniel Juncadella.
+- Corrected #33 TF Sport: Nicky Catsburg / Jonny Edgar / Blake McDonald.
+- Added all missing LMGT3 classified/retired entries down to #87 Akkodis ASP.
+- Corrected LMGT3 pole to #10 Garage 59 instead of the placeholder #58.
+- Validation now reports OK for Imola only if there are 35 cars, unique car numbers and no same-race duplicate drivers.
+- Clears stale saved localStorage copies of wec-imola-2026 so old corrupt data does not override the patched race.

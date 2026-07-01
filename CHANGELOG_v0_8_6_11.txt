@@ -1,0 +1,11 @@
+SCC v0.8.6.11
+
+Base: v0.8.6.5.
+
+Real changes in this ZIP:
+- sidebar/title version updated to v0.8.6.11.
+- Drivers overview: Starts column changed to Entered with finished count and prominent finish rate.
+- Finish rate is calculated as finished / entered and exposed in the tooltip.
+- Driver detail first row changed to Entered / Started / Finished / Finish rate.
+- database/drivers.json: added DOB for Bijoy Garg (2002-07-15) and Ben Barker (1991-04-23).
+- database/drivers.json keeps existing DOBs for Dane Cameron, Alex Quinn, Luca Stolz, Markus Winkelhock.

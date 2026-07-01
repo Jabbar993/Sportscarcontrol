@@ -1,0 +1,28 @@
+SCC v0.8.6.18 · Imola duplicate-driver fix
+
+Changed files:
+- js/data.js
+- js/patch-v08612-aco-importer.js
+- js/patch-v08613-aco-import-session.js
+- js/patch-v08615-aco-importer-fix.js
+- js/patch-v08617-aco-importer-repair.js
+- js/patch-v08618-imola-duplicates.js
+- index.html
+
+Fixes:
+- Corrected WEC 2026 Imola seed entries so no driver is assigned to two cars in the same race.
+- #007 and #7, plus #009 and #9, are kept as distinct car numbers.
+- Import/merge keys no longer strip significant leading zeroes from car numbers.
+- Import validation now reports duplicate driver assignments only inside the current race.
+- Broken cached Imola 2026 imports are cleared on first load so the corrected race data is used.
+
+Spot check fixed duplicate-driver warnings:
+- Daniel Juncadella remains only in #19 Genesis Magma Racing.
+- #33 TF Sport crew is Nicky Catsburg / Jonny Edgar / Blake McDonald.
+- Yasser Shahin remains only in #92 The Bend Manthey.
+- Rui Andrade remains only in #61 Iron Lynx.
+- Zacharie Robichon remains only in #27 Heart of Racing Team.
+- Alex Riberas remains only in #009 Aston Martin THOR Team.
+- Kobe Pauwels remains only in #23 Heart of Racing Team.
+
+- LMGT3 fastest-lap holder for #33 TF Sport corrected from Daniel Juncadella to Nicky Catsburg in the Imola seed data.
