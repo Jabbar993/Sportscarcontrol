@@ -1,8 +1,0 @@
-SCC v0.8.6.17
-
-- Added js/patch-v08617-aco-importer-repair.js.
-- Repaired WEC/ACO race classification parser for mixed PDF text order.
-- Repaired multi-PDF Hyperpole/Qualifying PP import for HYP + LMGT3.
-- Results de-duplicated by car number.
-- Preview confirms Results cars / FL rows / PP rows.
-- Save to database updates RACES and localStorage override.
