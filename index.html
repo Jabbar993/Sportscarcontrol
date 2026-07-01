@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SCC v0.8.6.20.3 · Clean Imola + Spa + Le Mans</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">SCC</div>
+        <div>
+          <strong>Sportscar Control</strong>
+          <span>v0.8.6.20.3</span>
+        </div>
+      </div>
+
+      <div class="side-title">Race archive</div>
+      <div class="race-picker">
+        <label>Season<select id="seasonSelect"></select></label>
+        <label>Series<select id="seriesSelect"></select></label>
+        <label>Race<select id="raceSelect"></select></label>
+      </div>
+      <div id="raceTree" class="race-tree"></div>
+
+      <div class="side-title database-title">Database</div>
+      <div class="database-nav">
+        <button data-db-tab="drivers" class="active"><span>◉</span> Drivers</button>
+        <button data-db-tab="teams"><span>▦</span> Teams</button>
+        <button data-db-tab="constructors"><span>◇</span> Constructors</button>
+        <button data-db-tab="circuits"><span>◎</span> Circuits</button>
+      </div>
+
+      <div class="side-footer">
+        Offline prototype<br />JSON-ready · no live timing
+      </div>
+    </aside>
+
+    <main class="main">
+      <nav class="tabs top-tabs main-nav-v0677">
+        <button data-tab="dashboard" class="active"><span>⌁</span>Dashboard</button>
+        <button data-tab="order"><span>▦</span>Order</button>
+        <button data-tab="summary"><span>✦</span>Summary</button>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <button data-tab="raceControl"><span>⚑</span>Race Control</button>
+        <button data-tab="import"><span>⇪</span>Import</button>
+        <button data-tab="races"><span>▤</span>Races</button>
+        <button data-tab="settings"><span>⚙</span>Settings</button>
+      </nav>
+
+      <header class="race-header panel compact-header">
+        <div class="series-logo-slot" id="seriesLogo"></div>
+        <div class="race-head-main">
+          <div class="eyebrow" id="seriesName"></div>
+          <h1 id="raceTitle"></h1>
+          <div class="race-meta-line">
+            <div class="meta-chip"><span id="circuitFlag"></span><strong id="circuitName"></strong></div>
+            <div class="meta-chip"><span class="meta-icon">📅</span><strong id="raceDate"></strong></div>
+            <div class="meta-chip"><span class="meta-icon">⏱</span><strong id="durationInfo"></strong></div>
+            <div class="meta-chip"><span class="meta-icon">🏁</span><strong id="lapsInfo"></strong></div>
+          </div>
+        </div>
+      </header>
+
+      <section id="tab-dashboard" class="tab-content active">
+        <div class="toolbar-row">
+          <div class="segmented"><button id="modeTime" class="active">Time</button><button id="modeLaps">Laps</button></div>
+          <div class="toolbar-note">Timeline uses official finish duration. The chequered flag is a finish marker, not a race-control phase.</div>
+        </div>
+
+        <section class="panel timeline-panel">
+          <div class="panel-title-row">
+            <h2>Race Control Timeline</h2>
+          </div>
+          <div class="timeline-wrap">
+            <svg id="timelineSvg" viewBox="0 0 1000 124" preserveAspectRatio="none"></svg>
+            <div id="tooltip" class="tooltip hidden"></div>
+          </div>
+          <div id="phaseLegend" class="phase-legend centered"></div>
+        </section>
+
+        <div class="dashboard-grid compact-dashboard no-order-dashboard dashboard-v062">
+          <div class="dashboard-left-stack">
+            <section class="panel stats-panel compact-panel dashboard-priority-panel">
+              <h2>Race Statistics</h2>
+              <div id="statsList"></div>
+            </section>
+
+            <section class="panel facts-panel compact-panel dashboard-priority-panel">
+              <h2>Race Flow</h2>
+              <div id="quickFacts"></div>
+            </section>
+
+            <section class="panel winners-panel compact-panel winners-main-panel">
+              <h2 id="winnersTitle">Class Winners</h2>
+              <div id="winnersList" class="winner-list compact-winners"></div>
+            </section>
+          </div>
+
+          <div class="dashboard-side right-stack">
+            <section class="panel segment-panel compact-panel">
+              <h2>Segment Details</h2>
+              <div id="segmentDetails" class="empty-state">Click a timeline segment.</div>
+            </section>
+
+            <section class="panel fastest-panel compact-panel">
+              <h2><span class="purple-dot">⏱</span> Fastest Laps</h2>
+              <div id="fastestLapPanel"></div>
+            </section>
+
+            <section class="panel pole-panel compact-panel">
+              <h2><span class="green-dot">⚑</span> Pole Positions</h2>
+              <div id="polePanel"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-raceControl" class="tab-content">
+        <div class="two-col wide-left">
+          <section class="panel">
+            <h2>Add / Edit Segment</h2>
+            <form id="segmentForm" class="form-grid">
+              <input type="hidden" id="editingId" />
+              <label>Phase<select id="phaseInput"></select></label>
+              <label>Start <input id="startInput" placeholder="hh:mm:ss" /></label>
+              <label>End <input id="endInput" placeholder="hh:mm:ss" /></label>
+              <label>Start lap <input id="startLapInput" type="number" min="0" /></label>
+              <label>End lap <input id="endLapInput" type="number" min="0" /></label>
+              <label class="full">Reason <input id="reasonInput" placeholder="Crash, debris, recovery..." /></label>
+              <label class="full">Notes <textarea id="notesInput" rows="3" placeholder="Optional notes"></textarea></label>
+              <div class="form-actions full">
+                <button type="submit" id="saveSegmentBtn">Add segment</button>
+                <button type="button" id="cancelEditBtn" class="secondary">Cancel</button>
+              </div>
+            </form>
+          </section>
+          <section class="panel">
+            <h2>Segments</h2>
+            <div id="segmentTable" class="segment-table"></div>
+          </section>
+        </div>
+      </section>
+
+      <section id="tab-order" class="tab-content">
+        <section class="panel">
+          <div class="panel-title-row">
+            <h2>Order</h2>
+            <div id="classFilters" class="class-filters"></div>
+          </div>
+          <div id="orderTable" class="order-table"></div>
+        </section>
+      </section>
+
+      <section id="tab-races" class="tab-content">
+        <section class="panel">
+          <h2>Race Browser</h2>
+          <p class="muted">Compact archive view. Use the filters or click any race card to open it without leaving the app.</p>
+          <div class="browser-toolbar">
+            <label>Season<select id="browserSeason"></select></label>
+            <label>Series<select id="browserSeries"></select></label>
+          </div>
+          <div id="raceBrowser" class="race-browser compact-list"></div>
+        </section>
+      </section>
+
+
+
+      <section id="tab-summary" class="tab-content">
+        <section class="panel summary-full-panel">
+          <h2>Race Summary</h2>
+          <p class="muted">Archive-style race overview. Dashboard stays compact; detailed results and statistics live here.</p>
+          <div id="summaryFull"></div>
+        </section>
+      </section>
+
+
+      <section id="tab-data" class="tab-content">
+        <section class="panel data-manager-panel">
+          <div class="panel-title-row">
+            <h2>Database</h2>
+            <div class="mini-note">Global · aggregated from all races in the archive</div>
+          </div>
+          <p class="muted">Global database view. It aggregates drivers, teams, constructors and circuits from every race loaded in the archive, not only from the currently selected race.</p>
+          <div class="data-tabs">
+            <button class="data-tab active" data-data-tab="drivers">Drivers</button>
+            <button class="data-tab" data-data-tab="teams">Teams</button>
+            <button class="data-tab" data-data-tab="constructors">Constructors</button>
+            <button class="data-tab" data-data-tab="circuits">Circuits</button>
+          </div>
+          <div id="dataManager" class="data-manager"></div>
+        </section>
+      </section>
+
+      <section id="tab-import" class="tab-content">
+        <div class="import-layout">
+          <section class="panel import-panel">
+            <h2>Import Wizard</h2>
+            <p class="muted">Build a race in layers. CSV/JSON can be imported directly. PDF files are now extracted in-browser when PDF.js is available, then passed through ACO/WEC/ELMS/MLMC, SRO/GTWC and IMSA parser hooks. If a PDF table cannot be parsed automatically, SCC shows the extracted text so it can be corrected or converted to CSV.</p>
+            <div class="wizard-steps">
+              <span class="wizard-step active">1 Metadata</span>
+              <span class="wizard-step">2 Results</span>
+              <span class="wizard-step">3 FL / PP</span>
+              <span class="wizard-step">4 Race control</span>
+            </div>
+
+            <div class="wizard-card">
+              <h3>1 · Metadata</h3>
+              <div class="form-grid import-meta-grid">
+                <label>Series<select id="importSeries"></select></label>
+                <label>Season<input id="importSeason" type="number" /></label>
+                <label>Round<input id="importRound" type="number" /></label>
+                <label>Race ID<input id="importId" placeholder="elms-paulricard-2026" /></label>
+                <label class="full">Event<input id="importEvent" placeholder="4 Hours of Le Castellet" /></label>
+                <label>Circuit<input id="importCircuit" placeholder="Circuit Paul Ricard" /></label>
+                <label>Country<input id="importCountry" placeholder="France" /></label>
+                <label>Date<input id="importDate" type="date" /></label>
+                <label>Scheduled<input id="importScheduled" placeholder="04:00:00" /></label>
+                <label>Official<input id="importOfficial" placeholder="04:00:01.773" /></label>
+                <label>Laps<input id="importLaps" type="number" /></label>
+              </div>
+              <div class="form-actions"><button id="applyMetadataBtn">Apply metadata to current race</button></div>
+            </div>
+
+            <div class="wizard-card">
+              <h3>2 · Results / Classification</h3>
+              <p class="muted">Classification/results source. SCC auto-detects SCC CSV and timing CSV columns, maps vehicle/constructor text, and fills flags from imported data + driver DB.</p>
+              <div id="resultsDrop" class="drop-zone">Drop Results PDF / CSV / JSON here<br><small>or</small><br><label class="buttonlike secondary">Browse file<input id="resultsFile" type="file" accept=".csv,.txt,.json,.pdf,text/csv,text/plain,application/json,application/pdf" hidden></label></div>
+              <textarea id="resultsCsv" class="import-textarea" rows="6" placeholder="Optional paste area: pos,no,laps,gap,time,status"></textarea>
+              <div class="form-actions"><button id="previewResultsBtn" class="secondary">Preview results</button><button id="importResultsBtn">Import results</button></div>
+              <div id="resultsPreview" class="import-preview"></div>
+            </div>
+
+            <div class="wizard-card">
+              <h3>3 · Performance / Qualifying</h3>
+              <p class="muted">Optional: fastest laps, pole positions, qualifying and starting grid. CSV columns: <code>type,class,no,driver,lap,time</code>. Type can be <code>FL</code> or <code>PP</code>. PDF text extraction is supported; if a table cannot be mapped automatically, SCC shows the extracted text for correction.</p>
+              <div id="performanceDrop" class="drop-zone">Drop FL / PP / Qualifying PDF / CSV / JSON here<br><small>or</small><br><label class="buttonlike secondary">Browse file<input id="performanceFile" type="file" accept=".csv,.txt,.json,.pdf,text/csv,text/plain,application/json,application/pdf" hidden></label></div>
+              <textarea id="performanceCsv" class="import-textarea" rows="5" placeholder="type,class,no,driver,lap,time
+FL,Overall,22,Driver Name,101,1:42.123
+PP,LMP2,22,Driver Name,,1:39.456"></textarea>
+              <div class="form-actions"><button id="previewPerformanceBtn" class="secondary">Preview performance</button><button id="importPerformanceBtn">Import performance</button></div>
+              <div id="performancePreview" class="import-preview"></div>
+            </div>
+            <div class="wizard-card">
+              <h3>4 · Race Control Messages</h3>
+              <p class="muted">Optional: race-control CSV/JSON or official message PDF. CSV supports <code>time,type,reason,notes</code> or <code>start,end,type,reason,notes</code>.</p>
+              <div id="raceControlDrop" class="drop-zone">Drop Race Control PDF / CSV / JSON here<br><small>or</small><br><label class="buttonlike secondary">Browse file<input id="raceControlFile" type="file" accept=".csv,.txt,.json,.pdf,text/csv,text/plain,application/json,application/pdf" hidden></label></div>
+              <textarea id="raceControlCsv" class="import-textarea" rows="5" placeholder="time,type,reason,notes
+00:42:18,FCY,Car stopped,T7
+00:45:01,GREEN,Restart,"></textarea>
+              <div class="form-actions"><button id="previewRaceControlBtn" class="secondary">Preview Race Control</button><button id="importRaceControlBtn">Import Race Control</button></div>
+              <div id="raceControlPreview" class="import-preview"></div>
+            </div>
+          </section>
+
+          <aside class="panel import-help">
+            <h2>Import checklist</h2>
+            <div id="importChecklist"></div><h3>Validation</h3><div id="importValidation" class="validation-list"></div>
+            <h3>Race Control</h3>
+            <p class="muted">Race Control can be entered manually or imported from CSV/JSON. PDF message logs are extracted when possible; if not, use CSV or the manual Race Control editor.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="tab-settings" class="tab-content">
+        <div class="two-col">
+          <section class="panel">
+            <h2>Asset Library</h2>
+            <p class="muted">Upload official SVG/PNG/WebP logos here. SCC stores them in this browser and can export them as an asset pack.</p>
+            <div class="asset-tools">
+              <button id="exportAssetsBtn">Export asset pack</button>
+              <label class="buttonlike secondary">Import asset pack<input id="importAssetsInput" type="file" accept="application/json" hidden /></label>
+              <button id="clearAssetsBtn" class="secondary">Clear uploaded assets</button>
+            </div>
+            <div id="assetStatus" class="asset-status"></div>
+          </section>
+
+          <section class="panel">
+            <h2>Storage / Race Data</h2>
+            <div class="form-actions">
+              <button id="exportRaceBtn">Export current race JSON</button>
+              <button id="resetRaceBtn" class="secondary">Reset current race</button>
+            </div>
+            <p class="muted">For official logos on disk, put files into <code>assets/constructors/...</code> or use the Asset Library uploader.</p>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/patch-v077.js"></script>
+  <script src="js/patch-v078.js"></script>
+  <script src="js/patch-v079.js"></script>
+  <script src="js/patch-v080.js"></script>
+  <script src="js/patch-v081.js"></script>
+  <script src="js/patch-v082.js"></script>
+  <script src="js/patch-v0821.js"></script>
+  <script src="js/patch-v083.js"></script>
+  <script src="js/patch-v084-audit-db.js"></script>
+  <script src="js/patch-v085-database-polish.js"></script>
+  <script src="js/patch-v0864-db-import.js"></script>
+  <script src="js/patch-v08612-aco-importer.js"></script>
+  <script src="js/patch-v08613-aco-import-session.js"></script>
+  <script src="js/patch-v08614-dob-current-field.js"></script>
+  <script src="js/patch-v08615-aco-importer-fix.js"></script>
+  <script src="js/patch-v08617-aco-importer-repair.js"></script>
+  <script src="js/patch-v08621-importer-v2.js"></script>
+</body>
+</html>

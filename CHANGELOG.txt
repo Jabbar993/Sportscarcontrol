@@ -1,0 +1,261 @@
+# Changelog
+
+SCC v0.8.6.21.2 - ACO Importer v2.2 cleanup
+
+- Replaced the old duplicate Import Wizard UI with a single ACO Importer v2.2 wizard.
+- Fixed metadata flow so preview is rebuilt from the current metadata fields.
+- Added graphical preview sections for dashboard, order, class winners, fastest laps and pole positions.
+- Moved generated replaceRace() code into an Advanced details section.
+- Renamed Add preview action to Import race to archive.
+- Kept Race Control manual.
+- No changes to app.js or race data.
+
+
+SCC v0.8.6.21 · ACO Importer v2 preview
+- Added preview-first ACO Importer v2 panel in Import tab.
+- Scope: Race Classification, Fastest Laps, Qualifying/Hyperpole PDFs.
+- Race Control remains manual.
+- Generates replaceRace({...}) code and can add preview to the in-browser archive.
+- No changes to app.js or existing race data.
+
+
+SCC v0.8.6.20.6
+
+Added:
+- WEC Spa-Francorchamps 2025 as clean reference race data.
+- 36 cars, HYP and LMGT3 classes.
+- PP and FL for Overall/HYP/LMGT3.
+
+Regression checked in data.js:
+- Imola 2026: 35 cars
+- Spa 2026: 35 cars
+- Qatar 2025: 36 cars
+- Imola 2025: 36 cars
+- Spa 2025: 36 cars
+
+No app.js changes.
+
+SCC v0.8.6.20.3 clean Le Mans
+
+Base: v0.8.6.20.2 CLEAN Spa + Int.
+
+Added:
+- WEC 2026 Le Mans as R3 reference race.
+- 62 Le Mans entries from Al Kamel final classification.
+- Le Mans classes: HYP, LMP2, LMP2 P/A, LMGT3.
+- Le Mans FL: Overall/HYP #8 Ryo Hirakawa, LMP2/LMP2 P/A #14 Kévin Estre, LMGT3 #78 Hadrien David.
+- Le Mans PP: Overall/HYP #15 Dries Vanthoor, LMP2 #29 Oliver Gray, LMP2 P/A #4 Laurin Heinrich, LMGT3 #27 Mattia Drudi.
+- DOB: Tom Fleming 2002-09-20; Parker Thompson 1998-03-02.
+
+Preserved:
+- Clean Imola data remains untouched.
+- Spa remains present.
+- Qatar remains R7.
+- General dynamic Int logic remains in app.js.
+
+SCC v0.8.6.20.2 · Spa clean reference
+
+Base: v0.8.6.20.1 CLEAN from scratch.
+
+Changed:
+- Imola remains clean reference data: 35 cars, PP and FL intact.
+- Added Spa 2026 as clean reference data in js/data.js.
+- Spa has 35 entries, HYP + LMGT3 classes, FL and PP filled.
+- Calendar remains clean: Imola R1, Spa R2, Le Mans R3, São Paulo R4, COTA R5, Fuji R6, Qatar R7, Bahrain R8.
+- app.js interval logic computes Int from finish times/gaps where possible, including cars on the same lap/lap deficit group.
+
+Spa reference highlights:
+- Overall winner: #20 BMW M Team WRT.
+- HYP PP / Overall PP: #94 Peugeot TotalEnergies, Loïc Duval, 2:00.653.
+- LMGT3 PP: #78 Akkodis ASP Team, Hadrien David, 2:16.612.
+- Overall/HYP FL: #93 Peugeot TotalEnergies, Stoffel Vandoorne, 2:04.177.
+- LMGT3 FL: #21 Vista AF Corse, Alessio Rovera, 2:18.281.
+
+SCC v0.8.6.20.1 CLEAN
+
+Built from the user-provided v0.8.6.20 project.
+
+Changed:
+- Removed Imola hack patch scripts v08618/v08619/v08620 from index.html and js/.
+- Imola 2026 reference data is now seeded in js/data.js as clean baseline data.
+- WEC 2026 calendar is seeded in js/data.js: Imola R1, Spa R2, Le Mans R3, Sao Paulo R4, COTA R5, Fuji R6, Qatar R7, Bahrain R8.
+- app.js loadRace returns to Dashboard after race selection.
+- app.js displayInterval computes Int generically against the previous car, using lap difference, gap difference, then stored int fallback.
+- app.js classGap/winning margin uses gap seconds or stored int fallback.
+
+Not changed:
+- Importer workflow intentionally not touched in this build.
+
+SCC v0.8.6.20
+
+Imola 2026 complete reference fix
+- Replaced the broken 24-car Imola seed with a complete 35-car race dataset.
+- Preserved #007 and #009 as string car numbers; they are not merged with #7/#9.
+- Corrected #19 Genesis: Paul-Loup Chatin / Mathieu Jaminet / Daniel Juncadella.
+- Corrected #33 TF Sport: Nicky Catsburg / Jonny Edgar / Blake McDonald.
+- Added all missing LMGT3 classified/retired entries down to #87 Akkodis ASP.
+- Corrected LMGT3 pole to #10 Garage 59 instead of the placeholder #58.
+- Validation now reports OK for Imola only if there are 35 cars, unique car numbers and no same-race duplicate drivers.
+- Clears stale saved localStorage copies of wec-imola-2026 so old corrupt data does not override the patched race.
+
+SCC v0.8.6.19 · Imola ACO hardfix
+
+Actual changes:
+- Added js/patch-v08619-imola-aco-hardfix.js.
+- Forces a clean WEC Imola 2026 working dataset at runtime so corrupted saved/imported copies cannot keep reappearing.
+- Keeps car numbers as exact strings: #007 and #7 are distinct, #009 and #9 are distinct.
+- Replaces the broken Imola seed/imported state with one row per car and no same-race duplicate drivers.
+- Removes the shown duplicate-driver cases in the active Imola race:
+  - Daniel/Dani Juncadella is not on both #19 and #33.
+  - Yasser Shahin is not on both #91 and another Team WRT car.
+  - Rui Andrade is not on both #79 and #34.
+  - Zacharie Robichon, Alex Riberas and Kobe Pauwels are not duplicated across Heart/Aston rows.
+- Clears only stale localStorage saved copies of wec-imola-2026, preserving other races/assets.
+- Validation now checks duplicate cars/drivers in the current race only.
+
+Important limitation:
+- This is not the promised full WEC 2012→ test sweep. It is a targeted correction for the specific Imola duplicate/#007 state shown in the screenshots.
+SCC v0.8.6.18 · Imola duplicate-driver fix
+
+Changed files:
+- js/data.js
+- js/patch-v08612-aco-importer.js
+- js/patch-v08613-aco-import-session.js
+- js/patch-v08615-aco-importer-fix.js
+- js/patch-v08617-aco-importer-repair.js
+- js/patch-v08618-imola-duplicates.js
+- index.html
+
+Fixes:
+- Corrected WEC 2026 Imola seed entries so no driver is assigned to two cars in the same race.
+- #007 and #7, plus #009 and #9, are kept as distinct car numbers.
+- Import/merge keys no longer strip significant leading zeroes from car numbers.
+- Import validation now reports duplicate driver assignments only inside the current race.
+- Broken cached Imola 2026 imports are cleared on first load so the corrected race data is used.
+
+Spot check fixed duplicate-driver warnings:
+- Daniel Juncadella remains only in #19 Genesis Magma Racing.
+- #33 TF Sport crew is Nicky Catsburg / Jonny Edgar / Blake McDonald.
+- Yasser Shahin remains only in #92 The Bend Manthey.
+- Rui Andrade remains only in #61 Iron Lynx.
+- Zacharie Robichon remains only in #27 Heart of Racing Team.
+- Alex Riberas remains only in #009 Aston Martin THOR Team.
+- Kobe Pauwels remains only in #23 Heart of Racing Team.
+
+- LMGT3 fastest-lap holder for #33 TF Sport corrected from Daniel Juncadella to Nicky Catsburg in the Imola seed data.
+SCC v0.8.6.17
+
+- Added js/patch-v08617-aco-importer-repair.js.
+- Repaired WEC/ACO race classification parser for mixed PDF text order.
+- Repaired multi-PDF Hyperpole/Qualifying PP import for HYP + LMGT3.
+- Results de-duplicated by car number.
+- Preview confirms Results cars / FL rows / PP rows.
+- Save to database updates RACES and localStorage override.
+
+SCC v0.8.6.16 - Imola duplicate/Juncadella importer cleanup
+
+Verified changes in this ZIP:
+- Version marker changed to v0.8.6.16 in index.html.
+- database/drivers.json: removed duplicate driver record `daniel-juncadella`.
+- database/drivers.json: `Dani Juncadella` keeps DOB 1991-05-07 and has aliases `Daniel Juncadella`, `D. Juncadella`.
+- ACO importer normalizes `Daniel Juncadella` and `D. Juncadella` to `Dani Juncadella`.
+- ACO result dedupe now merges race rows by car number first, not `car number + class`, because class can be missing/variant in PDF extraction and that was a likely source of duplicate Imola rows.
+- When duplicate rows for one car are detected, driver lists are merged by canonical driver name instead of blindly keeping one crew.
+
+Known limitation:
+- This fixes the duplicate key/canonical-name cause found in the shipped ZIP. It does not claim external PDF validation; if a PDF row is still skipped (e.g. missing P4), that needs the exact PDF text extraction sample.
+
+SCC v0.8.6.15 · ACO importer fix
+
+Actual changes in this ZIP:
+- Added js/patch-v08615-aco-importer-fix.js and loaded it after previous importer patches.
+- Static title/version updated to v0.8.6.15.
+- Import wizard relabelled: no Entry List; Race Classification is the main results source; Hyperpole/Qualifying is the PP source.
+- Results field accepts Race Classification / Results PDF and imports race order.
+- Fastest laps are extracted from Race Classification when possible, so the FL PDF does not need to be uploaded separately.
+- Qualifying/PP field accepts multiple PDFs at once for Hyperpole HYP + Hyperpole LMGT3.
+- Import session status now confirms detected Results cars / FL rows / PP rows.
+- Start new import / clear loaded PDFs resets session arrays, textareas, file inputs and previews.
+- Changing Race ID clears stale importer session data.
+- Save to database writes the current race into RACES and browser localStorage under sccSavedRaces.v0.8.6, then refreshes tree/selectors.
+- Saved browser races are merged back into RACES on load.
+
+Known limitation:
+- Browser localStorage persistence is local to the browser. To make a permanent source-code/database export, use Export current race JSON after saving.
+
+SCC v0.8.6.14 - current-field DOB pass + ACO importer retained
+
+Base: v0.8.6.13 ACO import session.
+Scope: only DOB/nationality enrichment requested for current WEC/GTWC/IMSA field; importer files retained.
+
+Updated/added drivers:
+- David Perel: updated; dob None -> 1985-05-07; nationality South Africa -> South Africa
+- Franck Perera: updated; dob None -> 1984-03-21; nationality France -> France
+- Giorgio Roda: updated; dob None -> 1994-03-18; nationality Italy -> Italy
+- Huub van Eijndhoven: updated; dob None -> 1999-12-01; nationality Netherlands -> Netherlands
+- Alessandro Ghiretti: created; dob None -> 2002-01-18; nationality None -> France
+- Alberto Di Folco: created; dob None -> 1996-03-21; nationality None -> Italy
+- Lorenzo Patrese: updated; dob None -> 2005-08-12; nationality Italy -> Italy
+
+Note: Alessandro Ghiretti stored as France/French because GTWC/Wikipedia list him as French, despite Italian origins.
+
+SCC v0.8.6.13 · ACO import session
+
+Importer changes
+- Added an ACO import session panel in the import sidebar.
+- Results and Performance upload fields now accept multiple files.
+- Performance upload supports several PDFs at once, e.g. Fastest Laps + Hyperpole HYP + Hyperpole LMGT3.
+- The session panel confirms for each PDF whether text was read and how many result cars / PP rows / FL rows were detected.
+- Results preview keeps drivers stacked with flags and merges duplicate result rows by car number + class.
+- Performance import combines PP and FL rows from multiple PDFs and keeps best Overall + best per class.
+- Entry List remains intentionally outside the import workflow.
+- Save to database stores the race in localStorage and shows a status message with car / PP / FL counts.
+
+Files changed
+- index.html
+- js/patch-v08613-aco-import-session.js
+- CHANGELOG_v0_8_6_13.txt
+
+SCC v0.8.6.12 - ACO/WEC importer pass
+
+Base:
+- Built from v0.8.6.11 / v0.8.6.5 database UI line.
+
+Importer changes:
+- Entry List is intentionally not part of the workflow.
+- Results preview is rebuilt as a readable table: car, class, team, model and drivers stacked vertically with flags.
+- Results import dedupes by car number before saving/importing. This is aimed at duplicate driver rows such as Juncadella showing up twice from the same car/session.
+- Driver initials from Al Kamel PDFs are resolved against known SCC driver names when possible (example: D. JUNCADELLA -> Dani/Daniel Juncadella depending on database match).
+- Performance import now treats ACO Qualifying / Hyperpole / Starting Grid PDF text as PP source.
+- Race Classification PDF text remains usable as FL source.
+- Save to database now writes to RACES and browser localStorage, then updates selectors/tree and shows a real success message with car/PP/FL counts.
+
+Limits:
+- Browser PDF text extraction still depends on PDF.js being available. If PDF.js cannot load, paste extracted text or CSV.
+- This is an importer parser/UI pass, not a full server-side Alkamel downloader.
+
+SCC v0.8.6.11
+
+Base: v0.8.6.5.
+
+Real changes in this ZIP:
+- sidebar/title version updated to v0.8.6.11.
+- Drivers overview: Starts column changed to Entered with finished count and prominent finish rate.
+- Finish rate is calculated as finished / entered and exposed in the tooltip.
+- Driver detail first row changed to Entered / Started / Finished / Finish rate.
+- database/drivers.json: added DOB for Bijoy Garg (2002-07-15) and Ben Barker (1991-04-23).
+- database/drivers.json keeps existing DOBs for Dane Cameron, Alex Quinn, Luca Stolz, Markus Winkelhock.
+
+SCC v0.8.6.11
+
+Base: v0.8.6.5.
+
+Real changes in this ZIP:
+- sidebar/title version updated to v0.8.6.11.
+- Drivers overview: Starts column changed to Entered with finished count and prominent finish rate.
+- Finish rate is calculated as finished / entered and exposed in the tooltip.
+- Driver detail first row changed to Entered / Started / Finished / Finish rate.
+- database/drivers.json: added DOB for Bijoy Garg (2002-07-15) and Ben Barker (1991-04-23).
+- database/drivers.json keeps existing DOBs for Dane Cameron, Alex Quinn, Luca Stolz, Markus Winkelhock.
+
+
