@@ -23,8 +23,6 @@
         <label>Series<select id="seriesSelect"></select></label>
         <label>Race<select id="raceSelect"></select></label>
       </div>
-      <div id="raceTree" class="race-tree"></div>
-
       <div class="side-title database-title">Database</div>
       <div class="database-nav">
         <button data-db-tab="drivers" class="active"><span>◉</span> Drivers</button>
@@ -65,6 +63,13 @@
       </header>
 
       <section id="tab-dashboard" class="tab-content active">
+        <div class="race-nav-row" id="raceNavRow">
+          <button id="navPrevRace" class="race-nav-btn" disabled><span class="race-nav-arrow">◀</span><span class="race-nav-text"><span class="race-nav-kicker">Previous race</span><span class="race-nav-label">—</span></span></button>
+          <button id="navNextRace" class="race-nav-btn" disabled><span class="race-nav-text"><span class="race-nav-kicker">Next race</span><span class="race-nav-label">—</span></span><span class="race-nav-arrow">▶</span></button>
+          <span class="nav-divider" aria-hidden="true"></span>
+          <button id="navPrevTrack" class="race-nav-btn" disabled><span class="race-nav-arrow">◀</span><span class="race-nav-text"><span class="race-nav-kicker">Previous at this track</span><span class="race-nav-label">—</span></span></button>
+          <button id="navNextTrack" class="race-nav-btn" disabled><span class="race-nav-text"><span class="race-nav-kicker">Next at this track</span><span class="race-nav-label">—</span></span><span class="race-nav-arrow">▶</span></button>
+        </div>
         <div class="toolbar-row">
           <div class="segmented"><button id="modeTime" class="active">Time</button><button id="modeLaps">Laps</button></div>
           <div class="toolbar-note">Timeline uses official finish duration. The chequered flag is a finish marker, not a race-control phase.</div>
@@ -148,6 +153,7 @@
         <section class="panel">
           <div class="panel-title-row">
             <h2>Order</h2>
+            <div id="orderViewToggle" class="order-view-toggle"></div>
             <div id="classFilters" class="class-filters"></div>
           </div>
           <div id="orderTable" class="order-table"></div>
@@ -195,73 +201,7 @@
       </section>
 
       <section id="tab-import" class="tab-content">
-        <div class="import-layout">
-          <section class="panel import-panel">
-            <h2>Import Wizard</h2>
-            <p class="muted">Build a race in layers. CSV/JSON can be imported directly. PDF files are now extracted in-browser when PDF.js is available, then passed through ACO/WEC/ELMS/MLMC, SRO/GTWC and IMSA parser hooks. If a PDF table cannot be parsed automatically, SCC shows the extracted text so it can be corrected or converted to CSV.</p>
-            <div class="wizard-steps">
-              <span class="wizard-step active">1 Metadata</span>
-              <span class="wizard-step">2 Results</span>
-              <span class="wizard-step">3 FL / PP</span>
-              <span class="wizard-step">4 Race control</span>
-            </div>
-
-            <div class="wizard-card">
-              <h3>1 · Metadata</h3>
-              <div class="form-grid import-meta-grid">
-                <label>Series<select id="importSeries"></select></label>
-                <label>Season<input id="importSeason" type="number" /></label>
-                <label>Round<input id="importRound" type="number" /></label>
-                <label>Race ID<input id="importId" placeholder="elms-paulricard-2026" /></label>
-                <label class="full">Event<input id="importEvent" placeholder="4 Hours of Le Castellet" /></label>
-                <label>Circuit<input id="importCircuit" placeholder="Circuit Paul Ricard" /></label>
-                <label>Country<input id="importCountry" placeholder="France" /></label>
-                <label>Date<input id="importDate" type="date" /></label>
-                <label>Scheduled<input id="importScheduled" placeholder="04:00:00" /></label>
-                <label>Official<input id="importOfficial" placeholder="04:00:01.773" /></label>
-                <label>Laps<input id="importLaps" type="number" /></label>
-              </div>
-              <div class="form-actions"><button id="applyMetadataBtn">Apply metadata to current race</button></div>
-            </div>
-
-            <div class="wizard-card">
-              <h3>2 · Results / Classification</h3>
-              <p class="muted">Classification/results source. SCC auto-detects SCC CSV and timing CSV columns, maps vehicle/constructor text, and fills flags from imported data + driver DB.</p>
-              <div id="resultsDrop" class="drop-zone">Drop Results PDF / CSV / JSON here<br><small>or</small><br><label class="buttonlike secondary">Browse file<input id="resultsFile" type="file" accept=".csv,.txt,.json,.pdf,text/csv,text/plain,application/json,application/pdf" hidden></label></div>
-              <textarea id="resultsCsv" class="import-textarea" rows="6" placeholder="Optional paste area: pos,no,laps,gap,time,status"></textarea>
-              <div class="form-actions"><button id="previewResultsBtn" class="secondary">Preview results</button><button id="importResultsBtn">Import results</button></div>
-              <div id="resultsPreview" class="import-preview"></div>
-            </div>
-
-            <div class="wizard-card">
-              <h3>3 · Performance / Qualifying</h3>
-              <p class="muted">Optional: fastest laps, pole positions, qualifying and starting grid. CSV columns: <code>type,class,no,driver,lap,time</code>. Type can be <code>FL</code> or <code>PP</code>. PDF text extraction is supported; if a table cannot be mapped automatically, SCC shows the extracted text for correction.</p>
-              <div id="performanceDrop" class="drop-zone">Drop FL / PP / Qualifying PDF / CSV / JSON here<br><small>or</small><br><label class="buttonlike secondary">Browse file<input id="performanceFile" type="file" accept=".csv,.txt,.json,.pdf,text/csv,text/plain,application/json,application/pdf" hidden></label></div>
-              <textarea id="performanceCsv" class="import-textarea" rows="5" placeholder="type,class,no,driver,lap,time
-FL,Overall,22,Driver Name,101,1:42.123
-PP,LMP2,22,Driver Name,,1:39.456"></textarea>
-              <div class="form-actions"><button id="previewPerformanceBtn" class="secondary">Preview performance</button><button id="importPerformanceBtn">Import performance</button></div>
-              <div id="performancePreview" class="import-preview"></div>
-            </div>
-            <div class="wizard-card">
-              <h3>4 · Race Control Messages</h3>
-              <p class="muted">Optional: race-control CSV/JSON or official message PDF. CSV supports <code>time,type,reason,notes</code> or <code>start,end,type,reason,notes</code>.</p>
-              <div id="raceControlDrop" class="drop-zone">Drop Race Control PDF / CSV / JSON here<br><small>or</small><br><label class="buttonlike secondary">Browse file<input id="raceControlFile" type="file" accept=".csv,.txt,.json,.pdf,text/csv,text/plain,application/json,application/pdf" hidden></label></div>
-              <textarea id="raceControlCsv" class="import-textarea" rows="5" placeholder="time,type,reason,notes
-00:42:18,FCY,Car stopped,T7
-00:45:01,GREEN,Restart,"></textarea>
-              <div class="form-actions"><button id="previewRaceControlBtn" class="secondary">Preview Race Control</button><button id="importRaceControlBtn">Import Race Control</button></div>
-              <div id="raceControlPreview" class="import-preview"></div>
-            </div>
-          </section>
-
-          <aside class="panel import-help">
-            <h2>Import checklist</h2>
-            <div id="importChecklist"></div><h3>Validation</h3><div id="importValidation" class="validation-list"></div>
-            <h3>Race Control</h3>
-            <p class="muted">Race Control can be entered manually or imported from CSV/JSON. PDF message logs are extracted when possible; if not, use CSV or the manual Race Control editor.</p>
-          </aside>
-        </div>
+        <!-- Populated at runtime by js/importer.js -->
       </section>
 
       <section id="tab-settings" class="tab-content">
@@ -301,14 +241,15 @@ PP,LMP2,22,Driver Name,,1:39.456"></textarea>
   <script src="js/patch-v082.js"></script>
   <script src="js/patch-v0821.js"></script>
   <script src="js/patch-v083.js"></script>
-  <script src="js/patch-v084-audit-db.js"></script>
   <script src="js/patch-v085-database-polish.js"></script>
   <script src="js/patch-v0864-db-import.js"></script>
-  <script src="js/patch-v08612-aco-importer.js"></script>
-  <script src="js/patch-v08613-aco-import-session.js"></script>
   <script src="js/patch-v08614-dob-current-field.js"></script>
-  <script src="js/patch-v08615-aco-importer-fix.js"></script>
-  <script src="js/patch-v08617-aco-importer-repair.js"></script>
-  <script src="js/patch-v08621-importer-v2.js"></script>
+  <script src="js/patch-v08615-fix-missing-constructors.js"></script>
+  <script src="js/patch-v08616-driver-name-learn.js"></script>
+  <script src="js/patch-v08617-fix-official-duration.js"></script>
+  <script src="js/patch-v08618-fix-crew-fastest-perrodo.js"></script>
+  <script src="js/patch-v08619-fix-crew-fastest-batch.js"></script>
+  <script src="js/patch-v08620-fill-crew-fastest-gaps.js"></script>
+  <script src="js/importer.js"></script>
 </body>
 </html>

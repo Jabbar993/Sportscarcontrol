@@ -1,5 +1,1088 @@
 # Changelog
 
+SCC v0.8.6.68 - WEC 2014 Silverstone real import (LMP1-H/L split confirmed live)
+
+- Imported wec-silverstone-2014 (round 1) for real: 27 entries with correct overall pos 1-27,
+  confirmed LMP1-H/LMP1-L class split appearing in both the race classification and
+  qualifying documents (Toyota #8 TS040 Hybrid's debut win), 27-row qualifying, 13 pole
+  records, 69-row FL Classification.
+- js/importer.js qualifyingAverageDriversFromText: some seasons (2014 confirmed) publish
+  qualifying pole-driver data as a "FastestLapByDriverAfter...ByClass" document ranking each
+  driver's single best lap of the WHOLE weekend so far, not just the qualifying session -
+  each row has its own trailing Session column ("Qualifying Practice" vs "Free Practice 3"
+  etc). Without filtering to that column, a car's unused 3rd crew member's practice-session
+  personal best could wrongly count as one of the two actual qualifying nominees. Now filters
+  out Free Practice/Warm-Up rows before attributing pole drivers - improved 2014 Silverstone's
+  precise 2-driver pole attribution from 0/27 cars to 21/27 (remaining 6 cars have no
+  qualifying-session lap in this ranking at all - their actual 2nd nominee's official lap
+  wasn't their personal best of the weekend - falls back to crediting the full listed crew).
+
+SCC v0.8.6.67 - WEC 2013 Silverstone real import (two-driver-average qualifying)
+
+- Imported wec-silverstone-2013 (round 1) for real, replacing the skeleton entry: 31 entries
+  (correct combined-classes overall pos 1-31, computed the same way as Sebring 2012), 30-row
+  qualifying order, 88-row FL Classification, 10 pole records across 4 classes + Overall.
+- 2013 was the first WEC season with two-driver-average qualifying (grid set by averaging
+  each car's two nominated drivers' best laps, not a single fastest lap) - the parser
+  functions for this (qualifyingAverageRowsFromText/qualifyingAverageDriversFromText/
+  polesFromAverageRows) already existed from earlier work on the 2018-2019 era but had never
+  actually been wired into a real import. First real use here: needed a SEPARATE qualifying-
+  session Fastest-Lap-by-Driver document (not the race one - a different Al Kamel file,
+  "07_FastestLapByDriver_Qualifying Practice.PDF") to correctly attribute each pole to the
+  two drivers actually nominated for qualifying, since the Drivers cell in the qualifying
+  classification itself lists the whole crew (2 or 3 names) undifferentiated.
+
+SCC v0.8.6.66 - WEC 2012-2017 era parser support + first real historical import (Sebring 2012)
+
+- Built an offline Node-based PDF import pipeline (download via curl, extract text with
+  pdfjs-dist matching js/app.js's readPdfText exactly, run the real unmodified parsing
+  functions via the existing __SCC_IMPORTER_INTERNAL__ test hook) to verify historical
+  imports without a live browser - reusable for the remaining WEC/ELMS/MLMC/IMSA seasons.
+- js/importer.js fixes, all found and verified against real 2012 WEC Sebring PDFs:
+  - Class names printed with a space ("LM P1", "LM GTE Pro") now recognised, not just the
+    modern no-space form ("LMP1", "GTEPRO").
+  - Real bug in parseClassification: once a document's "Not classified" section flipped an
+    internal status flag, later classified rows in a DIFFERENT class group were never
+    correctly recognised again (their own Pos column got misread as the car number). Fixed
+    by detecting a classified row from its own column shape instead of a flag that never
+    reset. Also added "Excluded" as a recognised status-section header (stewards
+    disqualification), alongside the existing Not classified/Retired/Disqualified.
+  - Driver names in "Fastest Lap by Driver" documents from this era print as an ordinary
+    "Firstname Surname" cell (neither initials nor all-caps), a shape none of the existing
+    name regexes covered and unsafe to free-text-scan for (a model fragment like "Ferrari
+    F458 Italia LM GTE Pro" could accidentally look like one). Added driverCellAfterClass(),
+    which locates the Driver cell by its structural tab-column position (right after Class)
+    instead of guessing from free text - wired into every function that reads driver names
+    from this document type (timeRecordsFromText, qualifyingTimeDriverMap,
+    flClassificationFromText, fullNameEnrichmentMap).
+  - Lap/segment times in this era use an apostrophe for the final minute-to-second separator
+    ("1'47.534", "12:00'15.243") instead of the modern all-colon format - every time-matching
+    regex across parseClassification/qualifyingRowsFromText/timeRecordsFromText/
+    qualifyingTimeDriverMap/flClassificationFromText/parseStartingGrid now accepts both and
+    normalises back to colon form before storing (toColonTime()), so nothing downstream needs
+    to know the source format.
+- js/app.js normClass: added explicit LMP2/LMP3/LMP1H/LMP1L branches (LMP2 in particular had
+  no branch at all and silently fell through un-normalised for any input with spaces/hyphens
+  - a latent bug independent of this era's work, caught by a round-trip check against every
+    SERIES class id).
+- Imported wec-sebring-2012 (60th Annual 12 Hours of Sebring, WEC's first-ever season opener)
+  for real, replacing the skeleton entry: 29 classified/NC/DSQ entries, full qualifying order
+  (28 cars), 82-row driver-level FL Classification, poles and fastest laps per class - all
+  cross-checked by hand against the source PDFs.
+- Fixed after user spotted it live in the Order tab: entries[].pos must be the genuine
+  overall race position (unique 1..N across every class), not the per-class rank the source
+  "ClassificationByClass" PDF prints in its own leading column - storing the raw per-class
+  rank made every class's own P1 car tie at overall pos 1 (four "WINNER OVERALL" labels
+  instead of one, wrong Pos column). Recomputed by sorting all entries together (status, then
+  laps descending, then total time ascending, then car number) and re-verified directly
+  against orderRowsHtml() - exactly one "Winner overall" label, correct 1-2-3-4-5-6 Pos
+  column. Only entries[].pos needed this - qualifying pos is intentionally per-class already
+  (no combined-classes qualifying position exists in real timing).
+
+SCC v0.8.6.65 - More FL Classification class-family merges
+
+- js/app.js flFamilyOf: MLMC's LMP3 / LMP3 Pro-Am now merge into one "LMP3" row in FL
+  Classification, same pattern as LMP2/LMP2 Pro-Am. WEC's 2014 LMP1-H/LMP1-L split merges
+  into "LMP1" (corrected scope from an earlier "2014-2016" note - the split only applies to
+  the 2014 season). GTWC Europe (Pro/Gold/Silver/Bronze/Pro-Am), GTWC America (Pro/Pro-Am/Am)
+  and GT Open (Pro/Pro-Am/Am) all merge into one "GT3" row each - these are driver-rating
+  splits within one single-make GT3 field, not different cars, same underlying pattern as
+  the other merges. Audited every other series (IMSA, ELMS, ASLMS, Creventic, Michelin Pilot
+  Challenge) for the same pattern - no further candidates found (Creventic's GT3/GTX/TCR/TCX
+  and MPC's GS/TCR are genuinely different vehicle categories, not rating splits of one car).
+
+SCC v0.8.6.64 - Add IMSA Michelin Pilot Challenge series (2019+)
+
+- js/data.js: new SERIES entry `mpc` ("IMSA Michelin Pilot Challenge", classes GS/TCR,
+  phases GREEN/SC/RED matching IMSA's own simpler race-control model since MPC runs under
+  IMSA control). Renamed from "Continental Tire SportsCar Challenge" for the 2019 season
+  when Michelin replaced Continental as tire supplier (Street Tuner class dropped at the
+  same time) - that's why coverage starts at 2019, not earlier.
+- Added lightweight calendar skeleton entries for all 8 seasons 2019-2026 (80 rounds total,
+  researched via Wikipedia season articles + Sportscar365/RACER cross-checks), approximate
+  dates pending real PDF imports. Series/season/race dropdowns pick this up automatically -
+  no UI wiring needed, they already derive their options from SERIES/RACES.
+- assets/assetpack/series/ is the existing shared logo folder (already used by every other
+  series) - reserved the id `mpc` there for a future `mpc.png`/`mpc.svg` logo file; the
+  logo() fallback renders a colored "Pilot Challenge" badge until that file is added.
+
+SCC v0.8.6.63 - Dashboard race navigation links + GTWC EU 2026 Spa duplicate fix
+
+- js/data.js: found and fixed the same kind of duplicate-entry bug as the IMSA one below,
+  this time in GTWC Europe 2026 - a lightweight skeleton entry (gtwc-spa24-2026, round 3,
+  "CrowdStrike 24 Hours of Spa") duplicated the existing detailed reference race
+  (gtwc-spa-2026, round 4, "24 Hours of Spa") for the same real event. Removed the redundant
+  skeleton entry. Audited every other 2025/2026 skeleton block against hand-crafted detailed
+  races for the same kind of id mismatch - no other instances found.
+- index.html/js/app.js/css/app.css: added a visible navigation row at the top of the
+  Dashboard tab with four links - Previous/Next race (chronological walk through the same
+  series' calendar) and Previous/Next at this track (same walk, filtered to races at the
+  same circuit within that series, so e.g. previous-at-track for ELMS 2026 Imola resolves to
+  ELMS 2025 Imola even if other series raced at Imola in between). Disabled/greyed out when
+  there's no neighbor in that direction (season boundary, or a track visited only once).
+
+SCC v0.8.6.62 - Fix duplicate IMSA 2026 R1/R4 calendar entries
+
+- js/data.js had two skeleton entries sharing the id imsa-daytona-2026 (an older full-season
+  2026 IMSA skeleton, plus a smaller entry added when IMSA import support was first built)
+  and two different-id entries for the same R4 round (imsa-laguna-2026 "Monterey SportsCar
+  Championship" vs imsa-lagunaseca-2026 "WeatherTech Raceway Laguna Seca") - both showed up
+  as separate rows in the Race dropdown. Removed the redundant newer pair, keeping the
+  original imsa-daytona-2026/imsa-laguna-2026 slots and names.
+- js/importer.js: added a one-time migrateLegacyRaceIds() step (runs before
+  loadPersistedRaces() on every load) that renames any already-imported race stored under
+  the old imsa-lagunaseca-2026 id onto imsa-laguna-2026 and restores the "Monterey SportsCar
+  Championship" event name, so real imported Daytona/Laguna Seca data keeps showing up
+  correctly with no manual localStorage edits needed.
+
+SCC v0.8.6.61 - Historical calendars back to 2012 (or real start year) for all 9 series
+
+- Added calendar skeleton entries (season/round/event/circuit/country/date - lightweight
+  placeholders pending real PDF imports, same style as the existing WEC/ELMS/MLMC 2023+
+  entries) for every supported series, going back to 2012 or the series' own real start
+  year if later, researched season-by-season via Wikipedia:
+  - WEC 2012-2017 (2018-19 onward already existed).
+  - ELMS 2012-2022 (2023+ already existed).
+  - MLMC 2016-2024 (started 2016 as "GT3 Le Mans Cup"; 2025+ already existed).
+  - IMSA 2014-2024 (didn't exist before 2014 - was separate ALMS/Grand-Am; 2025+ already
+    existed). Full round-by-round detail, ~130 individual rounds.
+  - Asian Le Mans Series: 2009 (single race), hiatus 2010-2012, 2013/2014, then winter
+    split-format seasons 2015-16 through 2019-20, then standalone UAE-only years
+    2021-2023 (a planned "2020-21" season was scrapped and never actually run), then back
+    to winter split-format from 2023-24. Careful not to duplicate the existing 2025/2026
+    entries, which already correspond to 2024-25/2025-26.
+  - International GT Open 2012-2024 (running continuously since 2006, no gaps; 2025+
+    already existed with a more detailed per-race breakdown - kept this addition simple/
+    one-entry-per-weekend for consistency with the rest of the file). Had to move the
+    insertion point to AFTER the existing gtopen splice-cleanup code, which otherwise
+    wipes every 'gtopen' entry and rebuilds from a separate detailed array - a real gap
+    that ate the first attempt at this addition entirely, caught by re-verifying counts
+    with a Node harness after every block instead of just checking JS syntax.
+  - GT World Challenge Europe (Endurance Cup 2012-2024 + Sprint Cup 2013-2024, Sprint
+    didn't exist in 2012). Kept as ONE top-level series (series:'gtwc', "GTWC EU") per
+    request - the Endurance/Sprint split only shows up as a second level: event names
+    prefixed "Endurance Cup —"/"Sprint Cup —", separate round numbering per category.
+    24 Hours of Spa is the Endurance headline round in every single season.
+  - GT World Challenge America 2012-2024 (net new, nothing existed before - renamed from
+    "Pirelli World Challenge" in 2019, not 2020/21 as first guessed). 2025/2026 already
+    existed under a different id prefix (gtwca-*) - first draft of this addition
+    accidentally duplicated those two seasons under a new prefix (gtwc-us-*-2025/2026);
+    caught and removed by re-checking season row counts, not just id collisions, since
+    the ids themselves didn't collide.
+  - 24H Series (Creventic) 2015-2026 (net new - no formal scored championship existed
+    2012-2014, individual races only). Creventic's own "12H Spa-Francorchamps" kept
+    distinct from the unrelated SRO/CrowdStrike "24 Hours of Spa" GT3 race - same
+    circuit, different organisers/events entirely.
+- Verified after every block with a small Node harness (not just `node --check` syntax
+  validation) that counts entries per series/season and checks for duplicate ids -
+  syntax-valid isn't the same as correct, and this caught two real mistakes above (the
+  gtopen splice-wipe, the gtwc_us 2025/2026 duplication) that syntax checking alone
+  would have missed entirely. Confirmed live in the browser afterwards too (season/
+  series/race dropdowns for GTWC EU 2013, Creventic 2018, ASLMS 2009), no console errors.
+  Total race count: 130 -> 918.
+- IMSA didn't get a full round-by-round grid/starting-position parser in this pass -
+  that's still the one known gap for real IMSA imports, separate from this calendar work.
+
+SCC v0.8.6.60 - IMSA: starting grid, fastest-lap driver highlight, GTD PRO/GTD merge
+
+- Three gaps found after using the real IMSA imports: no grid/start-vs-
+  finish position change arrows, no highlighted "who set this car's
+  fastest lap" driver in Race Order, and FL Classification listing GTD PRO
+  and GTD as two separate sections instead of one combined list the way
+  GTE Pro/Am and LMP2/Pro-Am already are for the other vendor's races.
+- New imsaGridRowsFromText() for IMSA's Starting Grid document - a
+  simpler, non-wrapping-sensitive layout than the Results/Qualifying docs
+  since only the (car number -> grid position) pair is needed, not the
+  full row. Same Bronze-driver marker cell as the other IMSA documents,
+  just in a different position (between Class and Nr here) - skipped by
+  content the same way.
+- analyzeImsa() now also reads the Starting Grid file input (previously
+  ignored for this series), and derives each entry's bestLapDriver from
+  the per-driver Fastest Lap rows (whichever of a car's drivers has that
+  car's own quickest lap) - both already worked for WEC/ELMS/MLMC, IMSA
+  just never had the equivalent wiring done yet.
+- flFamilyOf/flFamilyLabel/flFamilySortIndex (the FL Classification
+  merge from v0.8.6.56) now also merge GTD PRO + GTD into one "GTD"
+  section, same mechanism as GTE Pro/Am -> "GTE" and LMP2/Pro-Am ->
+  "LMP2" - harmless no-op for any series with a plain GTD class and no
+  GTD PRO counterpart.
+- Re-imported both real IMSA rounds (Daytona 2026 R1, Laguna Seca 2026
+  R4) with all three fixes applied and verified in the live UI: grid
+  position + gain/loss arrows on every entry, correct driver bolded in
+  Race Order's driver list, FL Classification showing one merged "GTD
+  Fastest Laps" section. No console errors.
+- Checked the reported missing constructor logos separately - the asset
+  files exist and load correctly in the current session (verified
+  img.complete/naturalWidth and the has-img class directly); this was
+  very likely the dev server outage mid-session, not a real bug - flagged
+  to the user to hard-refresh rather than "fixed" without a real cause.
+
+SCC v0.8.6.59 - IMSA wired into the actual Import Wizard (manual imports)
+
+- The new imsa* parsing functions (previous entry) were only reachable
+  through the debug hook used to build/verify them - the real Import
+  Wizard's analyze() function had no idea IMSA existed and would have run
+  every uploaded IMSA file through the Al Kamel-shaped parsers, which
+  can't read its column layout at all. Added a new analyzeImsa(), and
+  analyze() now checks the metadata form's own series selector and routes
+  to it whenever series=IMSA is picked, before touching any of the
+  existing WEC/ELMS/MLMC parsing - that pipeline is completely untouched.
+  Grid/starting-position isn't handled yet (no IMSA grid-doc parser exists
+  yet) - a Starting Grid file just gets ignored for this series rather
+  than erroring, same as leaving it empty for any other series.
+- Verified through the real wizard UI (not the debug hook): selected
+  IMSA, uploaded the three real Laguna Seca 2026 R4 files through the
+  actual file-picker inputs, clicked "Generate preview" - correct result
+  (33 cars, 3 classes, 4 FL, 4 PP, "Ready to import"), no console errors.
+  Not actually added to the archive (this was a UI-wiring check, not a
+  new import - imsa-lagunaseca-2026 from the previous entry is already
+  the real one).
+
+SCC v0.8.6.58 - IMSA WeatherTech SportsCar Championship support (new series)
+
+- New importer support for imsa.results.alkamelcloud.com, a genuinely
+  different results vendor product from the *.alkamelsystems.com sites
+  (WEC/ELMS/MLMC) with its own document shape end to end:
+  - ONE combined all-classes ranking per session (like ELMS' 90_ doc), but
+    column order [Pos, Pic, Nr, Class, Drivers, Team, Car, ...] with Drivers
+    BEFORE Team (opposite of every Al Kamel doc) and no separate Car/model
+    column in the qualifying doc at all.
+  - A real print-width line-wrapping problem the other vendor doesn't have -
+    a car's Drivers and/or Car text that doesn't fit the column spills onto
+    a following physical line with no Pos/Pic/Nr/Class prefix of its own,
+    sometimes landing AFTER the row's own trailing numeric columns once
+    reassembled. New imsaMergeWrappedLines()/imsaRowFields() reconstruct one
+    clean logical line per car first (driver names pulled out by content
+    from the whole line, not just the tail) so every other extraction step
+    works the same way it does for every other document in this file.
+  - GTD/GTD PRO rows carrying a Bronze-rated driver print an extra
+    single-letter "B" marker cell right after Class (same shape as WEC's
+    Hybrid "H"/Pro-Am "P/A" marker cells) - skipped, not needed here.
+  - A driver name format neither existing regex handled: Title-Case
+    surnames with a lower-case connector ("R. van der Zande", "A. Felix da
+    Costa"), sometimes mixed with upper-case connectors ("P. Di Resta") in
+    the same document. New case-insensitive IMSA_DRIVER_NAME_RE, with a
+    narrow trailing-connector extension (only "da"/"de", not "van der")
+    specifically to avoid corrupting the one real team whose name literally
+    repeats a driver's own connector-surname ("van der Steur Racing" /
+    driver R. van der Steur).
+  - Gap/Gap-to-previous columns can be a lap count, a M:SS.mmm time once
+    the gap passes a minute, a bare "-" for the class leader, or (for a car
+    that stopped running late but stayed classified) an extra "Not Running"
+    status word inserted as its own column.
+  - New imsaFlByDriverRowsFromText() for the separate "Results by Driver
+    Fastest Lap" document - a much simpler layout (no wrapping at all) but
+    fuses the car number and team into one cell.
+- Added SERIES.imsa's LMP2 class (was missing entirely - IMSA runs GTP,
+  LMP2, GTD PRO, GTD) and fixed its GTD PRO class key (GTD_PRO -> GTDPRO,
+  matching what the class-detection patterns actually normalise to -
+  GLOBAL_CLASS_META already had both spellings as a fallback, which is
+  what masked this until LMP2 rows made the real gap visible).
+- Verified end to end on two real, freshly-fetched rounds: Rolex 24 at
+  Daytona 2026 (R1, 24-hour race with hourly result subfolders - 60/60
+  entries, 60/60 qualifying rows, all 4 classes, clean team/model text and
+  constructor logos throughout) and WeatherTech Raceway Laguna Seca 2026
+  (R4, sprint race, no LMP2 this round - 33/33 entries and qualifying).
+  No console errors on either import.
+
+SCC v0.8.6.57 - ELMS combined qualifying doc + WEC 2018-19/2019-20 driver DB
+
+- ELMS prints its whole-field qualifying result as ONE combined ranking
+  across all classes (not one file per class like WEC/MLMC), in yet another
+  column layout qualifyingRowsFromText didn't know about: [pos, no, Drivers,
+  Team, Class, times...] - Drivers BEFORE Team (opposite order from the
+  Classification-doc layout) and no separate Car/model column printed at
+  all. Neither existing cols-detection branch matched this shape, so every
+  row fell to the whitespace-tokenised fallback and team/model/class/times
+  all ran together into one field (e.g. "Proton Competition LMP2 Pro Am
+  1:31.110 1:31.110 3.446" shown as the team name), and with no model text
+  anywhere to detect a constructor from, every logo fell back to the grey
+  "?" placeholder. Added a dedicated detection branch for this layout, and
+  model/team/constructor now fall back to the already-parsed Race
+  Classification entry for the same car when the qualifying document itself
+  has no model column (it never does, for this layout) - reused the same
+  entries the Pro-Am class-name fallback already relies on for combined
+  documents, so no new data source was needed.
+- Re-imported elms-barcelona-2025 for real (44 cars, 43/43 qualifying rows
+  across LMP2/LMP2 Pro-Am/LMP3/LMGT3, correct constructor logos throughout).
+  No console errors.
+- Added the reviewed WEC Spa 2018 (2018-19) + Silverstone 2019 (2019-20)
+  driver flags/DOBs to the database (58 drivers, plus resolving "A.
+  Priaulx"/"T. Kanaan" to Andy Priaulx/Tony Kanaan and correcting an
+  existing wrong DOB for António Félix da Costa, 1996-01-24 -> 1991-08-31).
+  DOB omitted (flag only) for four names whose only source was too weak to
+  trust (Erwin Creed, Charlie Robertson, Sun Mok, Charles Hollings).
+
+SCC v0.8.6.56 - FL Classification: merged GTE Pro/Am and LMP2/Pro-Am sections
+
+- LMGTE Pro + LMGTE Am (and LMP2 + LMP2 Pro-Am) used to print as two separate
+  "X Fastest Laps" sections, each strictly sorted within itself - so a
+  genuinely quicker Am/Pro-Am car could never appear ahead of a slower
+  Pro/plain-LMP2 car the way it actually happened on track. Now these
+  related pairs share one combined divider ("GTE Fastest Laps" / "LMP2
+  Fastest Laps") with rows from both interleaved by real lap time; each
+  row still shows its absolute position (across the whole field) and its
+  own narrow sub-class position (small "C" number), and keeps its own
+  class badge colour so Pro/Am (or LMP2/Pro-Am) rows stay distinguishable
+  within the merged list. Every other class is untouched. The per-class
+  "Average laptime" cards above the list are unaffected - still computed
+  and shown separately per real sub-class, same as before.
+- Verified on wec-spa-2018 (GTE Fastest Laps: Porsche/Ford/AF Corse Pro
+  cars first, Dempsey-Proton's Am car correctly interleaved in by its own
+  pace, not appended after all Pro cars) and elms-barcelona-2026 (LMP2 +
+  LMP2PA merged into one "LMP2 Fastest Laps", LMP3/LMGT3 untouched). No
+  console errors.
+
+SCC v0.8.6.55 - Two-driver-average qualifying: team/model text + single-lap cars
+
+- qualifyingAverageRowsFromText (2013-2020 era) built team/model/drivers by
+  whitespace-tokenising the whole line and relying on modelFromLine's
+  hardcoded Hypercar-era model list to find where the model name ended -
+  that list has no idea about GTE-era cars ("Ford GT", "BMW M8 GTE",
+  "Porsche 911 RSR"...), so for any car whose model it didn't recognise,
+  team/model/class/times all ran together into one field ("BMW Team MTEK
+  BMW M8 GTE LMGTE Pro 2:13.683 2:14.351 2 2'14.017" shown as the team
+  name). Same document already prints Team/Drivers/Car/Class in their own
+  tab cells (same layout qualifyingRowsFromText and parseClassification
+  already use) - switched to reading those cells directly, keeping the
+  numeric-sequence regex only for the trailing driver1/driver2/laps/average
+  columns (still needed to survive the Hybrid era's extra "H" marker cell).
+- A car whose 2nd nominated driver had every lap deleted (track limits,
+  steward decision) has only ONE recorded time, not two - the sequence
+  regex required exactly 4 numeric values and silently skipped these cars
+  entirely, dropping a real recorded qualifying time and pushing them into
+  the "beyond recorded time" grid-order fallback instead (e.g. Gulf Racing
+  UK #86 at Spa 2018-19, genuinely 10th on qualifying pace, was showing as
+  20th/unclassified). Added a 3-value fallback pattern (one time, laps,
+  average - which just repeats that one time) for this case.
+- Re-imported wec-spa-2018 and wec-silverstone-2019 (both already using
+  this parser) with the fix: team/model text now clean throughout both
+  (verified GTE Pro/Am and LMP1/LMP2 rows), car #86 correctly placed at
+  P10 in GTE Am instead of the grid-order fallback, only one genuinely
+  timeless car (#17, all laps deleted) remains there. No console errors.
+
+SCC v0.8.6.54 - Dashboard Fastest Laps / Pole Positions: crew list regression
+
+- The full-crew display added for the two-driver-average era's dual pole
+  highlight (v0.8.6.51) was applying unconditionally to every era and to
+  both panels, not just the one case that actually needs it. Result: the
+  Fastest Laps panel showed the whole crew (with the actual lap-setter
+  bold) instead of just that one driver, and the Pole Positions panel did
+  the same for every non-average season (e.g. 2021+), where exactly one
+  driver sets the time.
+- Fixed by only expanding to the full crew when there is more than one
+  highlighted name to show (the real average-era case); everywhere else
+  falls back to the single-driver line exactly as before v0.8.6.51.
+  Verified on wec-spa-2018 (average era: Fastest Laps now shows one name
+  per row, Pole Positions still shows both nominated drivers with the
+  third crew member plain) and wec-spa-2021 (both panels: one name per
+  row, no crew list). No console errors.
+
+SCC v0.8.6.53 - WEC 2018-2019 support + split-season convention finalised
+
+- Split seasons (2018-19, 2019-20) now use the END year internally
+  (season=2019 / season=2020, not the start year) - re-labelled the already-
+  imported 2019-20 Silverstone race to match. Event names keep the "(2018-19)"
+  / "(2019-20)" suffix so neither is mistaken for a plain calendar year.
+- Added WEC 2018-2019 calendar metadata (8 rounds: Spa, Le Mans, Silverstone,
+  Fuji, Shanghai, Sebring, Spa, Le Mans).
+- Real bug found and fixed testing Round 1 (Spa, imported for real): the
+  Average column's minute separator is an apostrophe in this season's own
+  documents ("1'54.962"), not the colon every other season (including
+  2019-20, tested previously) uses - the two-driver-average parser only
+  recognised colons, so qualifying silently produced 0 rows. Now accepts
+  either and normalises to colon form before storing, so nothing downstream
+  (sorting, class averages) needs to know the difference. Verified: 31/31
+  qualifying rows, both nominated drivers correctly identified for every one
+  (e.g. pole: Kazuki Nakajima + Fernando Alonso highlighted, Sébastien Buemi
+  - the third crew member, who didn't drive in qualifying - left plain).
+
+SCC v0.8.6.52 - WEC Spa 2021: 64 driver flags filled in (user-reviewed first)
+
+- Applied the driver country/DOB list after user review rather than guessing
+  silently: 34 drivers' flags for WEC 2021 Round 1 (Spa) plus DOBs for the ones
+  with a confident date, added to the shared driver database (benefits every
+  race, not just this one). FL Classification now 88/88 flagged, 0 missing.
+- Also fixed 3 truncated names found while investigating (same two-given-name
+  class of bug as before): "T. Jackson" -> "Thomas Jackson", "Pablo Montoya"
+  -> "Juan Pablo Montoya" (was a duplicate of the correct record), "Felix da
+  Costa" -> "Antonio Felix Da Costa".
+
+SCC v0.8.6.51 - Dashboard Pole Positions panel + GTE Pro color + split-season label
+
+- The Dashboard's own "Pole Positions" panel (separate from the Qualifying
+  table) still only showed whoever set the time, one name - the two-driver-
+  average era's dual highlight only reached the Qualifying view. Now shows the
+  full crew there too (perfDriversLines(), mirroring driverList()), with the
+  driver(s) who actually set the time bolded - both nominated drivers for the
+  average era, the single driver as before for every other era. No visual
+  change for existing single-driver races (verified against WEC 2025).
+- GTE Pro recolored to green (was black) per user spec.
+- WEC 2019-2020 (and future split seasons like 2018-2019) keep season=2019
+  internally for sorting/filtering, but the event name now reads "... (2019-20)"
+  so it's not mistaken for a plain calendar-year 2019 season.
+
+SCC v0.8.6.50 - WEC 2013-2020 two-driver-average qualifying support
+
+- New parser for the pre-2021 WEC qualifying format, which set grid position by
+  averaging TWO nominated drivers' laps (not one) - the Classification document's
+  own header literally reads "Driver 1 / Driver 2 / Laps / Average / Gap", two
+  time columns feeding one average, never a name column, so the two nominated
+  drivers' actual identities come from a paired Fastest-Lap-by-Driver document
+  instead (same cross-reference pattern already used elsewhere, reused as-is).
+  A new, separate function - doesn't touch any existing parsing path.
+- driverList() (the shared driver-row renderer used by Race/Qualifying/FL
+  Classification) now accepts either one highlighted name or an array of two -
+  both nominated drivers get bolded, the third crew member who never drove in
+  qualifying at all stays plain, exactly as before for every other format.
+- Pole-position driver stats (the Archive DB's per-driver PP column) now credit
+  BOTH nominated drivers for a two-driver-average pole, not just whichever name
+  a single-driver picker happened to land on - a new polesFromAverageRows()
+  that emits one pole record per nominated driver, which the existing stats
+  counter (already iterates the poles array per-record) picks up for free. The
+  Dashboard's own Pole Position panel still shows only one name per class (it
+  already dedupes by class), so this doesn't create a second, confusing row.
+- Verified on WEC 2019-2020 season Round 1 (Silverstone, imported for real):
+  31 entries across 4 classes (LMP1, LMP2, GTE Pro, GTE Am), 30/31 qualifying
+  rows with both nominated drivers correctly identified and bolded, third crew
+  member (e.g. Jose Maria Lopez alongside Conway/Kobayashi) correctly left
+  unhighlighted, both drivers credited in pole stats. No regression on the
+  existing single-driver-per-lap eras (WEC 2025 still 36/36 highlighted).
+
+SCC v0.8.6.49 - MLMC LMP3 Pro/Am as its own class + WEC 2021 verified
+
+- MLMC's LMP3 Pro/Am was a genuinely separate class the importer never
+  recognised at all (no pattern for it existed, unlike LMP2's) - all 10 Pro/Am
+  cars were silently folded into plain LMP3. Added the pattern and a dedicated
+  LMP3PA class: LMP3 gold, LMP3 P/A purple, GT3 white (as specified), each with
+  its own Average laptime card and Gap/Avg baseline instead of one contaminated
+  10-vs-24-car average.
+- WEC 2021 Round 1 (Spa) tested and imported for real: 33 entries across 5
+  classes (HYP 3, LMP2 7, LMP2 P/A 7, GTE Pro 5, GTE Am 11), 31/33 qualifying
+  rows, 88 FL Classification rows - the 2021-2022 combined-qualifying-document
+  code path (already fixed for 2022) works unchanged for 2021, as expected
+  since both years use the same single-driver format (averaging was scrapped
+  starting exactly 2021).
+
+SCC v0.8.6.48 - MLMC: found a third qualifying session I'd missed, not a code bug
+
+- MLMC's LMP3 class actually runs TWO separate qualifying sessions - a main
+  "LMP3" session and a slower "LMP3 Pro/Am" one - reported as a bug ("average
+  laptime lower than pole, P11 has a faster time than P1") after only the
+  Pro-Am session's 10 cars had been imported; the other 24 LMP3 cars fell back
+  to the Starting Grid document instead, which put them below the Pro-Am
+  drivers in display order even though their real times were faster. Re-fetched
+  the missing "Qualifying Practice - LMP3" session and rebuilt the import - all
+  34 LMP3 + 9 GT3 cars now have real per-class qualifying data (43/43, no grid
+  fallback needed at all), and the average/pole numbers are now consistent
+  (pole 1:36.357 < average 1:38.744, as it always should be).
+- Checked ELMS, WEC 2023 and WEC 2022 for the same kind of gap (a qualifying
+  session silently missing from the download) - all three already had every
+  session captured, this was specific to today's MLMC download.
+- Filled in 14 more missing driver flags for MLMC and fixed 5 more truncated
+  names (same two-given-name/two-word-surname class of bug as before: "Rey
+  Acosta" -> "Rey Acosta III", "Josep Mayola" -> "Josep Mayola Comadira", etc.).
+  Two drivers (Rashid Shawn, Georges Nakas) are still flag-less - not in the
+  database and not confidently identifiable.
+
+SCC v0.8.6.47 - WEC 2021-2022 support: LMP1 class + lost Pro-Am qualifying marker
+
+- Added LMP1 as a recognised class (WEC 2021 and earlier - dropped once Hypercar
+  replaced it from 2021 onward) and calendar shells for WEC 2021 and 2022.
+- WEC 2021-2022's combined qualifying documents ("Qualifying HYPERCAR - LMP2",
+  "Qualifying LMGTE Pro - LMGTE Am") print the Pro-Am marker as its OWN table
+  column right after the class ("LMP2" \t "P/A"), not fused into one string like
+  ELMS/MLMC's "LMP2 Pro/Am" - reading only the isolated class cell lost the
+  Pro-Am distinction entirely, and 4 duplicate/misclassified rows leaked through.
+  Now checks for that extra cell and folds it back into the class before
+  matching, verified on WEC 2022 Round 1 Sebring: 34/34 qualifying rows across
+  all 5 classes (HYP, LMP2, LMP2 P/A, GTE Pro, GTE Am), imported for real.
+
+SCC v0.8.6.46 - Qualifying/FL Classification: class sections in the wrong order
+
+- Qualifying and FL Classification sorted their class sections alphabetically
+  (localeCompare) - which happened to match the real fastest-to-slowest pecking
+  order for WEC's own HYP/LMGT3 (H before L is also correct order), so this went
+  unnoticed until a series with more classes exposed it: WEC 2023's alphabet
+  puts GTEAM before HYP and LMP2, ELMS's puts its slowest class (LMP3) before
+  its fastest (LMGT3) car-wise but real order is LMP2 first anyway - alphabetical
+  and real pace order only ever coincidentally matched for 2-class WEC seasons.
+  Now sorts by each series' own declared class order (SERIES[x].classes, already
+  fastest-first) instead of alphabetically.
+
+SCC v0.8.6.45 - Root-caused missing flags: a driver could get stuck without one forever
+
+- driverCountry() (used by the Fastest Laps panel and the new FL Classification
+  tab) checked the roster on the current entry first and returned whatever was
+  stored there - including an empty string, if that driver's country wasn't known
+  at the time THAT race was imported. An empty stored value short-circuited the
+  function before it ever tried the country database, so a driver stayed
+  flag-less forever even after being correctly added to the database later - this
+  is why Robert Shwartzman, Erwan Bastard and Daniel Mancinelli never got a flag:
+  they were imported before those DB entries existed. Now only trusts a non-empty
+  stored value; an empty one falls through to a fresh lookup.
+- Swept every currently-imported race and re-resolved every empty-country driver
+  against the database (already up to date, just never consulted) - 90 drivers
+  fixed in one pass. Also caught and fixed a handful of additional dropped-name-
+  fragment cases while investigating: "PJ Hyett" (nickname-style all-caps first
+  name broke the full-name regex), "Jens Reno Møller", "Abdulla Ali Al-Khelaifi",
+  "Sergio Sette Camara", "Manuel Espirito Santo" (two-given-name/two-word-surname
+  truncations, same class of bug as the earlier "Jose Maria Lopez" fix).
+- Three drivers (Ting Chou, Frederick Lubin, Filip Ugran) are still flag-less -
+  genuinely not in the database and not confidently identifiable, left blank
+  rather than guessed.
+
+SCC v0.8.6.44 - Fixed duplicate-surname crews + real ELMS/WEC 2023 imports
+
+- enrichDriverNames() upgraded initials ("S. GROVE") to full names by matching
+  surname alone - a car with two crew members sharing a surname (family teams:
+  "S. GROVE / B. GROVE", "R. TAYLOR / J. TAYLOR", both real WEC cars) got the SAME
+  full name assigned to both initials, silently duplicating one driver and hiding
+  the other entirely. Now also uses the initial letter to disambiguate when more
+  than one same-surname candidate exists, and never reuses a name already assigned
+  to that car. Found and fixed 4 real cases across currently-imported races (WEC
+  Spa/Le Mans 2025, ELMS Barcelona 2026 - Stephen/Brenton Grove, Ricky/Jordan
+  Taylor, Horst/Felix Felbermayr).
+- The Qualifying view's divider text ("HYP Hyperpole", "Beyond Hyperpole") assumed
+  every series runs a Hyperpole shootout - confusing for ELMS/MLMC, which don't.
+  Now reads "HYP Qualifying" / "Beyond Recorded Time" generically.
+- Rebuilt ELMS 2026 Round 1 Barcelona from scratch with the current importer (the
+  archive still had the broken pre-fix import: every qualifying row mislabelled
+  "LMP2PA") and imported WEC 2023 Round 1 Sebring for real (was only ever an empty
+  calendar placeholder) - both now have full Race/Qualifying/FL Classification
+  data, verified directly in the UI.
+
+SCC v0.8.6.43 - New "FL Classification" tab in Order: every driver's own fastest lap
+
+- Added a third toggle next to Race/Qualifying in the Order tab: FL Classification,
+  ranking every individual DRIVER by their own fastest lap of the race - not one row
+  per car with the whole crew, one row per driver who actually set a personal-best
+  lap. A 3-driver car appears up to 3 times, once per driver, each with their own
+  time - the Fastest Lap by Driver document already lists it this way, it just
+  wasn't being kept (the existing Dashboard FL panel reduces the same document down
+  to one row per class).
+  - Each row shows both absolute position and position within its class.
+  - "Fastest HYP", "Fastest LMGT3" etc. labels for each class's own quickest driver,
+    "Fastest Overall" for the single quickest lap of the whole race - same label
+    styling as Qualifying's Pole Position rows.
+  - Same "Average laptime" cards per class at the top and Gap/Avg deviation per row
+    as Qualifying, reusing those existing render-time-only functions directly.
+- Backfilled for all 10 currently-imported WEC races via re-fetched Fastest Lap by
+  Driver PDFs (95-184 driver rows per race depending on class count and race
+  length) - no re-import needed, and every future import gets it automatically.
+
+SCC v0.8.6.42 - Race Order + beyond-Hyperpole Qualifying now show the lap-setter too
+
+- The bold/italic "driver who set this time" highlight only ever existed on the
+  Qualifying view, and even there only for cars that made the Hyperpole cutoff -
+  reported by the user finding it missing for car 46 in Race Order.
+- Race Order (the Order tab's "Race" view) never had this at all - it always
+  rendered the full crew with no highlight, for every race. Now cross-references
+  each car's own Fastest-Lap-by-Driver document the same way Qualifying already
+  did, so the driver who set THAT CAR's fastest race lap is highlighted - for
+  every car in the field, not just the class leaders already covered by the
+  separate Fastest Laps panel.
+- Qualifying rows for cars beyond the Hyperpole cutoff (rendered from Starting
+  Grid data as a synthetic "qualifying-row-grid" row, dimmed/no gap) never had
+  a timeDriver either, since the Starting Grid document's own per-car driver
+  name was only ever used to upgrade initials to full names, never to drive
+  this highlight. Both fixes reuse the same underlying data Starting Grid
+  already provided - no new document type needed.
+- Root cause of a THIRD, more subtle bug: the highlight comparison checked the
+  raw driver name straight from the PDF against the roster name AFTER alias
+  resolution (e.g. "David Heinemeier" -> "David Heinemeier Hansson") - since
+  those two forms never matched, the row's real driver silently never
+  highlighted even when the underlying data was correct. Both sides now go
+  through the same resolution before comparing.
+- Applied directly to all 10 currently-imported WEC races (localStorage patch,
+  no re-import needed) using freshly re-fetched Fastest-Lap-by-Driver and
+  Starting Grid PDFs: Race Order 371/373 cars now highlighted, Qualifying
+  372/375 - the handful of remaining gaps are missing/duplicate driver data in
+  the source PDFs themselves (e.g. Le Mans car 63's own crew list prints
+  "Brenton Grove" twice instead of "Stephen Grove" + "Brenton Grove"), not an
+  importer bug. Future imports get all of this automatically.
+
+SCC v0.8.6.41 - Importer: series without a Hyperpole shootout (ELMS, MLMC, pre-2024 WEC)
+
+- The qualifying importer only ever worked for WEC's Hyperpole format. Series that
+  instead run one plain qualifying session per class (ELMS, MLMC) or WEC's own
+  2022-2023 format (three 15-minute class sessions, no shootout at all) produced
+  wrong or missing qualifying rows - reported by the user importing ELMS 2026
+  Round 1 Barcelona, whose race results imported fine but qualifying didn't.
+  No format-specific code was needed: every one of these is structurally the same
+  "one Classification + one Fastest-Lap-by-Driver PDF per class" shape the
+  Hyperpole path already understood, so the same qualifying importer now just
+  handles it correctly instead of needing a separate path. Root causes fixed:
+  - classFromText() picked whichever class pattern matched EARLIEST in a row's
+    text, so a model name containing a shorter class name as a bare substring
+    ("Porsche 911 GT3 R LMGT3" has "GT3" before its own "LMGT3") could win over
+    the row's real class column further right. Now takes the rightmost
+    non-contained match instead - every AlKamel row prints its class column
+    after the model, so the real class always wins.
+  - classifyDoc() scanned a document's ENTIRE text for "fastest lap", which
+    every Classification doc's own footer annotation ("Fastest Lap Lap 8")
+    contains too, misclassifying plain Classification PDFs as Fastest-Lap-by-
+    Driver ones. Now checks the filename first (Al Kamel's own naming is
+    consistent and far more reliable) and only falls back to a narrow
+    title/header text scan.
+  - qualifyingRowsFromText() re-tokenised the whitespace-collapsed row instead
+    of using the same tab-isolated Drivers/Car/Cat columns the Race
+    Classification parser already trusts, so a two-word surname with no
+    recognised connector ("Valentin HASSE CLOT") lost its second word whenever
+    more row text followed the driver list (every row in a non-Hyperpole doc,
+    since there's no Hyperpole-only "one name, then nothing else" shape here).
+  - singleClassFromText() and classFromText() both mistook a more specific
+    class match ("LMP2 Pro/Am", "LMGTE Am") for two different classes when a
+    shorter, more generic pattern ("LMP2", "Am") also matched inside the same
+    text, wrongly declaring an unambiguous single-class document ambiguous, or
+    picking the bare qualifier over the real class name.
+  - Added LMGTE PRO / LMGTE AM class patterns (missing entirely - WEC dropped
+    them after 2023) and a new GTEAM/GTEPRO class id, with LMGTE Am rendering
+    in orange in WEC's class list.
+  - normClass() was force-normalising any bare "GT3" to "LMGT3", which is
+    correct for WEC/ELMS but wrong for MLMC, whose own Al Kamel documents
+    print plain "GT3" as a genuinely different, already-existing class id.
+  - Driver full-name extraction ("Ahmad AL HARTHY") dropped the second half of
+    a two-word all-caps surname when its connector word ("AL") wasn't in the
+    recognised list; added it alongside the existing initials-format fix.
+- The "driver who set this time" bold/italic highlight (added earlier for
+  Hyperpole) needed no change at all for non-Hyperpole series - it already
+  works from the same Classification + Fastest-Lap-by-Driver PDF pair per
+  class, and non-Hyperpole formats have no cutoff, so it applies to literally
+  every car, not just a top-10 shootout.
+- Verified against real official Al Kamel PDFs (not synthetic data) for ELMS
+  2026 Round 1 Barcelona (4 classes), MLMC 2026 Round 1 Barcelona (2 classes),
+  and WEC 2023 Round 1 Sebring (3 pre-Hyperpole class sessions, LMGTE Am
+  included) - every class, car and qualifying time-setter came out correct,
+  cross-checked against the Race Classification's own entry/class counts.
+
+SCC v0.8.6.40 - Dashboard: Class Winners driver names always stacked
+
+- The Class Winners panel on the Dashboard was wrapping its 3 driver
+  names 2-then-1 depending on available width. They now always render
+  one per line, regardless of name length or container width.
+- Scoped to .winner-drivers-inline only, so the Summary tab's Class
+  Podiums panel (which intentionally wraps) is unaffected.
+
+SCC v0.8.6.39 - Qualifying: class average laptime + per-row deviation
+
+- Added an "Average laptime" card per class above the Qualifying table (two
+  side by side where there's room), showing the average of every real
+  recorded qualifying time in that class.
+- Gap to class pole is now bold like the lap time itself.
+- Added a new "Avg" line under Gap: each row's deviation from its own
+  class's average laptime, green when faster than average, red when
+  slower - including "Beyond Hyperpole" grid-sourced rows, whose dimmed
+  styling previously would have muted this color away too.
+- Both are pure render-time calculations over each row's already-stored
+  .time value, so every already-imported qualifying (all 8 WEC 2025 races
+  plus the two 2024 ones) has this immediately, and every future import
+  gets it automatically - no re-import or importer change needed.
+
+SCC v0.8.6.38 - Bold/italic Hyperpole time-setter finished for every WEC race
+
+- Finished rolling out the "who actually set this Hyperpole time" bold
+  italic highlight (added in v0.8.6.36 but only applied to Qatar/Imola
+  2025 so far) to the rest of WEC 2025 - Spa, Le Mans, São Paulo, COTA,
+  Bahrain, Fuji - plus the two WEC 2024 races imported outside this
+  session (Qatar, Imola). All 10 currently-imported WEC races now have
+  100% qualifying-row time-driver coverage, confirmed in localStorage.
+- For the two pre-existing 2024 races, patched the qualifying.timeDriver
+  field directly from freshly-downloaded Fastest Lap by Driver documents
+  instead of a full reimport, so nothing else about those two races'
+  already-correct data changed.
+
+SCC v0.8.6.37 - Found the actual reason Darren Leung kept showing Hong Kong
+
+- js/patch-v078.js silently replaces window.lookupDriverCountry with a
+  wrapper that checks its OWN hardcoded 100+-name dictionary FIRST, only
+  falling back to app.js's version for names it doesn't recognise. That
+  dictionary had 'd leung':'Hong Kong' - wrong, and since it's checked
+  before app.js's (correct) United Kingdom entry ever gets a chance, no
+  amount of fixing app.js, data.js or the importer could have solved this;
+  every previous Darren Leung fix in this changelog was only ever patching
+  the fallback path. Fixed the entry in patch-v078.js directly.
+- js/app.js's Jean-Karl Vernay entry (added in v0.8.6.36) used the key
+  'jean-karl vernay' (hyphen kept), but normalizeDriverName() converts
+  every non-alphanumeric character - including hyphens - to a space before
+  lookup, so the actual lookup key is 'jean karl vernay'. The hyphenated
+  key could never match. Fixed in both DRIVER_COUNTRY_DB and
+  DRIVER_BIRTH_DB.
+- Patched the 9 already-imported WEC races in this browser's localStorage
+  directly (re-importing all of them again wasn't necessary now that the
+  underlying causes are fixed) - Darren Leung is United Kingdom and
+  Jean-Karl Vernay is France everywhere now, confirmed both live and in
+  stored race data.
+
+SCC v0.8.6.36 - Class Podiums wrap timing fix + WEC 2024 driver DB entries
+
+- Found the real cause of Class Podiums sometimes wrapping to a second line
+  instead of abbreviating: renderSummaryFull()'s wrap check (added in
+  v0.8.6.32) measures each row's rendered height, but it usually runs while
+  the Summary tab is still display:none - importing a race calls render()
+  and then switches to Dashboard, so the tab a user lands on next never got
+  a real layout to measure against. switchTab() now re-runs
+  renderSummaryFull() when Summary itself becomes the active tab, giving it
+  actual layout to measure.
+- Added nationality and date of birth for the 13 drivers missing flags
+  after importing WEC 2024 Qatar and Imola from official PDFs: Robert
+  Shwartzman, Oliver Rasmussen, Mirko Bortolotti, Edoardo Mortara, Nicolas
+  Lapierre, Antonio Serravalle, Carl Wattana Bennett, Jean-Karl Vernay,
+  Daniel Mancinelli, Joshua Caygill, Hiroshi Koizumi, Erwan Bastard and
+  Nicolas Costa - looked up individually (Mortara races under the Italian
+  flag on WEC entry lists despite triple nationality; Wattana Bennett under
+  Thailand). Added "Wattana Bennett" -> "Carl Wattana Bennett" as a name
+  alias since the Race Classification PDF drops his first name.
+- Investigated the reported "manual nationality/DOB edit in the driver
+  database doesn't survive a refresh" - could not reproduce it. Tested the
+  exact flow (open a driver, edit Nationality/DOB, click Save, reload,
+  reopen the same driver) end to end and the edited values were still
+  there. If it happens again, worth checking for a stale cached script
+  (hard refresh) first.
+
+SCC v0.8.6.35 - WEC 2025 reimported from official PDFs + Le Mans parser fixes
+
+- Reimported all 8 rounds of WEC 2025 (Qatar, Imola, Spa, Le Mans, São Paulo,
+  COTA, Fuji, Bahrain) from official Al Kamel PDFs downloaded from
+  fiawec.alkamelsystems.com, replacing whatever data those calendar slots
+  held before. Every winner (overall and by class where checked) matches
+  public results.
+- Found and fixed two more importer bugs while working through Le Mans
+  specifically (62 cars, 4 classes: HYP/LMP2/LMP2PA/LMGT3):
+  - The Hyperpole/Qualifying doc-wide class guesser (classFromText on the
+    filename + document header) picked the FIRST class name it matched
+    anywhere in that text. Le Mans's combined "Hyperpole 2 LMP2-LMGT3"
+    document names multiple classes at once, so every row in the file -
+    including LMP2 and LMP2PA cars - got force-labelled as whichever class
+    matched first (LMGT3), corrupting Pole Positions for the other three
+    classes. Added singleClassFromText(), which only trusts a doc-wide class
+    guess when exactly one class name is found; otherwise each row falls
+    back to its own text or the already-parsed Race Classification entry.
+  - findPosNo() (used to locate the "position, car number" columns in a
+    tokenised PDF row) required the position to be at most 2 digits. A
+    24-hour race's Fastest Lap by Driver document ranks every recorded lap,
+    not one row per car, so rank numbers past 99 are common - the real
+    (rank, car-no) pair at the start of the row was being skipped entirely,
+    and a coincidental 2-digit pair further into the row (actually the lap
+    count columns) was picked instead, producing garbage team/driver
+    values. Widened to 3 digits / raised the range cap to 300.
+- Fixed a real data-loss bug in the import wizard: the metadata form only
+  refreshed from the calendar's selected race when the Import tab was
+  clicked AND no PDFs had been analyzed yet in that browser tab. Importing
+  a second race without clicking "Start new import / clear PDFs" first left
+  the form on the previous race while parsing the new PDFs - so results got
+  parsed correctly but saved under the wrong race id, silently overwriting
+  it. (This is how Qatar's data briefly became a copy of Imola's mid-way
+  through this batch - caught by checking each import's actual winner
+  against public results before moving to the next race, and fixed before
+  re-importing both.)
+- Added David Heinemeier Hansson, Edward Cheever and Cem Bölükbaşı to the
+  driver database (found missing while checking Le Mans's full driver list).
+  Heinemeier Hansson's two-word surname gets visually split by this
+  particular PDF's column spacing ("D. Heinemeier" / "Hansson" landing in
+  different cells) - worked around with the same name-alias mechanism
+  already used for Ben/Benjamin Barker, rather than a deeper column-parsing
+  change for one driver in one race.
+
+SCC v0.8.6.34 - Fixed importer overwriting the wrong race's saved data
+
+- Found a real data-corruption bug while reimporting WEC 2025 races one at a
+  time: the metadata form (Race ID, Event, Circuit...) only refreshed from
+  the calendar's currently-selected race when the Import tab was opened AND
+  no PDFs had been analyzed yet in that browser tab (`if(!session)`).
+  Importing a second race without first clicking "Start new import / clear
+  PDFs" left the form showing the FIRST race's metadata while the freshly
+  uploaded PDFs were for a different race - so the new race's results got
+  parsed correctly but saved under the old race's id, silently overwriting
+  it. Now the form also refreshes whenever the calendar's current race
+  doesn't match what's already in the form, session or not.
+- Also fixed "B. Barker" not resolving to a country: the Benjamin Barker
+  alias fix in the importer only matched the exact spelled-out name, not
+  the initials form ("B. Barker") that Race Classification PDFs actually
+  print - added the same initial+surname alias lookup already used
+  elsewhere for this.
+- Re-imported WEC Qatar 2025 and WEC Imola 2025 from official Al Kamel PDFs
+  after the fix and confirmed both hold their own correct results (Ferrari
+  AF Corse #50 Qatar winner, #51 Imola winner).
+
+SCC v0.8.6.33 - WEC/ELMS 2023-2024 calendar shells
+
+- Added calendar-only race shells (event/circuit/country/date/round, no
+  entries) for WEC 2023 (7 rounds), WEC 2024 (8 rounds), ELMS 2023 (6
+  rounds) and ELMS 2024 (6 rounds), same pattern as the existing 2025/2026
+  shells. Calendars cross-checked against Wikipedia and fiawec.com; lap
+  counts are rough placeholders like the other shell entries, not official.
+
+SCC v0.8.6.32 - Cross-race name resolution + canonical driver aliases
+
+- Added a driver full-name registry (learnDriverFullNames/resolveDriverFullName
+  in app.js): if a driver's full name is known from ANY race in the archive,
+  an initials-only appearance in a different race ("V. Hasse Clot", "D.
+  Vanthoor", "R. Marciello") is upgraded to it for display, the same way
+  country lookup already falls back across documents. Only resolves when
+  exactly one full name is known for that initial+surname, so it never
+  guesses between two different people.
+- That registry treats "Hasse-Clot" and "Hasse Clot" as the same surname
+  (data.js had both spellings) - otherwise the hyphen/space mismatch alone
+  would have kept them as two unrelated keys.
+- Benjamin Barker/Ben Barker and Thomas Fleming/Tom Fleming are now
+  canonicalized to the first spelling everywhere a driver name is grouped or
+  displayed - js/importer.js (so a freshly imported race is stored under the
+  canonical spelling regardless of which one that PDF used), app.js's
+  display and driver-history functions, and js/patch-v085-database-polish.js's
+  separate "Archive DB" driver list. Confirmed in the browser: both now
+  appear as a single merged driver record instead of two.
+
+- Found a second, completely separate driver database inside
+  js/patch-v085-database-polish.js (its own DOB_MASTER/COUNTRY_MASTER, used
+  by the Drivers/Teams/Circuits "Archive DB" view) that my earlier DOB/country
+  additions in js/app.js never reached. Added Andrew Gilbert, Benjamin Barker,
+  Bernardo Sousa, Celia Martin, Darren Leung, Thomas Flohr, James Cottingham
+  and the van der Linde brothers there too, and corrected a wrong pre-existing
+  Valentin Hasse Clot DOB (18th vs the 27th the user gave).
+- That same file only read races from the OLD save-button storage key
+  (scc_saved_races_v081) - any race imported through the current PDF
+  importer (scc_imported_races_v1) was invisible to the driver/team/circuit
+  database views even though it showed up fine in Order/Summary. Now reads
+  both.
+- Fixed two more data.js rows where Darren Leung was listed as "Hong Kong"
+  while eight other rows for the same person said "United Kingdom" - same
+  class of bug as the earlier Andrew Gilbert mismatch: whichever entry loads
+  last wins on every render, so one outlier row can silently overwrite an
+  otherwise-correct flag.
+- Fixed the full-name regex used to read "FirstName SURNAME" from the
+  Fastest Laps document: it only recognised a single connector word (VAN,
+  DER, DE...), so two-word surnames like "VAN DER LINDE" were parsed as
+  "Van Der" with the real surname dropped. Sheldon and Kelvin van der Linde
+  now come through with full names instead of initials.
+- Added a "Ben Barker" alias next to "Benjamin Barker" (same person, PDFs
+  spell it either way) so country/DOB resolve regardless of which the
+  source document uses - same pattern already in place for Thomas/Tom
+  Fleming. This doesn't merge split driver-database entries if the same
+  person appears under both spellings across different races; that's a
+  separate, bigger feature.
+- driverDob() now has the same "A. Surname" initials fallback that
+  lookupDriverCountry() already had, so a known DOB resolves even when a
+  document only ever prints that driver's initial.
+- Class Podiums driver names: replaced the character-count guess for when to
+  abbreviate a name with an actual post-render measurement (does the row's
+  driver line wrap to a second line, yes or no). The guess was abbreviating
+  rows that had plenty of real room, e.g. "Paul di Resta" / "Mikkel Jensen" /
+  "Jean-Eric Vergne" together.
+- Fixed inconsistent flag widths across Order/Podiums/performance lists - the
+  unknown-country fallback box was narrower than a real flag, so driver names
+  after it started a few pixels earlier than names after a known flag.
+
+SCC v0.8.6.30 - Hyperpole divider, grid lap times, more driver names
+
+- Added Benjamin Barker (UK, born 1991-04-23) to the driver database.
+- Starting Grid PDF is now also read for each car's lap time (previously only
+  grid position), so "Beyond Hyperpole" rows in Qualifying show a real lap
+  time and a gap to their class pole instead of "No lap time recorded" -
+  without touching the Hyperpole top-10, which still comes only from the
+  Hyperpole documents.
+- Starting Grid PDF is now also used as a driver-name source (it prints one
+  full name per car, same as the Fastest Laps document). This fills in
+  drivers who are missing from Fastest Laps entirely - Darren Leung, Tom van
+  Rompuy, Martin Berry, Thomas Flohr and James Cottingham now show full names
+  instead of initials.
+- Qualifying view now shows a "Hyperpole" divider above each class's top-10,
+  mirroring the existing "Beyond Hyperpole" divider below it.
+
+SCC v0.8.6.29 - Qualifying gap/grid extension, driver DB additions
+
+- Added Bernardo Sousa (Portugal), Célia Martin (France), Valentin Hasse Clot
+  (France), Andrew Gilbert (UK) with dates of birth to the driver database.
+- Found and fixed a pre-existing data error while adding Andrew Gilbert: one
+  entry in js/data.js (Kessel Racing #74) listed him as "United Arab
+  Emirates" while three other entries (Iron Lynx #74, the same real person)
+  consistently said "United Kingdom" - the outlier was overwriting the
+  correct value on every page load via learnDriverCountries().
+- Qualifying view now shows each car's gap to its own class pole (not "Int" -
+  qualifying has no "car ahead" the way a race does) as smaller text under
+  the lap time.
+- Qualifying view now extends past the Hyperpole top-10 using Starting Grid
+  data when both are available for a race, with a "Beyond Hyperpole · Grid
+  Order" divider - cars there have a grid position but no recorded lap time.
+  Races without Hyperpole data at all don't get anything synthesized.
+- Class Podiums cards: narrowed the laps/gap column so driver names have more
+  room before needing to abbreviate.
+
+SCC v0.8.6.28 - Winner highlighting, driver lookup, name-wrap fixes
+
+- Added start.bat: runs the local server and opens the app in the default
+  browser in one click. Needs Node.js installed; works fully offline except
+  PDF import (which loads the PDF-reading library from a CDN).
+- Order tab's winner row(s) - both overall and each class's own leader - now
+  get the same whole-row background tint + left accent stripe treatment as
+  Class Podiums, instead of just colored label text.
+- Qualifying view got the same treatment plus "Pole Position Overall" /
+  "Pole Position <Class>" labels, picking whichever class's own P1 actually
+  set the fastest time (not assuming HYP is always quickest).
+- Fixed DRIVER_NAME_RE to capture multi-word surnames with no recognised
+  connector prefix (e.g. "HASSE CLOT") generally, not just via a whitelist -
+  a trailing all-caps word is absorbed only when immediately followed by "/"
+  or end-of-line, so it can't swallow a model name after the last driver in
+  a row (e.g. "...LINDE BMW M Hybrid V8").
+- lookupDriverCountry now falls back to surname+first-initial matching when
+  an exact key lookup fails - Race Classification only prints initials
+  ("A. Al Harthy"), so a driver already known in the database under their
+  full name ("ahmad al harthy") previously still showed no flag. Only
+  applies when exactly one database entry matches (no guessing between e.g.
+  Michael and Mick Schumacher).
+- Class Podiums' driver-name abbreviation (for cards where a long name would
+  wrap to a second line) now looks at the *combined* length of all driver
+  names on that row instead of a fixed per-name cutoff - a fixed cutoff
+  abbreviated names like "Laurens Vanthoor" even when there was plenty of
+  room (e.g. only 2 drivers on that row).
+
+SCC v0.8.6.27 - Qualifying order in the Order tab
+
+- The importer now keeps the full ranked list from each Qualifying/Hyperpole
+  PDF (race.qualifying), not just the fastest time per class - previously
+  only pole position itself was captured (performance.poles), discarding
+  everyone else's qualifying position. Same initials-to-full-name driver
+  enrichment applied as the race entries.
+- Order tab has a new Race/Qualifying toggle (only shown when qualifying data
+  exists for the race) that swaps the table to the qualifying order - same
+  class filter pills apply to both.
+
+SCC v0.8.6.26 - Class Podiums visual polish
+
+- Summary tab's Class Podiums rows are slightly bigger (logo, fonts, padding)
+  and the winner row (1st place) now gets a background tint + left accent
+  stripe in that class's own color, plus a larger/colored position number and
+  gap label - it no longer relies on just the small "1." to read as the
+  winner.
+
+SCC v0.8.6.25 - Interval calculation fix
+
+- Fixed a data-correctness bug: when two consecutive cars shared the same lap
+  deficit (both "+1 Lap" etc.) and no absolute finish time was available for
+  either, the interval-to-car-ahead ("Int") silently defaulted to "+0.000" -
+  implying they were exactly tied, which is essentially never true. Now shows
+  "—" (honestly unknown) instead of a fabricated number. Affects app.js's
+  parseGapParts/displayInterval/classGap; races imported via this importer
+  aren't affected in practice since they carry a real absolute elapsed time
+  per entry, letting the (already-correct) time-based path handle it - this
+  specifically fixes manually-entered/incomplete race data.
+- Fixed the importer's own gap-to-leader extraction: Al Kamel sometimes
+  concatenates the lap-gap directly against the interval time with no space
+  ("1 Lap1:05.278"), which the old regex's word-boundary lookahead rejected
+  entirely - losing even the "1 Lap" part and showing "—" for gap. Now
+  recognises a following digit as well as whitespace/end-of-line.
+
+SCC v0.8.6.24 - Persistence + more Order tab polish
+
+- Imported races now save automatically to localStorage on "Import race to
+  archive" and reload on every page load, before app.js's own init() clones
+  the first race into state - previously RACES reset to the js/data.js seed
+  on every refresh, so an imported race (and anything derived from it) simply
+  vanished the moment the tab was closed and reopened. No extra "Save" button
+  needed; also migrates any races saved by the old (now-unreachable)
+  patch-v081 "Save race" button so nothing from a previous session is lost.
+- Replaced the Toyota logo with a better-detailed source SVG (user-supplied).
+- "Winner overall"/"Winner <Class>" no longer show two empty "—"/"Int —"
+  lines underneath - only rendered when there's a real gap/interval value, so
+  the label sits centered instead of looking like it's missing data.
+- "Winner <Class>" now renders in that class's own badge color (e.g. LMGT3
+  green) instead of always gold; "Winner overall" keeps the gold treatment.
+- Fixed a class-color lookup mismatch: GLOBAL_CLASS_META used the key
+  "LMP2_PA" but every SERIES definition in data.js actually uses "LMP2PA" (no
+  underscore), so races whose series didn't define LMP2PA itself fell back to
+  a generic grey badge/label instead of the intended light-blue color. Also
+  fixed GTP's fallback color (was black-on-black on the dark theme, same bug
+  class as the Mercedes/Toyota logos earlier).
+
+SCC v0.8.6.23 - Order tab polish + Starting Grid import
+
+- Fixed Mercedes and Toyota constructor logos rendering as solid black on the
+  app's dark theme (both SVGs had fill="black"/"#282830"); recoloured to a
+  light fill so they're visible again, matching the other constructor logos.
+- Order tab "WINNER" label now reads "Winner overall" for the race winner and
+  "Winner <Class>" for each class's own leader (even mid-pack overall, e.g.
+  LMGT3 P1 running P17 overall) - and keeps showing gap/interval/laps instead
+  of replacing them.
+- Added Starting Grid PDF as a new (optional) importer input. Al Kamel prints
+  two cars per row (odd grid slot left, even right) anchored by a "- N -" row
+  marker; parsed by anchoring on that marker rather than fixed columns so it
+  survives team names with a different word count on each side of a row.
+  Grid position is stored per entry (entries[].grid) and used to compute a
+  class-relative position-change indicator in Order (green ▲N for gained
+  positions, red ▼N for lost, compared within the car's own class rather than
+  the overall grid, since a class winner running mid-pack overall didn't
+  necessarily start there).
+
+SCC v0.8.6.22 - Importer consolidation
+
+- Replaced the 6 layered importer patch files (v0.8.6.12, .13, .15, .17, .21) with a
+  single js/importer.js. The old files were moved to js/_deprecated_importer_patches/
+  for reference rather than deleted.
+- Race Classification parsing no longer requires an exact "Final Classification"
+  header phrase; rows are now detected structurally (position/car number/class
+  token), so mixed or differently-worded PDF headings no longer silently produce
+  zero rows.
+- Class detection now covers the full SERIES vocabulary (HYP, LMP2, LMP2 P/A, LMP3,
+  LMGT3, GTP, GTD, GTD PRO, PRO/AM, GOLD/SILVER/BRONZE), not just WEC Hypercar/LMGT3,
+  so ELMS/Asian LMS/MLMC/IMSA-style documents are in scope.
+- Driver names are always produced as [name, country] pairs, never as a joined
+  string, fixing a class of bugs where only the first letter of a driver name
+  would render.
+- When the PDF exposes Team/Drivers/Model as separate table columns, the importer
+  now reads each column directly instead of re-guessing boundaries from merged
+  text, so multi-word surnames with no recognised prefix (e.g. "Hasse Clot") come
+  through whole instead of being truncated.
+- Import validation now actually blocks import (missing metadata, zero entries,
+  duplicate car numbers) instead of only showing a warning that could be ignored.
+- Race Control remains manual (unchanged project rule). No changes to app.js or
+  existing race data in js/data.js.
+- Fixed two pre-existing bugs (not caused by this change, but blocking the importer
+  in a real browser) found while live-testing against real WEC Fuji 2025 PDFs:
+  - patch-v077.js's constructorFromVehicle wrapper called itself infinitely for any
+    vehicle text not in its hardcoded list, crashing with a stack overflow and
+    leaving the importer stuck on "Reading files...". Fixed to call the original
+    function instead of the reassigned global.
+  - patch-v081.js injected an extra "Save race" card into the Import tab's DOM
+    after the wizard rendered, duplicating the archive-save action. Skipped when
+    js/importer.js's UI is present.
+- End-to-end tested in a real browser (not just Node) against the user's own
+  WEC Fuji 2025 PDF set (Race Classification, Fastest Laps, and two
+  ClassificationByCategory Hyperpole files): 36/36 cars, correct classes, correct
+  FL/PP matching official results, "Ready to import".
+- Fixed a critical bug where importing never actually updated what the app
+  displays: app.js declares `state` with `let`, which does NOT attach it to
+  `window`, so every `if(window.state)` check in the importer was silently
+  always false. The archive array (RACES) was updating correctly, but the
+  visible Dashboard/Order/Summary kept showing old data - "0 entries" even
+  though the import preview showed all cars correctly. Same root cause broke
+  metadata auto-fill from the currently selected calendar race. Both fixed by
+  using the bare `state` identifier.
+- Metadata (event/circuit/country/date/race ID) now pre-fills from whichever
+  race is selected in the calendar sidebar, and refreshes every time the
+  Import tab is opened (previously only ran once at page load). Pre-filling
+  the exact Race ID means importing PDFs for an existing calendar slot
+  overwrites that slot instead of creating an orphaned duplicate under a
+  differently-generated id.
+- Removed blocking alert() popups after import; they froze the whole page
+  until dismissed, which made "did this actually work" hard to tell (and
+  broke automated testing outright). Switching to the Dashboard with the
+  imported race visible is the confirmation instead.
+- Verified end-to-end again after these fixes: selecting the existing "6 Hours
+  of Fuji" WEC 2025 calendar slot, opening Import, metadata auto-fills
+  correctly, importing the same 4 PDFs replaces that exact slot (not a
+  duplicate) with 36 correct entries, and the real Order tab immediately shows
+  them with the app's normal styling (flags, team logos, gold WINNER label,
+  Int gaps, class filters) - not just the importer's own preview.
+- Race Classification only prints driver initials ("A. Lynn"), which don't
+  match a full-name-keyed driver database entry for the same person built up
+  from other races ("Alex Lynn") - this both dropped nationality flags and
+  fragmented that driver into a second, near-empty database record. The
+  importer now cross-references Fastest Laps / Qualifying documents (which
+  print full names) by car number + surname to upgrade initials before the
+  race is saved. Fixed a bug in that same enrichment where a second document
+  using initials-only formatting (e.g. a ClassificationByCategory Hyperpole
+  PDF) could overwrite an already-correct full name back to initials.
+
 SCC v0.8.6.21.2 - ACO Importer v2.2 cleanup
 
 - Replaced the old duplicate Import Wizard UI with a single ACO Importer v2.2 wizard.
