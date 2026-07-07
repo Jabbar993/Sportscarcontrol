@@ -10,8 +10,18 @@ function raceClassIds(){
   const present=[...new Set((state.race.entries||[]).map(e=>e.class).filter(Boolean))];
   return present.length ? order.filter(c=>present.includes(c)).concat(present.filter(c=>!order.includes(c))) : order;
 }
+// Sorting class sections alphabetically (localeCompare) happened to match the real pecking
+// order for WEC's own HYP/LMGT3 (H before L) - coincidence that broke the moment a series with
+// more classes appeared: WEC 2023's GTEAM/HYP/LMP2 alphabetizes to GTEAM first, ELMS's
+// LMGT3/LMP2/LMP2PA/LMP3 puts the slowest class first too. Order by the series' own declared
+// class order instead (fastest class first, as defined in SERIES[x].classes).
+function classSortIndex(cls){
+  const order=raceClassIds();
+  const i=order.indexOf(cls);
+  return i<0?order.length:i;
+}
 function constructorMeta(id){return CONSTRUCTORS.find(c=>c.id===id)||{id,name:id,short:String(id||'?').slice(0,3).toUpperCase(),logo:'',fallbackColor:'#334'} }
-const GLOBAL_CLASS_META={HYP:{label:'Hypercar',short:'HYP',color:'#e31b3f',text:'#fff'},LMGT3:{label:'LMGT3',short:'LMGT3',color:'#00b969',text:'#04110b'},LMP2:{label:'LMP2',short:'LMP2',color:'#0d7ee8',text:'#fff'},LMP2_PA:{label:'LMP2 P/A',short:'LMP2 P/A',color:'#69d7ff',text:'#071014'},LMP3:{label:'LMP3',short:'LMP3',color:'#8b5cf6',text:'#fff'},GTP:{label:'GTP',short:'GTP',color:'#111',text:'#fff'},GTD_PRO:{label:'GTD PRO',short:'GTD PRO',color:'#e31b3f',text:'#fff'},GTD:{label:'GTD',short:'GTD',color:'#00b969',text:'#04110b'},PRO:{label:'Pro',short:'PRO',color:'#f2f2f2',text:'#111'},GOLD:{label:'Gold',short:'GOLD',color:'#f2c230',text:'#111'},SILVER:{label:'Silver',short:'SILVER',color:'#2d8cff',text:'#fff'},BRONZE:{label:'Bronze',short:'BRONZE',color:'#cd7f32',text:'#fff'},PROAM:{label:'Pro-Am',short:'PRO-AM',color:'#00a651',text:'#071014'},GT3:{label:'GT3',short:'GT3',color:'#00b969',text:'#04110b'}};
+const GLOBAL_CLASS_META={HYP:{label:'Hypercar',short:'HYP',color:'#e31b3f',text:'#fff'},LMGT3:{label:'LMGT3',short:'LMGT3',color:'#00b969',text:'#04110b'},LMP2:{label:'LMP2',short:'LMP2',color:'#0d7ee8',text:'#fff'},LMP2PA:{label:'LMP2 P/A',short:'LMP2 P/A',color:'#69d7ff',text:'#071014'},LMP3:{label:'LMP3',short:'LMP3',color:'#8b5cf6',text:'#fff'},GTP:{label:'GTP',short:'GTP',color:'#f2f2f2',text:'#111'},GTDPRO:{label:'GTD PRO',short:'GTD PRO',color:'#e31b3f',text:'#fff'},GTD_PRO:{label:'GTD PRO',short:'GTD PRO',color:'#e31b3f',text:'#fff'},GTD:{label:'GTD',short:'GTD',color:'#00b969',text:'#04110b'},PRO:{label:'Pro',short:'PRO',color:'#f2f2f2',text:'#111'},GOLD:{label:'Gold',short:'GOLD',color:'#f2c230',text:'#111'},SILVER:{label:'Silver',short:'SILVER',color:'#2d8cff',text:'#fff'},BRONZE:{label:'Bronze',short:'BRONZE',color:'#cd7f32',text:'#fff'},PROAM:{label:'Pro-Am',short:'PRO-AM',color:'#00a651',text:'#071014'},GT3:{label:'GT3',short:'GT3',color:'#00b969',text:'#04110b'}};
 function classMeta(cls){return (series().classes&&series().classes[cls])||GLOBAL_CLASS_META[cls]||{label:cls,short:cls,color:'#778',text:'#fff'}}
 function emojiFlag(code){code=String(code||'').toUpperCase();if(!/^[A-Z]{2}$/.test(code))return '';return [...code].map(c=>String.fromCodePoint(127397+c.charCodeAt(0))).join('')}
 function flag(country){const raw=String(country||'').trim();const code=(FLAG_ALIASES[raw]||FLAG_ALIASES[raw.toUpperCase()]||FLAG_ALIASES[raw.toLowerCase()]||raw.toLowerCase()).replace(/[^a-z]/g,'');const svg=SCC_FLAG_SVGS[code];if(svg)return `<span class="flag flag-${esc(code)}" title="${esc(raw||code)}"><span class="flag-inner">${svg}</span></span>`;const em=emojiFlag(code);if(em)return `<span class="flag flag-emoji" title="${esc(raw||code)}">${em}</span>`;return `<span class="unknown-flag" title="${esc(raw)}">${esc((code||'??').slice(0,2).toUpperCase())}</span>`}
@@ -31,19 +41,58 @@ function logo(type,id,extraClass=''){
 }
 function classBadge(cls){const m=classMeta(cls);return `<span class="class-badge" style="background:${m.color};color:${m.text}">${esc(m.short||cls)}</span>`}
 function normalizedDriverCountry(name,country){return country||lookupDriverCountry(name)||''}
-function driverList(drivers,compact=false){return `<div class="driver-list ${compact?'compact':''}">${(drivers||[]).map(d=>{const c=normalizedDriverCountry(d[0],d[1]);return `<div class="driver">${c?flag(c):'<span class="no-flag"></span>'}<span>${esc(d[0])}</span></div>`}).join('')}</div>`}
+function driverList(drivers,compact=false,highlightName=''){
+  // highlightName comes straight from the imported PDF text (e.g. "David Heinemeier"), never
+  // through the same alias table the roster names below are resolved through (which turns that
+  // into "David Heinemeier Hansson") - comparing the raw form against the resolved form silently
+  // never matched, so the row's actual driver never got highlighted.
+  // Accepts either one name (single-driver-per-lap formats) or an array of two (the 2013-2020
+  // two-driver-average era, where BOTH nominated drivers set a qualifying-relevant lap and the
+  // third crew member - who never drove in qualifying at all - stays unhighlighted).
+  const hlNames=(Array.isArray(highlightName)?highlightName:[highlightName]).filter(Boolean);
+  const hlKeys=new Set(hlNames.map(n=>normalizeDriverName(resolveDriverFullName(n))));
+  return `<div class="driver-list ${compact?'compact':''}">${(drivers||[]).map(d=>{
+    const name=resolveDriverFullName(d[0]);
+    const c=normalizedDriverCountry(name,d[1]);
+    const isHl=hlKeys.has(normalizeDriverName(name));
+    return `<div class="driver">${c?flag(c):'<span class="no-flag"></span>'}<span>${isHl?`<strong class="qual-time-driver">${esc(name)}</strong>`:esc(name)}</span></div>`;
+  }).join('')}</div>`;
+}
 function groupRaces(){const out={};RACES.forEach(r=>{out[r.season]??={};out[r.season][r.series]??=[];out[r.season][r.series].push(r)});Object.values(out).forEach(seriesGroup=>Object.values(seriesGroup).forEach(arr=>arr.sort((a,b)=>(a.round||999)-(b.round||999)||String(a.event).localeCompare(String(b.event)))));return out}
-async function init(){await loadAssets();state.race=structuredClone(RACES[0]);buildRaceTree();buildRaceSelectors();bindEvents();render()}
+async function init(){
+  await loadAssets();
+  // Supports opening a specific race straight to its Dashboard via a "#race=<id>" link
+  // (e.g. the "open in new tab" action on a driver's race-history row) - falls back to the
+  // default first race whenever the hash is absent or doesn't match a known id.
+  const hashRaceId=(location.hash.match(/race=([^&]+)/)||[])[1];
+  const hashRace=hashRaceId?RACES.find(r=>r.id===decodeURIComponent(hashRaceId)):null;
+  state.race=structuredClone(hashRace||RACES[0]);
+  buildRaceSelectors();
+  bindEvents();
+  render();
+  if(hashRace)switchTab('dashboard');
+}
 function bindEvents(){document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>switchTab(b.dataset.tab));$('modeTime').onclick=()=>setMode('time');$('modeLaps').onclick=()=>setMode('laps');$('segmentForm').onsubmit=saveSegment;$('cancelEditBtn').onclick=resetForm;$('exportRaceBtn').onclick=exportRace;$('resetRaceBtn').onclick=()=>{const r=RACES.find(x=>x.id===state.race.id);state.race=structuredClone(r);state.selectedSegment=null;render()};$('exportAssetsBtn').onclick=exportAssets;$('importAssetsInput').onchange=importAssets;$('clearAssetsBtn').onclick=async()=>{if(confirm('Clear all uploaded logos stored in this browser?')){state.assets={};await saveAssets();render()}};if($('applyMetadataBtn'))$('applyMetadataBtn').onclick=applyImportMetadata;if($('previewEntriesBtn'))$('previewEntriesBtn').onclick=()=>previewCsv('entry');if($('importEntriesBtn'))$('importEntriesBtn').onclick=importEntriesCsv;if($('previewResultsBtn'))$('previewResultsBtn').onclick=()=>previewCsv('results');if($('importResultsBtn'))$('importResultsBtn').onclick=importResultsCsv;if($('previewPerformanceBtn'))$('previewPerformanceBtn').onclick=()=>previewCsv('performance');if($('importPerformanceBtn'))$('importPerformanceBtn').onclick=importPerformanceCsv;if($('previewRaceControlBtn'))$('previewRaceControlBtn').onclick=()=>previewCsv('raceControl');if($('importRaceControlBtn'))$('importRaceControlBtn').onclick=importRaceControlCsv;setupImportDropzones();document.querySelectorAll('.data-tab').forEach(b=>b.onclick=()=>{state.dataTab=b.dataset.dataTab;renderDataManager();syncDatabaseNav()});document.querySelectorAll('.database-nav button').forEach(b=>b.onclick=()=>{state.dataTab=b.dataset.dbTab;switchTab('data');renderDataManager();syncDatabaseNav()})}
-function switchTab(tab){document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));document.querySelectorAll('.tab-content').forEach(s=>s.classList.toggle('active',s.id===`tab-${tab}`));if(tab==='settings')renderAssets();if(tab==='races')renderRaceBrowser(true);if(tab==='data'){renderDataManager();syncDatabaseNav()}}
+function switchTab(tab){document.body.classList.toggle('db-tab-active',tab==='data');document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));document.querySelectorAll('.tab-content').forEach(s=>s.classList.toggle('active',s.id===`tab-${tab}`));if(tab==='settings')renderAssets();if(tab==='races')renderRaceBrowser(true);if(tab==='data'){window.__db85Selected='';renderDataManager();syncDatabaseNav()}
+  // renderSummaryFull() (and its Class Podiums name-wrap measurement) usually runs while the
+  // Summary tab is still display:none - e.g. importing a race calls render() and then switches
+  // to Dashboard, so the wrap check measures 0 height and never abbreviates anything. Re-running
+  // it here, now that the tab is actually visible, gives it real layout to measure against.
+  if(tab==='summary' && typeof renderSummaryFull==='function') renderSummaryFull();
+}
 function setMode(mode){state.mode=mode;$('modeTime').classList.toggle('active',mode==='time');$('modeLaps').classList.toggle('active',mode==='laps');renderTimeline();renderStats()}
 function loadRace(id){state.race=structuredClone(RACES.find(r=>r.id===id));state.selectedSegment=null;state.classFilter=null;state.selectedDriver=null;document.querySelectorAll('.race-button').forEach(b=>b.classList.toggle('active',b.dataset.race===id));render();switchTab('dashboard')}
-function buildRaceTree(){const g=groupRaces();$('raceTree').innerHTML=Object.keys(g).sort((a,b)=>b-a).map(season=>`<div class="tree-season"><div class="tree-title">${season}</div>${Object.entries(g[season]).map(([sid,races])=>`<div class="tree-series"><div class="tree-series-title">${SERIES[sid].short}</div>${races.map(r=>`<button class="race-button ${r.id===state.race?.id?'active':''}" data-race="${r.id}" onclick="loadRace('${r.id}');switchTab('dashboard')"><span>${esc(r.event)}</span><small>R${r.round||''}</small></button>`).join('')}</div>`).join('')}</div>`).join('')}
 
 function buildRaceSelectors(){
   const seasons=[...new Set(RACES.map(r=>r.season))].sort((a,b)=>b-a);
   $('seasonSelect').innerHTML=seasons.map(y=>`<option value="${y}">${y}</option>`).join('');
-  $('seasonSelect').onchange=()=>{populateSeriesSelect();populateRaceSelect();loadRace($('raceSelect').value)};
+  $('seasonSelect').onchange=()=>{
+    const prevSeries=$('seriesSelect').value;
+    populateSeriesSelect();
+    if([...$('seriesSelect').options].some(o=>o.value===prevSeries)) $('seriesSelect').value=prevSeries;
+    populateRaceSelect();
+    loadRace($('raceSelect').value);
+  };
   $('seriesSelect').onchange=()=>{populateRaceSelect();loadRace($('raceSelect').value)};
   $('raceSelect').onchange=()=>loadRace($('raceSelect').value);
   syncRaceSelectors();
@@ -59,15 +108,53 @@ function populateRaceSelect(){
   $('raceSelect').innerHTML=races.map(r=>`<option value="${r.id}">R${r.round||''} · ${esc(r.event)}</option>`).join('');
 }
 function syncRaceSelectors(){
-  if(!$('seasonSelect'))return;
+  if(!$('seasonSelect')||!state.race)return;
   $('seasonSelect').value=state.race.season;
   populateSeriesSelect();
   $('seriesSelect').value=state.race.series;
   populateRaceSelect();
   $('raceSelect').value=state.race.id;
 }
-function render(){(RACES||[]).forEach(r=>learnDriverCountries(r.entries||[]));learnDriverCountries(state.race?.entries||[]);renderHeader();renderPhaseInputs();renderLegend();renderTimeline();renderWinners();renderFastestLaps();renderPolePositions();renderSummaryFull();renderRaceSummary();renderStats();renderFacts();renderSegmentDetails();renderSegments();renderOrder();renderRaceBrowser();renderAssets();renderImportWizard();renderDataManager();buildRaceTree();syncRaceSelectors()}
-function renderHeader(){const r=state.race,s=series();$('seriesLogo').innerHTML=logo('series',r.series);$('seriesName').textContent=s.name;$('raceTitle').textContent=r.event;$('circuitFlag').innerHTML=flag(r.country);$('circuitName').textContent=r.circuit;$('raceDate').textContent=new Date(r.date+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});$('durationInfo').textContent=`${r.scheduledDuration} / ${r.officialDuration}`;$('lapsInfo').textContent=`${r.officialLaps} laps`}
+function render(){(RACES||[]).forEach(r=>{learnDriverCountries(r.entries||[]);learnDriverFullNames(r.entries||[])});learnDriverCountries(state.race?.entries||[]);learnDriverFullNames(state.race?.entries||[]);renderHeader();renderRaceNav();renderPhaseInputs();renderLegend();renderTimeline();renderWinners();renderFastestLaps();renderPolePositions();renderSummaryFull();renderRaceSummary();renderStats();renderFacts();renderSegmentDetails();renderSegments();renderOrder();renderRaceBrowser();renderAssets();renderImportWizard();renderDataManager();syncRaceSelectors()}
+function renderHeader(){const r=state.race,s=series();$('seriesLogo').innerHTML=logo('series',r.series);$('seriesName').textContent=s.name;$('raceTitle').textContent=r.event;$('circuitFlag').innerHTML=flag(r.country);$('circuitName').textContent=r.circuit;$('raceDate').textContent=new Date(r.date+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});$('durationInfo').textContent=`${r.officialDuration} / ${r.scheduledDuration}`;$('lapsInfo').textContent=`${r.officialLaps} laps`}
+// Chronological neighbors of the current race: plain prev/next walk the whole calendar for
+// this series in date order; "at this track" narrows that same walk to races at the same
+// circuit, so e.g. previous-at-track for ELMS 2026 Imola is ELMS 2025 Imola even if other
+// series raced at Imola in between (those don't belong to this series' walk at all).
+function raceNavNeighbors(){
+  const r=state.race;
+  if(!r) return {prevRace:null,nextRace:null,prevTrack:null,nextTrack:null};
+  const byDate=(a,b)=>String(a.date||'').localeCompare(String(b.date||''))||((a.round||0)-(b.round||0));
+  const sameSeries=RACES.filter(x=>x.series===r.series).sort(byDate);
+  const idx=sameSeries.findIndex(x=>x.id===r.id);
+  const prevRace=idx>0?sameSeries[idx-1]:null;
+  const nextRace=(idx>=0&&idx<sameSeries.length-1)?sameSeries[idx+1]:null;
+  const track=(r.circuit||'').trim().toLowerCase();
+  const sameTrack=sameSeries.filter(x=>(x.circuit||'').trim().toLowerCase()===track);
+  const tIdx=sameTrack.findIndex(x=>x.id===r.id);
+  const prevTrack=tIdx>0?sameTrack[tIdx-1]:null;
+  const nextTrack=(tIdx>=0&&tIdx<sameTrack.length-1)?sameTrack[tIdx+1]:null;
+  return {prevRace,nextRace,prevTrack,nextTrack};
+}
+function renderRaceNav(){
+  const row=$('raceNavRow');
+  if(!row) return;
+  const nav=raceNavNeighbors();
+  const setBtn=(elId,race)=>{
+    const el=$(elId);
+    if(!el) return;
+    const labelEl=el.querySelector('.race-nav-label');
+    if(!race){ el.disabled=true; el.title=''; el.onclick=null; if(labelEl)labelEl.textContent='—'; return; }
+    el.disabled=false;
+    el.title=`${SERIES[race.series]?.short||race.series} ${race.season} · R${race.round||''} ${race.event}`;
+    if(labelEl)labelEl.textContent=`${race.season} · ${race.event}`;
+    el.onclick=()=>loadRace(race.id);
+  };
+  setBtn('navPrevRace',nav.prevRace);
+  setBtn('navNextRace',nav.nextRace);
+  setBtn('navPrevTrack',nav.prevTrack);
+  setBtn('navNextTrack',nav.nextTrack);
+}
 function renderPhaseInputs(){const allowed=series().phases;$('phaseInput').innerHTML=allowed.map(p=>`<option value="${p}">${SCC_PHASES[p].label}</option>`).join('')}
 function renderLegend(){const used=[...new Set(state.race.segments.map(s=>s.phase))].filter(p=>series().phases.includes(p));$('phaseLegend').innerHTML=used.map(p=>{const ph=SCC_PHASES[p];return `<span class="legend-item"><span class="swatch ${p==='SLOW_ZONE'?'slow-swatch':''}" style="background:${p==='SLOW_ZONE'?'':ph.color}"></span>${esc(ph.label)}</span>`}).join('')}
 function renderTimeline(){const r=state.race,total=state.mode==='time'?parseTime(r.officialDuration):r.officialLaps;const svg=$('timelineSvg');svg.innerHTML=`<defs><pattern id="slowHatch" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(35)"><rect width="12" height="12" fill="${SCC_PHASES.SLOW_ZONE.color}"/><rect width="3" height="12" fill="rgba(255,255,255,.45)"/></pattern></defs>`;const x0=42,w=900,y=46,h=34,axisY=25;for(let i=0;i<=6;i++){const x=x0+w*i/6,val=total*i/6;const label=state.mode==='time'?fmtTime(val).replace(/:00$/,''):Math.round(val);svg.insertAdjacentHTML('beforeend',`<line x1="${x}" y1="${axisY+8}" x2="${x}" y2="${y+h+15}" stroke="#2b3e56" stroke-width="1"/><text x="${x}" y="${axisY}" text-anchor="${i===0?'start':i===6?'end':'middle'}" fill="#9aacc2" font-size="12">${label}</text>`)}svg.insertAdjacentHTML('beforeend',`<rect x="${x0}" y="${y}" width="${w}" height="${h}" rx="7" fill="#06101a" stroke="#25354b"/>`);state.race.segments.forEach(seg=>{const a=state.mode==='time'?seg.start:seg.startLap,b=state.mode==='time'?seg.end:seg.endLap;const x=x0+w*a/total,ww=Math.max(1,w*(b-a)/total);const ph=SCC_PHASES[seg.phase];const fill=seg.phase==='SLOW_ZONE'?'url(#slowHatch)':ph.color;const sel=state.selectedSegment?.id===seg.id;svg.insertAdjacentHTML('beforeend',`<rect data-id="${seg.id}" x="${x}" y="${y}" width="${ww}" height="${h}" rx="${ww<12?2:6}" fill="${fill}" stroke="${sel?'#fff':'rgba(0,0,0,.48)'}" stroke-width="${sel?3:1}"/>`)});svg.insertAdjacentHTML('beforeend',`<g data-finish="1" transform="translate(${x0+w+8},${y-5})"><rect width="30" height="44" rx="7" fill="#0c1320" stroke="#fff" opacity=".95"/><text x="15" y="29" text-anchor="middle" font-size="24">🏁</text></g>`);svg.querySelectorAll('rect[data-id]').forEach(el=>{el.onmousemove=e=>showTip(e,state.race.segments.find(s=>s.id===el.dataset.id));el.onmouseleave=hideTip;el.onclick=()=>{state.selectedSegment=state.race.segments.find(s=>s.id===el.dataset.id);renderTimeline();renderSegmentDetails();renderStats()}})}
@@ -108,18 +195,29 @@ function classRanks(){
   Object.keys(ranks).forEach(cls=>ranks[cls].sort((a,b)=>statusRank(a)-statusRank(b)||(Number(a.pos)||9999)-(Number(b.pos)||9999)||String(a.no).localeCompare(String(b.no))).forEach((e,i)=>{e.__classPos=i+1}));
   return ranks;
 }
+// Starting grid position within class (only populated when a Starting Grid PDF was
+// imported - entries without e.grid are simply absent from these rankings).
+function classGridRanks(){
+  const ranks={};
+  state.race.entries.forEach(e=>{ if(Number(e.grid)>0) (ranks[e.class]??=[]).push(e); });
+  Object.keys(ranks).forEach(cls=>ranks[cls].sort((a,b)=>(Number(a.grid)||9999)-(Number(b.grid)||9999)).forEach((e,i)=>{e.__classGridPos=i+1}));
+  return ranks;
+}
 function parseGapParts(e){
   const raw=String(e?.gap||e?.time||'').trim();
   if(!raw || raw==='—') return null;
   if(/DNF|DNS|RET|NC|DSQ|Electrical|Suspension|Transmission|Power loss/i.test(raw)) return null;
 
-  const out={laps:0,seconds:0,absolute:false};
+  // hasSeconds distinguishes "we parsed a real seconds value" from "seconds defaulted to 0
+  // because this gap was only ever expressed in whole laps" - conflating the two made two
+  // different "+1 Lap" cars look exactly 0.000s apart, which is never really true.
+  const out={laps:0,seconds:0,absolute:false,hasSeconds:false};
   if(!raw.startsWith('+')){
     const parts=raw.split(':').map(Number);
-    if(parts.length===3 && parts.every(Number.isFinite)) return {laps:0,seconds:parts[0]*3600+parts[1]*60+parts[2],absolute:true};
-    if(parts.length===2 && parts.every(Number.isFinite)) return {laps:0,seconds:parts[0]*60+parts[1],absolute:true};
+    if(parts.length===3 && parts.every(Number.isFinite)) return {laps:0,seconds:parts[0]*3600+parts[1]*60+parts[2],absolute:true,hasSeconds:true};
+    if(parts.length===2 && parts.every(Number.isFinite)) return {laps:0,seconds:parts[0]*60+parts[1],absolute:true,hasSeconds:true};
     const n=Number(raw);
-    return Number.isFinite(n)?{laps:0,seconds:n,absolute:false}:null;
+    return Number.isFinite(n)?{laps:0,seconds:n,absolute:false,hasSeconds:true}:null;
   }
 
   const x=raw.slice(1).trim().toLowerCase();
@@ -128,14 +226,14 @@ function parseGapParts(e){
   let timePart=x.replace(/\d+\s*laps?/g,'').replace(/^\s*\+\s*/,'').trim();
   if(timePart){
     const parts=timePart.split(':').map(Number);
-    if(parts.length===3 && parts.every(Number.isFinite)) out.seconds=parts[0]*3600+parts[1]*60+parts[2];
-    else if(parts.length===2 && parts.every(Number.isFinite)) out.seconds=parts[0]*60+parts[1];
-    else { const n=Number(timePart.replace(/^\+/,'')); if(Number.isFinite(n)) out.seconds=n; }
+    if(parts.length===3 && parts.every(Number.isFinite)) { out.seconds=parts[0]*3600+parts[1]*60+parts[2]; out.hasSeconds=true; }
+    else if(parts.length===2 && parts.every(Number.isFinite)) { out.seconds=parts[0]*60+parts[1]; out.hasSeconds=true; }
+    else { const n=Number(timePart.replace(/^\+/,'')); if(Number.isFinite(n)) { out.seconds=n; out.hasSeconds=true; } }
   } else if(!lapMatch){
     const parts=x.split(':').map(Number);
-    if(parts.length===3 && parts.every(Number.isFinite)) out.seconds=parts[0]*3600+parts[1]*60+parts[2];
-    else if(parts.length===2 && parts.every(Number.isFinite)) out.seconds=parts[0]*60+parts[1];
-    else { const n=Number(x); if(Number.isFinite(n)) out.seconds=n; else return null; }
+    if(parts.length===3 && parts.every(Number.isFinite)) { out.seconds=parts[0]*3600+parts[1]*60+parts[2]; out.hasSeconds=true; }
+    else if(parts.length===2 && parts.every(Number.isFinite)) { out.seconds=parts[0]*60+parts[1]; out.hasSeconds=true; }
+    else { const n=Number(x); if(Number.isFinite(n)) { out.seconds=n; out.hasSeconds=true; } else return null; }
   }
   return out;
 }
@@ -151,6 +249,38 @@ function fmtDeltaSeconds(d){
   }
   return `+${d.toFixed(3)}`;
 }
+function fmtLapTime(sec){
+  if(!Number.isFinite(sec)) return '—';
+  const m=Math.floor(sec/60), s=sec-m*60;
+  return `${m}:${s.toFixed(3).padStart(6,'0')}`;
+}
+// Signed version of fmtDeltaSeconds - the class average line needs both directions (faster
+// than average is exactly as common as slower), unlike a gap-to-pole which is never negative.
+function fmtSignedDelta(d){
+  if(!Number.isFinite(d)) return '';
+  return `${d<0?'-':'+'}${Math.abs(d).toFixed(3)}`;
+}
+// Average of every real recorded qualifying time in a class - purely a render-time calculation
+// over data that's already stored, so it's automatically available for every qualifying
+// already imported and every one imported from now on, no re-import needed.
+function classAverageLaptimes(rows){
+  const sums={}, counts={};
+  (rows||[]).forEach(r=>{
+    if(!r.time) return;
+    const t=parseTime('0:'+r.time);
+    sums[r.class]=(sums[r.class]||0)+t;
+    counts[r.class]=(counts[r.class]||0)+1;
+  });
+  const out={};
+  Object.keys(sums).forEach(cls=>{ out[cls]=sums[cls]/counts[cls]; });
+  return out;
+}
+function qualifyingAverageLaptimesHtml(classAvg){
+  const classes=Object.keys(classAvg);
+  if(!classes.length) return '';
+  const cards=classes.map(cls=>`<div class="qual-avg-card">${classBadge(cls)}<div class="qual-avg-text"><span>Average laptime</span><strong>${esc(fmtLapTime(classAvg[cls]))}</strong></div></div>`).join('');
+  return `<div class="qual-avg-grid">${cards}</div>`;
+}
 function classGap(e, classWinner){
   if(!classWinner || e===classWinner || e.no===classWinner.no) return '—';
   if(/NC|DNF|DNS|RET|DSQ/i.test(String(e.gap||e.status||''))) return e.gap||e.status;
@@ -159,7 +289,7 @@ function classGap(e, classWinner){
   const a=entryFinishSeconds(classWinner), b=entryFinishSeconds(e);
   if(a!==null && b!==null && b>=a) return fmtDeltaSeconds(b-a);
   const wp=parseGapParts(classWinner), ep=parseGapParts(e);
-  if(wp && ep && ep.laps===wp.laps && ep.seconds>=wp.seconds) return fmtDeltaSeconds(ep.seconds-wp.seconds);
+  if(wp && ep && ep.laps===wp.laps && wp.hasSeconds && ep.hasSeconds && ep.seconds>=wp.seconds) return fmtDeltaSeconds(ep.seconds-wp.seconds);
   const intv=String(e.int||e.interval||'').trim();
   if(intv && !/^[-—]$/.test(intv)) return intv;
   return e.gap||'—';
@@ -176,14 +306,18 @@ function displayInterval(e,prev){
   const a=entryFinishSeconds(prev), b=entryFinishSeconds(e);
   if(a!==null&&b!==null&&b>=a) return fmtDeltaSeconds(b-a);
   const pp=parseGapParts(prev), ep=parseGapParts(e);
-  if(pp && ep && ep.laps===pp.laps && ep.seconds>=pp.seconds) return fmtDeltaSeconds(ep.seconds-pp.seconds);
+  if(pp && ep && ep.laps===pp.laps && pp.hasSeconds && ep.hasSeconds && ep.seconds>=pp.seconds) return fmtDeltaSeconds(ep.seconds-pp.seconds);
   const raw=String(e.int||e.interval||'').trim();
   if(raw) return raw;
+  // No reliable second-level data for two cars sharing the same lap deficit (e.g. both
+  // "+1 Lap" with no time detail) - showing a fabricated "+0.000" implied they were
+  // literally tied, which is essentially never true. Honest "unknown" beats a fake number.
   return '—';
 }
 
 function orderRowsHtml(entries,limit=null,classMode=!!state.classFilter){
   const ranks=classRanks();
+  const gridRanks=classGridRanks();
   const overallLeader=(state.race.entries||[]).slice().sort((a,b)=>(Number(a.pos)||9999)-(Number(b.pos)||9999))[0];
   const data=limit?sortOrderEntries(entries).slice(0,limit):sortOrderEntries(entries);
   return data.map((e,idx)=>{
@@ -194,19 +328,212 @@ function orderRowsHtml(entries,limit=null,classMode=!!state.classFilter){
     const gap=classMode?displayGapClass(e,(ranks[e.class]||[])[0]):displayGapOverall(e,overallLeader);
     const prev=data[idx-1];
     const interval=displayInterval(e,prev);
-    const isViewWinner=isRunning && !prev;
+    // Overall P1 gets "Winner overall"; every class's own P1 (even mid-pack overall) gets
+    // "Winner <Class>" - both keep showing gap/int/laps instead of replacing them, since a
+    // class winner running P17 overall still has a meaningful gap-to-leader.
+    const isOverallWinner=isRunning && !classMode && Number(e.pos)===1;
+    const isClassWinner=isRunning && cpos===1;
+    // "Winner overall" keeps the gold treatment; a class winner's label uses that class's
+    // own badge color instead, so e.g. an LMGT3 class leader reads in LMGT3 green.
+    const winnerLabel=isOverallWinner ? 'Winner overall' : (isClassWinner ? `Winner ${esc(classMeta(e.class).short||e.class)}` : '');
+    const winnerLabelStyle=(!isOverallWinner && isClassWinner) ? ` style="color:${classMeta(e.class).color};text-shadow:none"` : '';
+    const winnerRowColor=isOverallWinner?'#f2c230':(isClassWinner?classMeta(e.class).color:'');
+    // Position change vs the class-relative starting grid slot (only available once a
+    // Starting Grid PDF has been imported for this race - otherwise no arrow is shown).
+    const gridClassPos=e.__classGridPos || ((gridRanks[e.class]||[]).findIndex(x=>x.no===e.no)+1);
+    const posDelta=isRunning && gridClassPos ? gridClassPos-cpos : null;
+    const posChangeHtml=posDelta===null?'':posDelta>0?`<em class="pos-change pos-change-up" title="Started C${gridClassPos}, gained ${posDelta}">▲${posDelta}</em>`:posDelta<0?`<em class="pos-change pos-change-down" title="Started C${gridClassPos}, lost ${-posDelta}">▼${-posDelta}</em>`:`<em class="pos-change pos-change-flat" title="Started C${gridClassPos}">–</em>`;
     const posCell=classMode
-      ? `<div class="pos class-mode-pos ${isRunning?'':'non-classified'}"><strong>${isRunning?displayPos:status}</strong><small>${isRunning?'Class':(Number(e.laps)>0?Number(e.laps)+' laps':'')}</small></div>`
-      : `<div class="pos ${isRunning?'':'non-classified'}"><strong>${isRunning?displayPos:status}</strong><small>${isRunning?'C'+cpos:(Number(e.laps)>0?Number(e.laps)+' laps':'')}</small></div>`;
-    const gapHtml=isViewWinner
-      ? `<div class="gap-cell winner-gap"><strong class="order-winner-label">WINNER</strong><small>${esc(String(e.laps||0))} laps · ${statusBadge(status)}</small></div>`
-      : `<div class="gap-cell"><strong>${esc(gap)}</strong><small>Int ${esc(interval)}</small><small>${esc(String(e.laps||0))} laps · ${statusBadge(status)}</small></div>`;
-    return `<div class="order-row ${isRunning?'':'order-row-status'}"><div>${posCell}</div>${classBadge(e.class)}<div class="car-no">${esc(e.no)}</div>${logo('constructor',e.constructor)}<div><div class="team-name">${esc(e.team)}</div><div class="car-model">${esc(e.model||constructorMeta(e.constructor).name)}</div></div><div class="order-drivers">${driverList(e.drivers)}</div>${gapHtml}</div>`;
+      ? `<div class="pos class-mode-pos ${isRunning?'':'non-classified'}"><strong>${isRunning?displayPos:status}</strong><small>${isRunning?'Class':(Number(e.laps)>0?Number(e.laps)+' laps':'')}</small>${posChangeHtml}</div>`
+      : `<div class="pos ${isRunning?'':'non-classified'}"><strong>${isRunning?displayPos:status}</strong><small>${isRunning?'C'+cpos:(Number(e.laps)>0?Number(e.laps)+' laps':'')}</small>${posChangeHtml}</div>`;
+    // A winner's own gap/int is just "—" (no gap to itself) - showing two empty dash lines
+    // under the label looks broken, so they're only rendered when there's a real value.
+    const gapIsEmpty=!gap || gap==='—';
+    const intervalIsEmpty=!interval || interval==='—';
+    const gapLine=(winnerLabel && gapIsEmpty) ? '' : `<strong>${esc(gap)}</strong>`;
+    const intLine=(winnerLabel && intervalIsEmpty) ? '' : `<small>Int ${esc(interval)}</small>`;
+    const gapHtml=`<div class="gap-cell${winnerLabel?' winner-gap':''}">${winnerLabel?`<em class="order-winner-label"${winnerLabelStyle}>${winnerLabel}</em>`:''}${gapLine}${intLine}<small>${esc(String(e.laps||0))} laps · ${statusBadge(status)}</small></div>`;
+    return `<div class="order-row ${isRunning?'':'order-row-status'}${winnerRowColor?' order-row-winner':''}"${winnerRowColor?` style="--order-winner-color:${winnerRowColor}"`:''}><div>${posCell}</div>${classBadge(e.class)}<div class="car-no">${esc(e.no)}</div>${logo('constructor',e.constructor)}<div><div class="team-name">${esc(e.team)}</div><div class="car-model">${esc(e.model||constructorMeta(e.constructor).name)}</div></div><div class="order-drivers">${driverList(e.drivers,false,e.bestLapDriver)}</div>${gapHtml}</div>`;
   }).join('');
 }
+// Only Hyperpole documents give a real lap time (top ~10 per class); the rest of the field's
+// qualifying order (if known at all) only comes from the Starting Grid PDF as a bare position,
+// no time. Extends state.race.qualifying with those grid-only rows - but only when the race
+// actually has Hyperpole data to extend (no qualifying data at all -> nothing to show) AND grid
+// data exists (otherwise there's no way to know the order beyond the Hyperpole cutoff).
+function extendedQualifyingRows(){
+  const qual=state.race.qualifying||[];
+  if(!qual.length) return qual;
+  const entries=state.race.entries||[];
+  if(!entries.some(e=>Number(e.grid)>0)) return qual;
+  const covered=new Set(qual.map(r=>r.class+'|'+r.no));
+  const maxPosByClass={};
+  qual.forEach(r=>{ maxPosByClass[r.class]=Math.max(maxPosByClass[r.class]||0,r.pos); });
+  const remainingByClass={};
+  entries.forEach(e=>{
+    if(!Number(e.grid)||covered.has(e.class+'|'+e.no)) return;
+    (remainingByClass[e.class]??=[]).push(e);
+  });
+  const extra=[];
+  Object.keys(remainingByClass).forEach(cls=>{
+    remainingByClass[cls].sort((a,b)=>Number(a.grid)-Number(b.grid)).forEach((e,i)=>{
+      extra.push({pos:(maxPosByClass[cls]||0)+i+1,no:e.no,class:cls,team:e.team,model:e.model,constructor:e.constructor,drivers:e.drivers,time:e.gridTime||'',timeDriver:e.gridDriver||'',fromGrid:true});
+    });
+  });
+  return [...qual,...extra];
+}
+function qualifyingRowsHtml(rows){
+  // "Pole Position Overall" is whichever class-P1 actually set the fastest time, not
+  // necessarily HYP just because it's usually quickest - compare real lap times.
+  const classPoles=rows.filter(r=>r.pos===1&&!r.fromGrid);
+  const overallPoleNo=classPoles.length?classPoles.reduce((best,r)=>parseTime('0:'+r.time)<parseTime('0:'+best.time)?r:best).no:null;
+  const classAvg=classAverageLaptimes(rows);
+  const out=[];
+  let lastClass=null, seenCutoff=false;
+  rows.forEach(r=>{
+    if(r.class!==lastClass){
+      lastClass=r.class; seenCutoff=false;
+      out.push(`<div class="qualifying-divider">${esc(classMeta(r.class).short||r.class)} Qualifying</div>`);
+    }
+    if(r.fromGrid && !seenCutoff){
+      seenCutoff=true;
+      out.push(`<div class="qualifying-divider">Beyond Recorded Time &middot; Grid Order</div>`);
+    }
+    const isClassPole=r.pos===1&&!r.fromGrid;
+    const isOverallPole=isClassPole&&r.no===overallPoleNo;
+    const poleLabel=isOverallPole?'Pole Position Overall':(isClassPole?`Pole Position ${esc(classMeta(r.class).short||r.class)}`:'');
+    const rowColor=isOverallPole?'#f2c230':(isClassPole?classMeta(r.class).color:'');
+    const labelStyle=(!isOverallPole&&isClassPole)?` style="color:${rowColor};text-shadow:none"`:'';
+    // Gap to that car's own class pole (not "Int" - the car immediately ahead - since
+    // qualifying order has no meaningful "car ahead" concept the way a race does). Cars
+    // beyond the Hyperpole cutoff can still have a real time (from the Starting Grid
+    // document, which times the whole field, not just the top 10) and get a gap too.
+    const classPole=classPoles.find(p=>p.class===r.class);
+    const gap=(!isClassPole&&classPole&&r.time)?fmtDeltaSeconds(parseTime('0:'+r.time)-parseTime('0:'+classPole.time)):'';
+    // Deviation from the class average, not just the gap to pole - green when this lap was
+    // faster than the class's own average, red when slower.
+    const avgDiff=(r.time&&classAvg[r.class]!=null)?parseTime('0:'+r.time)-classAvg[r.class]:null;
+    const avgHtml=avgDiff!=null?`<small class="qual-avg-diff ${avgDiff<0?'qual-avg-faster':'qual-avg-slower'}">Avg ${fmtSignedDelta(avgDiff)}</small>`:'';
+    const timeCell=r.time?`<strong>${esc(r.time)}</strong>${gap?`<strong class="qual-gap">Gap ${esc(gap)}</strong>`:''}${avgHtml}`:'<strong>—</strong><small>No lap time recorded</small>';
+    out.push(`<div class="order-row qualifying-row${r.fromGrid?' qualifying-row-grid':''}${rowColor?' order-row-winner':''}"${rowColor?` style="--order-winner-color:${rowColor}"`:''}><div class="pos"><strong>${esc(r.pos)}</strong><small>Class</small></div>${classBadge(r.class)}<div class="car-no">${esc(r.no)}</div>${logo('constructor',r.constructor)}<div><div class="team-name">${esc(r.team)}</div><div class="car-model">${esc(r.model||constructorMeta(r.constructor).name)}</div></div><div class="order-drivers">${driverList(r.drivers,false,r.timeDrivers||r.timeDriver)}</div><div class="gap-cell">${poleLabel?`<em class="order-winner-label"${labelStyle}>${poleLabel}</em>`:''}${timeCell}</div></div>`);
+  });
+  return out.join('');
+}
+// A Fastest Lap by Driver document ranks every recorded lap - one row per DRIVER, not per car
+// (a car with 3 drivers who each set a personal-best lap appears 3 times). Ranks are computed
+// here at render time (both overall across the whole field, and within each class) rather than
+// stored, so this stays correct even if classAverageLaptimes/etc. change independently.
+// Related sub-classes are shown together as one combined "family" (LMGTE Pro + LMGTE Am ->
+// "GTE", LMP2 + LMP2 Pro-Am -> "LMP2") - one divider instead of two, with rows from both
+// sub-classes interleaved by actual pace instead of listed as two back-to-back blocks. Each
+// row keeps its own real class for the badge colour and for classPos (the narrow sub-class
+// rank, still used by the per-class average card exactly as before - the average stays split
+// by real class, only the Fastest Laps list/divider itself is merged).
+function flFamilyOf(cls){
+  if(cls==='GTEPRO'||cls==='GTEAM') return 'GTE';
+  if(cls==='LMP2'||cls==='LMP2PA') return 'LMP2';
+  // IMSA's GTD PRO / GTD split the same way WEC's GTE Pro/Am does (a faster Pro-only class and
+  // a Pro-Am-eligible one) - merged into "GTD" the same way, harmless no-op for any other series
+  // that has a plain GTD class with no GTD PRO counterpart (this just maps GTD to itself).
+  if(cls==='GTDPRO'||cls==='GTD') return 'GTD';
+  // 2014 WEC LMP1 split into Hybrid (LMP1-H, works teams) and Light/non-hybrid (LMP1-L,
+  // privateers) sub-classes for that one season only - kept as distinct classes everywhere
+  // else (different colors/badges), but merged back into one "LMP1" family here per user
+  // request, same pattern as GTE/GTD above.
+  if(cls==='LMP1H'||cls==='LMP1L'||cls==='LMP1') return 'LMP1';
+  // MLMC's LMP3 / LMP3 Pro-Am split the same way WEC/ELMS's LMP2 / LMP2 Pro-Am does.
+  if(cls==='LMP3'||cls==='LMP3PA') return 'LMP3';
+  // GTWC Europe/America and GT Open all run one single-make GT3 category split purely by
+  // driver-rating lineup (Pro/Gold/Silver/Bronze/Pro-Am/Am), not by different cars - same
+  // "one underlying class, several crew-rating labels" pattern as GTE/GTD/LMP2/LMP3 above,
+  // merged into "GT3" per user request. These class ids only ever appear in gtwc/gtwc_us/
+  // gtopen, so this is unambiguous across every other series.
+  if(cls==='PRO'||cls==='GOLD'||cls==='SILVER'||cls==='BRONZE'||cls==='PROAM'||cls==='AM') return 'GT3';
+  return cls;
+}
+function flFamilyLabel(cls){
+  const f=flFamilyOf(cls);
+  return f==='GTE'||f==='LMP2'||f==='GTD'||f==='LMP1'||f==='LMP3'||f==='GT3' ? f : (classMeta(cls).short||cls);
+}
+function flFamilySortIndex(cls){
+  const f=flFamilyOf(cls);
+  const members=f==='GTE'?['GTEPRO','GTEAM']:f==='LMP2'?['LMP2','LMP2PA']:f==='GTD'?['GTDPRO','GTD']:f==='LMP1'?['LMP1H','LMP1L','LMP1']:f==='LMP3'?['LMP3','LMP3PA']:f==='GT3'?['PRO','GOLD','SILVER','BRONZE','PROAM','AM']:[cls];
+  return Math.min(...members.map(classSortIndex));
+}
+function flClassificationRows(){
+  const rows=(state.race.flClassification||[]).filter(r=>r.time).slice();
+  if(!rows.length) return [];
+  rows.sort((a,b)=>parseTime('0:'+a.time)-parseTime('0:'+b.time));
+  rows.forEach((r,i)=>{ r.pos=i+1; });
+  const byClass={};
+  rows.forEach(r=>{ (byClass[r.class]??=[]).push(r); });
+  Object.values(byClass).forEach(arr=>{
+    arr.sort((a,b)=>parseTime('0:'+a.time)-parseTime('0:'+b.time)).forEach((r,i)=>{ r.classPos=i+1; });
+  });
+  // Within the same family, order by actual time (so a quicker Am car can sit ahead of a
+  // slower Pro car) instead of by narrow classPos, which would keep printing all of one
+  // sub-class before the other regardless of pace.
+  return rows.sort((a,b)=>flFamilySortIndex(a.class)-flFamilySortIndex(b.class)||parseTime('0:'+a.time)-parseTime('0:'+b.time));
+}
+function flClassificationRowsHtml(rows){
+  const classAvg=classAverageLaptimes(rows);
+  const out=[];
+  let lastFamily=null;
+  rows.forEach(r=>{
+    const fam=flFamilyOf(r.class);
+    if(fam!==lastFamily){
+      lastFamily=fam;
+      out.push(`<div class="qualifying-divider">${esc(flFamilyLabel(r.class))} Fastest Laps</div>`);
+    }
+    const isClassFastest=r.classPos===1;
+    const isOverallFastest=r.pos===1;
+    const fastestLabel=isOverallFastest?'Fastest Overall':(isClassFastest?`Fastest ${esc(classMeta(r.class).short||r.class)}`:'');
+    const rowColor=isOverallFastest?'#f2c230':(isClassFastest?classMeta(r.class).color:'');
+    const labelStyle=(!isOverallFastest&&isClassFastest)?` style="color:${rowColor};text-shadow:none"`:'';
+    const classFastest=rows.find(x=>x.class===r.class&&x.classPos===1);
+    const gap=(!isClassFastest&&classFastest)?fmtDeltaSeconds(parseTime('0:'+r.time)-parseTime('0:'+classFastest.time)):'';
+    const avgDiff=(classAvg[r.class]!=null)?parseTime('0:'+r.time)-classAvg[r.class]:null;
+    const avgHtml=avgDiff!=null?`<small class="qual-avg-diff ${avgDiff<0?'qual-avg-faster':'qual-avg-slower'}">Avg ${fmtSignedDelta(avgDiff)}</small>`:'';
+    const timeCell=`<strong>${esc(r.time)}</strong>${gap?`<strong class="qual-gap">Gap ${esc(gap)}</strong>`:''}${avgHtml}`;
+    const name=resolveDriverFullName(r.driver);
+    const country=driverCountry(name);
+    const driverHtml=`<div class="driver-list"><div class="driver">${country?flag(country):'<span class="no-flag"></span>'}<span>${esc(name)}</span></div></div>`;
+    out.push(`<div class="order-row qualifying-row${rowColor?' order-row-winner':''}"${rowColor?` style="--order-winner-color:${rowColor}"`:''}><div class="pos"><strong>${esc(r.pos)}</strong><small>C${esc(r.classPos)}</small></div>${classBadge(r.class)}<div class="car-no">${esc(r.no)}</div>${logo('constructor',r.constructor)}<div><div class="team-name">${esc(r.team)}</div><div class="car-model">${esc(r.model||constructorMeta(r.constructor).name)}</div></div><div class="order-drivers">${driverHtml}</div><div class="gap-cell">${fastestLabel?`<em class="order-winner-label"${labelStyle}>${fastestLabel}</em>`:''}${timeCell}</div></div>`);
+  });
+  return out.join('');
+}
 function renderOrder(){
+  // Qualifying is only ever a per-class ranking (there's no meaningful combined-classes
+  // "overall qualifying position" the way there is for the race), so the toggle just swaps
+  // which dataset the existing class filter pills apply to.
+  const view=state.orderView||'race';
+  const hasQualifying=!!(state.race.qualifying&&state.race.qualifying.length);
+  const hasFlClassification=!!(state.race.flClassification&&state.race.flClassification.length);
+  if($('orderViewToggle')) $('orderViewToggle').innerHTML=(hasQualifying||hasFlClassification)
+    ? `<button class="filter-pill ${view==='race'?'active':''}" onclick="state.orderView='race';renderOrder()">Race</button>`
+      +(hasQualifying?`<button class="filter-pill ${view==='qualifying'?'active':''}" onclick="state.orderView='qualifying';renderOrder()">Qualifying</button>`:'')
+      +(hasFlClassification?`<button class="filter-pill ${view==='fl'?'active':''}" onclick="state.orderView='fl';renderOrder()">FL Classification</button>`:'')
+    : '';
   const classes=raceClassIds();
   if($('classFilters')) $('classFilters').innerHTML=`<button class="filter-pill ${!state.classFilter?'active':''}" onclick="state.classFilter=null;renderOrder()">All</button>`+classes.map(c=>`<button class="filter-pill ${state.classFilter===c?'active':''}" onclick="state.classFilter='${c}';renderOrder()">${esc(classMeta(c).short||c)}</button>`).join('');
+  if(hasQualifying && view==='qualifying'){
+    const qual=extendedQualifyingRows().filter(r=>!state.classFilter||r.class===state.classFilter).sort((a,b)=>classSortIndex(a.class)-classSortIndex(b.class)||a.pos-b.pos);
+    // Purely computed from qual.time, already present on every past and future import - no
+    // re-import needed for this to "just work" on existing races.
+    const avgHtml=qualifyingAverageLaptimesHtml(classAverageLaptimes(qual));
+    const header=`<div class="order-header"><span>Pos</span><span>Class</span><span>#</span><span></span><span>Team / Car</span><span>Drivers</span><span>Time</span></div>`;
+    const rows=qual.length?qualifyingRowsHtml(qual):'<div class="empty-state">No qualifying order for this class.</div>';
+    if($('orderTable')) $('orderTable').innerHTML=`${avgHtml}${header}<div class="entry-table">${rows}</div>`;
+    return;
+  }
+  if(hasFlClassification && view==='fl'){
+    const flRows=flClassificationRows().filter(r=>!state.classFilter||r.class===state.classFilter);
+    const avgHtml=qualifyingAverageLaptimesHtml(classAverageLaptimes(flRows));
+    const header=`<div class="order-header"><span>Pos</span><span>Class</span><span>#</span><span></span><span>Team / Car</span><span>Driver</span><span>Time</span></div>`;
+    const rows=flRows.length?flClassificationRowsHtml(flRows):'<div class="empty-state">No fastest lap classification for this class.</div>';
+    if($('orderTable')) $('orderTable').innerHTML=`${avgHtml}${header}<div class="entry-table">${rows}</div>`;
+    return;
+  }
   const entries=sortOrderEntries(state.race.entries.filter(e=>!state.classFilter||e.class===state.classFilter));
   const posLabel=state.classFilter?'Class Pos':'Pos';
   const gapLabel=state.classFilter?'Class Gap':'Gap';
@@ -413,11 +740,11 @@ function detectImportFormat(rows){
   return 'Generic CSV';
 }
 function val(row, names){for(const n of names){const k=cleanHeader(n); if(row[k]!==undefined && String(row[k]).trim()!=='') return row[k]} return ''}
-function normClass(v){const x=String(v||'').toUpperCase().replace(/[\s_/-]/g,'');if(x==='LMP2PA'||x==='LMP2PAM'||x==='LMP2PROAM'||x==='LMP2PROAMATEUR'||x==='PA')return'LMP2PA';if(x==='HYP'||x==='HYPERCAR')return'HYP';if(x==='GT3'||x==='LMGT3')return'LMGT3';if(x==='GTDPRO')return'GTDPRO';if(x==='PROAM')return'PROAM';return String(v||'').trim()}
+function normClass(v){const x=String(v||'').toUpperCase().replace(/[\s_/-]/g,'');if(x==='LMP2PA'||x==='LMP2PAM'||x==='LMP2PROAM'||x==='LMP2PROAMATEUR'||x==='PA')return'LMP2PA';if(x==='LMP3PA'||x==='LMP3PAM'||x==='LMP3PROAM'||x==='LMP3PROAMATEUR')return'LMP3PA';if(x==='HYP'||x==='HYPERCAR')return'HYP';if(x==='LMP1H')return'LMP1H';if(x==='LMP1L')return'LMP1L';if(x==='LMP1')return'LMP1';if(x==='LMP2')return'LMP2';if(x==='LMP3')return'LMP3';if(x==='LMGT3')return'LMGT3';if(x==='GT3')return'GT3';if(x==='GTDPRO')return'GTDPRO';if(x==='PROAM')return'PROAM';if(x==='GTEAM'||x==='LMGTEAM')return'GTEAM';if(x==='GTEPRO'||x==='LMGTEPRO')return'GTEPRO';return String(v||'').trim()}
 function normConstructor(v){return String(v||'').trim().toLowerCase().replace(/[^a-z0-9]/g,'').replace('mercedesamg','mercedes').replace('astonmartinracing','astonmartin')}
 function constructorFromVehicle(v){
   const x=String(v||'').toLowerCase();
-  const known=['oreca','ligier','duqueine','adess','ginetta','ferrari','porsche','bmw','mercedes','mclaren','astonmartin','aston martin','lamborghini','ford','corvette','lexus','audi','toyota','cadillac','alpine','peugeot','genesis','acura','hyundai','alfa romeo','alfa-romeo','chevrolet'];
+  const known=['oreca','ligier','duqueine','adess','ginetta','ferrari','porsche','bmw','mercedes','mclaren','astonmartin','aston martin','lamborghini','ford','corvette','lexus','audi','toyota','cadillac','alpine','peugeot','genesis','acura','hyundai','alfa romeo','alfa-romeo','chevrolet','isotta','maserati','dallara','nissan','bentley','jaguar'];
   const hit=known.find(k=>x.includes(k));
   return hit?normConstructor(hit):'';
 }
@@ -434,10 +761,127 @@ Object.assign(DRIVER_COUNTRY_DB, {
   'luca engstler':'Germany','lucas auer':'Austria','marcelo tomasoni':'Brazil','marvin dienst':'Germany','matias zagazeta':'Peru','mattia drudi':'Italy',
   'maxime martin':'Belgium','michael porter':'United States','morris schuring':'Netherlands','oliver söderström':'Sweden','rafael duran':'Mexico','ralf bohn':'Germany',
   'reece barr':'Ireland','riccardo pera':'Italy','roberto merhi':'Spain','rocco mazzola':'Italy','scott noble':'United Kingdom','stefano costantini':'Italy',
-  'tanart sathienthirakul':'Thailand','thomas fleming':'United Kingdom','tomas pintos':'Spain','ugo de wilde':'Belgium'
+  'tanart sathienthirakul':'Thailand','thomas fleming':'United Kingdom','tomas pintos':'Spain','ugo de wilde':'Belgium',
+  'kelvin van der linde':'South Africa','bernardo sousa':'Portugal','celia martin':'France','valentin hasse clot':'France','andrew gilbert':'United Kingdom','benjamin barker':'United Kingdom',
+  'ben barker':'United Kingdom','darren leung':'United Kingdom','thomas flohr':'Switzerland','james cottingham':'United Kingdom','sheldon van der linde':'South Africa',
+  'david heinemeier hansson':'Denmark','edward cheever':'United States','cem bolukbasi':'Turkey',
+  'robert shwartzman':'Israel','oliver rasmussen':'Denmark','mirko bortolotti':'Italy','edoardo mortara':'Italy',
+  'nicolas lapierre':'France','antonio serravalle':'Canada','wattana bennett':'Thailand','carl wattana bennett':'Thailand',
+  'jean karl vernay':'France','daniel mancinelli':'Italy','joshua caygill':'United Kingdom','hiroshi koizumi':'Japan',
+  'erwan bastard':'France','nicolas costa':'Brazil','stephen grove':'Australia','brenton grove':'Australia',
+  'valentin hasse':'France','david heinemeier':'Denmark','antonio felix':'Portugal',
+  'adam christodoulou':'United Kingdom','dennis andersen':'Denmark','richard westbrook':'United Kingdom',
+  'david beckmann':'Germany','fabio scherer':'Switzerland','albert costa':'Spain','julien canal':'France',
+  'scott huffaker':'United States','ulysse de pauw':'Belgium','gabriel aubry':'France','michael dinan':'United Kingdom',
+  'satoshi hoshino':'Japan','tomonobu fujii':'Japan','paul dalla lana':'Canada','axcil jefferies':'Zimbabwe',
+  'gunnar jeannette':'United States','esteban guerrieri':'Argentina','jacques villeneuve':'Canada',
+  'gustavo menezes':'United States','andre negrao':'Brazil','memo rojas':'Mexico','olli caldwell':'United Kingdom',
+  'joshua pierson':'United States','ryan briscoe':'Australia','olivier pla':'France','luis perez companc':'Argentina',
+  'razvan petru umbrarescu':'Romania','pj hyett':'United States','jens reno moller':'Denmark',
+  'abdulla ali al khelaifi':'Qatar','sergio sette camara':'Brazil','manuel espirito santo':'Portugal',
+  'ewan thomas':'United Kingdom','christian dannemand jorgensen':'Denmark','kristian brookes':'United Kingdom',
+  'nico hantke':'Germany','maksymilian angelard':'Poland','rey acosta iii':'United States',
+  'gonzalo de andres martin':'Spain','lorenzo ferdinando innocenti':'Italy','oscar lee ryndziewicz':'United Kingdom',
+  'josep mayola comadira':'Spain','shawn rashid':'United States','georges nakas':'Australia',
+  'alex brundle':'United Kingdom','andrea piccini':'Italy','andrew haryanto':'Indonesia','andrew watson':'United Kingdom',
+  'anthony davidson':'United Kingdom','beitske visser':'Netherlands','darren burke':'United Kingdom','esteban garcia':'Spain',
+  'antonio felix da costa':'Portugal','franco colapinto':'Argentina','frits van eerd':'Netherlands','giancarlo fisichella':'Italy',
+  'gianmaria bruni':'Italy','giedo van der garde':'Netherlands','giorgio sernagiotto':'Italy','jan magnussen':'Denmark',
+  'jaxon evans':'New Zealand','juan pablo montoya':'Colombia','katherine legge':'United Kingdom','kazuki nakajima':'Japan',
+  'manuela gostner':'Italy','marco seefried':'Germany','marcos gomes':'Brazil','miroslav konopka':'Slovakia',
+  'oliver gavin':'United Kingdom','patrick kelly':'United States','roberto gonzalez':'Mexico','roberto lacorte':'Italy',
+  'roman rusinov':'Russia','simon trummer':'Switzerland','sophia floersch':'Germany','thomas jackson':'United Kingdom',
+  'tatiana calderon':'Colombia'
+});
+// WEC Spa 2018 (2018-19) + Silverstone 2019 (2019-20) - researched and reviewed before applying.
+Object.assign(DRIVER_COUNTRY_DB, {
+  'fernando alonso':'Spain','thomas laurent':'France','oliver webb':'United Kingdom','dominik kraihamer':'Austria',
+  'mikhail aleshin':'Russia','vitaly petrov':'Russia','andrea pizzitola':'France','ho pin tung':'China',
+  'stephane richelmi':'Monaco','pierre thiriet':'France','jazeman jaafar':'Malaysia','weiron tan':'Malaysia',
+  'nabil jeffri':'Malaysia','pastor maldonado':'Venezuela','nathanael berthon':'France','erwin creed':'France',
+  'romano ricci':'France','stefan mucke':'Germany','billy johnson':'United States','sam bird':'United Kingdom',
+  'darren turner':'United Kingdom','martin tomczyk':'Germany','pedro lamy':'Portugal','mathias lauda':'Austria',
+  'euan alers hankey':'United Kingdom','sun mok':'Singapore','keita sawa':'Japan','motoaki ishikawa':'Japan',
+  'olivier beretta':'Monaco','khaled al qubaisi':'United Arab Emirates','jan lammers':'Netherlands','alex davison':'Australia',
+  'jorg bergmeister':'Germany','patrick lindsey':'United States','egidio perfetti':'Norway','stephane sarrazin':'France',
+  'egor orudzhev':'Russia','matevos isaakyan':'Russia','bruno senna':'Brazil','charlie robertson':'United Kingdom',
+  'antonin borga':'Switzerland','pierre ragues':'France','andrea belicchi':'Italy','mark patterson':'United States',
+  'kenta yamashita':'Japan','kei cozzolino':'Japan','david kolkmann':'Germany','bonamy grimes':'United Kingdom',
+  'johnny mowlem':'United Kingdom','charles hollings':'United Kingdom','jeroen bleekemolen':'Netherlands','michael simpson':'United Kingdom',
+  'guy smith':'United Kingdom','luca giraudi':'Italy','ricardo sanchez':'Mexico','andy priaulx':'United Kingdom','tony kanaan':'Brazil'
 });
 function learnDriverCountries(entries){(entries||[]).forEach(e=>(e.drivers||[]).forEach(d=>{if(d&&d[0]&&d[1])DRIVER_COUNTRY_DB[normalizeDriverName(d[0])]=d[1]}))}
-function lookupDriverCountry(name){return DRIVER_COUNTRY_DB[normalizeDriverName(name)]||''}
+// Some drivers race under more than one spelling of their own name across different PDFs
+// ("Ben Barker" vs "Benjamin Barker") - without a fixed canonical form, every place that
+// groups by name (the driver database, country/DOB lookup) treats them as two different
+// people. This always wins over whatever a results PDF says, by design.
+// 'david heinemeier':'David Heinemeier Hansson' works around a real Le Mans 2025 Race
+// Classification PDF layout quirk: his two-word surname "HEINEMEIER HANSSON" is spaced far
+// enough apart on the page that column-detection splits it into two cells, truncating the
+// parsed name to "D. Heinemeier" with "Hansson" swallowed into the next column.
+// 'maria lopez':'Jose Maria Lopez' - his real name has two given names ("Jose Maria"), but the
+// full-name regex only expects one Title-Case word before an ALL-CAPS surname, so it skips
+// "Jose" (not immediately followed by all-caps "MARIA") and matches "Maria LOPEZ" instead,
+// starting the name one word too late.
+const DRIVER_NAME_ALIASES={'ben barker':'Benjamin Barker','tom fleming':'Thomas Fleming','david heinemeier':'David Heinemeier Hansson','wattana bennett':'Carl Wattana Bennett','maria lopez':'Jose Maria Lopez','razvan umbrarescu':'Răzvan Petru Umbrărescu','petru umbrarescu':'Răzvan Petru Umbrărescu','dan harper':'Daniel Harper','jonny adam':'Jonathan Adam','lorenzo fluxa cross':'Lorenzo Fluxá','aliaksandr malykhin':'Alex Malykhin','akhil kumar':'Ajith Kumar','marco sorensen':'Marco Sørensen','nicolas pino':'Nico Pino','matthew campbell':'Matt Campbell','benjamin hanley':'Ben Hanley','horst felix felbermayr':'Horst Felbermayr','matthew bell':'Matt Bell','matthew richard bell':'Matt Bell','olli gray':'Oliver Gray','mikkel pedersen':'Mikkel Gaarde Pedersen','horst felbermayr jr.':'Horst Felbermayr','eddie cheever':'Eddie Cheever III','thomas sargent':'Tom Sargent','v. hasse clot':'Valentin Hasse-Clot','v hasse clot':'Valentin Hasse-Clot','alex jacoby':'Alexander Jacoby','gaarde pedersen':'Mikkel Gaarde Pedersen','c. eastwood':'Charlie Eastwood','charles eastwood':'Charlie Eastwood','edward cheever':'Eddie Cheever III','n. varrone':'Nicolás Varrone','j. lopez':'Jose Maria Lopez','m. espirito santo':'Manuel Espírito Santo','p. hanson':'Phil Hanson','a. quinn':'Alex Quinn','alexander quinn':'Alex Quinn','christopher froggatt':'Chris Froggatt','oscar ryndziewicz':'Oscar Lee Ryndziewicz','matthew kurzejewski':'Matt Kurzejewski','christian dannemand jorgensen':'Christian Dannemand Jørgensen','a priaulx':'Andy Priaulx','t kanaan':'Tony Kanaan'};
+const DRIVER_NAME_ALIASES_BY_INITIAL={};
+Object.values(DRIVER_NAME_ALIASES).forEach(canon=>{
+  const cp=canon.split(/\s+/);
+  DRIVER_NAME_ALIASES_BY_INITIAL[cp[0][0].toUpperCase()+'|'+cp.slice(1).join(' ').toLowerCase()]=canon;
+});
+// Registry of "initial + surname" -> the full name(s) seen for it anywhere in the archive, so
+// an initials-only name from one race (Race Classification only ever prints "D. Vanthoor") can
+// be upgraded using a full name already known from a DIFFERENT race, the same way
+// lookupDriverCountry already falls back across documents. Only resolves when exactly one full
+// name is known for that initial+surname - two different people who happen to share both never
+// get silently merged.
+const DRIVER_FULLNAME_SETS={};
+// A hyphenated surname ("Hasse-Clot") and its space-separated equivalent ("Hasse Clot", used
+// inconsistently in a few older race rows) must land on the same key, or the fallback below
+// never finds them.
+function fullNameKey(first,rest){return first[0].toUpperCase()+'|'+rest.join(' ').toLowerCase().replace(/-/g,' ');}
+function learnDriverFullNames(entries){
+  (entries||[]).forEach(e=>(e.drivers||[]).forEach(d=>{
+    if(!d||!d[0]) return;
+    const parts=String(d[0]).trim().split(/\s+/);
+    if(parts.length<2) return;
+    const first=parts[0];
+    if(/^[A-ZÀ-Ý]\.?$/.test(first)) return; // itself just initials, nothing to learn from
+    const canon=DRIVER_NAME_ALIASES[normalizeDriverName(d[0])]||d[0];
+    (DRIVER_FULLNAME_SETS[fullNameKey(first,parts.slice(1))]??=new Set()).add(canon);
+  }));
+}
+function resolveDriverFullName(name){
+  if(!name) return name;
+  const norm=normalizeDriverName(name);
+  if(DRIVER_NAME_ALIASES[norm]) return DRIVER_NAME_ALIASES[norm];
+  const parts=String(name).trim().split(/\s+/);
+  if(parts.length<2) return name;
+  const first=parts[0];
+  if(!/^[A-ZÀ-Ý]\.?$/.test(first)) return name; // already looks like a full first name
+  const key=fullNameKey(first,parts.slice(1));
+  if(DRIVER_NAME_ALIASES_BY_INITIAL[key]) return DRIVER_NAME_ALIASES_BY_INITIAL[key];
+  const known=DRIVER_FULLNAME_SETS[key];
+  return (known && known.size===1) ? [...known][0] : name;
+}
+function lookupDriverCountry(name){
+  const key=normalizeDriverName(name);
+  if(DRIVER_COUNTRY_DB[key]) return DRIVER_COUNTRY_DB[key];
+  // Race Classification only prints initials ("A. Al Harthy"), but the DB is keyed by full
+  // first names ("ahmad al harthy") learned from documents that spell them out in full - an
+  // exact key match fails even though this exact person is already known. Fall back to
+  // matching by surname + first-initial, but only when unambiguous (exactly one DB entry
+  // shares that surname and initial) - e.g. "M Schumacher" must not guess between Michael
+  // and Mick.
+  const parts=key.split(' ');
+  if(parts.length<2 || parts[0].length!==1) return '';
+  const surname=parts.slice(1).join(' ');
+  const matches=Object.keys(DRIVER_COUNTRY_DB).filter(k=>{
+    const kp=k.split(' ');
+    return kp.length>1 && kp.slice(1).join(' ')===surname && kp[0][0]===parts[0];
+  });
+  return matches.length===1 ? DRIVER_COUNTRY_DB[matches[0]] : '';
+}
 function setDriverCountry(name,country){if(name&&country){DRIVER_COUNTRY_DB[normalizeDriverName(name)]=country;try{localStorage.setItem('sccDriverCountries',JSON.stringify(DRIVER_COUNTRY_DB))}catch{}}}
 try{Object.assign(DRIVER_COUNTRY_DB,JSON.parse(localStorage.getItem('sccDriverCountries')||'{}'))}catch{}
 Object.assign(FLAG_ALIASES,{Portugal:'pt',Estonia:'ee',Monaco:'mc',Indonesia:'id',Malaysia:'my',Singapore:'sg',Philippines:'ph',Guatemala:'gt',Israel:'il',Andorra:'ad',Liechtenstein:'li',Uruguay:'uy',Malta:'mt',Slovakia:'sk',Slovenia:'si',Romania:'ro',Serbia:'rs',Croatia:'hr',Greece:'gr','Saudi Arabia':'sa',Qatar:'qa',UAE:'ae','United Arab Emirates':'ae',Korea:'kr','South Korea':'kr',Taiwan:'tw',Thailand:'th',Luxembourg:'lu',Russia:'ru',Belarus:'by',Czechia:'cz','Czech Republic':'cz',Hungary:'hu','Puerto Rico':'pr',Venezuela:'ve',Colombia:'co',Ecuador:'ec',Peru:'pe',Chile:'cl',Argentina:'ar'});
@@ -844,12 +1288,29 @@ function perfCard(p,overall=false){const e=findEntry(p.no)||{};const cls=p.class
 
 function driverCountry(name){
   const n=String(name||'').trim();
-  for(const e of (state.race.entries||[])) for(const d of (e.drivers||[])) if(String(d[0])===n) return d[1];
+  // A driver imported before their country was known (or before this driver was added to the
+  // DB) got stored with an empty country string on the entry itself - returning that empty
+  // value directly, without ever trying the lookup, meant the flag stayed missing forever even
+  // after the DB was fixed. Only trust a non-empty stored value; otherwise fall through.
+  for(const e of (state.race.entries||[])) for(const d of (e.drivers||[])) if(String(d[0])===n && d[1]) return d[1];
   return lookupDriverCountry(n)||'';
 }
 function perfDriverLine(p){
   const c=driverCountry(p.driver)||p.country||'';
   return `<span class="perf-driver">${c?flag(c):'<span class="no-flag"></span>'}<span>${esc(p.driver||'Unknown driver')}</span></span>`;
+}
+// One .perf-driver line per crew member (instead of just whoever set the time) - highlightNames
+// (a single name or an array of two, mirroring driverList's own signature) get bolded, everyone
+// else renders plain.
+function perfDriversLines(drivers,highlightNames){
+  const names=(Array.isArray(highlightNames)?highlightNames:[highlightNames]).filter(Boolean);
+  const hlKeys=new Set(names.map(n=>normalizeDriverName(resolveDriverFullName(n))));
+  return (drivers||[]).map(d=>{
+    const name=resolveDriverFullName(d[0]);
+    const c=normalizedDriverCountry(name,d[1]);
+    const isHl=hlKeys.has(normalizeDriverName(name));
+    return `<span class="perf-driver">${c?flag(c):'<span class="no-flag"></span>'}<span>${isHl?`<strong class="qual-time-driver">${esc(name)}</strong>`:esc(name)}</span></span>`;
+  }).join('');
 }
 function cleanLapTime(t){
   const raw=String(t||'').trim();
@@ -863,11 +1324,17 @@ function perfEntryRow(p,opts={}){
   const overall=opts.overall||p.class==='Overall';
   const constructorId=e.constructor || p.constructor || '';
   const model=e.model || constructorMeta(constructorId).name || '';
+  // Only the two-driver-average era needs the whole crew visible (the third member never drove
+  // in qualifying, but still gets listed unhighlighted). Every other era has exactly one driver
+  // who set the time, so opts.driverNames has a single entry - show just that one line, same as
+  // before this feature existed, instead of expanding to the full crew.
+  const namesArr=Array.isArray(opts.driverNames)?opts.driverNames.filter(Boolean):(opts.driverNames?[opts.driverNames]:[]);
+  const whoHtml=(namesArr.length>1 && e.drivers && e.drivers.length)?perfDriversLines(e.drivers,namesArr):perfDriverLine(p);
   return `<div class="perf-card ${overall?'overall':''}" style="--perf:${m.color}">
     <div class="perf-left">${overall?'<span class="overall-label">OVERALL</span>':`<span class="perf-badge" style="background:${m.color};color:${m.text||'#fff'}">${esc(m.short||cls)}</span>`}</div>
     <div class="perf-logo">${constructorId?logo('constructor',constructorId,'perf-logo-box'):''}</div>
     <div class="perf-car"><strong>#${esc(p.no||e.no||'—')} ${esc(e.team||'')}</strong><span>${esc(model)}</span></div>
-    <div class="perf-who">${perfDriverLine(p)}${p.lap?`<small>Lap ${esc(p.lap)}</small>`:''}</div>
+    <div class="perf-who">${whoHtml}${p.lap?`<small>Lap ${esc(p.lap)}</small>`:''}</div>
     <div class="perf-time">${esc(cleanLapTime(p.time))}</div>
   </div>`;
 }
@@ -877,12 +1344,21 @@ function performanceGroupHtml(kind){
   if(!list.length) return `<div class="empty-state">No ${kind==='FL'?'fastest-lap':'pole'} data imported yet.</div>`;
   const rows=[];
   const sorted=list.slice().filter(x=>x.time).sort((a,b)=>String(a.time).localeCompare(String(b.time)));
-  const overall=list.find(x=>x.class==='Overall')||sorted[0];
-  if(overall) rows.push(perfEntryRow({...overall,class:'Overall'}, {overall:true}));
+  // The two-driver-average era emits one pole record PER nominated driver sharing the same
+  // class+car (polesFromAverageRows) - grouping by class+car recovers both names instead of
+  // just whichever one happened to be found first, so both get highlighted in the full crew.
+  const groupFor=(matchList,cls)=>{
+    const first=matchList.find(x=>x.class===cls)||matchList.find(x=>(findEntry(x.no)||{}).class===cls);
+    if(!first) return null;
+    const names=matchList.filter(x=>x.class===cls&&x.no===first.no).map(x=>x.driver);
+    return {p:first,names:names.length?names:[first.driver]};
+  };
+  const overallGroup=groupFor(list,'Overall')||(sorted[0]?{p:sorted[0],names:[sorted[0].driver]}:null);
+  if(overallGroup) rows.push(perfEntryRow({...overallGroup.p,class:'Overall'}, {overall:true,driverNames:overallGroup.names}));
   rows.push('<div class="perf-separator"></div>');
   raceClassIds().forEach(cls=>{
-    const p=list.find(x=>x.class===cls)||list.find(x=>(findEntry(x.no)||{}).class===cls);
-    if(p) rows.push(perfEntryRow({...p,class:cls}));
+    const g=groupFor(list,cls);
+    if(g) rows.push(perfEntryRow({...g.p,class:cls}, {driverNames:g.names}));
   });
   return `<div class="performance-list">${rows.join('')}</div>`;
 }
@@ -894,22 +1370,77 @@ function renderPolePositions(){
   if(!$('polePanel'))return;
   $('polePanel').innerHTML=performanceGroupHtml('PP');
 }
-function driversInline(e){
-  return `<span class="summary-drivers-inline">${(e.drivers||[]).map(d=>{const c=normalizedDriverCountry(d[0],d[1]);return `<span>${c?flag(c):'<span class="no-flag"></span>'}<span>${esc(d[0])}</span></span>`}).join('')}</span>`;
+function driversInline(e,compact){
+  // Always render full names. In tight card layouts (Class Podiums), a row of 3 full names
+  // can wrap to a second line and make that row taller than its neighbours - but whether that
+  // actually happens depends on the real rendered width (driver count, flag widths, container
+  // size), which can't be guessed from character counts alone. fixPodiumNameWraps() runs after
+  // the DOM is in place and only abbreviates a row's longest name(s) if it truly wrapped.
+  const drivers=e.drivers||[];
+  const cls=compact?' class="dname"':'';
+  return `<span class="summary-drivers-inline">${drivers.map(d=>{
+    const name=resolveDriverFullName(d[0]);
+    const c=normalizedDriverCountry(name,d[1]);
+    return `<span>${c?flag(c):'<span class="no-flag"></span>'}<span${cls} data-full="${esc(name)}">${esc(name)}</span></span>`;
+  }).join('')}</span>`;
+}
+function abbrevDriverName(full){
+  const parts=String(full||'').split(/\s+/);
+  if(parts.length<2) return full;
+  return `${parts[0][0]}. ${parts.slice(1).join(' ')}`;
+}
+function fixPodiumNameWraps(){
+  document.querySelectorAll('.podium-row-v2 .summary-drivers-inline').forEach(row=>{
+    const names=Array.from(row.querySelectorAll('.dname'));
+    if(!names.length) return;
+    const lineHeight=parseFloat(getComputedStyle(row).lineHeight)||16;
+    const order=[...names].sort((a,b)=>b.dataset.full.length-a.dataset.full.length);
+    let i=0;
+    while(row.getBoundingClientRect().height>lineHeight*1.6 && i<order.length){
+      order[i].textContent=abbrevDriverName(order[i].dataset.full);
+      i++;
+    }
+  });
 }
 function podiumGroup(cls,arr){
   const winner=arr[0];
+  const clsColor=classMeta(cls).color;
   return `<section class="summary-class-card summary-class-card-v2">
     <div class="summary-class-head">${classBadge(cls)}<strong>${esc(classMeta(cls).label||cls)}</strong></div>
     <div class="podium-table podium-table-v2">
-      ${arr.slice(0,3).map((e,i)=>`<div class="podium-row podium-row-v2">
+      ${arr.slice(0,3).map((e,i)=>`<div class="podium-row podium-row-v2${i===0?' podium-row-winner':''}"${i===0?` style="--podium-winner-color:${clsColor}"`:''}>
         <span class="podium-pos">${i+1}.</span>
         <span class="podium-logo">${logo('constructor',e.constructor,'podium-logo-box')}</span>
-        <div class="podium-team"><strong>#${esc(e.no)} ${esc(e.team)}</strong><span class="podium-car">${esc(e.model||constructorMeta(e.constructor).name)}</span>${driversInline(e)}</div>
+        <div class="podium-team"><strong>#${esc(e.no)} ${esc(e.team)}</strong><span class="podium-car">${esc(e.model||constructorMeta(e.constructor).name)}</span>${driversInline(e,true)}</div>
         <span class="podium-gap">${i===0?esc(String(e.laps||'—')+' laps'):esc(classGap(e,winner))}</span>
       </div>`).join('')}
     </div>
   </section>`;
+}
+function placesProgressByClass(){
+  const ranks=classRanks(), gridRanks=classGridRanks();
+  return raceClassIds().map(cls=>{
+    const arr=(ranks[cls]||[]).filter(e=>entryStatus(e)==='Classified' && e.__classGridPos);
+    if(!arr.length) return null;
+    const withDelta=arr.map(e=>({e,delta:e.__classGridPos-e.__classPos}));
+    return {cls,gained:withDelta.reduce((a,b)=>b.delta>a.delta?b:a),lost:withDelta.reduce((a,b)=>b.delta<a.delta?b:a)};
+  }).filter(Boolean);
+}
+function progressDriversHtml(e){
+  return (e.drivers||[]).map((d,i)=>{
+    const name=resolveDriverFullName(d[0]);
+    const c=normalizedDriverCountry(name,d[1]);
+    return `${i?', ':''}${c?flag(c):'<span class="no-flag"></span>'}${esc(name)}`;
+  }).join('');
+}
+function progressRowHtml(cls,item,dir){
+  const e=item.e,delta=item.delta,m=classMeta(cls);
+  return `<div class="progress-row">
+    <span class="progress-badge" style="background:${m.color};color:${m.text}">${esc(m.short||cls)}</span>
+    <span class="progress-logo">${logo('constructor',e.constructor,'progress-logo-box')}</span>
+    <div class="progress-info"><strong>#${esc(e.no)} ${esc(e.team)}</strong><span class="progress-drivers">${progressDriversHtml(e)}</span></div>
+    <span class="progress-delta progress-delta-${dir}">${dir==='up'?'▲':'▼'} ${Math.abs(delta)}</span>
+  </div>`;
 }
 function winningMarginByClass(){
   const groups=classGroups();
@@ -936,10 +1467,12 @@ function renderSummaryFull(){
   const compItems=[['metadata','Metadata'],['results','Results'],['fastestLaps','Fastest laps'],['poles','Pole positions'],['raceControl','Race control timeline']]
     .map(([k,label])=>`<div class="completeness-item ${comp[k]?'ok':'missing'}">${label}</div>`).join('');
   const sourceItems=(state.race.sources||[]).map(x=>`<li>${esc(x)}</li>`).join('');
+  const finishedPct=entries.length?(classified.length/entries.length*100).toFixed(1):'0.0';
+  const progressByClass=placesProgressByClass();
   $('summaryFull').innerHTML=`
     <div class="summary-hero-grid">
-      <section class="summary-block"><h3>General</h3><div class="summary-line"><span>Series</span><strong>${esc(series().name)}</strong></div><div class="summary-line"><span>Race</span><strong>${esc(state.race.event)}</strong></div><div class="summary-line"><span>Circuit</span><strong>${flag(state.race.country)} ${esc(state.race.circuit)}</strong></div><div class="summary-line"><span>Scheduled / Official</span><strong>${esc(state.race.scheduledDuration)} / ${esc(state.race.officialDuration)}</strong></div></section>
-      <section class="summary-block"><h3>Classification</h3><div class="summary-line"><span>Overall winner</span><strong>#${esc(overall?.no||'—')} ${esc(overall?.team||'—')}</strong></div><div class="summary-line"><span>Finishers</span><strong>${classified.length} / ${entries.length}</strong></div><div class="summary-line"><span>NC / DNF / DNS</span><strong>${nonClass.length}</strong></div><div class="summary-line"><span>Official laps</span><strong>${esc(state.race.officialLaps)}</strong></div></section>
+      <section class="summary-block"><h3>General</h3><div class="summary-line"><span>Series</span><strong>${esc(series().name)}</strong></div><div class="summary-line"><span>Race</span><strong>${esc(state.race.event)}</strong></div><div class="summary-line"><span>Circuit</span><strong>${flag(state.race.country)} ${esc(state.race.circuit)}</strong></div><div class="summary-line"><span>Official / Scheduled</span><strong>${esc(state.race.officialDuration)} / ${esc(state.race.scheduledDuration)}</strong></div></section>
+      <section class="summary-block"><h3>Classification</h3><div class="summary-line"><span>Overall winner</span><strong>#${esc(overall?.no||'—')} ${esc(overall?.team||'—')}</strong></div><div class="summary-line"><span>Finishers</span><strong>${classified.length} / ${entries.length}</strong></div><div class="summary-line"><span>% Finished</span><strong>${finishedPct}%</strong></div><div class="summary-line"><span>Official laps</span><strong>${esc(state.race.officialLaps)}</strong></div></section>
     </div>
     <section class="summary-block podiums-big"><h3>Class Podiums</h3><div class="podium-class-grid">${Object.entries(groups).map(([cls,arr])=>podiumGroup(cls,arr)).join('')}</div></section>
     <div class="performance-duo">
@@ -947,17 +1480,21 @@ function renderSummaryFull(){
       <section class="summary-block"><h3>Performance · Pole Positions</h3>${performanceGroupHtml('PP')}</section>
     </div>
     <div class="summary-kpi-row">
-      <div class="kpi-card"><span>Winning margin</span><strong>${esc(entries[1]?classGap(entries[1],entries[0]):'—')}</strong><em>Overall</em></div>
       <div class="kpi-card"><span>Extra race time</span><strong>${fmtShort(extra)}</strong><em>After scheduled finish</em></div>
       <div class="kpi-card"><span>Total neutralized</span><strong>${fmtShort(totalNeutral)}</strong><em>${(totalNeutral/parseTime(state.race.officialDuration)*100).toFixed(1)}%</em></div>
       <div class="kpi-card"><span>Longest green</span><strong>${fmtShort(longestGreen)}</strong><em>Single run</em></div>
       <div class="kpi-card"><span>Longest neutralization</span><strong>${fmtShort(longestNeutral)}</strong><em>FCY / SC / red</em></div>
     </div>
+    ${progressByClass.length?`<div class="summary-two-columns lower">
+      <section class="summary-block"><h3>Most Places Gained · by Class</h3><div class="progress-list">${progressByClass.map(p=>progressRowHtml(p.cls,p.gained,'up')).join('')}</div></section>
+      <section class="summary-block"><h3>Most Places Lost · by Class</h3><div class="progress-list">${progressByClass.map(p=>progressRowHtml(p.cls,p.lost,'down')).join('')}</div></section>
+    </div>`:''}
     <div class="summary-two-columns lower">
       <section class="summary-block"><h3>Winning Margins by Class</h3>${winningMarginByClass()}</section>
       <section class="summary-block"><h3>Race Control</h3><div class="summary-line"><span>Total neutralized</span><strong>${fmtShort(totalNeutral)}</strong></div><div class="summary-line"><span>Longest green</span><strong>${fmtShort(longestGreen)}</strong></div><div class="summary-line"><span>Longest neutralization</span><strong>${fmtShort(longestNeutral)}</strong></div><div class="summary-line"><span>Extra race time</span><strong>${fmtShort(extra)}</strong></div></section>
     </div>
     <section class="summary-block wide"><h3>Data Completeness</h3><div class="completeness-list">${compItems}</div><ul class="source-list">${sourceItems}</ul></section>`;
+  fixPodiumNameWraps();
 }
 function classRanksForRace(race){
   const ranks={};
@@ -966,10 +1503,51 @@ function classRanksForRace(race){
   return ranks;
 }
 
-const DRIVER_BIRTH_DB={};
+const DRIVER_BIRTH_DB={
+  'bernardo sousa':'1987-05-16','celia martin':'1991-10-04','valentin hasse clot':'1996-02-27','andrew gilbert':'1980-10-24','benjamin barker':'1991-04-23','ben barker':'1991-04-23',
+  'robert shwartzman':'1999-09-16','oliver rasmussen':'2000-11-21','mirko bortolotti':'1990-01-10','edoardo mortara':'1987-01-12',
+  'nicolas lapierre':'1984-04-02','antonio serravalle':'2002-09-18','wattana bennett':'2004-09-02','carl wattana bennett':'2004-09-02',
+  'jean karl vernay':'1987-10-31','daniel mancinelli':'1988-07-23','joshua caygill':'1989-06-22','hiroshi koizumi':'1969-05-25',
+  'erwan bastard':'1998-06-09','nicolas costa':'1991-11-14','shawn rashid':'1995-10-05','georges nakas':'1970-02-24',
+  'alex brundle':'1991-06-03','andrea piccini':'1979-06-26','anthony davidson':'1979-04-18','beitske visser':'1996-09-22',
+  'antonio felix da costa':'1991-08-31','franco colapinto':'2003-05-27','giancarlo fisichella':'1973-01-14',
+  'gianmaria bruni':'1981-05-30','giedo van der garde':'1985-03-25','jan magnussen':'1973-07-04',
+  'juan pablo montoya':'1975-09-20','katherine legge':'1980-01-24','kazuki nakajima':'1985-01-11',
+  'oliver gavin':'1971-04-20','roman rusinov':'1985-07-10','sophia floersch':'2000-11-08','tatiana calderon':'1997-02-17',
+  // WEC Spa 2018 (2018-19) + Silverstone 2019 (2019-20) - DOB only where confidently sourced;
+  // Erwin Creed, Charlie Robertson, Sun Mok and Charles Hollings got a flag only above, no DOB
+  // here, because the only source found for each was too weak to trust (single low-quality
+  // snippet or a suspiciously round placeholder-looking date).
+  'fernando alonso':'1981-07-29','thomas laurent':'1998-04-05','oliver webb':'1991-03-20','dominik kraihamer':'1989-11-29',
+  'mikhail aleshin':'1987-05-22','vitaly petrov':'1984-09-08','andrea pizzitola':'1992-06-19','ho pin tung':'1982-12-04',
+  'stephane richelmi':'1990-03-17','pierre thiriet':'1989-04-20','jazeman jaafar':'1992-11-13','weiron tan':'1994-12-03',
+  'nabil jeffri':'1993-10-24','pastor maldonado':'1985-03-09','nathanael berthon':'1989-07-01','romano ricci':'1978-05-10',
+  'stefan mucke':'1981-11-22','billy johnson':'1986-10-10','sam bird':'1987-01-09','darren turner':'1974-04-13',
+  'martin tomczyk':'1981-12-07','pedro lamy':'1972-03-20','mathias lauda':'1981-01-30','euan alers hankey':'1987-03-18',
+  'keita sawa':'1976-08-16','motoaki ishikawa':'1967-04-07','olivier beretta':'1969-11-23','khaled al qubaisi':'1975-12-22',
+  'jan lammers':'1956-06-02','alex davison':'1979-11-03','jorg bergmeister':'1976-02-13','patrick lindsey':'1982-04-22',
+  'egidio perfetti':'1975-06-05','stephane sarrazin':'1975-11-02','egor orudzhev':'1995-10-16','matevos isaakyan':'1998-04-17',
+  'bruno senna':'1983-10-15','antonin borga':'1987-09-21','pierre ragues':'1984-01-10','andrea belicchi':'1976-12-18',
+  'mark patterson':'1951-12-16','kenta yamashita':'1995-08-03','kei cozzolino':'1987-11-09','david kolkmann':'1996-12-06',
+  'bonamy grimes':'1971-09-05','johnny mowlem':'1969-02-12','jeroen bleekemolen':'1981-10-23','michael simpson':'1983-09-13',
+  'guy smith':'1974-09-12','luca giraudi':'1968-11-11','ricardo sanchez':'1990-01-02','andy priaulx':'1974-08-07','tony kanaan':'1974-12-31'
+};
 try{Object.assign(DRIVER_BIRTH_DB,JSON.parse(localStorage.getItem('scc_driver_birth_db')||'{}'))}catch(e){}
 function saveDriverBirthDb(){try{localStorage.setItem('scc_driver_birth_db',JSON.stringify(DRIVER_BIRTH_DB))}catch(e){console.warn('DOB storage failed',e)}}
-function driverDob(name){return DRIVER_BIRTH_DB[normalizeDriverName(name)]||''}
+function driverDob(name){
+  const key=normalizeDriverName(name);
+  if(DRIVER_BIRTH_DB[key]) return DRIVER_BIRTH_DB[key];
+  // Same "A. Surname" fallback as lookupDriverCountry: only when exactly one known DOB
+  // shares that surname + first initial, so it never guesses between e.g. two Schumachers.
+  const parts=key.split(' ');
+  if(parts.length<2 || parts[0].length!==1) return '';
+  const surname=parts.slice(1).join(' ');
+  const matches=Object.keys(DRIVER_BIRTH_DB).filter(k=>{
+    const kp=k.split(' ');
+    return kp.length>1 && kp.slice(1).join(' ')===surname && kp[0][0]===parts[0];
+  });
+  return matches.length===1 ? DRIVER_BIRTH_DB[matches[0]] : '';
+}
 function driverAge(name, atDate){const dob=driverDob(name); if(!dob)return ''; const a=new Date(dob+'T00:00:00'), b=new Date((atDate||new Date().toISOString().slice(0,10))+'T00:00:00'); let y=b.getFullYear()-a.getFullYear(); const m=b.getMonth()-a.getMonth(); if(m<0||(m===0&&b.getDate()<a.getDate()))y--; return y>=0?String(y):''}
 
 function databaseRaces(){
@@ -982,7 +1560,7 @@ function driverRecords(){
     const raceDrivers=new Set();
     (r.entries||[]).forEach(e=>{
       (e.drivers||[]).forEach(d=>{
-        const rawName=d[0]; if(!rawName) return;
+        const rawName=resolveDriverFullName(d[0]); if(!rawName) return;
         const key=normalizeDriverName(rawName);
         const country=d[1]||lookupDriverCountry(rawName)||'';
         if(!map.has(key)) map.set(key,{key,name:rawName,country,dob:driverDob(rawName),records:[],classes:new Set(),teams:new Set(),series:new Map(),overallWins:0,classWins:0,overallPodiums:0,classPodiums:0,poles:0,fastest:0,polesOverall:0,polesClass:0,fastestOverall:0,fastestClass:0});
@@ -1222,7 +1800,7 @@ function driverRecords(){
     const ranks=classRanksForRace(r);
     (r.entries||[]).forEach(e=>{
       (e.drivers||[]).forEach(drv=>{
-        const rawName=drv[0]; if(!rawName) return;
+        const rawName=resolveDriverFullName(drv[0]); if(!rawName) return;
         const key=normalizeDriverName(rawName);
         const country=drv[1]||lookupDriverCountry(rawName)||'';
         if(!map.has(key)) map.set(key,{key,name:rawName,country,dob:driverDob(rawName),records:[],classes:new Set(),teams:new Set(),constructors:new Set(),series:new Map(),overallWins:0,classWins:0,overallPodiums:0,classPodiums:0,polesOverall:0,polesClass:0,fastestOverall:0,fastestClass:0,finishes:0});
@@ -1314,7 +1892,7 @@ function driverRecords(){
   sccLearnArchiveCountries();
   const map=new Map();
   const getRec=(rawName,country)=>{
-    const name=String(rawName||'').trim(); if(!name) return null;
+    const name=resolveDriverFullName(String(rawName||'').trim()); if(!name) return null;
     const key=normalizeDriverName(name);
     const c=country||lookupDriverCountry(name)||'';
     if(!map.has(key)) map.set(key,{key,name,country:c,dob:driverDob(name),records:[],classes:new Set(),teams:new Set(),constructors:new Set(),series:new Map(),overallWins:0,classWins:0,overallPodiums:0,classPodiums:0,polesOverall:0,polesClass:0,fastestOverall:0,fastestClass:0,finishes:0});

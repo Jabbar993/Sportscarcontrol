@@ -31,6 +31,9 @@ function saveCurrentRaceToArchive(){
   alert(`Race saved to archive and database: ${race.event||race.id}`);
 }
 function injectSaveButton(){
+  // js/importer.js owns the Import tab now and already provides an equivalent action
+  // ("Save to database" in the checklist); don't graft this onto its UI.
+  if($('importerCard'))return;
   const importPanel=document.querySelector('.import-panel'); if(importPanel && !$('saveRaceToArchiveBtn')){
     const bar=document.createElement('div'); bar.className='wizard-card save-race-card';
     bar.innerHTML=`<h3>6 · Save race</h3><p class="muted">Writes the current imported race into the local archive and immediately rebuilds the global database.</p><div class="form-actions"><button id="saveRaceToArchiveBtn">Save race to archive + database</button></div><div id="saveRaceStatus" class="mini-note"></div>`;
@@ -222,5 +225,5 @@ window.renderDataManager=function(){if(!$('dataManager'))return; const tab=state
 function showDb(tab){state.dataTab=tab||'drivers'; document.querySelectorAll('.tab-content').forEach(x=>x.classList.remove('active')); $('tab-data')?.classList.add('active'); document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.tab==='data')); window.renderDataManager();}
 // disabled old DB click listener; v0.8.4 owns DB routing
 function boot(){setVersion(); mergeSavedRaces(); injectSaveButton(); if(typeof buildRaceTree==='function')buildRaceTree(); if(typeof buildRaceSelectors==='function')buildRaceSelectors();}
-document.addEventListener('DOMContentLoaded',boot); setTimeout(boot,0);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot); else boot();
 })();

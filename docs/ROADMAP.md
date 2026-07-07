@@ -16,10 +16,15 @@
 
 ## Current focus
 
-- Stabilise ACO Importer
-- Improve importer preview
-- Support Al Kamel Results / FL / Qualifying PDFs reliably
+- Improve driver database (DOB/nationality auto-fill on import, win/podium/PP/FL split
+  overall vs class)
 - Keep Race Control manual
+
+## Recently done
+
+- Stabilised ACO Importer: consolidated 6 layered patch files into one js/importer.js,
+  verified against a real WEC Fuji 2025 PDF set (36/36 cars, correct classes/laps/drivers,
+  correct FL/PP per class)
 
 ## Near-term tasks
 

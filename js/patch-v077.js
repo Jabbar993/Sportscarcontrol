@@ -57,13 +57,18 @@
     ['Adess','adess','Adess'],
     ['Ginetta','ginetta','Ginetta']
   ];
+  // Keep a reference to the pre-patch constructorFromVehicle before overwriting the global
+  // below - calling the bare `constructorFromVehicle` identifier from inside vehicleInfo would
+  // resolve to the *new* window.constructorFromVehicle once reassigned, causing infinite
+  // self-recursion (and a stack overflow) for any vehicle text not in VEHICLE_MAP.
+  const originalConstructorFromVehicle = typeof constructorFromVehicle==='function' ? constructorFromVehicle : null;
   function vehicleInfo(text){
     const x=String(text||'').toLowerCase().replace(/[–—]/g,'-').replace(/\s+/g,' ');
     for(const [needle,ctor,model] of VEHICLE_MAP){
       if(x.includes(needle.toLowerCase())) return {constructor:ctor, model};
     }
-    if(typeof constructorFromVehicle==='function'){
-      const ctor=constructorFromVehicle(text);
+    if(originalConstructorFromVehicle){
+      const ctor=originalConstructorFromVehicle(text);
       return {constructor:ctor, model:String(text||'').trim()};
     }
     return {constructor:'',model:String(text||'').trim()};
