@@ -1,0 +1,154 @@
+{
+ "title": "Rast holds off Spengler to win Nürburgring Race 1",
+ "dek": "René Rast turned pole into an Audi win by 0.862 seconds over Bruno Spengler's BMW, while Paul di Resta was spun into last place and lost the points lead to Gary Paffett.",
+ "chapters": [
+  {
+   "k": "before",
+   "phase": "Build-up",
+   "title": "Round eight with a leader under pressure",
+   "text": [
+    "The DTM arrived at the Nürburgring for round eight of ten with the title still open between two Mercedes-AMG team-mates. Paul di Resta led the standings after winning Race 1 at Misano from pole, but Gary Paffett had gone home from the same weekend with finishes of 19th and 14th and needed to take points back. Audi, meanwhile, had won only once all year, through René Rast at Zandvoort.",
+    "The talking point in the paddock was tyre pressure. Hankook's minimum starting pressure, which had been a recommendation, became a binding rule for this weekend, to be checked on the grid, with a breach potentially leading to disqualification. The series wanted to stop teams running pressures far below the maker's advice in search of grip, a practice that had raised the risk of tyre damage, and the rule also meant nobody could pit on lap one to dodge the problem.",
+    "On Friday the Mercedes C 63 gave Mick Schumacher his first taste of a DTM car, eight demonstration laps, two of them on wet tyres, after an invitation from series boss Gerhard Berger. Practice also left Robin Frijns with a grid penalty: his third reprimand of the season, for driving against the direction of travel on an escape road, cost him five places on the grid."
+   ],
+   "cars": []
+  },
+  {
+   "k": "before",
+   "phase": "Qualifying",
+   "title": "Rast steals pole after the flag",
+   "text": [
+    "Qualifying ran in dry, sunny but cold conditions, around 13 degrees. Philipp Eng set the early pace and held provisional pole, and at half time the order was Eng, Pascal Wehrlein and Marco Wittmann, with the eventual front-row men still to appear. As the session closed Paffett went quickest with a 1m22.231s in the final minute, only for Rast to cross the line after the chequered flag, set the fastest first sector of anyone and take pole with 1m22.203s, 0.028 seconds clear.",
+    "It was Rast's first pole of the 2018 season, and he said the habit of finding one last lap at the very end was working at the moment. Bruno Spengler took third for BMW on 1m22.281s, which put all three manufacturers in the top three. Lucas Auer was fourth, Wittmann fifth and Eng sixth, ahead of Daniel Juncadella in seventh.",
+    "Di Resta, the championship leader, slid down the order as the session went on and could only manage eighth, Wehrlein was ninth and Augusto Farfus tenth. Mike Rockenfeller was 11th, the next best Audi, and Audi motorsport chief Dieter Gass noted that Rast would have no team-mate close by to help him in the race. Timo Glock was 12th, Edoardo Mortara 15th, and Loïc Duval, who ran wide and threw gravel onto the track early on, was last in the session. After Frijns’ five-place penalty, Duval lined up 17th and Frijns 18th."
+   ],
+   "cars": [
+    "33",
+    "2",
+    "7"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "Opening laps",
+   "title": "Rast leads, the stops are pushed back",
+   "text": [
+    "Rast made the most of pole to lead into the first corner, with Paffett on his tail and Spengler and Auer behind. Wittmann briefly got past Auer for fourth before the Mercedes took the place back. Further down the field Mortara and Frijns touched at the start, though both continued.",
+    "The new minimum pressures changed the usual rhythm of the mandatory stop. Rather than stopping at the end of the first lap, the cars stayed out, and the first to come in were Frijns and Jamie Green, who took fresh tyres within the first eight laps, with the replacements also having to be set to the minimum pressure. Paffett pressed Rast without a real attempt to pass, and Spengler eventually found a way past the Mercedes into second around the middle of the race."
+   ],
+   "cars": [
+    "4",
+    "53"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "Eng and di Resta",
+   "title": "Di Resta spun into the gravel",
+   "text": [
+    "The incident of the afternoon came on lap 12 in the Mercedes Arena, where di Resta got past Eng's BMW. Eng tried a counter-attack, turned in with too little room and the contact sent the Mercedes spinning into the gravel. Di Resta got going again but dropped to 12th at that stage, and the stewards gave Eng a drive-through penalty. Eng apologised afterwards, saying the gap had been there and then was not.",
+    "The damage to di Resta went further than the race. He ended up 18th and last with no points, while Eng, after serving the penalty, was classified 16th. Glock, meanwhile, was heading the other way. Starting 12th, he made up places on fresher tyres after his stop, and had moved ahead of Auer and Wittmann by the closing stages."
+   ],
+   "cars": [
+    "25",
+    "3"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "The finish",
+   "title": "Spengler closes to 0.862 seconds",
+   "text": [
+    "Rast's tyres faded late on and a lead of around seven seconds melted away as Spengler, on fresher rubber, came ever closer. At the flag after 40 laps in 57m14.769s the gap was 0.862 seconds, and Rast said another couple of laps would have made it really tight. He had won from pole after setting the fastest lap, a 1m23.768s on lap three, and it was the second win of his season.",
+    "Paffett took third, 6.862 seconds behind, and kept Glock at bay on the final lap to protect the place. Glock was fourth from 12th on the grid, with Wittmann fifth, Rockenfeller sixth, Wehrlein seventh and Duval eighth after starting 17th. Farfus and Nico Müller completed the top ten.",
+    "The result put Paffett back in front of the championship on 194 points, eight clear of di Resta on 186, with Mortara a distant third on 138."
+   ],
+   "cars": [
+    "16",
+    "11",
+    "99"
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "i": "⏱",
+   "t": "Pole after the flag",
+   "v": "René Rast took pole with 1m22.203s, 0.028 seconds ahead of Gary Paffett, with a lap completed after the chequered flag.",
+   "one": {
+    "label": "Autosport: DTM Nurburgring: Rene Rast edges Gary Paffett for pole position",
+    "url": "https://www.autosport.com/dtm/news/dtm-nurburgring-rene-rast-edges-gary-paffett-for-pole-position-5295215/5295215/"
+   }
+  },
+  {
+   "i": "🏁",
+   "t": "Rast wins by 0.862",
+   "v": "Rast won after 40 laps in 57m14.769s, 0.862 seconds ahead of Bruno Spengler, after trimming a gap of around seven seconds in the closing stages.",
+   "one": {
+    "label": "Auto Bild: DTM: Rast siegt am Nürburgring",
+    "url": "https://www.autobild.de/artikel/dtm-rast-siegt-am-nuerburgring-14048655.html"
+   }
+  },
+  {
+   "i": "⚠",
+   "t": "Eng penalised",
+   "v": "Philipp Eng received a drive-through penalty for spinning Paul di Resta on lap 12 and finished 16th, while di Resta was 18th.",
+   "one": {
+    "label": "Motorsport-Total.com: DTM Nürburgring 2018: Zweiter Saisonsieg für Rene Rast und Audi",
+    "url": "https://www.motorsport-total.com/dtm/news/dtm-nuerburgring-2018-zweiter-saisonsieg-fuer-rene-rast-und-audi-18090804"
+   }
+  },
+  {
+   "i": "📈",
+   "t": "Paffett back in front",
+   "v": "Gary Paffett led the standings on 194 points, eight ahead of Paul di Resta on 186.",
+   "one": {
+    "label": "Motorsport-Total.com: DTM Nürburgring 2018: Zweiter Saisonsieg für Rene Rast und Audi",
+    "url": "https://www.motorsport-total.com/dtm/news/dtm-nuerburgring-2018-zweiter-saisonsieg-fuer-rene-rast-und-audi-18090804"
+   }
+  },
+  {
+   "i": "🛞",
+   "t": "Minimum tyre pressure",
+   "v": "Hankook's minimum starting pressure became binding at the Nürburgring, with a breach liable to bring disqualification.",
+   "one": {
+    "label": "Motorsport-Total.com: DTM Nürburgring 2018: Pole-Position für Rene Rast am Samstag",
+    "url": "https://www.motorsport-total.com/dtm/news/dtm-nuerburgring-2018-pole-position-fuer-rene-rast-am-samstag-18090803"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "label": "Autosport: DTM Nurburgring: Rene Rast edges Gary Paffett for pole position",
+   "url": "https://www.autosport.com/dtm/news/dtm-nurburgring-rene-rast-edges-gary-paffett-for-pole-position-5295215/5295215/"
+  },
+  {
+   "label": "Motorsport-Total.com: DTM Nürburgring 2018: Pole-Position für Rene Rast am Samstag",
+   "url": "https://www.motorsport-total.com/dtm/news/dtm-nuerburgring-2018-pole-position-fuer-rene-rast-am-samstag-18090803"
+  },
+  {
+   "label": "Motorsport-Total.com: DTM Nürburgring 2018: Zweiter Saisonsieg für Rene Rast und Audi",
+   "url": "https://www.motorsport-total.com/dtm/news/dtm-nuerburgring-2018-zweiter-saisonsieg-fuer-rene-rast-und-audi-18090804"
+  },
+  {
+   "label": "Auto Bild: DTM: Rast siegt am Nürburgring",
+   "url": "https://www.autobild.de/artikel/dtm-rast-siegt-am-nuerburgring-14048655.html"
+  },
+  {
+   "label": "Racingblog: DTM Rückblick Nürburgring 2018",
+   "url": "https://www.racingblog.de/2018/09/10/dtm-rueckblick-nuerburgring-2018-perfektes-wochenende-fuer-rast/"
+  },
+  {
+   "label": "SPORT1: DTM: Rast siegt am Nürburgring, Paffett übernimmt Gesamtführung",
+   "url": "https://www.sport1.de/news/motorsport/dtm/2018/09/dtm-rast-siegt-am-nuerburgring-paffett-uebernimmt-gesamtfuehrung"
+  },
+  {
+   "label": "Motorsport-Magazin: DTM Live-Ticker Nürburgring: Rast gewinnt vor Spengler",
+   "url": "https://www.motorsport-magazin.com/dtm/news-250041-dtm-nuerburgring-2018-live-ticker-zum-samstag/"
+  },
+  {
+   "label": "Sportscar365: Weekly Racing Roundup (9.10.18)",
+   "url": "https://sportscar365.com/features/roundup/weekly-racing-roundup-9-10-18/"
+  }
+ ]
+}

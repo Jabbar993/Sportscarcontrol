@@ -1,0 +1,217 @@
+{
+  "title": "Wittmann wins a chaotic Hungaroring Race 2 as BMW sweeps the podium",
+  "dek": "Marco Wittmann won from 14th on the grid for BMW as a rain shower, pit-lane crashes and a red flag upended the race, with Timo Glock and Philipp Eng completing a BMW podium.",
+  "chapters": [
+    {
+      "k": "before",
+      "phase": "Build-up",
+      "title": "Mercedes lead the way into Sunday",
+      "text": [
+        "Saturday had gone Mercedes-AMG's way. Paul di Resta won Race 1 from pole ahead of Lucas Auer, Gary Paffett took the lead of the championship on 79 points, seven clear of Timo Glock, and BMW went home from the first race without a point, the best of its six cars being Bruno Spengler in 12th. Sunday promised heat of around 30 degrees, but clouds hung over the circuit and the threat of a shower was never far away. The race was again set for 55 minutes plus one lap, with a compulsory pit stop."
+      ],
+      "cars": [
+        "3"
+      ]
+    },
+    {
+      "k": "before",
+      "phase": "Qualifying",
+      "title": "Auer fixes his mistake and heads a five-Mercedes top five",
+      "text": [
+        "Auer had thrown away a possible pole on Saturday, and on Sunday morning he put it right. His 1m36.717s was 0.632 seconds quicker than di Resta's pole time the day before, and it gave Mercedes-AMG a clean sweep of the top five places. Pascal Wehrlein joined him on the front row 0.063 seconds back, di Resta was third on 1m36.977s, and Edoardo Mortara and Paffett followed, the latter 0.308 seconds off the pace.",
+        "René Rast was the best of the rest, sixth for Team Rosberg on 1m37.046s and the only driver to keep the Mercedes cars from taking the first six places, ahead of Daniel Juncadella's Mercedes. He was frustrated nonetheless: he had expected to find more in the final run and felt a lap good enough for pole had slipped away when others improved. Glock lined up eighth, the best of the BMWs, and Nico Müller and Jamie Green completed the top ten.",
+        "The rest of the BMW line-up had a difficult time. The six M4s had ended third practice at the bottom of the order, and in qualifying Marco Wittmann could manage only 14th on 1m37.453s, with Philipp Eng 15th, Joel Eriksson 17th and Spengler last, 1.033 seconds off the pole time. Mike Rockenfeller's Audi was 16th. Wittmann admitted afterwards that he had not expected to score from that position."
+      ],
+      "cars": [
+        "22",
+        "94",
+        "33"
+      ]
+    },
+    {
+      "k": "turn",
+      "phase": "Opening laps",
+      "title": "Glock spins, BMW stops early and the rain arrives",
+      "text": [
+        "Auer made the best start and kept the lead from Wehrlein, and the Mercedes cars held the first six places. Further back it went wrong for Glock. He was spun around in Turn 2 after contact with Müller and dropped from eighth to last, and he came in at the end of the first lap for his mandatory stop, together with Eriksson and Rockenfeller. Glock said afterwards that he had stopped early precisely because the spin had put him at the back. Augusto Farfus followed a lap later.",
+        "The decisions looked mundane for a few laps. Rain began to fall at around lap four, light at first and then heavier, and the track turned greasy, which allowed Wehrlein to sweep past Auer at Turn 1 and take the lead. Farfus came back in for rain tyres, the first to do so, and several others started to turn in towards the pit lane as the water worsened."
+      ],
+      "cars": [
+        "16",
+        "51",
+        "99"
+      ]
+    },
+    {
+      "k": "turn",
+      "phase": "Pit-lane crashes",
+      "title": "Three cars slide into the pit lane and the race is stopped",
+      "text": [
+        "At the end of lap six Auer turned in to change from slick tyres to wet ones. The concrete of the working lane was awash and as slick as ice, and the Mercedes could not be stopped: it slid into the pit building and trapped marshals between the car and the wall. A lap later Mortara had the same problem and hit his own pit gantry, which fell onto his car, while Spengler's BMW ran into mechanics outside his garage.",
+        "The safety car had been deployed when the ambulance entered the pit lane, but several drivers were already on their way in, and the race was red-flagged after eight laps once the third car had slid. A statement from the organisers said one marshal had severe leg injuries and two more people had moderate injuries, none of them in a critical condition. The marshal was flown to hospital.",
+        "The stoppage lasted about half an hour. The sun came out while the cars waited on the grid, and by the time the race was ready to resume the track was close to dry."
+      ],
+      "cars": [
+        "48",
+        "7",
+        "15"
+      ]
+    },
+    {
+      "k": "turn",
+      "phase": "Restart",
+      "title": "The dry track turns the order upside down",
+      "text": [
+        "The race restarted behind the safety car with about 28 minutes on the clock. Auer, di Resta and Mortara had all stopped before the flag, so the Mercedes of Wehrlein, Paffett and Juncadella led, followed by Müller and Green, and these five still had a compulsory stop to make. The BMWs of Eng, Wittmann, Glock and Eriksson, along with Rockenfeller, had all made their stops already and so ran at the head of the virtual order.",
+        "That meant the five leaders had to come in again while the cars behind them did not. Paffett, whose team had left wet tyres on his car, dropped through the field like a stone and was passed by almost everyone, at one point down to 17th, and Rast was spun at the restart. Juncadella passed Wehrlein for the lead, built a lead of nearly three seconds and then stopped with eight minutes left, but a slow stop dropped him to 17th, and he finished 14th."
+      ],
+      "cars": [
+        "2",
+        "23",
+        "53"
+      ]
+    },
+    {
+      "k": "turn",
+      "phase": "The finish",
+      "title": "Wittmann takes the lead from Eng and wins from 14th",
+      "text": [
+        "Wittmann had passed Eng by then, and once the five leaders had made their stops he took over the effective lead and went on to win after 26 laps. The two-time champion took the flag in 1h17m50.129s, 5.870 seconds clear of Glock, who had worked his way back from last place after his early spin. Eng completed an all-BMW podium 13.457 seconds behind, and held off a late attack by Rockenfeller by 0.480 seconds.",
+        "Di Resta climbed through the field in the closing laps to finish fifth, the best of the Mercedes drivers, and Eriksson was sixth. It was Wittmann's first win of 2018 and came the day after all six BMWs had finished outside the top ten. Paffett, still struggling after his tyre problem, finished 18th, which cost him the championship lead."
+      ],
+      "cars": [
+        "11",
+        "25"
+      ]
+    },
+    {
+      "k": "after",
+      "phase": "Aftermath",
+      "title": "Three drivers excluded, Glock back in front",
+      "text": [
+        "BMW Team RMG dedicated the win to everyone hurt in the pit lane, and Wittmann said his team had called him in on exactly the right lap as the rain began, in line with a plan to run until it came. Glock and Eng both pointed to the timing of their stops and said they had been lucky that the red flag arrived just after they left the pits. BMW's motorsport staff called the weekend a roller-coaster, and said the pace had been better on Sunday than on Saturday. Rockenfeller said the result was secondary after the images from the pit lane.",
+        "Mercedes left Sunday almost empty-handed after locking out the front of the grid. Team principal Ulrich Fritz called that bitter after such a strong weekend, and said that in hindsight showing the red flag earlier would have been right; he added that Mercedes had decided before the race not to stop any driver early, to give each of them the same chance of winning. Paffett was angrier, saying it had been “the most embarrassing DTM race I've been in”, and arguing that the race should have been stopped after Auer's crash. The organisers' response was that the extent of the first injury was not yet clear, and that the safety car had been used to close the pit lane. Audi's Dieter Gass praised Rockenfeller's fourth place, but conceded that after seeing who won, Audi might have done better to bring a car in early.",
+        "Hours after the finish the stewards excluded Auer, Mortara and Spengler for breaking the rule that requires drivers to slow enough to stop safely at their garage without endangering others. Before the decision Spengler had been seventh, Auer ninth and Mortara tenth. Mortara and Spengler also received a 10-place grid penalty for the next race, suspended for two race weekends, because yellow flags had been waved and their teams had warned them by radio. Wittmann said that none of the drivers deserved the blame, and Loïc Duval called it “the most slippery pitlane I have ever had”.",
+        "In the table, Glock regained the lead from Paffett and went into the break on 90 points to Paffett's 79, a gap of 11, while di Resta stayed third. The DTM next went to the Norisring in Nuremberg on 22–24 June."
+      ],
+      "cars": []
+    }
+  ],
+  "facts": [
+    {
+      "i": "🥇",
+      "t": "From 14th to the win",
+      "v": "Marco Wittmann started 14th and won in 1h17m50.129s, 5.870 seconds ahead of Timo Glock, with Philipp Eng third.",
+      "one": {
+        "label": "Motorsport.com: Hungaroring DTM: Wittmann wins after pitlane drama",
+        "url": "https://www.motorsport.com/dtm/news/hungaroring-dtm-wittmann-wins-after-pitlane-drama-1044232/3115190/"
+      }
+    },
+    {
+      "i": "🚩",
+      "t": "Red flag after eight laps",
+      "v": "Cars slid into the pit lane on a rain-soaked concrete working lane, and the race was stopped for about half an hour.",
+      "one": {
+        "label": "TouringCarTimes: Race 2 red-flagged as cars crash in the pit lane at the Hungaroring",
+        "url": "https://www.touringcartimes.com/2018/06/03/race-2-red-flagged-cars-crash-pit-lane-hungaroring/"
+      }
+    },
+    {
+      "i": "⚠",
+      "t": "Three exclusions",
+      "v": "Lucas Auer, Edoardo Mortara and Bruno Spengler were excluded for breaking the rule on slowing down in the pit-lane entry.",
+      "one": {
+        "label": "Motorsport-Magazin: DTM-Unfälle Budapest: Strafen für Auer, Spengler und Mortara",
+        "url": "https://www.motorsport-magazin.com/dtm/news-247575-dtm-unfaelle-budapest-strafen-fuer-auer-spengler-und-mortara/"
+      }
+    },
+    {
+      "i": "📈",
+      "t": "Glock regains the lead",
+      "v": "Timo Glock went to 90 points and Gary Paffett stayed on 79, an 11-point gap at the top of the table.",
+      "one": {
+        "label": "Motorsport-Total: DTM Budapest 2018: BMW-Dreifacherfolg nach Unfall-Chaos in Boxengasse",
+        "url": "https://www.motorsport-total.com/dtm/news/dtm-budapest-2018-bmw-dreifacherfolg-nach-unfall-chaos-in-boxengasse-18060304"
+      }
+    },
+    {
+      "i": "🔧",
+      "t": "Slower pit lane",
+      "v": "The pit-lane speed limit was reduced from 60 to 50 km/h for the rest of the season after the Hungaroring accidents.",
+      "one": {
+        "label": "Motorsport-Magazin: DTM eingebremst: Boxengassen-Tempolimit dauerhaft verschärft",
+        "url": "https://www.motorsport-magazin.com/dtm/news-249687-dtm-eingebremst-boxengassen-tempolimit-dauerhaft-verschaerft/"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "label": "Motorsport.com: Hungaroring DTM: Wittmann wins after pitlane drama",
+      "url": "https://www.motorsport.com/dtm/news/hungaroring-dtm-wittmann-wins-after-pitlane-drama-1044232/3115190/"
+    },
+    {
+      "label": "Autosport: DTM Hungaroring: Wittmann prevails in chaotic race two",
+      "url": "https://www.autosport.com/dtm/news/136486/wittmann-prevails-after-red-flag-interruption"
+    },
+    {
+      "label": "Autosport: Gary Paffett criticises DTM for red flag delay after pit incidents",
+      "url": "https://www.autosport.com/dtm/news/gary-paffett-criticises-dtm-for-red-flag-delay-after-pit-incidents-5320217/5320217/"
+    },
+    {
+      "label": "Autosport: Auer, Mortara and Spengler excluded for Hungaroring pit incidents",
+      "url": "https://www.autosport.com/dtm/news/136496/three-drivers-excluded-for-dtm-pit-accidents"
+    },
+    {
+      "label": "Motorsport.com: Drivers not to blame for Hungary pit chaos, say rivals",
+      "url": "https://www.motorsport.com/dtm/news/auer-mortara-spengler-pitlane-chaos-hungary-1044624/3116367/"
+    },
+    {
+      "label": "Motorsport.com Nederland: DTM Hungaroring: Wittmann wint na chaos, volledig BMW-podium",
+      "url": "https://nl.motorsport.com/dtm/news/2018-dtm-hungaroring-race-2-verslag-1044201/3115097/"
+    },
+    {
+      "label": "TouringCarTimes: Race 2 red-flagged as cars crash in the pit lane at the Hungaroring",
+      "url": "https://www.touringcartimes.com/2018/06/03/race-2-red-flagged-cars-crash-pit-lane-hungaroring/"
+    },
+    {
+      "label": "Racing24-7: Accidents marred the race at Hungaroring",
+      "url": "https://racing24-7.net/en/2018/06/03/uheld-overskyggede-lobet-pa-hungaroring/"
+    },
+    {
+      "label": "Motorsport-Total: DTM Budapest 2018: BMW-Dreifacherfolg nach Unfall-Chaos in Boxengasse",
+      "url": "https://www.motorsport-total.com/dtm/news/dtm-budapest-2018-bmw-dreifacherfolg-nach-unfall-chaos-in-boxengasse-18060304"
+    },
+    {
+      "label": "Motorsport-Total: DTM Budapest 2018: Auer auf Pole, fünf Mercedes vorne!",
+      "url": "https://www.motorsport-total.com/dtm/news/dtm-budapest-2018-auer-auf-pole-fuenf-mercedes-vorne-18060302"
+    },
+    {
+      "label": "Motorsport-Magazin: DTM: Schwerer Unfall überschattet BMW Dreifach-Sieg in Budapest",
+      "url": "https://www.motorsport-magazin.com/dtm/news-247565-dtm-schwerer-unfall-ueberschattet-bmw-dreifach-sieg-in-budapest/"
+    },
+    {
+      "label": "Motorsport-Magazin: DTM-Unfälle Budapest: Strafen für Auer, Spengler und Mortara",
+      "url": "https://www.motorsport-magazin.com/dtm/news-247575-dtm-unfaelle-budapest-strafen-fuer-auer-spengler-und-mortara/"
+    },
+    {
+      "label": "Motorsport-Magazin: DTM-Unfälle: Die Hintergründe zum Budapest-Chaos",
+      "url": "https://www.motorsport-magazin.com/dtm/news-247638-dtm-unfaelle-die-hintergruende-zum-budapest-chaos/"
+    },
+    {
+      "label": "Motorsport-Magazin: DTM eingebremst: Boxengassen-Tempolimit dauerhaft verschärft",
+      "url": "https://www.motorsport-magazin.com/dtm/news-249687-dtm-eingebremst-boxengassen-tempolimit-dauerhaft-verschaerft/"
+    },
+    {
+      "label": "Auto Bild: DTM: Verletzte nach Unfällen in der Box - Auer und Co. disqualifiziert",
+      "url": "https://www.autobild.de/artikel/dtm-verletzte-nach-unfaellen-in-der-box-13750237.html"
+    },
+    {
+      "label": "BimmerToday: DTM 2018: BMW punktet mit viel Glück am Hungaroring",
+      "url": "https://www.bimmertoday.de/2018/06/03/dtm-2018-bmw-punktet-mit-viel-gluck-am-hungaroring/"
+    },
+    {
+      "label": "Sport1: DTM in Budapest: Mercedes im zweiten Qualifying mit Machtdemonstration",
+      "url": "https://www.sport1.de/news/motorsport/dtm/2018/06/dtm-in-budapest-mercedes-im-zweiten-qualifying-mit-machtdemonstration"
+    }
+  ]
+}
