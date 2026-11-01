@@ -1,0 +1,146 @@
+{
+ "title": "Wittmann wins a soaked Assen opener as Müller's late stop falls short",
+ "dek": "Marco Wittmann won Race 1 at Assen from pole for BMW Team RMG, passing Nico Müller's Audi after the Swiss driver's late stop, with Müller 3.137 seconds back and René Rast third.",
+ "chapters": [
+  {
+   "k": "before",
+   "phase": "Build-up",
+   "title": "The DTM's first visit to Assen, with two Audis fighting for the title",
+   "text": [
+    "The DTM arrived at TT Circuit Assen on 20–21 July for the first time, a circuit built with motorcycles in mind. The round fell at the halfway point of an 18-race season, and Race 1 was the ninth of them. Audi's René Rast of Team Rosberg led the championship, with his fellow Audi driver Nico Müller of Abt Sportsline the closest challenger, and the pair had already tangled at the Norisring two weeks earlier.",
+    "For BMW, the weekend followed a difficult home round. Marco Wittmann, a former champion, had struggled badly at the Norisring, which made Assen a chance to bounce back. R-Motorsport's Aston Martin Vantage DTM, new to the series in 2019, ran four cars, while Audi and BMW fielded the rest of an 18-car field. Both races of the weekend carried a mandatory pit stop, and the whole field ran on Hankook tyres."
+   ],
+   "cars": [
+    "33"
+   ]
+  },
+  {
+   "k": "before",
+   "phase": "Qualifying",
+   "title": "Wittmann takes pole by 0.158 seconds",
+   "text": [
+    "Wittmann put his BMW M4 DTM on pole with a 1m25.434s lap on the first flying runs, and nobody beat it. Rast was 0.158 seconds slower in the first runs and ended up second on 1m25.592s, his final attempt starting well in sector one before he lost time in the last two. The second runs were delayed by a red flag when Jake Dennis's R-Motorsport Aston Martin stopped at the Ramshoek bend and had to be towed back to the garage; Dennis did not return to the session.",
+    "Loïc Duval made it an all-Audi second row for Phoenix on 1m25.749s, with the WRT car of Pietro Fittipaldi fourth, 0.002 seconds behind him on 1m25.751s. Timo Glock was fifth for BMW Team RMR on 1m25.853s, with Müller sixth, two thousandths slower, ahead of Sheldon van der Linde on 1m25.856s. Bruno Spengler, Philipp Eng and Joel Eriksson were next, with Jonathan Aberdein 11th for WRT.",
+    "Robin Frijns, the local driver, was 12th on the timesheet but lined up last in 18th behind the rest of the grid. Jamie Green, Mike Rockenfeller and the Aston Martins of Daniel Juncadella, Paul di Resta and Ferdinand Habsburg filled the middle of the grid, with Dennis 17th."
+   ],
+   "cars": [
+    "11",
+    "28",
+    "21"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "Safety car start",
+   "title": "A safety car start and a bruising duel for the lead",
+   "text": [
+    "Rain intensified towards the start, with hail on the grid, and the race began behind the safety car with no formation lap; the field was released after three neutralised laps. Rast attacked Wittmann immediately, going side by side with him through the opening corners, but the BMW driver held the lead through the slow first sector and Rast chose not to take a risk as championship leader.",
+    "The duel ended when Juncadella's Aston Martin stopped at the side of the track and the safety car came out again. Wittmann got a good restart on lap six and pulled more than a second clear, while Rast ran slightly wide at the Geert Timmer Bocht chicane. Behind them Müller, starting sixth, climbed the order, passing Glock in a tight fight at the De Strubben hairpin that sent the BMW across the gravel, then Fittipaldi and Duval. Fittipaldi slipped from fourth on the grid to 11th by the flag."
+   ],
+   "cars": [
+    "23",
+    "16"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "Pit stops",
+   "title": "Müller stays out as the rest stop",
+   "text": [
+    "Rast pitted at the end of lap 15 and Wittmann a lap later, and the BMW driver rejoined ahead only for Rast to catch him while his tyres were slow to warm up. The pair resumed their battle, and Rast later said that scrap cost enough time to let Müller back in front.",
+    "Müller was the gambler. He ran third in a long first stint, mandatory stop still to come, which risked a safety car ruining his race, and came in at around lap 25 or 26 of the 31. He rejoined just ahead of Wittmann and Rast on the wet outlap. Frijns had gone off backwards into the barriers after running over a kerb, ending his race with 21 laps completed."
+   ],
+   "cars": [
+    "51",
+    "4"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "The finish",
+   "title": "Wittmann passes Müller and wins by 3.137 seconds",
+   "text": [
+    "Müller led for only a short time: his cold tyres were slow to come in and Wittmann caught him quickly, making the pass for the lead before the Meeuwenmeer kink. Müller said the new rain tyres took longer to work than he had hoped and that Wittmann deserved the win. He got heat into the tyres before Rast could attack and held second, so two Audis shared the podium with the BMW.",
+    "Wittmann won his third race of the season, finishing 3.137 seconds ahead of Müller and 8.094 seconds clear of Rast, in 1h01m15.672s over 31 laps. Müller set the fastest lap of the race, a 1m44.598s on lap 30. Eng finished fourth for BMW Team RMR, 25.313 seconds back, fending off Glock, who was only 0.221 seconds behind in fifth. Aberdein was sixth for WRT after starting 11th, ahead of Green, Duval, Rockenfeller and van der Linde.",
+    "Spengler finished 15th, ahead of only Eriksson among the classified cars, while Dennis led the Aston Martins home in 12th from Habsburg and di Resta, 14th. Juncadella was out after three laps. The result left Rast leading the championship on 145 points, with Müller 24 behind, Eng third and Wittmann fourth, 45 points off the lead."
+   ],
+   "cars": [
+    "25",
+    "27",
+    "7"
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "i": "🌧",
+   "t": "Safety car start",
+   "v": "Heavy rain and hail meant Race 1 started behind the safety car with no formation lap, and the field was released after three neutralised laps.",
+   "one": {
+    "label": "TouringCarTimes: Marco Wittmann masters the rain to take his third victory of the year",
+    "url": "https://www.touringcartimes.com/2019/07/20/marco-wittmann-masters-rain-take-third-victory-year"
+   }
+  },
+  {
+   "i": "⏱",
+   "t": "Müller's long stint",
+   "v": "Nico Müller delayed his mandatory stop until around lap 25 or 26 of 31 and rejoined ahead of Wittmann and Rast before Wittmann passed him.",
+   "one": {
+    "label": "Motorsport.com: Assen DTM: Wittmann sees off Audi threat in wet race",
+    "url": "https://www.motorsport.com/dtm/news/wittmann-muller-rast-wet-race/4498158/"
+   }
+  },
+  {
+   "i": "📈",
+   "t": "Standings after Race 1",
+   "v": "René Rast led on 145 points, 24 clear of Müller, with Philipp Eng third and Wittmann fourth, 45 points behind.",
+   "one": {
+    "label": "AUTO BILD: Audi-Titelspiele - Vorteil Rast",
+    "url": "https://www.autobild.de/artikel/dtm-qualifying-in-assen-15272661.html"
+   }
+  },
+  {
+   "i": "🚩",
+   "t": "Spengler's drive-through",
+   "v": "Bruno Spengler served a drive-through penalty after spinning team-mate Sheldon van der Linde at the De Strubben hairpin and finished 15th.",
+   "one": {
+    "label": "Autosport: BMW's Wittmann defeats Audi pair Muller and Rast for Assen DTM win",
+    "url": "https://www.autosport.com/dtm/news/bmws-wittmann-defeats-audi-pair-muller-and-rast-for-assen-dtm-win-4991041/4991041/"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "label": "Autosport: BMW's Wittmann defeats Audi pair Muller and Rast for Assen DTM win",
+   "url": "https://www.autosport.com/dtm/news/bmws-wittmann-defeats-audi-pair-muller-and-rast-for-assen-dtm-win-4991041/4991041/"
+  },
+  {
+   "label": "Motorsport.com: Assen DTM: Wittmann sees off Audi threat in wet race",
+   "url": "https://www.motorsport.com/dtm/news/wittmann-muller-rast-wet-race/4498158/"
+  },
+  {
+   "label": "Motorsport.com: Rast couldn't afford \"crazy risks\" in Wittmann battle",
+   "url": "https://www.motorsport.com/dtm/news/rast-wittmann-battle-assen-muller/4498263/"
+  },
+  {
+   "label": "Motorsport.com: Assen DTM: Wittmann beats Rast to Saturday pole",
+   "url": "https://www.motorsport.com/dtm/news/wittmann-rast-assen-saturday-qualifying/4498037/"
+  },
+  {
+   "label": "TouringCarTimes: Marco Wittmann masters the rain to take his third victory of the year",
+   "url": "https://www.touringcartimes.com/2019/07/20/marco-wittmann-masters-rain-take-third-victory-year"
+  },
+  {
+   "label": "TouringCarTimes: René Rast and Nico Müller keep the pressure on each other at Assen",
+   "url": "https://www.touringcartimes.com/2019/07/20/rene-rast-nico-muller-keep-pressure-assen/"
+  },
+  {
+   "label": "SPORT1: DTM: Wittmann triumphiert in Assen",
+   "url": "https://www.sport1.de/news/motorsport/dtm/2019/07/dtm-marco-wittmann-siegt-in-assen-rene-rast-weiter-gesamtfuehrender"
+  },
+  {
+   "label": "AUTO BILD: Audi-Titelspiele - Vorteil Rast",
+   "url": "https://www.autobild.de/artikel/dtm-qualifying-in-assen-15272661.html"
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+  "title": "Rast recovers from a stall to win Norisring Race 1",
+  "dek": "René Rast won DTM Race 1 at the Norisring for Audi by 34.498 seconds after stalling at the start, as an early safety car turned his lap-three stop into a net lead.",
+  "chapters": [
+    {
+      "k": "before",
+      "phase": "Build-up",
+      "title": "Two sprints on Audi's home street circuit",
+      "text": [
+        "The DTM came to the Norisring on 6–7 July for the seventh and eighth races of the 2019 season: two sprints on the 2.3-kilometre street circuit in Nuremberg, which Audi bills as its home round. The grid was 18 cars, with the new Class 1 machines in their two-litre turbo form, producing more than 610 horsepower in the case of the Audi RS 5 DTM, and four Aston Martin Vantage DTMs from R-Motorsport making up the newcomers' contingent.",
+        "René Rast of Audi Sport Team Rosberg arrived as championship leader. Nico Müller, whose win in the Sunday race at Misano was the second of his DTM career, and Philipp Eng, BMW's leading title hope, were among those trying to close the gap.",
+        "Friday practice went to Audi. Mike Rockenfeller was quickest in the 45-minute opening session with a 46.527s that was seven tenths quicker than the existing qualifying lap record, and the Audis took the top four places and six of the top eight. Loïc Duval led the half-hour second session on 46.635s, with Bruno Spengler's BMW third. Daniel Juncadella was the best of the Aston Martins in both sessions, though his team-mate Jake Dennis managed only 12 laps in the first one because of a car problem."
+      ],
+      "cars": [
+        "99",
+        "23"
+      ]
+    },
+    {
+      "k": "before",
+      "phase": "Qualifying",
+      "title": "Müller breaks the lap record, then the stewards rearrange the grid",
+      "text": [
+        "Müller took pole position for Audi Sport Team Abt Sportsline with a 46.337s set on his first run, a new qualifying record and the fastest lap ever driven on the circuit's current layout. Eng put his BMW second on 46.412s, 0.075s adrift, splitting Müller and Duval. Spengler's 46.492s had briefly topped the order before Müller, Eng and Duval beat it. Rast was next on 46.524s, ahead of Joel Eriksson on 46.527s and Marco Wittmann on 46.532s.",
+        "Jonathan Aberdein was the best of the customer WRT Audis, 0.280s from pole, and Green's Rosberg Audi was eighth on 46.728s. Among the Aston Martins, Juncadella's 46.893s was more than two tenths clear of Paul di Resta's 47.125s.",
+        "The order did not survive the paperwork. The two Phoenix Audis, Duval and Rockenfeller, were excluded from the qualifying results and sent to the back of the grid, where they would start 17th and 18th. Müller stayed on pole."
+      ],
+      "cars": [
+        "51",
+        "25",
+        "7"
+      ]
+    },
+    {
+      "k": "turn",
+      "phase": "Opening laps",
+      "title": "A stall, a crash at Turn 1 and a lap-three gamble",
+      "text": [
+        "Müller made a good start and led into the first corner from the BMWs of Spengler and Eng. Rast was not part of it. He released the clutch too aggressively and stalled, and sat on the grid watching his mirror camera while the field filed past him; nobody hit him. Pietro Fittipaldi's WRT Audi was out on the opening lap. The safety car came out as the field began lap four.",
+        "With a safety car looking likely, Rast's team called him in at the end of lap three. He rejoined tenth, ahead of every other car that had already stopped, and with the nine cars in front of him still to pit he had effectively moved to the front. Juncadella and Dennis made the same early call with their Aston Martins. Müller, in the lead, had not stopped."
+      ],
+      "cars": [
+        "33",
+        "21"
+      ]
+    },
+    {
+      "k": "turn",
+      "phase": "Stops and retirements",
+      "title": "Rast takes the lead when Müller finally stops",
+      "text": [
+        "Timo Glock's BMW was out after nine laps. On fresh tyres Rast worked his way back up the order and passed Green for fourth at the start of lap 20, then moved up to second behind Müller. Behind him the Audi camp suffered: Rockenfeller, climbing from the back row, stopped after 25 laps and Robin Frijns after 28 with technical problems, which Audi put down to defects around the charge-air supply. Sheldon van der Linde's BMW retired after 31 laps.",
+        "Müller came in at the end of lap 30, the last of the leaders to stop, and Rast inherited the lead with 9.9 seconds in hand over Eriksson's BMW. Müller rejoined seventh. Green finished 11th after front-end damage in a collision."
+      ],
+      "cars": [
+        "4",
+        "16",
+        "31"
+      ]
+    },
+    {
+      "k": "turn",
+      "phase": "Müller's charge",
+      "title": "Fresh tyres against worn ones",
+      "text": [
+        "With Rast pulling away, the interest shifted to the fight behind him. Wittmann's BMW had been running third but his tyres were badly worn, and Juncadella closed on him, though the Aston's lack of straight-line speed made it hard to pass before the first corner. Müller, on much fresher tyres, came through the Astons of Dennis and Habsburg and then past Juncadella and Wittmann in quick succession. His 47.391s on lap 33 was the fastest lap of the race.",
+        "While Juncadella spent time getting past Wittmann around the outside of the chicane, Müller was already gone and Duval and Spengler closed up. Both eventually passed the pair. Rast, having made the early stop, said later that once he had a gap of 30 to 40 seconds he looked after his tyres to the end."
+      ],
+      "cars": [
+        "11",
+        "76",
+        "62"
+      ]
+    },
+    {
+      "k": "turn",
+      "phase": "The finish",
+      "title": "A move at the last corner decides second place",
+      "text": [
+        "Rast crossed the line 34.498 seconds clear after 69 laps in 57:31.554, the largest winning margin recorded in a DTM race at the Norisring and his third win of the season. “Before the first corner I was last, I thought the race was over,” he said afterwards.",
+        "Second place was decided at the final corner. Müller had spent the closing laps behind Eriksson, who defended boldly into the first corner and on the exit, but on the last lap Müller dived up the inside of the final hairpin and took the place, finishing 34.498 seconds behind Rast. Eriksson was 0.194s further back in third, the best-placed BMW.",
+        "Duval, who had started from the back row, recovered to fourth, ahead of Spengler. Juncadella finished sixth, equalling R-Motorsport's best result in the DTM, with Eng seventh and Wittmann eighth. Dennis and Habsburg completed the points, ninth and tenth, a lap down, from 16th and 15th on the grid. Rast left the Norisring with 118 points, 27 clear of Eng, who was third in the standings, with Müller second."
+      ],
+      "cars": [
+        "47",
+        "28"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "i": "🏆",
+      "t": "Largest Norisring margin in the DTM",
+      "v": "Rast won by 34.498 seconds, the biggest winning margin any driver has recorded in a DTM race at the Norisring.",
+      "one": {
+        "label": "Autosport: Rene Rast thought Norisring DTM race was over after stall at start",
+        "url": "https://www.autosport.com/dtm/news/144627/rast-thought-race-was-over-after-stall-at-start"
+      }
+    },
+    {
+      "i": "⏱",
+      "t": "Pole by 0.075 seconds",
+      "v": "Nico Müller's 46.337s on his first qualifying run was a new qualifying record and put him 0.075s ahead of Philipp Eng.",
+      "one": {
+        "label": "Autosport: Nico Muller's record Norisring DTM lap secures Audi pole for opener",
+        "url": "https://www.autosport.com/dtm/news/144615/muller-record-lap-secures-audi-norising-pole"
+      }
+    },
+    {
+      "i": "🔁",
+      "t": "A stop on lap three",
+      "v": "Rast pitted at the end of lap three, just before the safety car, rejoined tenth and was ahead of all the cars that had stopped while the nine in front had yet to pit.",
+      "one": {
+        "label": "Autosport: Rene Rast thought Norisring DTM race was over after stall at start",
+        "url": "https://www.autosport.com/dtm/news/144627/rast-thought-race-was-over-after-stall-at-start"
+      }
+    },
+    {
+      "i": "🎯",
+      "t": "Second place decided at the last corner",
+      "v": "Müller passed Joel Eriksson at the final corner of the final lap to take second, 0.194s ahead of the BMW at the flag.",
+      "one": {
+        "label": "Touring Car Times: René Rast recovers from stalling on the grid to win at the Norisring",
+        "url": "https://touringcartimes.com/2019/07/06/rene-rast-recovers-stalling-grid-win-norisring"
+      }
+    },
+    {
+      "i": "📈",
+      "t": "Rast 27 points clear of Eng",
+      "v": "After the race Rast led the standings with Eng third, 27 points behind, on 91 points.",
+      "one": {
+        "label": "BMW PressClub: Eriksson on the podium for BMW at the Norisring",
+        "url": "https://www.press.bmwgroup.com/global/article/detail/T0298365EN/eriksson-on-the-podium-for-bmw-at-the-norisring-–-four-bmw-m4-dtms-in-the-points"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "label": "Autosport: Nico Muller's record Norisring DTM lap secures Audi pole for opener",
+      "url": "https://www.autosport.com/dtm/news/144615/muller-record-lap-secures-audi-norising-pole"
+    },
+    {
+      "label": "Autosport: DTM Norisring, Mike Rockenfeller fastest as Audi dominates practice",
+      "url": "https://www.autosport.com/dtm/news/144605/rockenfeller-fastest-as-audi-dominates-practice"
+    },
+    {
+      "label": "Autosport: DTM Norisring, Audi's Rene Rast recovers from stall to win opener",
+      "url": "https://www.autosport.com/dtm/news/144618/rast-recovers-from-stall-to-win-frantic-opener"
+    },
+    {
+      "label": "Autosport: Rene Rast thought Norisring DTM race was over after stall at start",
+      "url": "https://www.autosport.com/dtm/news/144627/rast-thought-race-was-over-after-stall-at-start"
+    },
+    {
+      "label": "Motorsport.com: Norisring DTM, Rast takes unlikely last-to-first win",
+      "url": "https://www.motorsport.com/dtm/news/norisring-rast-stall-win-muller/4489655/"
+    },
+    {
+      "label": "Touring Car Times: René Rast recovers from stalling on the grid to win at the Norisring",
+      "url": "https://touringcartimes.com/2019/07/06/rene-rast-recovers-stalling-grid-win-norisring"
+    },
+    {
+      "label": "Touring Car Times: René Rast takes nothing for granted despite record breaking victory",
+      "url": "https://touringcartimes.com/2019/07/06/rene-rast-takes-nothing-granted-despite-record-breaking-victory"
+    },
+    {
+      "label": "Touring Car Times: Daniel Juncadella elated after best race of the year",
+      "url": "https://www.touringcartimes.com/2019/07/06/daniel-juncadella-elated-best-race-year/"
+    },
+    {
+      "label": "Touring Car Times: Joel Eriksson, I didn't expect Nico to dive at the last moment",
+      "url": "https://www.touringcartimes.com/2019/07/06/joel-eriksson-didnt-expect-nico-dive-last-moment"
+    },
+    {
+      "label": "Audi Sport Team Rosberg (Audi press release): From zero to hero, Rast wins at Audi's home round",
+      "url": "https://rosberg.de/2019/07/06/from-zero-to-hero-rast-wins-at-audis-home-round/?lang=en"
+    },
+    {
+      "label": "BMW PressClub: Eriksson on the podium for BMW at the Norisring",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0298365EN/eriksson-on-the-podium-for-bmw-at-the-norisring-–-four-bmw-m4-dtms-in-the-points"
+    },
+    {
+      "label": "Abendzeitung: Audi-Pilot Rast gewinnt DTM-Hitzerennen auf Norisring",
+      "url": "https://www.abendzeitung-muenchen.de/bayern/audi-pilot-rast-gewinnt-dtm-hitzerennen-auf-norisring-art-660242"
+    },
+    {
+      "label": "Auto Bild: DTM am Norisring",
+      "url": "https://www.autobild.de/artikel/dtm-am-norisring-15145011.html"
+    }
+  ]
+}
