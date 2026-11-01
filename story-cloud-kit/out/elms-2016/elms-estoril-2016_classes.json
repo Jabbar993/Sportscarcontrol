@@ -1,0 +1,377 @@
+{
+ "LMP3": {
+  "title": "Muller’s young Ligier crew wins the Estoril finale after United stumbles",
+  "dek": "Laurent, Ehrlacher and Cougnaud gave M.Racing - YMR its first LMP3 win of 2016, two laps clear of United’s #3, as the champion #2 car lost its race to an incident.",
+  "facts": [
+   {
+    "i": "🏆",
+    "t": "First win of the year",
+    "v": "The #18 M.Racing - YMR Ligier took its first LMP3 victory of the season, finishing two laps clear of United’s #3.",
+    "one": {
+     "label": "Sportscar365: G-Drive Wins Estoril; Steals LMP2 Title from TDS",
+     "url": "https://sportscar365.com/lemans/elms/g-drive-wins-estoril-steals-lmp2-title-from-tds/"
+    }
+   },
+   {
+    "i": "🔥",
+    "t": "Fire at the first stops",
+    "v": "Ultimate’s Ligier #17 caught fire during refuelling at the first round of stops; driver Lahaye got out unhurt.",
+    "one": {
+     "label": "DailySportsCar: Estoril: Race Report Hour Two, G-Drive Lead, Dramas For TDS, United & JMW!",
+     "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-hour-two-g-drive-lead-dramas-for-tds-united-and-jmw.html"
+    }
+   },
+   {
+    "i": "🚦",
+    "t": "Pit-lane speeding for the runner-up",
+    "v": "United’s #3 served a drive-through penalty for speeding in the pit lane during the third hour yet kept second place.",
+    "one": {
+     "label": "DailySportsCar: Estoril: Race Report Hour Three, JMW Out, G-Drive Lead",
+     "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-hour-three-jmw-out-g-drive-lead.html"
+    }
+   },
+   {
+    "i": "🏅",
+    "t": "Rookie of the Year",
+    "v": "Thomas Laurent, who anchored the winning #18, was named ELMS Rookie of the Year at the post-season awards.",
+    "one": {
+     "label": "DailySportsCar: Estoril: Post Race Notebook",
+     "url": "https://www.dailysportscar.com/2016/10/25/estoril-post-race-notebook.html"
+    }
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "A decided title, a crowded paddock",
+    "cars": [
+     "2",
+     "12"
+    ],
+    "text": [
+     "The LMP3 title had been settled a round earlier at Spa, where Brundle, Guasch and England clinched it for United in the #2 Ligier, and the car wore a commemorative decal at Estoril as the team chased a fourth class win in six races. The class was still all Ligier JS P3 Nissan; neither the Ave-Riley nor the Norma made the finale as hoped, and Tockwith skipped the weekend to prepare for the Asian Le Mans Series.",
+     "Eurointernational came back with two cars after missing Spa, with Mondini and Palmer in the #11 and Breukers, Dromedari and Portuguese Nissan GT Academy winner Miguel Faisca, making his LMP3 debut, in the #12. Race Performance’s #8 used Leutwiler and Oak’s #4 had Merlin back. A format change eased the weekend: the mandatory reference pit-stop time had to be set in two stops instead of the usual three."
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Brundle takes pole for the champions",
+    "cars": [
+     "3",
+     "19"
+    ],
+    "text": [
+     "Brundle put the #2 on pole with a 1:50.355 in mixed conditions, 0.186s ahead of Boyd in the sister #3. The two Duqueine cars were next, Lunardi’s #19 on 1:51.045 and Borga’s #20 on 1:51.112, with Gachet’s Panis Barthez Ligier #16 fifth.",
+     "The M.Racing - YMR #18 qualified ninth in class on 1:52.664, behind Villorba, RLR and Graff. Practice had hinted at its speed: Ehrlacher had topped the first session ahead of Rayhall’s Graff #10, and Boyd led the damp second one."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Clean start for United",
+    "cars": [
+     "9",
+     "18"
+    ],
+    "text": [
+     "Droux put the #19 into the gravel on the formation lap, but the front of the class was tidy. Brundle ran fourth overall on the opening lap, with Boyd behind and Guibbert’s Graff #9 third in class. Around half an hour in, the #2 was still seventh overall. United used one of its two timed stops early, just before the hour, bringing Brundle in for Guasch; the #2 rejoined seventh."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 2",
+    "title": "Short stops reshuffle the order",
+    "cars": [
+     "11",
+     "15"
+    ],
+    "text": [
+     "The first round of stops rewrote the class order. Cars on short initial stints took the lead, with Eurointernational’s #11 ahead of RLR’s #15 and Graff’s #9. Trouillet slowly lost ground in the Graff, and Laurent took the #18 past it, then caught the #15 and moved into second. United’s change of drivers, Guasch into the #2 and Patterson into the #3, was marred when the #2 spun and lost at least a lap."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 3",
+    "title": "The champions hit the JMW Ferrari",
+    "cars": [
+     "16"
+    ],
+    "text": [
+     "United’s afternoon unravelled early in the third hour. Guasch lost the #2 over the kerbs at Turn 2 and struck JMW’s slow-moving GTE Ferrari, bringing out the race’s only safety car; both cars limped back to the pits. At the restart the #18 led from United’s #3 and Eurointernational’s #11. Palmer lost several places in traffic on lap 84, which lifted Gachet’s #16 into third. The hour was littered with spins and gravel visits, among them the #6, #8, #17, #11, #18, #2, #4, #24 and #10."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Ehrlacher brings it home",
+    "cars": [
+     "20"
+    ],
+    "text": [
+     "The #18 had become sixth overall by the start of the last hour and stayed out of trouble. Graff’s #9 ran second with United’s #3 close behind, and in the closing half hour the gap shrank to a few seconds before Bell took the #3 past on lap 128 and pulled away. Rain arrived with about 20 minutes left. Five minutes from the end the #20 Duqueine spun into the gravel at Turn 3. Ehrlacher took the flag to give the Yvan Muller-owned team its first win of the season, two laps clear."
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "United second, Graff third",
+    "cars": [],
+    "text": [
+     "M.Racing - YMR’s #18 (Laurent, Ehrlacher, Cougnaud) won on 140 laps. United’s #3 (Patterson, Bell, Boyd) was second on 138 and Graff’s #9 (Trouillet, Petit, Guibbert) third, also on 138. Graff’s #10, Inter Europol’s #13, Eurointernational’s #12, Race Performance’s #8 and Villorba’s #7 followed, all on 137 laps. The champion #2 was 20th overall after 135 laps. Brundle set the class fastest lap, 1:37.519. The #20, #16, #11 and #6 were not classified.",
+     "Laurent won Rookie of the Year at the awards, and Guasch took Gentleman Driver of the Year as LMP3 drivers’ champion. Plans for 2017 were already shifting: the ACO announced an LMP3 class in the reshaped Le Mans Cup, with promotion and relegation of five teams between that series and the ELMS each year. The ELMS moves to Portimão for 2017, running 20–22 October."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: Estoril Preview: TDS Looking To Seal Title",
+    "url": "https://www.dailysportscar.com/2016/10/20/estoril-preview-tds-looking-to-seal-title.html"
+   },
+   {
+    "label": "Sportscar365: ELMS Gears Up for Estoril Finale",
+    "url": "https://sportscar365.com/lemans/elms/elms-gears-up-for-estoril-finale/"
+   },
+   {
+    "label": "Sportscar365: Lapierre Takes DragonSpeed to Third Pole of Season at Estoril",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-on-pole-for-4h-estoril/"
+   },
+   {
+    "label": "Sportscar365: Estoril Weekend Notebook",
+    "url": "https://sportscar365.com/lemans/elms/estoril-weekend-notebook-2/"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Free Practice 1, Beche Fastest For Thiriet by TDS Before Red Flag",
+    "url": "https://www.dailysportscar.com/2016/10/21/free-practice-1-beche-fastest-for-thiriet-by-tds-before-red-flag.html"
+   },
+   {
+    "label": "Sportscar365: Lapierre Quickest in Wet FP2 at Estoril",
+    "url": "https://sportscar365.com/lemans/elms/lapierre-quickest-in-wet-fp2-at-estoril/"
+   },
+   {
+    "label": "DailySportsCar: Estoril, Friday AM Paddock Notes",
+    "url": "https://www.dailysportscar.com/2016/10/21/estoril-friday-am-paddock-notes.html"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Race Report Hour One, G-Drive Battle To The Race Lead",
+    "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-hour-1-g-drive-battle-to-the-race-lead.html"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Race Report Hour Two, G-Drive Lead, Dramas For TDS, United & JMW!",
+    "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-hour-two-g-drive-lead-dramas-for-tds-united-and-jmw.html"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Race Report Hour Three, JMW Out, G-Drive Lead",
+    "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-hour-three-jmw-out-g-drive-lead.html"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Race Report Final Hour, Championship Wins For The Mighty #38 & Aston #99",
+    "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-final-hour-championship-wins-for-the-mighty-38-and-aston-99.html"
+   },
+   {
+    "label": "Sportscar365: Drama for Championship Leaders at Halfway in Estoril",
+    "url": "https://sportscar365.com/lemans/elms/drama-for-championship-leaders-at-halfway-mark-in-estoril/"
+   },
+   {
+    "label": "Sportscar365: G-Drive Wins Estoril; Steals LMP2 Title from TDS",
+    "url": "https://sportscar365.com/lemans/elms/g-drive-wins-estoril-steals-lmp2-title-from-tds/"
+   },
+   {
+    "label": "Sportscar365: Estoril Post-Race Notebook",
+    "url": "https://sportscar365.com/lemans/elms/estoril-post-race-notebook/"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Post Race Notebook",
+    "url": "https://www.dailysportscar.com/2016/10/25/estoril-post-race-notebook.html"
+   }
+  ]
+ },
+ "LMGTE": {
+  "title": "Beechdean’s Aston wins from last on the grid as JMW’s Ferrari breaks",
+  "dek": "Howard, Turner and Macdowall won by a lap and took the GTE title when JMW, needing only seventh, retired from the lead of the points with gearbox failure.",
+  "facts": [
+   {
+    "i": "🏆",
+    "t": "Title swing",
+    "v": "JMW began the day 20 points clear and needed to finish seventh or higher; Beechdean needed to win, and did.",
+    "one": {
+     "label": "Sportscar365: G-Drive Wins Estoril; Steals LMP2 Title from TDS",
+     "url": "https://sportscar365.com/lemans/elms/g-drive-wins-estoril-steals-lmp2-title-from-tds/"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Cracked gearbox casing",
+    "v": "The #66 JMW Ferrari lost over three minutes in a pit stop with gearbox trouble, then retired early in the third hour after a patch-up attempt failed.",
+    "one": {
+     "label": "DailySportsCar: Estoril: Race Report Hour Three, JMW Out, G-Drive Lead",
+     "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-hour-three-jmw-out-g-drive-lead.html"
+    }
+   },
+   {
+    "i": "🚦",
+    "t": "Late stop-and-go for the #51",
+    "v": "AF Corse’s #51 collected a stop-and-go in the final quarter hour for contact with the #8, settling the podium order.",
+    "one": {
+     "label": "DailySportsCar: Estoril: Race Report Final Hour, Championship Wins For The Mighty #38 & Aston #99",
+     "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-final-hour-championship-wins-for-the-mighty-38-and-aston-99.html"
+    }
+   },
+   {
+    "i": "🎟",
+    "t": "Le Mans invitations",
+    "v": "Aston Martin Racing and JMW earned automatic 2017 Le Mans entries as GTE champion and runner-up.",
+    "one": {
+     "label": "DailySportsCar: ELMS Championship Results Add Two Further 2017 Le Mans 24 Hours Entrants",
+     "url": "https://www.dailysportscar.com/2016/10/23/elms-championship-results-add-two-further-2017-le-mans-24-hours-entrants.html"
+    }
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "JMW needs a clean finale",
+    "cars": [
+     "66",
+     "88"
+    ],
+    "text": [
+     "The same eight GTE cars that raced at Spa returned to Estoril, and the title was in JMW’s hands. The Ferrari F458 of Bertolini, Butcher and Smith led Beechdean’s Aston Martin by 20 points, so a strong finish all but secured the title for the British team. The one driver change put Benjamin Barker in Proton’s #88 Porsche in place of Cairoli, after a string of good WEC results; Christina Nielsen returned to Formula Racing’s #60 after missing Paul Ricard.",
+     "Practice was a scramble. Henzler’s Proton Porsche #77 led the first session on 1:40.165 and Cioci’s AF Corse Ferrari #51 topped the damp second, with Turner’s Aston Martin three tenths behind. The class also got a rule change: Gold and Platinum drivers in three-driver crews needed only 45 minutes behind the wheel instead of 60."
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Barker on pole, the Aston last",
+    "cars": [
+     "56",
+     "55"
+    ],
+    "text": [
+     "Barker put the #88 Porsche on pole with a 1:54.754 in mixed conditions on his return to the series. Pier Guidi’s AT Racing Ferrari #56 was second on 1:55.091, with Cioci in the #51 and Griffin in the #55 third and fourth for AF Corse. Bertolini, the points leader, managed fifth in the #66.",
+     "The Formula Racing #60 and Henzler’s #77 followed, and Turner’s Aston Martin #99 on 1:57.213 was the slowest of the eight, so the car needing a win to take the title started last in class."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Early scrapping at the front",
+    "cars": [
+     "51",
+     "99"
+    ],
+    "text": [
+     "Pole-sitter Barker was careful at the start, letting Aguas take the lead in the AF Corse #51. Contact with other traffic then hit the leading cars: the #88 suffered tyre damage after a collision on lap 8 and the #51 touched the LMP2 G-Drive Gibson on lap 11. That left the title contenders, Aston #99 and JMW #66, running one-two, and on lap 23 Butcher passed Macdowall for the lead. The #60 Ferrari stopped at Turn 7."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 2",
+    "title": "JMW’s gearbox gives up",
+    "cars": [
+     "77"
+    ],
+    "text": [
+     "The second hour decided the title. The #66 stopped for over three minutes with a gearbox problem, then rejoined smoking from the rear with a small fire and came in on lap 50 for extensive repairs. Aston #99 took control of the class, with the #51 second and Proton’s #77 under pressure from Scott in the #55. Spilt fuel in the pit lane brought a fire marshal to the AT Racing Ferrari #56."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 3",
+    "title": "Struck by an LMP3",
+    "cars": [],
+    "text": [
+     "JMW sent the #66 out again after a patch-up attempt, and Smith was cruising back when Guasch’s LMP3 Ligier spun at Turn 2 and hit it. The collision brought out the safety car and the Ferrari retired shortly after. It was the end of the points lead. Aston #99 led the #51 by under a second on the restart, then the #51 stopped on track on lap 87 after an LMP3 went off in front of it, and the #56 moved up to second."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Beechdean takes the title",
+    "cars": [],
+    "text": [
+     "Aston Martin Racing’s #99 pitted at the top of the hour and Macdowall kept a margin of 25–30 seconds over the AT Racing Ferrari #56. The AF Corse Ferraris #51 and #55 battled for third, until trouble for the #51 in the final quarter hour let the #55 take the place. Rain began with 20 minutes to go and was lashing down at the flag. The class had no last-gasp drama; everything had happened in the middle of the race."
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "A title won from the grid’s last row",
+    "cars": [],
+    "text": [
+     "The #99 (Howard, Turner, Macdowall) won on 136 laps, a lap clear of the AT Racing #56 (Talkanitsa, Talkanitsa Jr, Pier Guidi). AF Corse’s #55 (Cameron, Griffin, Scott) was third, ahead of sister car #51 (Perazzini, Cioci, Aguas). The Proton Porsches #88 and #77 were fifth and sixth in class, on 131 and 125 laps. Pier Guidi’s 1:40.476 was the fastest lap in the class. JMW’s #66 stopped after 45 laps and, like the Formula Racing #60, was not classified.",
+     "Turner said he would not have believed this outcome a week earlier, and praised Howard’s stint as one of his best of the year. JMW, which only needed seventh, was named Team of the Year at the awards despite its misfortune. Beechdean’s Aston Martin Racing and JMW both earned automatic entries to the 2017 Le Mans 24 Hours. The ELMS heads to Portimão next season, 20–22 October."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: Estoril Preview: TDS Looking To Seal Title",
+    "url": "https://www.dailysportscar.com/2016/10/20/estoril-preview-tds-looking-to-seal-title.html"
+   },
+   {
+    "label": "Sportscar365: ELMS Gears Up for Estoril Finale",
+    "url": "https://sportscar365.com/lemans/elms/elms-gears-up-for-estoril-finale/"
+   },
+   {
+    "label": "Sportscar365: Lapierre Takes DragonSpeed to Third Pole of Season at Estoril",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-on-pole-for-4h-estoril/"
+   },
+   {
+    "label": "Sportscar365: Estoril Weekend Notebook",
+    "url": "https://sportscar365.com/lemans/elms/estoril-weekend-notebook-2/"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Free Practice 1, Beche Fastest For Thiriet by TDS Before Red Flag",
+    "url": "https://www.dailysportscar.com/2016/10/21/free-practice-1-beche-fastest-for-thiriet-by-tds-before-red-flag.html"
+   },
+   {
+    "label": "Sportscar365: Lapierre Quickest in Wet FP2 at Estoril",
+    "url": "https://sportscar365.com/lemans/elms/lapierre-quickest-in-wet-fp2-at-estoril/"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Race Report Hour One, G-Drive Battle To The Race Lead",
+    "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-hour-1-g-drive-battle-to-the-race-lead.html"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Race Report Hour Two, G-Drive Lead, Dramas For TDS, United & JMW!",
+    "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-hour-two-g-drive-lead-dramas-for-tds-united-and-jmw.html"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Race Report Hour Three, JMW Out, G-Drive Lead",
+    "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-hour-three-jmw-out-g-drive-lead.html"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Race Report Final Hour, Championship Wins For The Mighty #38 & Aston #99",
+    "url": "https://www.dailysportscar.com/2016/10/23/estoril-race-report-final-hour-championship-wins-for-the-mighty-38-and-aston-99.html"
+   },
+   {
+    "label": "Sportscar365: Drama for Championship Leaders at Halfway in Estoril",
+    "url": "https://sportscar365.com/lemans/elms/drama-for-championship-leaders-at-halfway-mark-in-estoril/"
+   },
+   {
+    "label": "Sportscar365: G-Drive Wins Estoril; Steals LMP2 Title from TDS",
+    "url": "https://sportscar365.com/lemans/elms/g-drive-wins-estoril-steals-lmp2-title-from-tds/"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Post Race Quotes",
+    "url": "https://www.dailysportscar.com/2016/10/23/estoril-post-race-quotes.html"
+   },
+   {
+    "label": "DailySportsCar: Estoril: Post Race Notebook",
+    "url": "https://www.dailysportscar.com/2016/10/25/estoril-post-race-notebook.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Championship Results Add Two Further 2017 Le Mans 24 Hours Entrants",
+    "url": "https://www.dailysportscar.com/2016/10/23/elms-championship-results-add-two-further-2017-le-mans-24-hours-entrants.html"
+   },
+   {
+    "label": "Sportscar365: Estoril Post-Race Notebook",
+    "url": "https://sportscar365.com/lemans/elms/estoril-post-race-notebook/"
+   }
+  ]
+ }
+}

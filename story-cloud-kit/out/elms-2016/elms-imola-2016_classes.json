@@ -1,0 +1,317 @@
+{
+ "LMGTE": {
+  "title": "Proton Porsche leads the GTE field from pole to the flag",
+  "dek": "Renauer, Henzler and Hedlund won the seven-car class from pole in Proton’s #77 Porsche, finishing 13th overall and ahead of JMW’s Ferrari and AT Racing.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "A thin class at Imola",
+    "text": [
+     "GTE arrived in Italy as the smallest class on the grid, and it shrank before the race. Formula Racing’s Ferrari 458 hit the wall at Variante Villeneuve at around 170km/h with Nielsen driving in Saturday morning’s second practice, and the rear chassis damage ruled the car out of both qualifying and the race. That left seven cars: two Proton Competition Porsche 911 RSRs, the JMW Motorsport Ferrari, AT Racing’s Ferrari, a pair of AF Corse Ferraris and the Aston Martin Vantage run by Beechdean.",
+     "The Aston Martin of Howard, Turner and Macdowall arrived as the Silverstone winner after JMW’s Ferrari lost its opening-round victory to a disqualification, so Smith, Butcher and Bertolini had a point to prove. They looked the likeliest to deliver it: Bertolini, on home soil, led the class in both free practice sessions, with 1:42.262 on Friday (0.316s clear of Formula Racing’s Ferrari) and 1:41.870 on Saturday morning. Bachler put the #88 Porsche second in the second session on 1:42.044."
+    ],
+    "cars": [
+     "99"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Henzler takes pole by 0.041s",
+    "text": [
+     "With only seven cars out, the short GTE session came down to a late shoot-out. Bertolini held provisional pole in the JMW Ferrari until Henzler found 1:41.269 on his final lap, putting the #77 Proton Porsche 0.041s ahead. Henzler said the balance was so much better than at Silverstone, where the team had struggled.",
+     "Bachler came out just before the end to take third in the sister Porsche on 1:41.397, Rigon was fourth for AT Racing on 1:41.517, and the AF Corse Ferraris of Griffin and Cioci followed on 1:41.736 and 1:41.776. The top six were covered by roughly half a second. Howard’s Aston Martin was alone at the back on 1:44.944, well over three seconds off the pace of the Porsche on pole."
+    ],
+    "cars": [
+     "66",
+     "88"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 1–3",
+    "title": "Renauer builds the gap",
+    "text": [
+     "Renauer started from pole and ran a stint of close to two hours, long enough to open a lead that proved decisive. Henzler and later Hedlund drove their stints with no real pressure from behind, and the Proton Porsche was never headed.",
+     "JMW were the only ones with the pace to threaten. Smith’s opening stint left the Ferrari some way adrift, but Bertolini in the middle stint looked quick enough to win outright, but the full-course yellow and safety car periods ended any chance of closing the gap."
+    ],
+    "cars": [
+     "77"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 4",
+    "title": "Rain and the safety car",
+    "text": [
+     "Rain arrived hard with about an hour left, and a full-course yellow was called while stranded cars were recovered. When conditions worsened the safety car came out with roughly 25 minutes to go and stayed there to the end, so the GTE order was settled behind it with no chance of a sprint."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Proton ahead of every LMP3",
+    "text": [
+     "The race ran its full four hours but finished behind the safety car, which peeled into the pit lane on the last lap with overtaking forbidden. Proton’s #77 completed 116 laps to win GTE, finishing 13th overall and ahead of the whole LMP3 field.",
+     "JMW’s Ferrari was second, one lap down, a result that did not make up for the Silverstone disqualification but kept the team in the class fight. AT Racing’s #56 was third on 114 laps, with the second Proton Porsche fourth and the Beechdean Aston Martin fifth on the same laps, a disappointing result for the Silverstone winner. Darren Turner set the class fastest lap in the Aston, a 1:41.876."
+    ],
+    "cars": [
+     "56"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Results",
+    "text": [
+     "Proton Competition’s #77 (Hedlund, Henzler, Renauer) won GTE from JMW’s #66 (Smith, Butcher, Bertolini), one lap behind, with AT Racing’s #56 (Talkanitsa, Talkanitsa Jr, Rigon) third and Proton’s #88 (Roda, Bachler, Ried) fourth, both two laps down. The #99 Aston Martin was fifth, then AF Corse’s #55 (Cameron, Griffin, Scott) sixth, also on 114 laps, with the #51 (Perazzini, Cioci, Aguas) seventh, three laps off the winner.",
+     "The Proton crew’s winning margin came from the opening stint and a clean afternoon. Formula Racing’s Ferrari was repaired in time for a test two weeks later at Paul Ricard, with the Danish squad aiming at the Le Mans 24 Hours. The ELMS next visits the Red Bull Ring on 17 July, after many of the teams have raced at Le Mans."
+    ],
+    "cars": [
+     "55",
+     "51"
+    ]
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Pole by 0.041s",
+    "v": "Henzler’s 1:41.269 put the #77 Proton Porsche just ahead of Bertolini’s JMW Ferrari, with only seven cars running.",
+    "one": {
+     "label": "DailySportsCar: Imola, Lapierre Puts Dragonspeed On Pole In Tight ELMS Qualifying",
+     "url": "https://www.dailysportscar.com/2016/05/14/imola-lapierre-puts-dragonspeed-on-pole-in-tight-elms-qualifying.html"
+    }
+   },
+   {
+    "i": "🏆",
+    "t": "Ahead of the whole LMP3 field",
+    "v": "The winning Porsche led the seven-car class throughout and finished 13th overall, ahead of the entire LMP3 field.",
+    "one": {
+     "label": "Sportscar365: TDS Wins 4H Imola Behind Safety Car",
+     "url": "https://sportscar365.com/lemans/elms/tds-wins-4h-imola-behind-safety-car/"
+    }
+   },
+   {
+    "i": "⚠",
+    "t": "Formula Racing out after a heavy crash",
+    "v": "The #60 Ferrari hit the wall at Variante Villeneuve in the second practice session and could not start the race.",
+    "one": {
+     "label": "Sportscar365: NIELSEN: Imola Debrief",
+     "url": "https://sportscar365.com/lemans/elms/nielsen-imola-debrief/"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: Imola, Lapierre Puts Dragonspeed On Pole In Tight ELMS Qualifying",
+    "url": "https://www.dailysportscar.com/2016/05/14/imola-lapierre-puts-dragonspeed-on-pole-in-tight-elms-qualifying.html"
+   },
+   {
+    "label": "Sportscar365: DragonSpeed Grabs Pole for 4H Imola",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-grabs-pole-for-4h-imola/"
+   },
+   {
+    "label": "DailySportsCar: TDS Wins Rain Shortened 4 Hours Of Imola",
+    "url": "https://www.dailysportscar.com/2016/05/15/tds-wins-rain-shortened-4-hours-of-imola.html"
+   },
+   {
+    "label": "Sportscar365: TDS Wins 4H Imola Behind Safety Car",
+    "url": "https://sportscar365.com/lemans/elms/tds-wins-4h-imola-behind-safety-car/"
+   },
+   {
+    "label": "DailySportsCar: Imola, Free Practice 1, Panis Barthez Fastest",
+    "url": "https://www.dailysportscar.com/2016/05/13/imola-free-practice-1-panis-barthez-fastest.html"
+   },
+   {
+    "label": "DailySportsCar: Imola, Panis Barthez Tops Incident-Packed FP2",
+    "url": "https://www.dailysportscar.com/2016/05/14/imola-panis-barthez-tops-incident-packed-fp2.html"
+   },
+   {
+    "label": "Sportscar365: Panis Barthez Ligier Leads FP1 in Imola",
+    "url": "https://sportscar365.com/lemans/elms/panis-barthez-leads-imola-fp1/"
+   },
+   {
+    "label": "Sportscar365: Panis Barthez Fastest in Practice at Imola",
+    "url": "https://sportscar365.com/lemans/elms/panis-barthez-fastest-in-practice-at-imola/"
+   },
+   {
+    "label": "DailySportsCar: Imola, Brief Preview & Entry List Changes",
+    "url": "https://www.dailysportscar.com/2016/05/13/imola-brief-preview-entry-list-changes.html"
+   },
+   {
+    "label": "Sportscar365: NIELSEN: Imola Debrief",
+    "url": "https://sportscar365.com/lemans/elms/nielsen-imola-debrief/"
+   }
+  ]
+ },
+ "LMP3": {
+  "title": "United’s #2 Ligier survives the rain for a second straight win",
+  "dek": "Brundle, Guasch and England took the #2 United Ligier to LMP3 victory over Eurointernational’s #11 in a 20-car, all-Ligier class, as the sister car lost time to a pit-lane speeding penalty.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Twenty Ligiers, one chassis",
+    "text": [
+     "LMP3 was the largest class in the series and, at Imola a pure one-make field. Murphy Prototypes had planned to bring its Ave-Riley AR-2, which was still going through homologation in the United States, and after a short spell with a Ginetta at Silverstone it rented a Ligier JS P3 for Imola, crewed by Baxter, Kapadia and Garofall. Garofall had won the class here the year before. Eurointernational also added a second car, the #12 for Dromedari, Mancini and Rusinov.",
+     "United Autosports arrived as the form team after finishing one-two at Silverstone with the #2 ahead of the #3. Fuel was a talking point: the cars had struggled to complete a full stint on 75 litres at the opener, so the allocation was raised to 85 for Imola. In practice Mondini led the first session in the #11 Eurointernational Ligier on 1:40.099, 0.069s clear of the #2, even though Roda put it in the gravel at Rivazza soon after. Villorba Corse’s #7 topped the second session on 1:40.349 ahead of Duqueine’s #19."
+    ],
+    "cars": [
+     "14",
+     "12"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Boyd takes United’s first pole",
+    "text": [
+     "United looked set for a one-two on the grid until Mondini’s late lap split the pair. Boyd set pole in the #3 on 1:39.256, the team’s first, after improving his own provisional time twice. Mondini’s 1:39.401 put the Eurointernational #11 second, ahead of Brundle’s #2 on 1:39.623, 0.367s off pole.",
+     "Rayhall was fourth in Graff’s #10 on 1:39.934, and Lunardi ended fifth for Duqueine’s #19 after going off at Variante Alta while he held fourth. The first five were within seven tenths. A yellow came out mid-session when Kapadia lost a front-left wheel from the Murphy Ligier into the final chicane; that car started 40th and last on the class grid."
+    ],
+    "cars": [
+     "3",
+     "11",
+     "10"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 1–3",
+    "title": "Brundle jumps the pole car",
+    "text": [
+     "The #3 led away from pole with Bell at the wheel, but Brundle, in the #2, tracked him early and took the lead when Bell ran wide letting LMP2 traffic through at Tamburello. Dealing with the GTE cars proved awkward for the whole class, since the Imola layout punished the Ligier’s lack of straight-line speed, and a Proton Porsche eventually beat every LMP3 on the road.",
+     "The #2 lost ground by pitting early under the Gold driver drive-time rules and had to fight back through the order after its stop. Meanwhile the #3 lost far more, serving a drive-through penalty for speeding in the pit lane that dropped it to mid-pack. Eurointernational stayed in the hunt: the #11 led at times, and the #12 led for a stint with Rusinov at the wheel. England, in the #2, made two good passes in heavy traffic to retake the lead."
+    ],
+    "cars": [
+     "2"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 4",
+    "title": "The storm and the stranded Ligiers",
+    "text": [
+     "Rain came in stair rods with about an hour left and quickly turned the circuit treacherous. All four full-course yellows of the race were caused by LMP3 cars stranded in the gravel, and this time the yellow stayed out as conditions worsened. England kept the #2 going long enough to make the fuel window in case racing resumed, and the safety car then took over with under half an hour to go, locking in the order."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Second in a row for United",
+    "text": [
+     "The race ended behind the safety car, so there was no late scramble. The #2 United Ligier of Brundle, Guasch and England won LMP3 on 115 laps, 14th overall. Eurointernational’s #11 (Mondini, Roda, Jacoboni) finished second on the same lap and Panis Barthez Competition’s #16 took third, completing the podium.",
+     "The Duqueine #19 and M.Racing’s #18 came home fourth and fifth on the lead lap, with RLR MSport’s #15 sixth, a lap down. The pole-sitting #3 recovered only as far as seventh in class."
+    ],
+    "cars": [
+     "16",
+     "19"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Results and the points picture",
+    "text": [
+     "United Autosports’ #2 (Brundle, Guasch, England) won from the #11 Eurointernational (Mondini, Roda, Jacoboni), the #16 Panis Barthez (Debard, Moineault, Gachet), the #19 Duqueine (Hallyday, Lunardi, Droux) and the #18 M.Racing (Laurent, Ehrlacher, Cougnaud) on the lead lap. Seventeen LMP3 cars were classified. Graff’s #10 and By Speed Factory’s #5 were not classified, and Graff’s #9 was disqualified.",
+     "Brundle called it the second win in two races for the #2 crew and said it left them 25 points clear in the championship. The next round is the Red Bull Ring on 17 July, after the Le Mans 24 Hours."
+    ],
+    "cars": [
+     "18"
+    ]
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "First pole for United",
+    "v": "Boyd’s 1:39.256 gave the #3 Ligier pole and United Autosports its first pole in the class; the #11 split the team’s front row.",
+    "one": {
+     "label": "DailySportsCar: Imola, Lapierre Puts Dragonspeed On Pole In Tight ELMS Qualifying",
+     "url": "https://www.dailysportscar.com/2016/05/14/imola-lapierre-puts-dragonspeed-on-pole-in-tight-elms-qualifying.html"
+    }
+   },
+   {
+    "i": "⛽",
+    "t": "Fuel allocation raised",
+    "v": "LMP3 cars had struggled to make a full stint on 75 litres at Silverstone, so the allowance was increased to 85 litres at Imola.",
+    "one": {
+     "label": "DailySportsCar: Imola, Paddock Notes, Renault RS.01s, GT3s, Happy Families, LMP3 Fuel",
+     "url": "https://www.dailysportscar.com/2016/05/15/imola-paddock-notes-renault-rs-01s-gt3s-happy-families-lmp3-fuel.html"
+    }
+   },
+   {
+    "i": "🚩",
+    "t": "All four yellows from LMP3 cars",
+    "v": "Every full-course yellow of the race was triggered by an LMP3 car stranded in the gravel.",
+    "one": {
+     "label": "Sportscar365: TDS Wins 4H Imola Behind Safety Car",
+     "url": "https://sportscar365.com/lemans/elms/tds-wins-4h-imola-behind-safety-car/"
+    }
+   },
+   {
+    "i": "🔁",
+    "t": "Pit-lane speeding costs the #3",
+    "v": "A drive-through for speeding in the pit lane dropped the pole-sitting car to mid-pack and a seventh-in-class finish.",
+    "one": {
+     "label": "Sportscar365: TDS Wins 4H Imola Behind Safety Car",
+     "url": "https://sportscar365.com/lemans/elms/tds-wins-4h-imola-behind-safety-car/"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: Imola, Lapierre Puts Dragonspeed On Pole In Tight ELMS Qualifying",
+    "url": "https://www.dailysportscar.com/2016/05/14/imola-lapierre-puts-dragonspeed-on-pole-in-tight-elms-qualifying.html"
+   },
+   {
+    "label": "Sportscar365: DragonSpeed Grabs Pole for 4H Imola",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-grabs-pole-for-4h-imola/"
+   },
+   {
+    "label": "DailySportsCar: TDS Wins Rain Shortened 4 Hours Of Imola",
+    "url": "https://www.dailysportscar.com/2016/05/15/tds-wins-rain-shortened-4-hours-of-imola.html"
+   },
+   {
+    "label": "Sportscar365: TDS Wins 4H Imola Behind Safety Car",
+    "url": "https://sportscar365.com/lemans/elms/tds-wins-4h-imola-behind-safety-car/"
+   },
+   {
+    "label": "Sportscar365: BRUNDLE: Imola Debrief",
+    "url": "https://sportscar365.com/lemans/elms/brundle-imola-debrief/"
+   },
+   {
+    "label": "DailySportsCar: Imola, Free Practice 1, Panis Barthez Fastest",
+    "url": "https://www.dailysportscar.com/2016/05/13/imola-free-practice-1-panis-barthez-fastest.html"
+   },
+   {
+    "label": "DailySportsCar: Imola, Panis Barthez Tops Incident-Packed FP2",
+    "url": "https://www.dailysportscar.com/2016/05/14/imola-panis-barthez-tops-incident-packed-fp2.html"
+   },
+   {
+    "label": "Sportscar365: Panis Barthez Ligier Leads FP1 in Imola",
+    "url": "https://sportscar365.com/lemans/elms/panis-barthez-leads-imola-fp1/"
+   },
+   {
+    "label": "Sportscar365: Panis Barthez Fastest in Practice at Imola",
+    "url": "https://sportscar365.com/lemans/elms/panis-barthez-fastest-in-practice-at-imola/"
+   },
+   {
+    "label": "Sportscar365: Murphy Switches to Ligier JS P3 for Imola",
+    "url": "https://sportscar365.com/lemans/elms/murphy-switches-to-ligier-js-p3-for-imola/"
+   },
+   {
+    "label": "DailySportsCar: Imola, Paddock Notes, Renault RS.01s, GT3s, Happy Families, LMP3 Fuel",
+    "url": "https://www.dailysportscar.com/2016/05/15/imola-paddock-notes-renault-rs-01s-gt3s-happy-families-lmp3-fuel.html"
+   },
+   {
+    "label": "DailySportsCar: DSC's Weekend Roundtable: One-Make LMP3, Race Direction, GT3 LM Cup Impressions & Blancpain BoP",
+    "url": "https://www.dailysportscar.com/2016/05/16/dscs-weekend-roundtable-one-make-lmp3-race-direction-gt3-lm-cup-impressions-blancpain-bop.html"
+   }
+  ]
+ }
+}
