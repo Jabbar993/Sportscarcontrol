@@ -1,0 +1,165 @@
+{
+ "title": "Wickens leads from pole to flag at Zandvoort as Mortara's penalty costs Audi",
+ "dek": "Robert Wickens converted pole into a start-to-finish Race 1 win for Mercedes-AMG, 7.217 seconds clear of championship leader Marco Wittmann, while a drive-through penalty dropped Edoardo Mortara to 17th.",
+ "chapters": [
+  {
+   "k": "before",
+   "phase": "Build-up",
+   "title": "Halfway through the season, with the title fight wide open",
+   "text": [
+    "The DTM reached the midpoint of its 2016 season at Circuit Park Zandvoort on 16 and 17 July, with Saturday's race the ninth of the year's 18. Marco Wittmann arrived at the head of the standings for BMW on 75 points, two clear of Audi's Edoardo Mortara and five ahead of Mercedes-AMG's Paul di Resta. Eight races had produced seven different winners, with Audi on four victories and BMW and Mercedes-AMG on two each, and Robert Wickens, 17 points behind the leader, was still looking for his first win of the year.",
+    "The 4.307-kilometre circuit sits among the dunes beside the beach, with little run-off and a reputation as one of the hardest places on the calendar to pass, so grid position promised to count for more than usual. Mercedes-AMG set the tone on Friday: Wickens and Gary Paffett topped the two free practice sessions, while Wittmann managed only a handful of laps with his BMW. Audi arrived with the heaviest cars of the three manufacturers."
+   ],
+   "cars": []
+  },
+  {
+   "k": "before",
+   "phase": "Qualifying",
+   "title": "Wickens takes pole by 0.116 seconds",
+   "text": [
+    "Wickens set the target with a 1m30.727s on the second runs, after a late flurry of fast laps made the first efforts largely redundant. Wittmann, who had lost most of Friday, was third when he started his final lap and posted the best first sector of anyone, but could not improve in the last two and ended second, 0.116 seconds behind. Christian Vietoris was third for Mercedes-AMG at 0.130 seconds, missing the front row by just 0.014, with Paffett fourth at 0.220. Wickens called the result emotional and cautioned that the race was still to come.",
+    "Green was fifth, 0.226 seconds off the pace and the best of the Audis, and said afterwards that Audi were not so strong at this track; Mortara was sixth. Esteban Ocon, António Félix da Costa, Mattias Ekström and Timo Glock completed the top ten, which split four Mercedes-AMG, three Audi and three BMW. The field was tightly packed, with 1.184 seconds covering the 24 cars from Wickens to Augusto Farfus on the back row.",
+    "Maximilian Götz had a scare at the start of the 20-minute session, spinning out of the fast Scheivlak bend and backing his Mercedes into the barrier. He still set the 15th-fastest time, and started 14th in the #84 car."
+   ],
+   "cars": [
+    "6",
+    "53",
+    "84"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "Opening laps",
+   "title": "A start-line tangle brings out the safety car",
+   "text": [
+    "Wickens, who described his getaway as only average, defended the lead from Wittmann in the opening moments. Further back, a collision at the start ended the races of Götz and Adrien Tambay, whose Rosberg Audi #27 was also stopped before completing a lap. Götz said afterwards that he felt a blow from behind and got no further than third gear, about a hundred metres into the race.",
+    "The safety car was deployed at the end of the first lap to clear the cars. When racing resumed, Wittmann stayed within a second of the leader, and the Mercedes-AMG of Vietoris and Paffett sat behind him in third and fourth, with Green and the Audi of Mortara next in line."
+   ],
+   "cars": [
+    "27"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "Slow zone",
+   "title": "Farfus runs off, Wickens breaks free and Audi is hit twice",
+   "text": [
+    "The next break came before half-distance, when Farfus went off at one of the fast corners at the back of the circuit and his BMW stopped, triggering a slow zone. It proved decisive for the order at the front. Wittmann said his pace was good early on but that after the slow zone he struggled to match the leader and had to look in his mirrors to protect second place, while Wickens found extra grip, broke out of DRS range and began to pull away.",
+    "The same period proved costly for Audi. Mortara, running sixth behind Green, and Nico Müller were each given a drive-through penalty. Mortara rejoined and finished 17th, Müller 20th, which left Green as the only Audi in the top five."
+   ],
+   "cars": [
+    "18",
+    "48",
+    "51"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "The finish",
+   "title": "Wittmann holds Vietoris off for second",
+   "text": [
+    "Wickens took the flag after 25 laps in 41m55.441s, 7.217 seconds clear of Wittmann, for his fourth DTM victory and his first of 2016. Behind him the battle was for second. Vietoris was faster through the corners and attacked repeatedly, but Wittmann, quick on the straights, defended well and kept the place by 1.770 seconds. Vietoris explained that overtaking was only possible on the straight, where the BMW was strong, and he finished third, 8.987 seconds from the winner. Paffett was fourth, 10.657 seconds behind, and the top five at the finish ran in exactly the order they had started.",
+    "Green was fifth, the best-placed Audi, 12.626 seconds back. Da Costa won the fight for sixth over Ekström, who could not find a way past him; the pair finished within a second of each other, with Daniel Juncadella and Ocon eighth and ninth. Maxime Martin took the final point in tenth, 0.294 seconds ahead of Timo Scheider.",
+    "Wickens became the eighth different winner in nine races, and gave Mercedes-AMG its third win of the season. The result lifted him to 83 points, ten behind Wittmann's 93. Mortara and Green were level on 73, with di Resta on 70."
+   ],
+   "cars": [
+    "11",
+    "8",
+    "13"
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "i": "🏆",
+   "t": "Eight winners in nine races",
+   "v": "Wickens became the eighth different winner in nine races of the 2016 season, giving Mercedes-AMG its third win against four for Audi and two for BMW.",
+   "one": {
+    "label": "Auto Bild: Wickens siegt am Samstag",
+    "url": "https://www.autobild.de/artikel/dtm-wickens-siegt-am-samstag-10580675.html"
+   }
+  },
+  {
+   "i": "⏱",
+   "t": "Pole by 0.116 seconds",
+   "v": "Wickens put his Mercedes-AMG on pole in 1m30.727s, 0.116 seconds ahead of Wittmann, with Vietoris third at 0.130 seconds.",
+   "one": {
+    "label": "Autosport: Wickens takes pole for race one",
+    "url": "https://www.autosport.com/dtm/news/dtm-zandvoort-robert-wickens-takes-pole-for-race-one-5040616/5040616/"
+   }
+  },
+  {
+   "i": "📈",
+   "t": "Ten points between the top two",
+   "v": "Wittmann kept the lead on 93 points, with Wickens on 83 and Mortara on 73 after his drive-through penalty.",
+   "one": {
+    "label": "Motorsport-Total: Souveräner Sieg für Robert Wickens",
+    "url": "https://www.motorsport-total.com/dtm/news/dtm-zandvoort-2016-souveraener-sieg-fuer-robert-wickens-16071604"
+   }
+  },
+  {
+   "i": "🎯",
+   "t": "First points of the season",
+   "v": "Juncadella and Ocon, eighth and ninth, scored their first points of 2016 and were the last two drivers to get on the board.",
+   "one": {
+    "label": "Autosport: Wickens dominates race one",
+    "url": "https://www.autosport.com/dtm/news/125319/wickens-dominates-first-zandvoort-dtm-race"
+   }
+  },
+  {
+   "i": "⚠",
+   "t": "Penalty for the start collision",
+   "v": "Martin Tomczyk was given a drive-through penalty for the start-line collision with Götz and Tambay, and finished 19th.",
+   "one": {
+    "label": "Motorsport-Total: Souveräner Sieg für Robert Wickens",
+    "url": "https://www.motorsport-total.com/dtm/news/dtm-zandvoort-2016-souveraener-sieg-fuer-robert-wickens-16071604"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "label": "Autosport: DTM Zandvoort, Robert Wickens dominates race one for Mercedes",
+   "url": "https://www.autosport.com/dtm/news/125319/wickens-dominates-first-zandvoort-dtm-race"
+  },
+  {
+   "label": "Autosport: DTM Zandvoort, Robert Wickens takes pole for race one",
+   "url": "https://www.autosport.com/dtm/news/dtm-zandvoort-robert-wickens-takes-pole-for-race-one-5040616/5040616/"
+  },
+  {
+   "label": "Autosport: DTM Zandvoort, Audi furious with Mortara penalty given in error",
+   "url": "https://www.autosport.com/dtm/news/dtm-zandvoort-audi-furious-with-mortara-penalty-given-in-error-5040562/5040562/"
+  },
+  {
+   "label": "Motorsport-Total: DTM Zandvoort 2016, Souveräner Sieg für Robert Wickens",
+   "url": "https://www.motorsport-total.com/dtm/news/dtm-zandvoort-2016-souveraener-sieg-fuer-robert-wickens-16071604"
+  },
+  {
+   "label": "Motorsport-Total: DTM Zandvoort 2016, Robert Wickens am Samstag auf der Pole",
+   "url": "https://www.motorsport-total.com/dtm/news/dtm-zandvoort-2016-robert-wickens-am-samstag-auf-der-pole-16071603"
+  },
+  {
+   "label": "Motorsport-Total: DTM Zandvoort, die Mercedes-Stimmen zum Samstagsrennen",
+   "url": "https://www.motorsport-total.com/dtm/news/dtm-zandvoort-die-mercedes-stimmen-zum-samstagsrennen-16071605"
+  },
+  {
+   "label": "Motorsport.com (de): DTM in Zandvoort, Robert Wickens holt Pole-Position für Mercedes",
+   "url": "https://de.motorsport.com/dtm/news/dtm-in-zandvoort-robert-wickens-holt-pole-position-fur-mercedes-799265/799265/"
+  },
+  {
+   "label": "Sport1: DTM in Zandvoort 2016, Mercedes-Pilot Robert Wickens triumphiert",
+   "url": "https://www.sport1.de/motorsport/dtm/2016/07/dtm-in-zandvoort-2016-mercedes-pilot-robert-wickens-triumphiert"
+  },
+  {
+   "label": "Auto Bild: DTM, Wickens siegt am Samstag",
+   "url": "https://www.autobild.de/artikel/dtm-wickens-siegt-am-samstag-10580675.html"
+  },
+  {
+   "label": "GTspirit: DTM, Wickens and Green win at Zandvoort",
+   "url": "https://gtspirit.com/2016/07/17/dtm-wickens-and-green-win-at-zandvoort-as-season-goes-into-summer-break/"
+  },
+  {
+   "label": "TouringCarTimes: DTM Zandvoort preview, Showdown on the beach",
+   "url": "https://www.touringcartimes.com/2016/07/14/dtm-zandvoort-preview-showdown-on-the-beach/"
+  }
+ ]
+}
