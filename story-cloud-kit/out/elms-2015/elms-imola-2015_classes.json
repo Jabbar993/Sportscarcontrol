@@ -1,0 +1,412 @@
+{
+ "LMGTE": {
+  "title": "Pier Guidi’s late move wins LMGTE at Imola",
+  "dek": "Alessandro Pier Guidi took the AT Racing Ferrari into the lead on lap 130 and won LMGTE by 3.032 seconds from Proton’s Porsche, with Formula Racing’s Ferrari third.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Ferrari territory, with challengers",
+    "text": [
+     "LMGTE came to Imola with eight cars, and the Ferrari 458s of AF Corse and its customer teams were expected to dominate at a circuit so close to Maranello. Marc VDS had other plans. Jesse Krohn had at one stage been due to race at the Nürburgring 24 Hours but ended up in the BMW Z4 alongside Priaulx and Hassid, and he expected the shorter straights to suit the car better than Silverstone had. Proton Competition’s Porsche #88 had a new line-up, with Marco Mapelli joining Lietz and Ried in place of the Silverstone pairing of Bachler and Al Qubaisi.",
+     "Saturday’s wet opening session said little about the order: an AF Corse GTC Ferrari was nearly two seconds quicker than the best GTE car, the AT Racing Ferrari. The second session was drier, and Formula Racing’s #60 Ferrari topped it on 1:42.300, with the Marc VDS BMW second and Gulf Racing UK’s Porsche third."
+    ],
+    "cars": [
+     "52",
+     "88"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Pier Guidi sets the mark early",
+    "text": [
+     "Alessandro Pier Guidi put the AT Racing Ferrari #56 on pole with a 1:41.747 and nobody beat it through a stopwatch battle that kept changing the top three. Raffaele Giammaria came closest, 0.431 seconds adrift in the #51 AF Corse car after a late effort, and Mac took Formula Racing’s #60 to third on 1:42.307. Griffin’s AF Corse #55, Tordoff’s JMW Ferrari and Carroll’s Gulf Porsche followed, and under nine tenths covered the first six cars.",
+     "The Proton Porsche and the Marc VDS BMW were a long way back on the grid, 27th and 30th overall, with the rest of the class lined up between 12th and 18th."
+    ],
+    "cars": [
+     "56",
+     "51"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 1–3",
+    "title": "A lightly neutralised race",
+    "text": [
+     "The race was affected by few cautions: an early safety car for gravel on the track, and a second around half distance to retrieve a stopped LMP3 Ginetta. Through the middle of the race the AT Racing Ferrari, shared by Alexander Talkanitsa, Alexander Talka Jr and Pier Guidi, fought with Giammaria’s #51 and the Formula Racing Ferrari #60, while Lietz drove strongly in the Proton Porsche."
+    ],
+    "cars": [
+     "60"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Three drivers, one lap",
+    "text": [
+     "The class was decided in the last half hour. Pier Guidi had taken over for the final stint and tracked down Mapelli’s Porsche at Tamburello and Rizzoli’s Formula Racing Ferrari at Rivazza, getting in front on lap 130 of his 132. Neither could respond. He crossed the line 3.032 seconds ahead of the Proton Porsche, while Rizzoli, passed by both cars in the closing minutes, was left third.",
+     "Behind them Priaulx’s BMW was near enough to try for third on the final lap, and Griffin had put the second AF Corse Ferrari into contention late on, so five cars finished on the lead lap."
+    ],
+    "cars": [
+     "55"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Results",
+    "text": [
+     "AT Racing won LMGTE with Alexander Talkanitsa, Alexander Talka Jr and Pier Guidi, completing 132 laps. Proton Competition’s Porsche of Lietz, Mapelli and Ried was second, 3.032 seconds back, and Formula Racing’s Ferrari of Laursen, Mac and Rizzoli third on the same lap. Marc VDS’s BMW (Priaulx, Hassid, Krohn) was fourth and AF Corse’s #55 (Cameron, Griffin, Scott) fifth, all five cars on 132 laps.",
+     "JMW Motorsport’s Ferrari and AF Corse’s #51, with Mann, Giammaria and Cressoni, were sixth and seventh, two laps down. Gulf Racing UK’s Porsche finished eighth, eight laps behind. Pier Guidi called the racing clean, quick and very enjoyable. The next round is at the Red Bull Ring on 12 July."
+    ],
+    "cars": []
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Pole by 0.431s",
+    "v": "Pier Guidi’s 1:41.747 put the AT Racing Ferrari ahead of Giammaria’s AF Corse car by 0.431 seconds.",
+    "one": {
+     "label": "Sportscar365: Jota Sport Secures Pole for 4H Imola",
+     "url": "https://sportscar365.com/lemans/elms/jota-sport-secures-pole-in-qualifying-for-4h-imola/"
+    }
+   },
+   {
+    "i": "🥇",
+    "t": "3.032s at the flag",
+    "v": "Pier Guidi finished 3.032 seconds ahead of Mapelli’s Proton Porsche after leading from lap 130.",
+    "one": {
+     "label": "Sportscar365: Thiriet by TDS Racing Takes 4H Imola Win",
+     "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-takes-4h-imola-win/"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Marc VDS gravel and a penalty",
+    "v": "Hassid’s BMW spread the gravel that brought out the first safety car, and Krohn served a track-limits penalty while chasing lost time.",
+    "one": {
+     "label": "DailySportsCar: First Win For ORECA 05 Coupe",
+     "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-first-win-for-oreca-05-coupe.html"
+    }
+   },
+   {
+    "i": "🧭",
+    "t": "Krohn’s switch",
+    "v": "Jesse Krohn had been due to race at the Nürburgring 24 Hours that week before being placed in the Marc VDS BMW.",
+    "one": {
+     "label": "Sportscar365: Thiriet by TDS Racing Quickest on Saturday at Imola",
+     "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-fastest-on-saturday-at-imola/"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Thiriet by TDS Racing Takes 4H Imola Win",
+    "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-takes-4h-imola-win/"
+   },
+   {
+    "label": "Sportscar365: Jota Sport Secures Pole for 4H Imola",
+    "url": "https://sportscar365.com/lemans/elms/jota-sport-secures-pole-in-qualifying-for-4h-imola/"
+   },
+   {
+    "label": "Sportscar365: Thiriet by TDS Racing Quickest on Saturday at Imola",
+    "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-fastest-on-saturday-at-imola/"
+   },
+   {
+    "label": "Sportscar365: Thiriet by TDS Racing Tops Wet Imola Free Practice 1",
+    "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-tops-wet-imola-free-practice-1/"
+   },
+   {
+    "label": "DailySportsCar: ELMS Imola, First Win For ORECA 05 Coupe",
+    "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-first-win-for-oreca-05-coupe.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Imola, JOTA Sport Take Hat-Trick Pole",
+    "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-jota-sport-take-hat-trick-pole.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Imola, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2015/05/16/elms-imola-free-practice-2-report-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Imola, Friday conversations",
+    "url": "https://www.dailysportscar.com/2015/05/15/elms-imola-friday-conversations.html"
+   }
+  ]
+ },
+ "GTC": {
+  "title": "AF Corse sweeps GTC at Imola",
+  "dek": "The #62 Ferrari of Mastronardi, Castellacci and Hall won GTC by a lap from sister car #63, completing an AF Corse one-two-three with the #64.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Ferraris set the pace",
+    "text": [
+     "GTC was the smallest class at Imola, with five cars: three AF Corse Ferrari 458 Italia GT3s (#62, #63 and #64), the TDS Racing BMW Z4 GT3 and Massive Motorsport’s Aston Martin Vantage GT3. Saturday’s wet running favoured the Ferraris. The #63 of Roda, Melnikov and Cioci was nearly two seconds quicker than the best LMGTE car in the first session.",
+     "In the drier second session the order flipped inside AF Corse. The #62 of Mastronardi, Castellacci and Hall set 1:44.637, narrowly ahead of its sister car, which managed 1:44.705."
+    ],
+    "cars": [
+     "62"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Cioci takes pole",
+    "text": [
+     "Cioci put the #63 Ferrari on class pole with a 1:43.704, 0.282 seconds ahead of Castellacci in the #62. Perera took third for TDS Racing’s BMW on 1:44.928, while Poulsen’s Massive Motorsport Aston Martin managed 1:45.856 and Barreiros’s #64 Ferrari, on 1:47.828, was a long way back. On the overall grid the five cars started 22nd, 24th, 25th, 26th and 28th, interspersed with LMGTE and LMP3 machinery."
+    ],
+    "cars": [
+     "63",
+     "59"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 1–3",
+    "title": "Control from the #62",
+    "text": [
+     "Gravel on the track brought out an early safety car, and a stopped LMP3 Ginetta caused a second around half distance. After an early scrap with its sister car, the #62 Ferrari led for most of the race. TDS Racing’s BMW ran on well adrift of the Ferraris, and Massive Motorsport’s Aston Martin went on to be not classified, stopping at 84 laps."
+    ],
+    "cars": [
+     "68"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "A team-order podium",
+    "text": [
+     "Hall brought the #62 Ferrari home first, a lap clear of Roda’s sister #63 car. Barreiros took the flag third in the #64 to complete an AF Corse podium sweep. The three Ferraris finished on 129, 128 and 127 laps, so the margins between them were exactly one lap each."
+    ],
+    "cars": [
+     "64"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Results",
+    "text": [
+     "Rino Mastronardi, Francesco Castellacci and Stuart Hall won GTC for AF Corse with 129 laps. Giorgio Roda, Ilya Melnikov and Marco Cioci were second, one lap behind, and Mads Rasmussen, Felipe Barreiros and Francisco Guedes third, two laps down. TDS Racing’s BMW of Perera, Lunardi and Dermont was fourth on 106 laps, 23 behind the winner, while Massive Motorsport’s Aston Martin (Elgaard, Poulsen, Moller) was not classified.",
+     "Hall said the team had managed the gap and looked after the car, calling it probably the easiest win he had ever had. The next round is at the Red Bull Ring on 12 July."
+    ],
+    "cars": []
+   }
+  ],
+  "facts": [
+   {
+    "i": "🌧",
+    "t": "Ferrari quicker than the GTEs",
+    "v": "In the wet first session the #63 GTC Ferrari was almost two seconds faster than the best LMGTE car.",
+    "one": {
+     "label": "Sportscar365: Thiriet by TDS Racing Tops Wet Imola Free Practice 1",
+     "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-tops-wet-imola-free-practice-1/"
+    }
+   },
+   {
+    "i": "🏁",
+    "t": "Pole by 0.282s",
+    "v": "Cioci’s 1:43.704 put the #63 Ferrari ahead of Castellacci’s sister car by 0.282 seconds.",
+    "one": {
+     "label": "DailySportsCar: ELMS Imola, JOTA Sport Take Hat-Trick Pole",
+     "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-jota-sport-take-hat-trick-pole.html"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Alternator trouble",
+    "v": "AF Corse’s #63 had suffered an alternator problem around qualifying, leaving some nervous faces in the garage before the race.",
+    "one": {
+     "label": "DailySportsCar: ELMS Imola, JOTA Sport Take Hat-Trick Pole",
+     "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-jota-sport-take-hat-trick-pole.html"
+    }
+   },
+   {
+    "i": "⚠",
+    "t": "Massive’s rough Saturday",
+    "v": "The Massive Motorsport Aston Martin stopped a few hundred metres into the first session, and Moller crashed it at Tosa in the second.",
+    "one": {
+     "label": "DailySportsCar: ELMS Imola, Free Practice 2 Report",
+     "url": "https://www.dailysportscar.com/2015/05/16/elms-imola-free-practice-2-report-2.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Thiriet by TDS Racing Takes 4H Imola Win",
+    "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-takes-4h-imola-win/"
+   },
+   {
+    "label": "Sportscar365: Jota Sport Secures Pole for 4H Imola",
+    "url": "https://sportscar365.com/lemans/elms/jota-sport-secures-pole-in-qualifying-for-4h-imola/"
+   },
+   {
+    "label": "Sportscar365: Thiriet by TDS Racing Tops Wet Imola Free Practice 1",
+    "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-tops-wet-imola-free-practice-1/"
+   },
+   {
+    "label": "Sportscar365: Thiriet by TDS Racing Quickest on Saturday at Imola",
+    "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-fastest-on-saturday-at-imola/"
+   },
+   {
+    "label": "DailySportsCar: ELMS Imola, First Win For ORECA 05 Coupe",
+    "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-first-win-for-oreca-05-coupe.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Imola, JOTA Sport Take Hat-Trick Pole",
+    "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-jota-sport-take-hat-trick-pole.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Imola, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2015/05/16/elms-imola-free-practice-2-report-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Imola, Free Practice 1 Report",
+    "url": "https://www.dailysportscar.com/2015/05/16/elms-imola-free-practice-1-report-2.html"
+   }
+  ]
+ },
+ "LMP3": {
+  "title": "Bolton’s Ginetta takes LMP3 as Team LNT falters",
+  "dek": "University of Bolton’s Garofall and Dons won LMP3 by two laps from SVK by Speed Factory after pole-sitting Team LNT lost its lead to a long stop and penalties.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "A new class, a growing grid",
+    "text": [
+     "LMP3 was new to the European Le Mans Series in 2015, and Imola was the second round for the six Ginetta-Nissans entered. Team LNT arrived as the class pace-setter, having taken pole at Silverstone, and its Hoy and Robertson car again led the way in both Saturday practice sessions, ahead of the sister car of Simpson and Paletou. Villorba Corse, making its debut at Imola, was third both times.",
+     "The wet first session brought trouble. Fuster put the SVK by Speed Factory car in the gravel at Acque Minerali for one red flag, and Craven’s Lanan Racing Ginetta collided with a spun LMP2 Oreca at Variante Alta for another. Away from the track, the class was attracting interest: a two-car Ginetta programme for 2016, with a first outing planned at the Estoril finale in October, was announced by the Leeds-based team of Zak Brown and Richard Dean."
+    ],
+    "cars": [
+     "5",
+     "11"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Robertson on pole again",
+    "text": [
+     "Robertson put the Team LNT Ginetta #3 on pole with a 1:42.498, his second pole in a row, in a session where he had a quick spin at Rivazza late on. Shulzhitskiy took the rebuilt Lanan Racing car to second on 1:42.996, almost half a second back. Garofall was third for University of Bolton on 1:43.241, ahead of Calko in the SVK by Speed Factory car on 1:43.607 and Paletou in the second LNT car on 1:43.751. Villorba’s Ginetta started last in class, 29th overall."
+    ],
+    "cars": [
+     "3"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 1–3",
+    "title": "LNT’s race unravels",
+    "text": [
+     "Robertson followed up his qualifying pace with a strong opening stint, and Team LNT’s #3 looked a likely winner. It was not to be. A long pit stop and two penalties cost the car its lead, and it dropped out of contention. Around half distance the stopped Villorba Corse Ginetta brought out the second safety car of a race with few cautions. LNT’s second car, the #2 of Simpson and Paletou, was out after 26 laps."
+    ],
+    "cars": [
+     "2"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Bolton by two laps",
+    "text": [
+     "With LNT’s challenge gone, the University of Bolton Ginetta was left in control. Garofall and Dons took the flag two laps ahead of Calko, Fuster and Matijosaitis in the SVK by Speed Factory car. Craven and Shulzhitskiy brought the Lanan Racing Ginetta home third. Garofall said it was a first international win for the students of the University of Bolton, and for a team running on such a demanding circuit he called it a fantastic result."
+    ],
+    "cars": [
+     "7",
+     "15"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Results",
+    "text": [
+     "Rob Garofall and Morten Dons won LMP3 for University of Bolton with 126 laps. Konstantin Calko, Jesus Fuster and Dainius Matijosaitis were second for SVK by Speed Factory, two laps behind, and Alex Craven and Mark Shulzhitskiy third for Lanan Racing on 121 laps.",
+     "Team LNT’s Chris Hoy and Charlie Robertson were not classified after 108 laps. The Villorba Corse Ginetta of Lacorte and Sernagiotto stopped at 54 laps and the second LNT car at 26, and neither was classified. The next round is at the Red Bull Ring on 12 July."
+    ],
+    "cars": []
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Almost half a second",
+    "v": "Robertson’s 1:42.498 gave Team LNT pole, with Lanan Racing’s Ginetta second, almost half a second slower.",
+    "one": {
+     "label": "Sportscar365: Jota Sport Secures Pole for 4H Imola",
+     "url": "https://sportscar365.com/lemans/elms/jota-sport-secures-pole-in-qualifying-for-4h-imola/"
+    }
+   },
+   {
+    "i": "🏆",
+    "t": "Students’ first international win",
+    "v": "Garofall said it was the first win in international motorsport for the University of Bolton students.",
+    "one": {
+     "label": "DailySportsCar: ELMS Imola, First Win For ORECA 05 Coupe",
+     "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-first-win-for-oreca-05-coupe.html"
+    }
+   },
+   {
+    "i": "🚩",
+    "t": "Tyre penalty, same result",
+    "v": "The winning Ginetta received a post-race penalty of 3 minutes 35 seconds for using an extra set of slick tyres, not enough to drop it behind the SVK car.",
+    "one": {
+     "label": "DailySportsCar: ELMS Imola, First Win For ORECA 05 Coupe",
+     "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-first-win-for-oreca-05-coupe.html"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Gearbox oil line",
+    "v": "Team LNT’s #2 retired with a gearbox oil-line problem, while the team’s #3 still left Imola with the class points lead.",
+    "one": {
+     "label": "DailySportsCar: ELMS Imola, First Win For ORECA 05 Coupe",
+     "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-first-win-for-oreca-05-coupe.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Thiriet by TDS Racing Takes 4H Imola Win",
+    "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-takes-4h-imola-win/"
+   },
+   {
+    "label": "Sportscar365: Jota Sport Secures Pole for 4H Imola",
+    "url": "https://sportscar365.com/lemans/elms/jota-sport-secures-pole-in-qualifying-for-4h-imola/"
+   },
+   {
+    "label": "Sportscar365: Thiriet by TDS Racing Tops Wet Imola Free Practice 1",
+    "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-tops-wet-imola-free-practice-1/"
+   },
+   {
+    "label": "Sportscar365: Thiriet by TDS Racing Quickest on Saturday at Imola",
+    "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-racing-fastest-on-saturday-at-imola/"
+   },
+   {
+    "label": "Sportscar365: United Autosports Announces LMP3 Program for 2016",
+    "url": "https://sportscar365.com/lemans/elms/united-autosports-announces-lmp3-program-for-2016/"
+   },
+   {
+    "label": "DailySportsCar: ELMS Imola, First Win For ORECA 05 Coupe",
+    "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-first-win-for-oreca-05-coupe.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Imola, JOTA Sport Take Hat-Trick Pole",
+    "url": "https://www.dailysportscar.com/2015/05/17/elms-imola-jota-sport-take-hat-trick-pole.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Imola, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2015/05/16/elms-imola-free-practice-2-report-2.html"
+   },
+   {
+    "label": "DailySportsCar: United Autosports Move To LMP3 In 2016 As First Step To Le Mans",
+    "url": "https://www.dailysportscar.com/2015/05/13/united-autosports-move-to-lmp3-in-2016-as-first-move-to-le-mans.html"
+   }
+  ]
+ }
+}

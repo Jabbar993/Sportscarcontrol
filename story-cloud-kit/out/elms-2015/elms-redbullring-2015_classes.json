@@ -1,0 +1,434 @@
+{
+ "LMGTE": {
+  "title": "Mac edges Griffin by 0.667s after a final-lap Ferrari scrap",
+  "dek": "Formula Racing’s Laursen, Mac and Rizzoli won by 0.667s from the AF Corse Ferrari of Griffin, Cameron and Scott, which had started from the back of the grid after a fuel infringement.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Nine points cover seven teams",
+    "text": [
+     "The GTE title fight was wide open at the midpoint of the season: just nine points covered the top seven entries. AT Racing’s Ferrari, the winner at Imola, led Gulf Racing UK’s Porsche by three points, with Proton Competition a point further back in third. JMW Motorsport was fourth, six points off the top, and the second AF Corse Ferrari fifth, seven adrift.",
+     "Proton’s Porsche arrived with Richard Lietz, the Austrian, back in the car alongside Christian Ried and Sebastian Asch, in a new Remus livery. Gulf had Daniel Brown standing in for Phil Keen, who was committed to British GT, while BMW Team Marc VDS brought the only GTE-specification BMW Z4 in the series, chasing a first podium after two fourth places. The rest of the eight-car class was Ferraris, among them the AF Corse crew of Mann, Giammaria and Cressoni, who had been the best ELMS finishers in the GTE-Am class at Le Mans with fifth."
+    ],
+    "cars": [
+     "56",
+     "86",
+     "88"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Griffin fastest, then sent to the back",
+    "text": [
+     "Matt Griffin’s 1:29.692 in the #55 AF Corse Ferrari was the quickest time, just 0.022s ahead of Giammaria in the sister #51 car, with Ferraris occupying the first five places. It was far from simple: Griffin lost two quick laps to track limits on a circuit left green by an overnight thunderstorm, then bolted on fresh tyres for the decisive run. He praised Dunlop for being close to the pace of the Michelins used the year before.",
+     "The result did not stand on the grid. The #55 was moved to the back of the field after a fuel infringement, so the class started from the #51 (13th overall), then Mac’s #60 Formula Racing Ferrari (1:29.847). Pier Guidi (#56), Tordoff (#66) and Lietz (#88, 1:30.352) followed, Priaulx’s BMW (#52) was short of running after throttle trouble in both practice sessions, and Carroll’s #86 Porsche, last on 1:30.881, never found a clean lap."
+    ],
+    "cars": [
+     "51",
+     "55"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Traffic and safety cars",
+    "text": [
+     "The class had to share the circuit with the four Ginettas, and the early laps saw cars three and four wide with positions changing constantly. Two safety car periods in the first hour kept the pack tight. Brown produced an excellent early stint in the Gulf Porsche, and Lietz was quick in the Proton car, while back in 29th place the #55 began to work its way through the field with Scott at the wheel."
+    ],
+    "cars": [
+     "66"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Ferraris trade the lead",
+    "text": [
+     "JMW’s Ferrari led the race more than once and so did the AT Racing car, but the AT entry suffered an incident in the middle of the race and slid down the order, finishing 18 laps behind the winner. Both Porsches ran strongly before fading, and the Marc VDS BMW, still hampered by throttle problems, relied on strategy and consistency to climb to fourth.",
+     "Scott’s recovery was the drive of the race: within a stint he led the class, just outside the overall top ten, then handed over to Duncan Cameron and back again, before Griffin took the car to the front."
+    ],
+    "cars": [
+     "52"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Mac hits Griffin into the last corner",
+    "text": [
+     "With just over 20 minutes to go, Griffin led from Mac and Cressoni, and the trio stayed within a second of one another for lap after lap after Mac passed the #51 car. Cressoni then made a late error that dropped him a second or two back. A group of LMP2 cars was close behind the leaders as they began the last lap.",
+     "Griffin ran a little wide at Turn 1, Mac took a better line and drew alongside on the run to Turn 2, and in the corner both Ferraris touched the Thiriet by TDS Oreca running second overall, spinning it. The delay cost Griffin the lead: the #60 crossed the line 0.667s clear in 10th overall, with the #55 11th."
+    ],
+    "cars": [
+     "60"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "A Ferrari 1-2-3 and a heavy price for the pole",
+    "text": [
+     "Laursen, Mac and Rizzoli took Formula Racing’s win from Griffin, Cameron and Scott, with Cressoni’s #51 completing a Ferrari top three and the Marc VDS BMW fourth. All eight cars were classified: Lietz, Asch and Ried were fifth, 143 laps to the winner’s 144, Asch setting the class fastest lap at 1:31.196, ahead of JMW and Gulf, while the AT Racing Ferrari was eighth, 18 laps down.",
+     "Griffin said there had been no intent and no advantage in the fuel matter, adding that the rules were the rules. The title picture stayed open going into the next round at Paul Ricard in September, with Estoril to close the season in October."
+    ],
+    "cars": []
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Pole time, back-row start",
+    "v": "Griffin’s 1:29.692 beat Giammaria by 0.022s, yet the #55 started 29th after a fuel infringement.",
+    "one": {
+     "label": "Sportscar365 Jota Sport Wins 4H Red Bull Ring",
+     "url": "https://sportscar365.com/lemans/elms/jota-sport-wins-four-hours-of-red-bull-ring/"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Throttle trouble at Marc VDS",
+    "v": "The #52 BMW Z4 suffered an electrical throttle problem in both practice sessions and still finished fourth.",
+    "one": {
+     "label": "DailySportsCar ELMS: Red Bull Ring, Free Practice 2, TDS On Top After a Messy Session",
+     "url": "https://www.dailysportscar.com/2015/07/11/elms-red-bull-ring-free-practice-2-tds-on-top-after-a-messy-session.html"
+    }
+   },
+   {
+    "i": "🥇",
+    "t": "Won by 0.667s",
+    "v": "Mac’s #60 Ferrari beat Griffin’s #55 by 0.667s after a last-lap move that also touched the second-placed Oreca.",
+    "one": {
+     "label": "Sportscar365 Jota Sport Wins 4H Red Bull Ring",
+     "url": "https://sportscar365.com/lemans/elms/jota-sport-wins-four-hours-of-red-bull-ring/"
+    }
+   },
+   {
+    "i": "⚠",
+    "t": "AT Racing slides down",
+    "v": "The #56 Ferrari took front-suspension damage in the middle of the race and finished 18 laps behind the winner.",
+    "one": {
+     "label": "DailySportsCar ELMS: Red Bull Ring, Race Report, Jota Win, Mighty GTE Battles, LNT Dominate P3",
+     "url": "https://www.dailysportscar.com/2015/07/12/elms-red-bull-ring-race-report-jota-win-mighty-gte-battles-lnt-dominate-p3.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Jota Sport Wins 4H Red Bull Ring",
+    "url": "https://sportscar365.com/lemans/elms/jota-sport-wins-four-hours-of-red-bull-ring/"
+   },
+   {
+    "label": "Sportscar365: Tincknell Clinches Pole for Jota at Red Bull Ring",
+    "url": "https://sportscar365.com/lemans/elms/tincknell-clinches-pole-for-jota-at-red-bull-ring/"
+   },
+   {
+    "label": "Sportscar365: Jota Quickest in Free Practice at Red Bull Ring",
+    "url": "https://sportscar365.com/lemans/elms/jota-quickest/"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Weekend Preview",
+    "url": "https://www.dailysportscar.com/2015/07/10/elms-red-bull-ring-weekend-preview.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Friday Paddock Notes, Fun In The Styrian Sun",
+    "url": "https://www.dailysportscar.com/2015/07/10/elms-red-bull-ring-friday-paddock-notes-fun-in-the-styrian-sun.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Free Practice 2, TDS On Top After a Messy Session",
+    "url": "https://www.dailysportscar.com/2015/07/11/elms-red-bull-ring-free-practice-2-tds-on-top-after-a-messy-session.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Qualifying Report, Tincknell, Griffin, Robertson & Castelacci",
+    "url": "https://www.dailysportscar.com/2015/07/12/elms-red-bull-ring-qualifying-report-tincknell-griffin-robertson-castelacci.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Race Report, Jota Win, Mighty GTE Battles, LNT Dominate P3",
+    "url": "https://www.dailysportscar.com/2015/07/12/elms-red-bull-ring-race-report-jota-win-mighty-gte-battles-lnt-dominate-p3.html"
+   }
+  ]
+ },
+ "GTC": {
+  "title": "AF Corse’s #62 Ferrari wins from pole in GTC",
+  "dek": "Flohr, Castellacci and Hall took the #62 AF Corse Ferrari to GTC victory from pole, two laps clear of Perera’s TDS BMW, which held off Massive Motorsport’s Aston Martin for second.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "TDS lead by five points",
+    "text": [
+     "Five GTC cars lined up in Austria, covering BMW, Ferrari and Aston Martin. TDS Racing’s BMW Z4 of Perera, Lunardi and Dermont led the standings by five points over the #64 AF Corse Ferrari, thanks to a win at Silverstone and a fourth place in Italy. The BMW’s minimum weight was cut by 20 kg to 1,280 kg for this round, and the Aston Martin was also reduced by 20 kg, to 1,285 kg.",
+     "The Imola winners, Castellacci and Hall, ran the #62 AF Corse Ferrari with Thomas Flohr alongside them, while Roda, Cioci and Melnikov shared the #63 sister car. Massive Motorsport again fielded the only Aston Martin Vantage in the series for the Danes Elgaard, Moller and Poulsen, the last of them the reigning GTE-Am world champion."
+    ],
+    "cars": [
+     "59",
+     "64"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Castellacci beats Cioci late",
+    "text": [
+     "Practice had been close: Perera’s BMW led the first session on 1:32.236, with the top three separated by 79 thousandths, before the AF Corse Ferraris took the top two places in the second. In qualifying Cioci looked to have pole in the #63 until the closing minutes, when Castellacci found space and posted 1:31.101, roughly two tenths faster.",
+     "Perera was third in the BMW on 1:31.704. The #64 Ferrari qualified fourth (1:33.074) and Elgaard’s Aston Martin fifth, which made the grid order #62, #63, #59, #64, #68."
+    ],
+    "cars": [
+     "62",
+     "63"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Early double stint",
+    "text": [
+     "The GTC cars were the slowest in the field, picking their way past faster LMP2 and GTE machinery, and two safety car periods in the first hour reshuffled the traffic. Thomas Flohr drove a controlled early double stint in the #62 Ferrari."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Castellacci and Hall take control",
+    "text": [
+     "Castellacci and then Hall moved on to the attack, and the #62 took the class lead in the second half of the race. The TDS BMW was the main threat until it slid into a gravel trap and lost time, while the Massive Motorsport Aston Martin also spent time in front. The #63 Ferrari lost many laps and ran well behind, finishing 23 laps down on the winner, and the #64 was not classified after 44 laps."
+    ],
+    "cars": [
+     "68"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Perera holds off Poulsen",
+    "text": [
+     "Hall brought the #62 home in a tidy final stint. The fight for second went to the last lap, where Poulsen in the Aston Martin almost outdrew Perera’s BMW, but Perera had the legs through Turns 8 and 9 to the line. Both finished on 139 laps, two behind the winner."
+    ],
+    "cars": []
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Back-to-back for the #62",
+    "text": [
+     "The #62 AF Corse entry completed 141 laps for its second GTC win in a row, after Imola, with Castellacci setting the class fastest lap at 1:32.956. TDS Racing’s Perera, Lunardi and Dermont were second and Massive Motorsport’s Elgaard, Poulsen and Moller third, both two laps down, and the #63 Ferrari was the fourth classified car. The next round is at Paul Ricard in September."
+    ],
+    "cars": []
+   }
+  ],
+  "facts": [
+   {
+    "i": "⚖",
+    "t": "Weight cut for BMW and Aston",
+    "v": "The TDS BMW Z4 was cut by 20 kg to 1,280 kg and the Massive Motorsport Aston Martin by 20 kg to 1,285 kg for the Red Bull Ring.",
+    "one": {
+     "label": "DailySportsCar ELMS: Red Bull Ring, Weekend Preview",
+     "url": "https://www.dailysportscar.com/2015/07/10/elms-red-bull-ring-weekend-preview.html"
+    }
+   },
+   {
+    "i": "🎯",
+    "t": "Pole by two tenths",
+    "v": "Castellacci’s 1:31.101 beat the #63 sister car by about two tenths in the final minutes of qualifying.",
+    "one": {
+     "label": "Sportscar365 Tincknell Clinches Pole for Jota at Red Bull Ring",
+     "url": "https://sportscar365.com/lemans/elms/tincknell-clinches-pole-for-jota-at-red-bull-ring/"
+    }
+   },
+   {
+    "i": "🥇",
+    "t": "Second place decided at the line",
+    "v": "Perera’s BMW edged Poulsen’s Aston Martin for second on the final lap after both cars had been race leaders.",
+    "one": {
+     "label": "DailySportsCar ELMS: Red Bull Ring, Race Report, Jota Win, Mighty GTE Battles, LNT Dominate P3",
+     "url": "https://www.dailysportscar.com/2015/07/12/elms-red-bull-ring-race-report-jota-win-mighty-gte-battles-lnt-dominate-p3.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Jota Sport Wins 4H Red Bull Ring",
+    "url": "https://sportscar365.com/lemans/elms/jota-sport-wins-four-hours-of-red-bull-ring/"
+   },
+   {
+    "label": "Sportscar365: Tincknell Clinches Pole for Jota at Red Bull Ring",
+    "url": "https://sportscar365.com/lemans/elms/tincknell-clinches-pole-for-jota-at-red-bull-ring/"
+   },
+   {
+    "label": "Sportscar365: Jota Quickest in Free Practice at Red Bull Ring",
+    "url": "https://sportscar365.com/lemans/elms/jota-quickest/"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Weekend Preview",
+    "url": "https://www.dailysportscar.com/2015/07/10/elms-red-bull-ring-weekend-preview.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Free Practice 1, Jota On Top, Villorba Shunt",
+    "url": "https://www.dailysportscar.com/2015/07/11/elms-red-bull-ring-free-practice-1-jota-on-top-villorba-corse-shunt.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Free Practice 2, TDS On Top After a Messy Session",
+    "url": "https://www.dailysportscar.com/2015/07/11/elms-red-bull-ring-free-practice-2-tds-on-top-after-a-messy-session.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Qualifying Report, Tincknell, Griffin, Robertson & Castelacci",
+    "url": "https://www.dailysportscar.com/2015/07/12/elms-red-bull-ring-qualifying-report-tincknell-griffin-robertson-castelacci.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Race Report, Jota Win, Mighty GTE Battles, LNT Dominate P3",
+    "url": "https://www.dailysportscar.com/2015/07/12/elms-red-bull-ring-race-report-jota-win-mighty-gte-battles-lnt-dominate-p3.html"
+   }
+  ]
+ },
+ "LMP3": {
+  "title": "Team LNT dominates LMP3 in a four-car field",
+  "dek": "Hoy and Robertson won from class pole, eight laps clear of Villorba Corse, in a four-car, all-Ginetta field that lost SVK by Speed Factory’s car before the finish.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "A thin field in the class’s first year",
+    "text": [
+     "LMP3 was in its first season in the European Le Mans Series, and the class arrived in Austria with just four cars, all Ginetta-Nissans. The Ginetta was then the only LMP3 chassis fully approved by the ACO, with the Ligier JS P3, Riley-Ave AR-2 and ADESS-03 still being homologated, and a technical bulletin raised the minimum weight to 930 kg from this round.",
+     "Team LNT borrowed the University of Bolton car from Team RLR, which had won at Imola, and ran it as the #2 for Shulzhitskiy and Paletou, because its own second car was still in the USA after an IMSA test. Hoy and Robertson in the #3 wanted a return to the top step after an unhappy Italian round. SVK by Speed Factory, second in points after two rounds, ran Calko, Fuster and Matijosaitis in the #15, and Villorba Corse’s Lacorte and Sernagiotto in the #5 hoped for a cleaner weekend after new-car problems at Imola."
+    ],
+    "cars": [
+     "15",
+     "5"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Robertson into the 1:29s",
+    "text": [
+     "Robertson took class pole in the #3 on 1:29.851, finding a late lap that put him into the 1:29s. Calko (#15, 1:30.234) leapfrogged Shulzhitskiy’s #2 (1:30.481) late in the session to take second. Villorba’s #5 managed only 1:31.765: Lacorte had hit the barrier at Turn 2 in the first practice session, damaging the left rear, and the car missed the second session, so it had little set-up time.",
+     "Robertson expected the straights and slow corners to make traffic tricky, and said the class had to stay clean. On the grid the Ginettas were 15th, 17th, 20th and 26th overall."
+    ],
+    "cars": [
+     "3"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Sharing the track with the GTEs",
+    "text": [
+     "For the first hour the four Ginettas had to mix it with a pack of GTE cars, running three and even four wide in places with positions gained and lost in large numbers. Two safety car periods did not make life easier. Robertson started from class pole and moved clear of the other Ginettas in the #3."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Hoy holds the position",
+    "text": [
+     "Hoy completed a faultless double stint, holding the car’s place in the field before handing back to Robertson for the run to the finish. The #2 car spent half an hour in the pits and made further stops for front bodywork, and the #15 SVK Ginetta was out after 78 laps and was not classified."
+    ],
+    "cars": [
+     "2"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Eight laps in hand",
+    "text": [
+     "Robertson took the chequered flag with 141 laps completed, 19th overall. Villorba Corse’s #5 finished second in class, eight laps behind, with the #2 on 116 laps third."
+    ],
+    "cars": []
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "LNT’s win in a survival race",
+    "text": [
+     "Hoy and Robertson converted class pole into the win, with Robertson also setting the class fastest lap at 1:30.397. Lacorte and Sernagiotto took second for Villorba, 18 laps behind the overall winner and eight behind the class winner, and Shulzhitskiy and Paletou were third, 25 laps down. Calko, Fuster and Matijosaitis were not classified. The class returns at Paul Ricard in September."
+    ],
+    "cars": []
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Class pole in the 1:29s",
+    "v": "Robertson’s 1:29.851 put the #3 Ginetta on class pole and 15th on the overall grid.",
+    "one": {
+     "label": "DailySportsCar ELMS: Red Bull Ring, Qualifying Report, Tincknell, Griffin, Robertson & Castelacci",
+     "url": "https://www.dailysportscar.com/2015/07/12/elms-red-bull-ring-qualifying-report-tincknell-griffin-robertson-castelacci.html"
+    }
+   },
+   {
+    "i": "⚠",
+    "t": "Penalty after the race",
+    "v": "The #5 Villorba Ginetta received a three-lap penalty after the race for a driving time infringement.",
+    "one": {
+     "label": "Sportscar365 Jota Sport Wins 4H Red Bull Ring",
+     "url": "https://sportscar365.com/lemans/elms/jota-sport-wins-four-hours-of-red-bull-ring/"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "SVK car loses bodywork",
+    "v": "The #15 SVK Ginetta suffered repeated contact, losing underbody sections on both sides, before it retired.",
+    "one": {
+     "label": "DailySportsCar ELMS: Red Bull Ring, Race Report, Jota Win, Mighty GTE Battles, LNT Dominate P3",
+     "url": "https://www.dailysportscar.com/2015/07/12/elms-red-bull-ring-race-report-jota-win-mighty-gte-battles-lnt-dominate-p3.html"
+    }
+   },
+   {
+    "i": "🧭",
+    "t": "First ADESS-03 customer",
+    "v": "G-Private Racing Services announced it had ordered two of the new ADESS-03 LMP3 cars, planning to enter the ELMS among other series.",
+    "one": {
+     "label": "Sportscar365 G-Private Racing Services Becomes First ADESS-03 Customer",
+     "url": "https://sportscar365.com/lemans/elms/g-private-racing-services-orders-two-adess-03-lmp3-cars/"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Jota Sport Wins 4H Red Bull Ring",
+    "url": "https://sportscar365.com/lemans/elms/jota-sport-wins-four-hours-of-red-bull-ring/"
+   },
+   {
+    "label": "Sportscar365: Tincknell Clinches Pole for Jota at Red Bull Ring",
+    "url": "https://sportscar365.com/lemans/elms/tincknell-clinches-pole-for-jota-at-red-bull-ring/"
+   },
+   {
+    "label": "Sportscar365: LMP3 to Be Limited to Five Constructors",
+    "url": "https://sportscar365.com/lemans/elms/lmp3-to-be-limited-to-five-constructors/"
+   },
+   {
+    "label": "Sportscar365: G-Private Racing Services Becomes First ADESS-03 Customer",
+    "url": "https://sportscar365.com/lemans/elms/g-private-racing-services-orders-two-adess-03-lmp3-cars/"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Weekend Preview",
+    "url": "https://www.dailysportscar.com/2015/07/10/elms-red-bull-ring-weekend-preview.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Friday Paddock Notes, Fun In The Styrian Sun",
+    "url": "https://www.dailysportscar.com/2015/07/10/elms-red-bull-ring-friday-paddock-notes-fun-in-the-styrian-sun.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Free Practice 1, Jota On Top, Villorba Shunt",
+    "url": "https://www.dailysportscar.com/2015/07/11/elms-red-bull-ring-free-practice-1-jota-on-top-villorba-corse-shunt.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Free Practice 2, TDS On Top After a Messy Session",
+    "url": "https://www.dailysportscar.com/2015/07/11/elms-red-bull-ring-free-practice-2-tds-on-top-after-a-messy-session.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Qualifying Report, Tincknell, Griffin, Robertson & Castelacci",
+    "url": "https://www.dailysportscar.com/2015/07/12/elms-red-bull-ring-qualifying-report-tincknell-griffin-robertson-castelacci.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Race Report, Jota Win, Mighty GTE Battles, LNT Dominate P3",
+    "url": "https://www.dailysportscar.com/2015/07/12/elms-red-bull-ring-race-report-jota-win-mighty-gte-battles-lnt-dominate-p3.html"
+   }
+  ]
+ }
+}

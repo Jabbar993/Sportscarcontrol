@@ -1,0 +1,472 @@
+{
+ "LMGTE": {
+  "title": "Marc VDS bow out with a GTE win as Formula Racing take the title",
+  "dek": "BMW Team MarcVDS won its final race from near the back of the grid, a lap clear of the Beechdean-run Aston Martin, while fifth place secured Formula Racing’s GTE championship.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "A title to close and a team to say goodbye to",
+    "text": [
+     "Nine cars lined up in GTE for the season finale, and the class championship was still open. Formula Racing’s Ferrari #60, the points leader after a year built on speed and consistency, needed seven points to be sure of the title. Behind it, six cars were within 13 points of each other in the fight for second place, which carried an automatic entry to Le Mans.",
+     "The weekend was also the last four-wheeled race for BMW Team MarcVDS, which had pulled out of sports car racing after a single season in GTE. Priaulx, Hassid and Jesse Krohn kept an outside shot at the title in the #52 BMW Z4. The entry list carried one newcomer: the Aston Martin Vantage #99, run by British GT champions Beechdean under the Aston Martin Racing banner for Howard, Adam and Macdowall, on a one-off ELMS debut with 2016 in mind. JMW Motorsport added Ferrari factory driver Calado to its line-up for the weekend.",
+     "Practice was disrupted by the weather. Free Practice 1 was red-flagged 26 minutes early because of wind and heavy rain, and in the wet session Lietz’s Proton Porsche topped the class. A drying track in the extended second session put Calado’s JMW Ferrari in front, with Priaulx a tenth and a half behind."
+    ],
+    "cars": [
+     "60",
+     "99"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Porsche takes pole, Priaulx gambles on slicks",
+    "text": [
+     "The GT cars went first in a 20-minute session on a track that was still wet after overnight rain. There was no intermediate tyre available to the GT classes, and conditions at first favoured the ABS-equipped GTC cars over their nominally faster GTE rivals.",
+     "Lietz used the traction of the Porsche to claim GTE pole with 1:52.945, ahead of Mac in the Formula Racing Ferrari (1:53.034) and Calado in the JMW car (1:53.108). Pier Guidi’s AT Racing Ferrari, the two further AF Corse cars and Carroll’s Gulf Porsche followed, with the Aston Martin eighth on 1:55.065.",
+     "Priaulx, meanwhile, tried slicks on the damp surface and it did not pay off: his 2:06.423 left the BMW at the bottom of the timesheet, and it started 29th overall, second-last on the grid."
+    ],
+    "cars": [
+     "88",
+     "52"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Hassid on the charge",
+    "text": [
+     "Starting from the back, Hassid was in the thick of the GTE fight within a handful of laps and kept pushing before handing to Priaulx. Up front, the JMW Ferrari ran at the head of the class early on, with Butcher driving the first stint, while the Formula Racing Ferrari ran with the title in mind rather than outright speed."
+    ],
+    "cars": [
+     "66"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Rain, slicks and a stopped Ferrari",
+    "text": [
+     "A sudden downpour in the second hour turned the race on its head. Priaulx was one of a handful of GT drivers who stayed out on slicks while others stopped for tyres, and after a nervous few laps the track came back to him, leaving the BMW without the time lost in extra pit stops.",
+     "Calado took over the JMW Ferrari soon after it lost the class lead, and the car stopped on the circuit, ending its race after 69 laps. With the Ferrari gone, Krohn moved the BMW into the class lead in the third hour."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 4",
+    "title": "Protecting the title",
+    "text": [
+     "The #60 only needed sixth to be certain of the championship and drove accordingly, running conservatively through the changeable conditions. Griffin was chasing a podium in the #55 AF Corse Ferrari after a relatively quiet run, but the car could not find the pace to get there."
+    ],
+    "cars": [
+     "55"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Krohn brings it home",
+    "text": [
+     "Krohn took the BMW to the flag 129 laps in, a lap clear of Macdowall’s Aston Martin on its debut, so the podium had no Ferrari on it. Wainwright, Carroll and Keen’s Gulf Porsche completed it on the same lap as the Aston, with Cameron, Griffin and Scott’s Ferrari fourth and the Formula Racing Ferrari fifth, which was enough for the title."
+    ],
+    "cars": [
+     "86"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Champions and farewells",
+    "text": [
+     "Priaulx, Hassid and Krohn gave BMW Team MarcVDS a winning farewell, while the Aston Martin of Howard, Adam and Macdowall took second on the team’s first ELMS start and the Gulf Porsche of Wainwright, Carroll and Keen third. Laursen, Mac and Rizzoli were crowned class champions with Formula Racing, who finished fifth ahead of AT Racing’s #56 in sixth. The AF Corse Ferrari of Mann, Giammaria and Cressoni was seventh, 7 laps behind the winners, and Proton’s Porsche #88, the pole-sitter, completed 100 laps for eighth.",
+     "Beechdean was evaluating a full-season ELMS entry for 2016 after the debut. The next ELMS date was the Paul Ricard prologue on 22 and 23 March."
+    ],
+    "cars": [
+     "56"
+    ]
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Last race for Marc VDS",
+    "v": "The Belgian team’s BMW entry contested its final four-wheeled race at Estoril and won the GTE class.",
+    "one": {
+     "label": "Sportscar365: Estoril Weekend Notebook",
+     "url": "https://sportscar365.com/lemans/elms/estoril-weekend-notebook/"
+    }
+   },
+   {
+    "i": "🎯",
+    "t": "Slicks in qualifying",
+    "v": "Priaulx opted for slicks on a wet track in qualifying and ended up last, 2:06.423 off the pace.",
+    "one": {
+     "label": "Sportscar365: Jota Sport Beats Greaves to Wet Estoril Pole",
+     "url": "https://sportscar365.com/lemans/elms/jota-sport-beats-greaves-to-wet-estoril-pole/"
+    }
+   },
+   {
+    "i": "🏆",
+    "t": "Title with fifth place",
+    "v": "Formula Racing needed sixth to be sure of the title and finished fifth, taking the team and driver championships.",
+    "one": {
+     "label": "DailySportsCar: ELMS Estoril, GT Race Report, Marc VDS Take Emotional Win, Formula Ferrari & TDS BMW Titles",
+     "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-race-report-part-3-the-gts-marc-vds-take-emotional-win-formula-ferrari-and-tds-bmw-the-titles.html"
+    }
+   },
+   {
+    "i": "🥇",
+    "t": "Podium without a Ferrari",
+    "v": "The Aston Martin Vantage of Beechdean on its ELMS debut finished second, ahead of the Gulf Porsche.",
+    "one": {
+     "label": "Sportscar365: Thiriet by TDS Wins Estoril, Greaves Claims LMP2 Title",
+     "url": "https://sportscar365.com/lemans/elms/tds-wins-estoril-greaves-claims-lmp2-championship/"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: ELMS Estoril, Race Preview, Part 2 The GTs",
+    "url": "https://www.dailysportscar.com/2015/10/17/elms-estoril-race-preview-part-two-the-gt-cars.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, Saturday Paddock Notes & Free Practice 1, Wind Stops Play",
+    "url": "https://www.dailysportscar.com/2015/10/17/elms-estoril-saturday-paddock-notes-free-practice-1-wind-stops-play.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, Free Practice 2, Greaves Fastest As The Sunshine Arrives!",
+    "url": "https://www.dailysportscar.com/2015/10/17/elms-estoril-free-practice-2-greaves-fastest-as-the-sunshine-arrives.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, GT Qualifying, Wet Track Sees GTC BMW Top The Times",
+    "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-gt-qualifying-wet-track-sees-gtc-bmw-top-the-times.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, GT Race Report, Marc VDS Take Emotional Win, Formula Ferrari & TDS BMW Titles",
+    "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-race-report-part-3-the-gts-marc-vds-take-emotional-win-formula-ferrari-and-tds-bmw-the-titles.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Crowns Their Champions, Plus Special Awards For Robertson, Hignett & TDS",
+    "url": "https://www.dailysportscar.com/2015/10/19/elms-crowns-their-champions-plus-special-awards-for-robertson-hignett-and-tds.html"
+   },
+   {
+    "label": "Sportscar365: Greaves Tops Saturday Free Practice at Estoril",
+    "url": "https://sportscar365.com/lemans/elms/greaves-tops-saturday-free-practice-at-estoril/"
+   },
+   {
+    "label": "Sportscar365: Estoril Weekend Notebook",
+    "url": "https://sportscar365.com/lemans/elms/estoril-weekend-notebook/"
+   },
+   {
+    "label": "Sportscar365: Jota Sport Beats Greaves to Wet Estoril Pole",
+    "url": "https://sportscar365.com/lemans/elms/jota-sport-beats-greaves-to-wet-estoril-pole/"
+   },
+   {
+    "label": "Sportscar365: Thiriet by TDS Wins Estoril, Greaves Claims LMP2 Title",
+    "url": "https://sportscar365.com/lemans/elms/tds-wins-estoril-greaves-claims-lmp2-championship/"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, Notes From Press Conference, Prize Money in 2016, Prologue Date Change",
+    "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-notes-from-the-press-conference-prize-money-in-2016-prologue-date-change.html"
+   }
+  ]
+ },
+ "LMP3": {
+  "title": "LNT Ginetta wins from last on the grid as Graff’s Ligier debuts second",
+  "dek": "Simpson and Paletou took the #2 Ginetta from 30th on the grid to win by a lap over the debuting Graff Ligier, with Hoy and Robertson third.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Ginettas meet the Ligier",
+    "text": [
+     "LMP3 reached its first-ever finale with the title already settled. Team LNT’s Hoy and Robertson in the #3 Ginetta had clinched the inaugural championship at the previous round, so the new contest at Estoril was one of pace: the founding Ginetta-Nissans against Graff’s Ligier JS P3, which was making its European debut after a Ligier had won in the opening round of the Asian Le Mans Series the weekend before.",
+     "Five cars ran in the class. Team LNT fielded two Ginettas, the #2 of Simpson and Paletou and the #3 of Hoy and Robertson, and the Graff Ligier #9 carried Trouillet, Findlay and Accary. Villorba Corse ran its Ginetta #5 and SVK by Speed Factory its #15, a team that confirmed over the weekend it would switch to two Ligier JS P3 cars in 2016 after being one of only two teams to run the whole ELMS season in the class.",
+     "In practice the LNT Ginettas set the pace. In the extended second session Simpson led from his team-mate by a tenth, with the Graff Ligier about a second back, and the Ginettas outpaced the GTE cars on the day."
+    ],
+    "cars": [
+     "9",
+     "15"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Pole taken away, the #2 sent to the back",
+    "text": [
+     "On a drying track, LNT filled the front row. Robertson’s #3 took pole at 1:50.469 after the #2 had been fastest on the final lap, but the Simpson time was disallowed and the car was sent to the back of the grid, 30th of 30 overall.",
+     "Findlay put the Graff Ligier third in class, 1.3 seconds off the pole time. Villorba’s Sernagiotto (1:56.188) and the SVK Ginetta of Calko (1:57.052) were the other two. Calko’s car ran into the gravel at the final corner late in the session, bringing out yellow flags."
+    ],
+    "cars": [
+     "3"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Paletou goes through the field",
+    "text": [
+     "Starting last, the #2 made rapid progress. Paletou, in his first season of racing, carved through the field in his opening stint."
+    ],
+    "cars": [
+     "2"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Storm, Hoy’s defence and the Ligier’s recovery",
+    "text": [
+     "The second-hour downpour decided the class. By the time the weather settled, the #2 was in control, and the question was who would take second. For some time it looked like an LNT 1-2, but the Graff Ligier worked its way forward after a slow start and eventually moved ahead of the #3 for second."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 4",
+    "title": "Simpson laps the class",
+    "text": [
+     "Simpson took the #2 through the closing stint at a strong pace and finished a lap clear of everyone else in the class, while the Ligier held second ahead of Hoy and the #3."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "A first win for the #2 crew",
+    "text": [
+     "The #2 finished 127 laps in, one lap ahead of the Graff Ligier #9 and two ahead of the #3. SVK’s Ginetta #15 was fourth on 123 laps, and Villorba’s #5 retired after 46 laps and was not classified."
+    ],
+    "cars": [
+     "5"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Champions, then a win for the second Ginetta",
+    "text": [
+     "Simpson and Paletou’s win was the first for the #2 Ginetta and its crew, and gave Team LNT a 1-2 in the inaugural class championship. Robertson’s #3 set the class fastest lap, a 1:39.120, and Hoy and Robertson were crowned drivers’ champions, with Robertson also awarded the series’ Rookie of the Year.",
+     "Graff’s second place on the Ligier’s European debut was a strong first outing for the new car. Nissan said it would give the LMP3 champions an LMP2 test at a later date."
+    ],
+    "cars": []
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏆",
+    "t": "Inaugural champions",
+    "v": "Hoy and Robertson, with Team LNT, were the first ELMS LMP3 champions and are to receive an LMP2 test from Nissan.",
+    "one": {
+     "label": "DailySportsCar: ELMS Estoril, Notes From Press Conference, Prize Money in 2016, Prologue Date Change",
+     "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-notes-from-the-press-conference-prize-money-in-2016-prologue-date-change.html"
+    }
+   },
+   {
+    "i": "🎯",
+    "t": "Pole disallowed",
+    "v": "Simpson’s final-lap 1:50.395 in qualifying was disallowed, giving pole to Robertson and sending the #2 to the back of the grid.",
+    "one": {
+     "label": "DailySportsCar: ELMS Estoril, LMP Qualifying, Drying Track Drama As Jota Take Pole, LNT Ginettas In LMP3",
+     "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-lmp-qualifying-drying-track-drama-as-jota-take-pole-lnt-ginettas-boss-lmp3.html"
+    }
+   },
+   {
+    "i": "🛞",
+    "t": "Slicks in the storm",
+    "v": "Paletou, who rose from 30th to 8th overall in the first hour, persuaded the team to stay out on slicks when most of the field stopped for inters or wets.",
+    "one": {
+     "label": "DailySportsCar: ELMS Estoril, LMP3 Race Report, Paletou & Simpson Win, LNT Take 1,2 In Title Race",
+     "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-race-report-part-2-lmp3-paletou-and-simpson-win-lnt-take-12-in-title-race.html"
+    }
+   },
+   {
+    "i": "🧭",
+    "t": "Ligier on debut",
+    "v": "The Graff Ligier JS P3, in its first European race, ran with the Ginettas and finished second in class.",
+    "one": {
+     "label": "DailySportsCar: ELMS Estoril, LMP3 Race Report, Paletou & Simpson Win, LNT Take 1,2 In Title Race",
+     "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-race-report-part-2-lmp3-paletou-and-simpson-win-lnt-take-12-in-title-race.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: ELMS Estoril, Race Preview, Part 1 The LMPs",
+    "url": "https://www.dailysportscar.com/2015/10/16/elms-estoril-weekend-preview-part-1-the-lmps.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, Saturday Paddock Notes & Free Practice 1, Wind Stops Play",
+    "url": "https://www.dailysportscar.com/2015/10/17/elms-estoril-saturday-paddock-notes-free-practice-1-wind-stops-play.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, Free Practice 2, Greaves Fastest As The Sunshine Arrives!",
+    "url": "https://www.dailysportscar.com/2015/10/17/elms-estoril-free-practice-2-greaves-fastest-as-the-sunshine-arrives.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, LMP Qualifying, Drying Track Drama As Jota Take Pole, LNT Ginettas In LMP3",
+    "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-lmp-qualifying-drying-track-drama-as-jota-take-pole-lnt-ginettas-boss-lmp3.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, LMP3 Race Report, Paletou & Simpson Win, LNT Take 1,2 In Title Race",
+    "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-race-report-part-2-lmp3-paletou-and-simpson-win-lnt-take-12-in-title-race.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Crowns Their Champions, Plus Special Awards For Robertson, Hignett & TDS",
+    "url": "https://www.dailysportscar.com/2015/10/19/elms-crowns-their-champions-plus-special-awards-for-robertson-hignett-and-tds.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, Notes From Press Conference, Prize Money in 2016, Prologue Date Change",
+    "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-notes-from-the-press-conference-prize-money-in-2016-prologue-date-change.html"
+   },
+   {
+    "label": "DailySportsCar: Speed Factory Switch To Ligier For 2016 ELMS & VdeV LMP3 Campaign",
+    "url": "https://www.dailysportscar.com/2015/10/18/68309.html"
+   },
+   {
+    "label": "Sportscar365: Greaves Tops Saturday Free Practice at Estoril",
+    "url": "https://sportscar365.com/lemans/elms/greaves-tops-saturday-free-practice-at-estoril/"
+   },
+   {
+    "label": "Sportscar365: Jota Sport Beats Greaves to Wet Estoril Pole",
+    "url": "https://sportscar365.com/lemans/elms/jota-sport-beats-greaves-to-wet-estoril-pole/"
+   },
+   {
+    "label": "Sportscar365: Thiriet by TDS Wins Estoril, Greaves Claims LMP2 Title",
+    "url": "https://sportscar365.com/lemans/elms/tds-wins-estoril-greaves-claims-lmp2-championship/"
+   },
+   {
+    "label": "Sportscar365: Speed Factory Confirms Switch to Ligier JS P3",
+    "url": "https://sportscar365.com/lemans/elms/speed-factory-confirms-switch-to-ligier-js-p3/"
+   }
+  ]
+ },
+ "GTC": {
+  "title": "AF Corse Ferrari wins as TDS BMW clinches the GTC title",
+  "dek": "AF Corse’s #63 Ferrari won the last GTC race of the season, a lap ahead of TDS Racing’s BMW, whose second place was enough to clinch the title.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "TDS needs 13 points",
+    "text": [
+     "The GTC title was nearly decided before the cars left the pits. TDS Racing’s BMW Z4 GT3 #59, driven by Perera, Lunardi and Dermont, led the points by 13 and needed 13 more to be champion. The only car left that could stop it was AF Corse’s #62 Ferrari of Flohr, Castellacci and Hall, which needed to win and also needed BMW trouble.",
+     "Six cars ran in the class: the BMW, three AF Corse Ferraris (#62, #63 and #64), Massive Motorsport’s Aston Martin V12 Vantage #68 and a newcomer, the TF Sport Aston Martin Vantage #77 of Yoluc, Hankey and Stanaway. TF Sport was looking at a full ELMS programme for 2016. On the Sunday the ACO also announced a Michelin GT3 Le Mans Cup for 2016, to run on ELMS weekends.",
+     "The BMW was the fastest GT car in the wet first practice, eighth overall. In the second session the Ferraris went one-two, with the #62 leading the #63 by a tenth and the BMW another tenth back."
+    ],
+    "cars": [
+     "62"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Perera on pole in the wet",
+    "text": [
+     "The GT session started on a wet track, and at first the ABS-equipped GTC cars were quicker than the GTE cars. Cioci led with the #63 Ferrari early on, before Perera took the TDS BMW to pole with 1:52.723, the fastest time of the whole GT session.",
+     "Cioci was second with 1:52.950 and Castellacci third in the #62 (1:53.014), with Stanaway’s TF Sport Aston fourth (1:53.180). Guedes put the #64 Ferrari fifth on 1:53.930 and Moller’s Massive Motorsport Aston Martin was sixth on 1:59.856."
+    ],
+    "cars": [
+     "59"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 1–3",
+    "title": "The cautious cars lose out",
+    "text": [
+     "The race swung between dry and very wet. The title contenders played it conservatively, while the #63 took advantage, with Cioci in the final stint. The #62 needed a win and finished fourth. The Massive Motorsport Aston, which started 28th, was not classified after 82 laps. The TF Sport car dropped down the order after the driver change and would end fifth."
+    ],
+    "cars": [
+     "63",
+     "68",
+     "77"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "The #63 takes the win",
+    "text": [
+     "The #63 Ferrari won on 125 laps. TDS’s BMW was second, a copybook run to take the title, and the #64 AF Corse Ferrari third on the same lap, ahead of the #62 a lap down in fourth. TF Sport’s Aston Martin was fifth on 123."
+    ],
+    "cars": [
+     "64"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "TDS wins the title, AF Corse the race",
+    "text": [
+     "Roda, Melnikov and Cioci won the class for AF Corse. Perera, Lunardi and Dermont finished second to clinch the drivers’ and team titles for TDS Racing, which was named Team of the Year at the awards evening. Rasmussen, Barreiros and Guedes took third in the #64, ahead of Flohr, Castellacci and Hall in the #62, whose title hopes ended, and Yoluc, Hankey and Stanaway in the TF Sport Aston Martin. Lunardi set the class fastest lap with a 1:41.864."
+    ],
+    "cars": []
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏆",
+    "t": "TDS Racing champions",
+    "v": "Perera, Lunardi and Dermont and the TDS BMW took the GTC title with a second-place finish.",
+    "one": {
+     "label": "DailySportsCar: ELMS Crowns Their Champions, Plus Special Awards For Robertson, Hignett & TDS",
+     "url": "https://www.dailysportscar.com/2015/10/19/elms-crowns-their-champions-plus-special-awards-for-robertson-hignett-and-tds.html"
+    }
+   },
+   {
+    "i": "🥇",
+    "t": "AF Corse wins the final GTC race",
+    "v": "The #63 Ferrari of Roda, Melnikov and Cioci won the last GTC race of the ELMS season.",
+    "one": {
+     "label": "DailySportsCar: ELMS Estoril, GT Race Report, Marc VDS Take Emotional Win, Formula Ferrari & TDS BMW Titles",
+     "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-race-report-part-3-the-gts-marc-vds-take-emotional-win-formula-ferrari-and-tds-bmw-the-titles.html"
+    }
+   },
+   {
+    "i": "🧭",
+    "t": "TF Sport debuts",
+    "v": "The TF Sport Aston Martin appeared at Estoril with an eye to the 2016 ELMS; Hankey led the opening stint before the car dropped to fifth.",
+    "one": {
+     "label": "DailySportsCar: ELMS Estoril, GT Race Report, Marc VDS Take Emotional Win, Formula Ferrari & TDS BMW Titles",
+     "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-race-report-part-3-the-gts-marc-vds-take-emotional-win-formula-ferrari-and-tds-bmw-the-titles.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: ELMS Estoril, Race Preview, Part 2 The GTs",
+    "url": "https://www.dailysportscar.com/2015/10/17/elms-estoril-race-preview-part-two-the-gt-cars.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, Saturday Paddock Notes & Free Practice 1, Wind Stops Play",
+    "url": "https://www.dailysportscar.com/2015/10/17/elms-estoril-saturday-paddock-notes-free-practice-1-wind-stops-play.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, Free Practice 2, Greaves Fastest As The Sunshine Arrives!",
+    "url": "https://www.dailysportscar.com/2015/10/17/elms-estoril-free-practice-2-greaves-fastest-as-the-sunshine-arrives.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, GT Qualifying, Wet Track Sees GTC BMW Top The Times",
+    "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-gt-qualifying-wet-track-sees-gtc-bmw-top-the-times.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Estoril, GT Race Report, Marc VDS Take Emotional Win, Formula Ferrari & TDS BMW Titles",
+    "url": "https://www.dailysportscar.com/2015/10/18/elms-estoril-race-report-part-3-the-gts-marc-vds-take-emotional-win-formula-ferrari-and-tds-bmw-the-titles.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS Crowns Their Champions, Plus Special Awards For Robertson, Hignett & TDS",
+    "url": "https://www.dailysportscar.com/2015/10/19/elms-crowns-their-champions-plus-special-awards-for-robertson-hignett-and-tds.html"
+   },
+   {
+    "label": "Sportscar365: Thiriet by TDS Wins Estoril, Greaves Claims LMP2 Title",
+    "url": "https://sportscar365.com/lemans/elms/tds-wins-estoril-greaves-claims-lmp2-championship/"
+   },
+   {
+    "label": "Sportscar365: ACO Launches Michelin GT3 Le Mans Cup for 2016",
+    "url": "https://sportscar365.com/lemans/aco-launches-michelin-gt3-le-mans-cup/"
+   }
+  ]
+ }
+}

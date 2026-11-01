@@ -1,0 +1,491 @@
+{
+ "LMP3": {
+  "title": "Robertson and Hoy win and take the first LMP3 title",
+  "dek": "Robertson and Hoy won for Team LNT by about 110 seconds from Villorba Corse and clinched the first LMP3 title when the sister Ginetta stopped on track.",
+  "facts": [
+   {
+    "i": "🏆",
+    "t": "First LMP3 champions",
+    "v": "Hoy and Robertson sealed the inaugural LMP3 drivers' title, and Team LNT the teams' title, with a round still to run at Estoril.",
+    "one": {
+     "label": "24h-lemans.com: ELMS - 4 Hours of Le Castellet - Race Report",
+     "url": "https://www.24h-lemans.com/en/news/elms-4-hours-of-le-castellet-race-report-21902"
+    }
+   },
+   {
+    "i": "🏁",
+    "t": "Third pole of the year",
+    "v": "Robertson's 1:55.431 gave the #3 pole, 0.205s clear of Simpson in the sister #2.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Paul Ricard, Qualifying, Tincknell Stars Again",
+     "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-qualifying-tincknell-stars-again.html"
+    }
+   },
+   {
+    "i": "🔁",
+    "t": "Extra timed stop",
+    "v": "LMP3 cars had to make an additional mandatory 2m30s timed stop, which dropped the class leader back into the GTE traffic.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Paul Ricard, Robertson, Hoy & Team LNT Take The Win & The First LMP3 Title",
+     "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-robertson-hoy-team-lnt-take-the-win-and-the-first-lmp3-title.html"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Lighter Ginettas",
+    "v": "The updated Ginettas, known internally as the G57, were at the class weight limit for the first time since the Prologue test.",
+    "one": {
+     "label": "DailySportsCar: LMP3 Catch-Up, Ginetta & Ligier Programmes Progress, Yvan Muller Latest Ligier Customer",
+     "url": "https://www.dailysportscar.com/2015/09/08/lmp3-catch-up-ginetta-ligier-programmes-progress-yvan-muller-latest-ligier-customer.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Race Preview",
+    "url": "https://www.dailysportscar.com/2015/09/04/elms-paul-ricard-race-preview.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, AF Racing BR01 Tops Free Practice 1",
+    "url": "https://www.dailysportscar.com/2015/09/05/elms-paul-ricard-af-racing-br01-tops-fp1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Saturday Morning Notes, BR01s On Dunlops, New Look At Team LNT",
+    "url": "https://www.dailysportscar.com/2015/09/05/elms-paul-ricard-saturday-morning-paddock-notes-br01s-on-dunlops-new-look-at-team-lnt.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Gommendy's Free Practice 2 Mistral Magic",
+    "url": "https://www.dailysportscar.com/2015/09/05/elms-paul-ricard-gommendys-fp2-mistral-magic.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Qualifying, Tincknell Stars Again",
+    "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-qualifying-tincknell-stars-again.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Robertson, Hoy & Team LNT Take The Win & The First LMP3 Title",
+    "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-robertson-hoy-team-lnt-take-the-win-and-the-first-lmp3-title.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, JOTA Extends Title Advantage With Win (updated)",
+    "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-jota-extends-title-advantage-with-win.html"
+   },
+   {
+    "label": "DailySportsCar: LMP3 Catch-Up, Ginetta & Ligier Programmes Progress, Yvan Muller Latest Ligier Customer",
+    "url": "https://www.dailysportscar.com/2015/09/08/lmp3-catch-up-ginetta-ligier-programmes-progress-yvan-muller-latest-ligier-customer.html"
+   },
+   {
+    "label": "Sportscar365: TDS Tops Saturday Free Practice at Paul Ricard",
+    "url": "https://sportscar365.com/lemans/elms/tds-tops-saturday-free-practice-at-paul-ricard/"
+   },
+   {
+    "label": "Sportscar365: Jota Sport Wins 4H Le Castellet",
+    "url": "https://sportscar365.com/lemans/elms/jota-sport-wins-4h-le-castellet/"
+   },
+   {
+    "label": "24h-lemans.com: ELMS - 4 Hours of Le Castellet - Race Report",
+    "url": "https://www.24h-lemans.com/en/news/elms-4-hours-of-le-castellet-race-report-21902"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "A title that could be settled in France",
+    "cars": [
+     "3"
+    ],
+    "text": [
+     "LMP3 reached Paul Ricard as a four-car class that could crown its first champion before the season was out. Team LNT held the top two places in the standings, with Chris Hoy and Charlie Robertson in the #3 Ginetta-Nissan 19 points clear of Michael Simpson and Gaëtan Paletou in the sister #2, so a win for the #3 would make the pair unassailable with only the Estoril finale left. The other two entries, Villorba Corse's #5 for Roberto Lacorte and Giorgio Sernagiotto and SVK by Speed Factory's #15 for Konstantin Calko, Mirco van Oostrum and Dainius Matijosaitis, needed both luck and pace to disturb the order.",
+     "The Ginettas, now known internally as the G57, arrived with lighter bodywork and aerodynamic changes. They were at the class weight limit for the first time since the Prologue test, and lap times in practice showed the step forward. LNT had swapped chassis between its two cars, so the #2 appeared in a full orange and black Ginetta livery. Simpson and Paletou's #2 headed its sister car in both free practice sessions, with the two LNT cars first and second each time, while van Oostrum took his first competitive laps in the SVK car that morning."
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Robertson heads an LNT front row",
+    "cars": [
+     "15"
+    ],
+    "text": [
+     "Robertson took pole for the #3 with a 1:55.431, his third of the season. Simpson put the #2 second on 1:55.636, 0.205s adrift, so Team LNT locked out the class front row once more. Robertson said the team had tried set-up changes on Saturday before reverting to the settings it started the day with, that he had known the lap was in the car, and that Simpson and Paletou had looked strong enough to make this the toughest qualifying of the year.",
+     "The other two Ginettas were well back. Calko's #15 managed a 1:56.731 and Sernagiotto's #5 a 1:57.058, roughly 1.3 and 1.6 seconds off the pole time. On the mixed-class grid the four LMP3 cars started from 11th, 12th, 19th and 20th overall, with the GTE cars slotted between them."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Robertson and Paletou trade the lead",
+    "cars": [],
+    "text": [
+     "The first hour of the class race was a duel between the two LNT cars. Robertson led the opening laps with Paletou on his tail, until Robertson lost time in traffic and Paletou took the lead after about a quarter of an hour. From there the two circulated nose to tail on near-identical lap times until the first scheduled stops."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "The #2 stops on track",
+    "cars": [
+     "2"
+    ],
+    "text": [
+     "Paletou came out of the first stops with a slightly bigger lead and looked to be pulling clear when the #2 stopped on track with a suspected drivetrain problem and could not rejoin. It had completed 32 laps. A safety car was deployed to recover it around 70 minutes into the race, and the #3 was left with a commanding lead that it never lost, Robertson lapping consistently quickly. Behind them Villorba Corse and SVK by Speed Factory ran on in second and third."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 4",
+    "title": "Hoy and Robertson stay in control",
+    "cars": [
+     "5"
+    ],
+    "text": [
+     "Hoy's long stint kept the #3 comfortably in front, and Robertson climbed back aboard for the final 20 minutes or so. The Ginettas had less trouble than before in passing the GTE cars, but the class order itself did not change: the #3 in front, Lacorte and Sernagiotto's #5 second, and the #15 a lap behind in third."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Champions in the first LMP3 season",
+    "cars": [],
+    "text": [
+     "Robertson took the chequered flag roughly 110 seconds ahead of the Villorba Corse #5, with both cars on 113 laps, and the SVK by Speed Factory #15 completed the podium one lap down. The win gave Hoy and Robertson, and Team LNT, the first LMP3 title in the European Le Mans Series with a round in hand."
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Team LNT take the title with a round to spare",
+    "cars": [],
+    "text": [
+     "Team LNT's #3 won on 113 laps from Villorba Corse's #5 on the same lap, with the #15 third on 112. The #2 was not classified after 32 laps. Robertson also set the class fastest lap, a 1:57.032, and the victory was the #3's third in the first four rounds.",
+     "Hoy said he was delighted to win and overwhelmed to be a champion in the class's first year, praising the team's attention to detail and the Ginetta, which he said had felt comfortable from the first run and improved all season. Robertson said he could hardly believe it, that the car had been faultless and the pit stops had gone like clockwork, and that the pressure was finally lifting. Both said they wanted to finish the year with another good result at Estoril on 18 October."
+    ]
+   }
+  ]
+ },
+ "LMGTE": {
+  "title": "Formula Racing takes GTE win as AT Racing's pole unravels",
+  "dek": "Laursen, Mac and Rizzoli won for Formula Racing, a lap clear of BMW Team MarcVDS, after pole-sitting AT Racing's Ferrari was undone by contact and track-limits penalties.",
+  "facts": [
+   {
+    "i": "🥇",
+    "t": "Second win in a row",
+    "v": "Formula Racing's Ferrari #60 followed its Red Bull Ring victory with another win, Rizzoli taking the flag.",
+    "one": {
+     "label": "Sportscar365: Jota Sport Wins 4H Le Castellet",
+     "url": "https://sportscar365.com/lemans/elms/jota-sport-wins-4h-le-castellet/"
+    }
+   },
+   {
+    "i": "📈",
+    "t": "A 19-point cushion",
+    "v": "Formula Racing left France 19 points ahead of BMW Team MarcVDS, with 22 points covering the top four teams before Estoril.",
+    "one": {
+     "label": "24h-lemans.com: ELMS - 4 Hours of Le Castellet - Race Report",
+     "url": "https://www.24h-lemans.com/en/news/elms-4-hours-of-le-castellet-race-report-21902"
+    }
+   },
+   {
+    "i": "⚠",
+    "t": "Penalties for AT Racing",
+    "v": "Contact with an LMP2 Ligier and multiple track-limits penalties ended AT Racing's chance of victory with the pole-sitting #56.",
+    "one": {
+     "label": "Sportscar365: Jota Sport Wins 4H Le Castellet",
+     "url": "https://sportscar365.com/lemans/elms/jota-sport-wins-4h-le-castellet/"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "BoP changes",
+    "v": "The Porsche 911 RSR gained 10kg and extra fuel capacity, while the BMW Z4 GTE received a larger fuel capacity and restrictor but a lowered rear wing.",
+    "one": {
+     "label": "Sportscar365: Paul Ricard Weekend Notebook",
+     "url": "https://sportscar365.com/lemans/elms/paul-ricard-weekend-notebook/"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Race Preview",
+    "url": "https://www.dailysportscar.com/2015/09/04/elms-paul-ricard-race-preview.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, AF Racing BR01 Tops Free Practice 1",
+    "url": "https://www.dailysportscar.com/2015/09/05/elms-paul-ricard-af-racing-br01-tops-fp1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Saturday Morning Notes, BR01s On Dunlops, New Look At Team LNT",
+    "url": "https://www.dailysportscar.com/2015/09/05/elms-paul-ricard-saturday-morning-paddock-notes-br01s-on-dunlops-new-look-at-team-lnt.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Gommendy's Free Practice 2 Mistral Magic",
+    "url": "https://www.dailysportscar.com/2015/09/05/elms-paul-ricard-gommendys-fp2-mistral-magic.html"
+   },
+   {
+    "label": "DailySportsCar: Butcher's Choice: New ELMS Face Looks Forward To Ricard",
+    "url": "https://www.dailysportscar.com/2015/09/05/butchers-choice-new-elms-face-looks-forward-to-ricard.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Qualifying, Tincknell Stars Again",
+    "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-qualifying-tincknell-stars-again.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, JOTA Extends Title Advantage With Win (updated)",
+    "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-jota-extends-title-advantage-with-win.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Formula Racing Take S/C Assisted GTE Win, TDS BMW In GTC",
+    "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-gt-classes-formula-racing-take-sc-assisted-gte-win-tds-bmw-in-gtc.html"
+   },
+   {
+    "label": "Sportscar365: TDS Tops Saturday Free Practice at Paul Ricard",
+    "url": "https://sportscar365.com/lemans/elms/tds-tops-saturday-free-practice-at-paul-ricard/"
+   },
+   {
+    "label": "Sportscar365: Paul Ricard Weekend Notebook",
+    "url": "https://sportscar365.com/lemans/elms/paul-ricard-weekend-notebook/"
+   },
+   {
+    "label": "Sportscar365: Jota Sport Wins 4H Le Castellet",
+    "url": "https://sportscar365.com/lemans/elms/jota-sport-wins-4h-le-castellet/"
+   },
+   {
+    "label": "24h-lemans.com: ELMS - 4 Hours of Le Castellet - Race Report",
+    "url": "https://www.24h-lemans.com/en/news/elms-4-hours-of-le-castellet-race-report-21902"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "A title chase with eight cars",
+    "cars": [
+     "60",
+     "66"
+    ],
+    "text": [
+     "Eight cars lined up in LMGTE with the championship at a pivotal point. Formula Racing's Ferrari #60 led the standings by five points from AF Corse's #55 of Duncan Cameron, Matt Griffin and Aaron Scott, with Proton's Porsche a further five back. AT Racing and BMW Team MarcVDS were level on 36 points, with the Gulf Porsche just behind, while JMW Motorsport was sixth, 14 points off the lead.",
+     "The one new face was Rory Butcher, a British GT regular, who made his ELMS debut alongside Robert Smith and Jonny Cocker in JMW's #66 Ferrari. Richard Lietz returned to Proton's #88 Porsche with Marco Mapelli and Christian Ried. Dunlop used a lunchtime test on Saturday to develop its 2016 GTE tyre, running JMW's Ferrari and Proton's Porsche, and the combination of medium and medium-plus Dunlop compounds was chosen for the first time that weekend.",
+     "In practice AF Corse's #51 set the early pace in the first session, with Pier Guidi's AT Racing Ferrari close behind. In the afternoon Pier Guidi topped the class from Griffin's #55, with Lietz's Proton Porsche third."
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Pier Guidi leads a Ferrari lock-out",
+    "cars": [
+     "56",
+     "51"
+    ],
+    "text": [
+     "Pier Guidi's 1:55.782 put AT Racing's #56 on pole by 0.036s from Bertolini's AF Corse #51, with Mac third for Formula Racing's #60 on 1:56.024, so Ferraris held the first three places. Pier Guidi had spun on his in-lap yet still took the pole, saying the lap itself held a small mistake and some traffic but was good enough.",
+     "Carroll's Gulf Porsche was the best of the rest in fourth on 1:56.207, ahead of Butcher's JMW Ferrari on 1:56.225, a promising start to his ELMS debut. Griffin's #55 was sixth on 1:56.545, so the top six were covered by less than eight tenths. Lietz's Proton Porsche (1:57.238) and Priaulx's BMW Team MarcVDS Z4 (1:57.401) filled the last two places. On the grid the class occupied 13th to 18th overall, with the Proton and the BMW starting 21st and 22nd."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "AT Racing leads, then spins",
+    "cars": [
+     "86"
+    ],
+    "text": [
+     "Talkanitsa Jr led the early running in the pole-sitting #56, with Laursen's #60 and Keen's Gulf Porsche pressing him. His run was blunted when a touch from the Algarve Pro Racing Ligier pitched the Ferrari into a spin, and track-limits penalties began to accumulate against the team. Meanwhile Hassid made good progress in the BMW Team MarcVDS Z4, which had started from the back of the class."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Two safety cars, and Formula Racing escapes both",
+    "cars": [
+     "52"
+    ],
+    "text": [
+     "The first safety car came out around 70 minutes in, to recover a stranded LMP3 Ginetta. Laursen led from Priaulx, by then aboard the BMW, with the #60 gaining a large time advantage by avoiding the queue behind the safety car that caught the rest of the class. Mapelli then charged the Proton Porsche past the Gulf Porsche and AF Corse's #55.",
+     "Just after halfway the safety car was out again to recover the wrecked Murphy Prototypes LMP2 car, and again the #60 benefited, effectively sealing the race. The rest of the class, the BMW included, fell a lap behind. Krohn took over the BMW and ran on to second, while Cocker worked the JMW Ferrari up from seventh or eighth and a delayed Lietz rejoined in the Proton."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 4",
+    "title": "A fight for the last podium place",
+    "cars": [
+     "88"
+    ],
+    "text": [
+     "With about 80 minutes left Cocker had the JMW Ferrari running fourth or fifth, and 20 minutes later, after the next round of stops, third or fourth, still ahead of Mapelli's Proton Porsche. AT Racing, hit by penalties, had slipped out of the fight at the front."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Butcher snatches third",
+    "cars": [
+     "55"
+    ],
+    "text": [
+     "Butcher took over the JMW Ferrari for the final stop, rejoined fifth and attacked, passing Carroll's Gulf Porsche and Mapelli's Proton Porsche to claim third. Rizzoli brought the #60 home for Formula Racing's win, with Krohn taking the BMW Team MarcVDS Z4 across the line second, a lap down. Proton's Porsche finished fourth, AT Racing's #56 fifth and AF Corse's #55 sixth."
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Formula Racing extend the points lead",
+    "cars": [],
+    "text": [
+     "Formula Racing's #60 won on 117 laps. BMW Team MarcVDS's #52 was second on 116 and JMW's #66 third on 115, with Proton's #88, AT Racing's #56, AF Corse's #55 and Gulf's #86 completing the classified finishers on the same lap as the JMW. AF Corse's #51, which had qualified second, was not classified. Pier Guidi set the class fastest lap, a 1:58.120.",
+     "It was Formula Racing's second victory in succession, and it left the team 19 points ahead of BMW Team MarcVDS with 22 points covering the top four teams going into Estoril. The BMW's second place was its first podium of the season, and third place gave JMW 15 points on Butcher's debut. AT Racing's pole turned into a fifth place in class after contact and penalties. The final round is on 18 October."
+    ]
+   }
+  ]
+ },
+ "GTC": {
+  "title": "TDS Racing wins GTC at home and stretches its title lead",
+  "dek": "Perera, Lunardi and Dermont gave TDS Racing its second GTC win of 2015, ahead of AF Corse's #62 Ferrari and Massive Motorsport's Aston Martin, and widened their title lead.",
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Pole by under a tenth",
+    "v": "Perera's 1:58.396 gave TDS Racing its second GTC pole of the year, after Silverstone, with Castellacci less than a tenth behind.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Paul Ricard, Qualifying, Tincknell Stars Again",
+     "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-qualifying-tincknell-stars-again.html"
+    }
+   },
+   {
+    "i": "🏆",
+    "t": "Second win of 2015",
+    "v": "TDS Racing's BMW Z4 GT3 followed its Silverstone opener victory with a second class win and a larger points lead.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Paul Ricard, Formula Racing Take S/C Assisted GTE Win, TDS BMW In GTC",
+     "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-gt-classes-formula-racing-take-sc-assisted-gte-win-tds-bmw-in-gtc.html"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Balance of Performance",
+    "v": "The Aston Martin Vantage GT3 received a power increase for Le Castellet, while the BMW Z4 GT3 got a weight break and a larger refuelling restrictor.",
+    "one": {
+     "label": "Sportscar365: Paul Ricard Weekend Notebook",
+     "url": "https://sportscar365.com/lemans/elms/paul-ricard-weekend-notebook/"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Race Preview",
+    "url": "https://www.dailysportscar.com/2015/09/04/elms-paul-ricard-race-preview.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, AF Racing BR01 Tops Free Practice 1",
+    "url": "https://www.dailysportscar.com/2015/09/05/elms-paul-ricard-af-racing-br01-tops-fp1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Gommendy's Free Practice 2 Mistral Magic",
+    "url": "https://www.dailysportscar.com/2015/09/05/elms-paul-ricard-gommendys-fp2-mistral-magic.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Qualifying, Tincknell Stars Again",
+    "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-qualifying-tincknell-stars-again.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Formula Racing Take S/C Assisted GTE Win, TDS BMW In GTC",
+    "url": "https://www.dailysportscar.com/2015/09/06/elms-paul-ricard-gt-classes-formula-racing-take-sc-assisted-gte-win-tds-bmw-in-gtc.html"
+   },
+   {
+    "label": "Sportscar365: TDS Tops Saturday Free Practice at Paul Ricard",
+    "url": "https://sportscar365.com/lemans/elms/tds-tops-saturday-free-practice-at-paul-ricard/"
+   },
+   {
+    "label": "Sportscar365: Paul Ricard Weekend Notebook",
+    "url": "https://sportscar365.com/lemans/elms/paul-ricard-weekend-notebook/"
+   },
+   {
+    "label": "Sportscar365: Jota Sport Wins 4H Le Castellet",
+    "url": "https://sportscar365.com/lemans/elms/jota-sport-wins-4h-le-castellet/"
+   },
+   {
+    "label": "24h-lemans.com: ELMS - 4 Hours of Le Castellet - Race Report",
+    "url": "https://www.24h-lemans.com/en/news/elms-4-hours-of-le-castellet-race-report-21902"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "TDS Racing leads a five-car class",
+    "cars": [
+     "59"
+    ],
+    "text": [
+     "GTC arrived at Paul Ricard with five cars and a close title fight. TDS Racing's BMW Z4 GT3 #59 of Franck Perera, Dino Lunardi and Eric Dermont led AF Corse's #62 Ferrari of Thomas Flohr, Francesco Castellacci and Stuart Hall by five points, while Mads Rasmussen was third among the drivers, 23 points off the lead. The Red Bull Ring had produced a close battle in the same small field, and the wide open spaces of Paul Ricard promised another.",
+     "AF Corse fielded three Ferrari 458 Italia GT3s, the #62, the #63 of Giorgio Roda, Ilya Melnikov and Marco Cioci, and the #64 of Rasmussen, Adrien de Leener and Francisco Guedes. The fifth car was Massive Motorsport's Aston Martin Vantage GT3 #68 for Casper Elgaard, Kristian Poulsen and Simon Moller. Perera topped the morning practice session on a 1:58.002, while in the afternoon the AF Corse Ferraris led, Cioci ahead of Castellacci."
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Perera takes pole on home ground",
+    "cars": [
+     "64"
+    ],
+    "text": [
+     "Perera used his local knowledge to take pole for TDS Racing with a 1:58.396, the team's second pole of the year after Silverstone. He said the team had run new tyres and he believed the others were on old ones, adding that the BMW lost time on the straight in the second sector but was strong in the first and third sectors, and that the extra point was welcome for the championship.",
+     "Castellacci was second for AF Corse in the #62, less than a tenth behind on 1:58.478. Cioci was third in the #63 on 1:58.752, with Rasmussen's #64 on 2:04.143 sharing the second row. Massive Motorsport's Aston Martin was the slowest of the five on 2:06.522."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Roda leads, Dermont stays in touch",
+    "cars": [],
+    "text": [
+     "The class was a race-long battle between the #63, the #59 and the #62. Roda led much of the early running for AF Corse in the #63, with Dermont keeping the TDS BMW in touch and building a foundation for the later stints. Flohr had a relatively quiet start in the #62."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Lunardi takes over as the #63 drops out",
+    "cars": [
+     "63"
+    ],
+    "text": [
+     "Lunardi took the BMW on from Dermont, while Castellacci produced a strong stint in the #62 to keep the class battle alive. The #63 ran only 61 laps and was not classified, which removed one of the early front-runners. Two safety car periods shuffled the mixed-class field during this stretch, but the BMW stayed in the lead battle."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 4",
+    "title": "Hall tries to close on Perera",
+    "cars": [
+     "62"
+    ],
+    "text": [
+     "After the final stops Perera emerged as the class leader, with the BMW holding enough of a gap to stay ahead of the Ferraris. Hall took over the #62 from Castellacci and tried to reel in Perera, but the gap was large enough that the BMW was never seriously threatened."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "TDS take the flag at home",
+    "cars": [
+     "68"
+    ],
+    "text": [
+     "Perera crossed the line for a home victory for the all-French team, TDS Racing's second win of 2015 after its Silverstone opener victory. AF Corse's #62 Ferrari of Flohr, Castellacci and Hall took second on the same lap. Massive Motorsport's Aston Martin of Moller, Poulsen and Elgaard completed the podium one lap down."
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "TDS Racing move clear before Estoril",
+    "cars": [],
+    "text": [
+     "TDS Racing's #59 won on 113 laps. AF Corse's #62 was second on the same lap, Massive Motorsport's #68 third on 112 and AF Corse's #64 fourth, also on 112. The #63 was not classified after 61 laps. Lunardi set the class fastest lap, a 2:00.214.",
+     "Lunardi called the weekend exceptional, praising Dermont's stint, and said the team had no problems and was confident of finishing the job at Estoril. The result moved TDS Racing further clear of the #62 crew in the standings. The final round is on 18 October."
+    ]
+   }
+  ]
+ }
+}
