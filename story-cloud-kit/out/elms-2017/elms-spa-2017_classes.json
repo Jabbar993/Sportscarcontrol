@@ -1,0 +1,310 @@
+{
+ "LMP3": {
+  "title": "AT Racing convert pole into a first win of the year in a messy LMP3 race",
+  "dek": "Jensen, Talkanitsa Sr. and Talkanitsa Jr. won from pole for AT Racing a lap clear of Duqueine’s Norma, as safety cars, spins and four non-finishers shook up a 17-car class.",
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Pole by 0.711s",
+    "v": "Jensen’s 2:13.634 in the final minute put the AT Racing Ligier more than seven tenths clear of Boyd’s United Autosports car.",
+    "one": {
+     "label": "DailySportsCar: Hanley Steers DragonSpeed To Fourth Pole Of 2017 At Spa",
+     "url": "https://www.dailysportscar.com/2017/09/23/hanley-steers-dragonspeed-to-fourth-pole-of-2017.html"
+    }
+   },
+   {
+    "i": "🚩",
+    "t": "Neutralisations from LMP3 incidents",
+    "v": "The full course yellow and safety car periods that broke up the four hours were largely caused by LMP3 drivers.",
+    "one": {
+     "label": "Sportscar365: Graff Survives Late-Race Penalty to Win 4H Spa",
+     "url": "https://sportscar365.com/lemans/elms/graff-survives-late-race-penalty-to-win-4h-spa/"
+    }
+   },
+   {
+    "i": "⚠",
+    "t": "Penalties for the leaders",
+    "v": "The #6 and #15 Ligiers were handed a two-minute, 20-second penalty for undertaking under full course yellow, and the #9 later received a pit-stop infringement penalty without losing its lead.",
+    "one": {
+     "label": "DailySportsCar: GRAFF Wins Dramatic 4H Spa-Francorchamps After Late Penalty",
+     "url": "https://www.dailysportscar.com/2017/09/24/graff-wins-dramatic-4h-spa-francorchamps-after-late-penalty.html"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Four cars not classified",
+    "v": "The #19 Norma, #11 and #16 Ligiers and #5 Ligier all ended the day without a classification.",
+    "one": {
+     "label": "DailySportsCar: GRAFF Wins Dramatic 4H Spa-Francorchamps After Late Penalty",
+     "url": "https://www.dailysportscar.com/2017/09/24/graff-wins-dramatic-4h-spa-francorchamps-after-late-penalty.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Stevens Rejoins JMW for Remainder of ELMS Season",
+    "url": "https://sportscar365.com/lemans/elms/stevens-rejoins-jmw-for-remainder-of-elms-season/"
+   },
+   {
+    "label": "Sportscar365: Hirschi Tops Friday Practice at Spa",
+    "url": "https://sportscar365.com/lemans/elms/hirschi-tops-friday-practice-for-4h-spa/"
+   },
+   {
+    "label": "Sportscar365: Hirakawa Fastest in FP2 on ELMS Return",
+    "url": "https://sportscar365.com/lemans/elms/hirakawa-fastest-in-fp2-on-elms-return/"
+   },
+   {
+    "label": "Sportscar365: DragonSpeed Takes Fourth Pole of Season at Spa",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-takes-fourth-pole-of-season-at-spa/"
+   },
+   {
+    "label": "Sportscar365: Graff Survives Late-Race Penalty to Win 4H Spa",
+    "url": "https://sportscar365.com/lemans/elms/graff-survives-late-race-penalty-to-win-4h-spa/"
+   },
+   {
+    "label": "DailySportsCar: 35 Cars Set For 4H Spa-Francorchamps",
+    "url": "https://www.dailysportscar.com/2017/09/20/35-cars-set-for-4h-spa.html"
+   },
+   {
+    "label": "DailySportsCar: GRAFF Quickest In Red-Flagged Spa FP1",
+    "url": "https://www.dailysportscar.com/2017/09/22/graff-quickest-in-red-flagged-spa-fp1.html"
+   },
+   {
+    "label": "DailySportsCar: Hanley Steers DragonSpeed To Fourth Pole Of 2017 At Spa",
+    "url": "https://www.dailysportscar.com/2017/09/23/hanley-steers-dragonspeed-to-fourth-pole-of-2017.html"
+   },
+   {
+    "label": "DailySportsCar: GRAFF Wins Dramatic 4H Spa-Francorchamps After Late Penalty",
+    "url": "https://www.dailysportscar.com/2017/09/24/graff-wins-dramatic-4h-spa-francorchamps-after-late-penalty.html"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Seventeen cars and a 12-point lead",
+    "cars": [
+     "19"
+    ],
+    "text": [
+     "LMP3 brought the biggest class entry to Spa, 17 cars made up of 13 Ligier JS P3s and four Norma M30s, with the whole field running Nissan power. United Autosports arrived leading the class by 12 points, the same margin G-Drive held in LMP2, so the points leaders had a cushion but not a large one with two rounds to go.",
+     "There was little movement in the entry list. The only change since Le Castellet was at M.Racing - YMR, where Australian Neale Muston took over the #19 Norma M30 from Erwin Creed; Muston had been racing a Ginetta in the VdeV series and was new to the ELMS. The third driver in the #5 By Speed Factory Ligier was still to be named when the entry was published.",
+     "Practice went to the Ligiers. Ligiers filled the top seven places in FP1, led by AT Racing’s Mikkel Jensen on a 2:15.004, with Boyd’s #3 United car about three tenths back and the championship-leading #2 of Falb and Rayhall third. The best Norma, Duqueine’s #7, managed only eighth, and Muston crashed in the morning bronze test, so the #19 did not run in the session. FP2 on Saturday morning was Boyd’s, nearly 1.5 seconds clear of Smiechowski’s Inter Europol Ligier."
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Jensen finds seven tenths in the last minute",
+    "cars": [
+     "3",
+     "6",
+     "4"
+    ],
+    "text": [
+     "AT Racing took pole with a late flourish. Jensen went top in the final minute with a 2:13.634, beating the field by more than seven tenths and giving the Austrian team its second pole of the season.",
+     "United Autosports locked out the next two places, but not in the order the standings suggested: Boyd put the #3 car second on a 2:14.345 and Rayhall’s #2, 2:14.487, started third, after the two cars had traded fast laps. Kaiser’s 360 Racing Ligier was fourth and Droux’s Duqueine Norma M30 fifth on a 2:15.005, the quickest car that was not a Ligier. Panis Barthez, Ultimate, Oregon and RLR followed, all within about four tenths of the Norma.",
+     "Not everyone had a clean session. Cool Racing’s #4 Ligier was found with a right-rear puncture at the end, and the Swiss team could manage only 34th on the overall grid, second-last in class. By Speed Factory’s #5 was last of all, more than nine seconds off the pole time."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "A spin at La Source and a safety car",
+    "cars": [
+     "5",
+     "16",
+     "11"
+    ],
+    "text": [
+     "The class was messy from the green light. Müller spun the #5 By Speed Factory Ligier at La Source, and pole-sitter Jensen was only fourth in class at the end of lap 1. He went past Bean’s Panis Barthez Ligier on lap 2 and Boyd’s United car on lap 8, and from there he began to build a gap.",
+     "Bean was then involved in contact with Mondini’s #11 Eurointernational Ligier and Rayhall’s #2 at Turn 19. The first safety car came out around the first hour mark, and the class pitted under it. At the restart the #9 still led, with 360 Racing’s #6 and the #15 RLR Ligier behind it. Of the Panis Barthez and Eurointernational cars involved, neither was classified at the flag."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Strategy splits under yellow",
+    "cars": [
+     "15",
+     "13",
+     "17"
+    ],
+    "text": [
+     "A second safety car brought the AT Racing crew in for fuel on lap 40, and the #9 rejoined third behind the #6 and #15. It was back to second when the RLR Ligier spun at the bus stop chicane on lap 45, and it took the lead when the 360 Racing car made another stop. The Ligier then stayed ahead of Ultimate’s #17, Duqueine’s #7 and Inter Europol’s #13.",
+     "Schatz took the #7 Norma past Heriau’s #17 for second on lap 64, and both cars pitted at the end of the third hour. Hippe then took the #13 Inter Europol Ligier ahead of the Ultimate car, only to have a collision with the #4 Cool Racing Ligier at La Source. Muston’s #19 Norma and the #5 By Speed Factory Ligier were both out before the end."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "A last splash for the #2",
+    "cars": [
+     "9",
+     "7",
+     "2"
+    ],
+    "text": [
+     "Once the field had settled, the #9 AT Racing Ligier cruised. Jensen and the two Talkanitsas completed 92 laps, one more than anyone else in the class, to take the team’s first LMP3 win of the season. Duqueine’s #7 Norma, driven by Borga, Droux and Schatz, was second.",
+     "The fight for third was the closest of the finish. Falb brought the #2 United Ligier in for a short splash of fuel in the final 25 minutes and rejoined to complete the podium, ahead of Inter Europol’s #13 and the sister #3 United car, which finished fifth."
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "AT Racing win, Duqueine second, United third",
+    "cars": [
+     "18"
+    ],
+    "text": [
+     "AT Racing’s Ligier won on 92 laps, with Duqueine’s #7 Norma second and the points-leading United #2 of Falb and Rayhall third. Inter Europol’s #13 was fourth and the #3 United car fifth, both on 91 laps. Jensen also set the class fastest lap, a 2:16.083.",
+     "Four cars were not classified: M.Racing - YMR’s #19 Norma after 52 laps, Eurointernational’s #11 after 46, Panis Barthez’s #16 after 45 and By Speed Factory’s #5 after 32. The final round is at Portimao in October."
+    ]
+   }
+  ]
+ },
+ "LMGTE": {
+  "title": "Spirit of Race’s #51 Ferrari wins a lap clear as the points leaders struggle",
+  "dek": "Mastronardi, Roda and Bertolini took the #51 Ferrari to Spirit of Race’s third straight win of the year, a lap clear of JMW’s Ferrari, while TF Sport’s Aston Martin finished fifth.",
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Proton’s first pole of 2017",
+    "v": "Cairoli’s 2:16.757 put Proton Competition’s Porsche on pole for the first time this season, 0.358s up on Thiim’s TF Sport Aston Martin.",
+    "one": {
+     "label": "Sportscar365: DragonSpeed Takes Fourth Pole of Season at Spa",
+     "url": "https://sportscar365.com/lemans/elms/dragonspeed-takes-fourth-pole-of-season-at-spa/"
+    }
+   },
+   {
+    "i": "🥇",
+    "t": "Third straight Spirit of Race win",
+    "v": "The #51 victory followed wins for the sister #55 car in the previous two rounds, making it three in a row for the AF Corse-run squad.",
+    "one": {
+     "label": "Sportscar365: Graff Survives Late-Race Penalty to Win 4H Spa",
+     "url": "https://sportscar365.com/lemans/elms/graff-survives-late-race-penalty-to-win-4h-spa/"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Proton’s race compromised",
+    "v": "The pole-sitting Porsche was delayed by right-rear damage after contact at the restart and rejoined some 15 laps behind the class leader.",
+    "one": {
+     "label": "DailySportsCar: GRAFF Wins Dramatic 4H Spa-Francorchamps After Late Penalty",
+     "url": "https://www.dailysportscar.com/2017/09/24/graff-wins-dramatic-4h-spa-francorchamps-after-late-penalty.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Stevens Rejoins JMW for Remainder of ELMS Season",
+    "url": "https://sportscar365.com/lemans/elms/stevens-rejoins-jmw-for-remainder-of-elms-season/"
+   },
+   {
+    "label": "Sportscar365: Hirschi Tops Friday Practice at Spa",
+    "url": "https://sportscar365.com/lemans/elms/hirschi-tops-friday-practice-for-4h-spa/"
+   },
+   {
+    "label": "Sportscar365: Hirakawa Fastest in FP2 on ELMS Return",
+    "url": "https://sportscar365.com/lemans/elms/hirakawa-fastest-in-fp2-on-elms-return/"
+   },
+   {
+    "label": "Sportscar365: DragonSpeed Takes Fourth Pole of Season at Spa",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-takes-fourth-pole-of-season-at-spa/"
+   },
+   {
+    "label": "Sportscar365: Graff Survives Late-Race Penalty to Win 4H Spa",
+    "url": "https://sportscar365.com/lemans/elms/graff-survives-late-race-penalty-to-win-4h-spa/"
+   },
+   {
+    "label": "DailySportsCar: 35 Cars Set For 4H Spa-Francorchamps",
+    "url": "https://www.dailysportscar.com/2017/09/20/35-cars-set-for-4h-spa.html"
+   },
+   {
+    "label": "DailySportsCar: GRAFF Quickest In Red-Flagged Spa FP1",
+    "url": "https://www.dailysportscar.com/2017/09/22/graff-quickest-in-red-flagged-spa-fp1.html"
+   },
+   {
+    "label": "DailySportsCar: Hanley Steers DragonSpeed To Fourth Pole Of 2017 At Spa",
+    "url": "https://www.dailysportscar.com/2017/09/23/hanley-steers-dragonspeed-to-fourth-pole-of-2017.html"
+   },
+   {
+    "label": "DailySportsCar: GRAFF Wins Dramatic 4H Spa-Francorchamps After Late Penalty",
+    "url": "https://www.dailysportscar.com/2017/09/24/graff-wins-dramatic-4h-spa-francorchamps-after-late-penalty.html"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "TF Sport lead, JMW with Stevens",
+    "cars": [
+     "90"
+    ],
+    "text": [
+     "The GTE grid was the same six cars that raced at Le Castellet, with one change of driver. Will Stevens rejoined JMW Motorsport for the last two rounds, replacing Johnny Cocker in the #66 Ferrari 488 GTE alongside Rob Smith and Jody Fannin, after winning at Le Mans with the team earlier in the year. It was his first ELMS start since Spa 2016, when he drove an LMP2 Ligier for WRT.",
+     "The title fight was tight. TF Sport’s Aston Martin held a nine-point lead over the second-placed JMW Ferrari, so two bad races could swing it. Stevens said Spa was one of his favourite tracks but a hard one in a GT car, and that JMW would try to catch the points leaders.",
+     "Proton Competition’s Porsche was the clear pace-setter in practice. Cairoli led FP1 on a 2:17.888, well ahead of the field, with Turner’s Beechdean Aston Martin second on 2:20.292 and TF Sport third. FP2 on Saturday morning went to Thiim’s TF Sport car on a 2:17.901, more than a second ahead of Stevens in the JMW Ferrari in second."
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Cairoli puts Proton on pole",
+    "cars": [
+     "77",
+     "55"
+    ],
+    "text": [
+     "Cairoli took Proton Competition’s first pole of the season, lapping in 2:16.757 on a day when the whole GTE field was separated by just 1.3 seconds. The Italian said the team had done a perfect job on set-up and that the priority in the race was to avoid mistakes.",
+     "Thiim put the TF Sport Aston Martin second on a 2:17.115, 0.358 off the Porsche. Stevens jumped from sixth to third late in the session with a 2:17.684, the fastest of the Ferrari 488 drivers in his first ELMS weekend since last year. Griffin’s Spirit of Race #55 Ferrari was fourth on a 2:17.787, Bertolini’s #51 sister car fifth on a 2:17.855, and Gunn put the Beechdean Aston Martin sixth on a 2:18.050."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "The Porsche loses its lead",
+    "cars": [
+     "99"
+    ],
+    "text": [
+     "Cairoli’s Porsche led away from the grid. Lap 3 brought damage to the front bumper of the TF Sport Aston Martin, which had to pit for repairs and lost many positions, and by lap 6 Scott had taken the #55 Spirit of Race Ferrari past Camathias’s Porsche for the lead. Gunn’s Beechdean Aston Martin then fought the Porsche for several laps and took second on lap 17, setting off after the Ferrari.",
+     "The first safety car came near the end of the first hour, and the class pitted under it. The #55, which had stopped just before the neutralisation, lost a lot of ground, while the Beechdean car took the lead from the Porsche and Spirit of Race’s #51. The Proton Porsche returned to the pits with damage at the restart and rejoined many laps down."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Bertolini takes control",
+    "cars": [
+     "51"
+    ],
+    "text": [
+     "After the second safety car, Turner held the lead in the Beechdean Aston Martin from Fannin’s JMW Ferrari, with Mastronardi’s Spirit of Race #51 third. A full course yellow and a round of driver changes reshuffled the order, and on lap 57 Bertolini took the lead in the #51 car, with a lead of about a lap over the #99 Aston Martin and the #66 JMW Ferrari, which were running within a second of each other.",
+     "Fannin passed Howard to take second place for JMW and pulled away from the Aston Martin. Both cars then made their final stops in the last hour."
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Spirit of Race one lap clear",
+    "cars": [
+     "66"
+    ],
+    "text": [
+     "There was no change at the front. The #51 Ferrari of Mastronardi, Roda and Bertolini completed 91 laps, one more than any other GTE car, to win by more than a minute. JMW’s #66 Ferrari, with Smith, Fannin and Stevens, was second on 90 laps, and Beechdean’s #99 Aston Martin of Howard, Gunn and Turner third after a strong drive from Gunn."
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Spirit of Race win, JMW second, Beechdean third",
+    "cars": [],
+    "text": [
+     "The #51 Ferrari won on 91 laps for Spirit of Race’s first victory of the season in that car. JMW’s #66 Ferrari was second on 90 laps and Beechdean’s Aston Martin third, also on 90. The sister #55 Spirit of Race car of Cameron, Griffin and Scott was fourth; the #55 had won the previous two rounds, so this was a third straight win for the AF Corse-run squad. Griffin set the class fastest lap, a 2:20.527.",
+     "The championship leaders, TF Sport’s #90 Aston Martin, were fifth on 88 laps after multiple problems. Proton’s pole-sitting Porsche was sixth and last on 70 laps, 21 behind the winner. The title is decided at Portimão in October."
+    ]
+   }
+  ]
+ }
+}

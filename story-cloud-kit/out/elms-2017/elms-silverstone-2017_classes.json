@@ -1,0 +1,333 @@
+{
+ "LMP3": {
+  "title": "United’s Falb and Rayhall lead LMP3 from the front as the new class thins out behind",
+  "dek": "Falb and Rayhall won the LMP3 opener for United Autosports a lap clear of Ultimate’s Ligier, despite Jensen’s AT Racing taking class pole.",
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Pole by two seconds",
+    "v": "Jensen’s 1:53.665 for AT Racing was about two seconds inside the previous LMP3 record at Silverstone.",
+    "one": {
+     "label": "Sportscar365: Silverstone ELMS Weekend Notebook",
+     "url": "https://sportscar365.com/lemans/elms/silverstone-elms-weekend-notebook-2/"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Norma rebuilt in time",
+    "v": "M.Racing - YMR’s Norma M 30, wrecked in the Monza Prologue, was repaired for the opener, with Creed standing in for the injured Delomier.",
+    "one": {
+     "label": "Sportscar365: Silverstone ELMS Weekend Notebook",
+     "url": "https://sportscar365.com/lemans/elms/silverstone-elms-weekend-notebook-2/"
+    }
+   },
+   {
+    "i": "🚩",
+    "t": "Practice interrupted",
+    "v": "Panis Barthez’s Ligier #16 caused two of the four full-course yellows in FP1, the last of which ended the session early.",
+    "one": {
+     "label": "Sportscar365: Hirakawa Tops ELMS FP1 with Lap Record",
+     "url": "https://sportscar365.com/lemans/elms/hirakawa-tops-elms-fp1-with-lap-record/"
+    }
+   },
+   {
+    "i": "🌀",
+    "t": "Falb’s spin",
+    "v": "Falb spun at Copse in the final hour but United’s lead was big enough to absorb it.",
+    "one": {
+     "label": "Sportscar365: United Autosports Wins Silverstone ELMS Thriller",
+     "url": "https://sportscar365.com/lemans/elms/united-autosports-wins-silverstone-thriller/"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: DragonSpeed Takes Pole for 4H Silverstone",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-takes-pole-for-4h-silverstone/"
+   },
+   {
+    "label": "Sportscar365: United Autosports Wins Silverstone ELMS Thriller",
+    "url": "https://sportscar365.com/lemans/elms/united-autosports-wins-silverstone-thriller/"
+   },
+   {
+    "label": "Sportscar365: Silverstone ELMS Weekend Notebook",
+    "url": "https://sportscar365.com/lemans/elms/silverstone-elms-weekend-notebook-2/"
+   },
+   {
+    "label": "Sportscar365: Hirakawa Tops ELMS FP1 with Lap Record",
+    "url": "https://sportscar365.com/lemans/elms/hirakawa-tops-elms-fp1-with-lap-record/"
+   },
+   {
+    "label": "Sportscar365: Hanley Quickest in ELMS Free Practice at Silverstone",
+    "url": "https://sportscar365.com/lemans/elms/hanley-quickest-in-elms-free-practice-at-silverstone/"
+   },
+   {
+    "label": "DailySportsCar: Silverstone Preview: Brave New LMP2 World",
+    "url": "https://www.dailysportscar.com/2017/04/13/silverstone-preview-brave-new-lmp2-world.html"
+   },
+   {
+    "label": "DailySportsCar: Hirakawa Quickest In FP1 At Silverstone",
+    "url": "https://www.dailysportscar.com/2017/04/13/hirakawa-quickest-in-fp1-at-silverstone.html"
+   },
+   {
+    "label": "DailySportsCar: Hanley Puts DragonSpeed Top In FP2",
+    "url": "https://www.dailysportscar.com/2017/04/14/hanley-puts-dragonspeed-top-in-fp2.html"
+   },
+   {
+    "label": "DailySportsCar: Hanley Puts DragonSpeed On Pole",
+    "url": "https://www.dailysportscar.com/2017/04/14/hanley-puts-dragonspeed-on-pole.html"
+   },
+   {
+    "label": "DailySportsCar: United Snatches Win In 4H Silverstone Thriller",
+    "url": "https://www.dailysportscar.com/2017/04/15/united-snatches-win-in-4h-silverstone-thriller.html"
+   },
+   {
+    "label": "Sportscar365: Silverstone Thursday Notebook",
+    "url": "https://sportscar365.com/lemans/wec/silverstone-thursday-notebook-5/"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Seventeen cars and three new teams",
+    "text": [
+     "LMP3 arrived at the season opener as the biggest class on the entry list, with seventeen cars, three of them from teams new to the category: Cool Racing by GPC, AT Racing and Oregon Team. Ligier JS P3s made up most of the field; the only Normas were the M 30s of M.Racing - YMR and Oregon Team.",
+     "The YMR car had been in a heavy crash at the Monza Prologue two weeks earlier and was rebuilt in time. Its regular driver Delomier was still recovering, so Creed took his place. Eurointernational came with a reshuffled pair of crews, Mondini and Uboldi in the #11 and Dromedari, Harnatty and Pialat in the #12, while Duqueine’s #8 ran as a two-driver entry for Beltoise and Hassid.",
+     "United Autosports set the early pace. Rayhall topped the first session in the #2 Ligier on 1:54.221, about eight tenths clear of Kapadia’s RLR MSport car, and Boyd then led the second in the #3 on 1:55.804, three tenths ahead of Panis Barthez. The first session was stopped early after four full-course yellows, two of them caused by the Panis Barthez Ligier. Jensen, meanwhile, had trouble in practice and never got a qualifying-simulation run."
+    ],
+    "cars": [
+     "19",
+     "11",
+     "8"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Jensen snatches pole from United",
+    "text": [
+     "United had looked the team to beat until Jensen put the AT Racing Ligier #9 on pole with a 1:53.665 late in the session, the quickest lap of the class by more than a tenth and about two seconds inside the previous Silverstone LMP3 record. Rayhall was second in the #2 on 1:53.786 and Boyd third in the #3 on 1:54.181, which gave the front three a lap-time spread of half a second.",
+     "Gachet put the Panis Barthez Ligier #16 fourth on 1:54.574, ahead of Cougnaud in the #18 M.Racing - YMR car. Ehrlacher’s #19 was the best of the Normas, sixth in class on 1:55.179. Kapadia’s RLR MSport entry and Mondini’s Eurointernational #11 completed the top eight. Cool Racing’s #4 was at the back of the class on 1:57.343."
+    ],
+    "cars": [
+     "9",
+     "16"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 1–2",
+    "title": "United take control",
+    "text": [
+     "The #2 United Ligier of Falb and Rayhall took charge early and led almost from start to finish. The sister #3 spent a good part of the race running second, while the M.Racing - YMR Norma showed well among the leaders in the first half of the race before it began to fade. Behind them the class was a scramble, with a string of spins and off-track moments among the lower-order runners."
+    ],
+    "cars": [
+     "3"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 3–4",
+    "title": "A static top, a scrap behind",
+    "text": [
+     "The top of the order stayed static through the second half. Falb’s spin at Copse in the last hour cost United little, as the #2 had built enough margin to take the flag in control. Further back there was plenty of action: with about forty minutes to go, Jean-Baptiste Lahaye slipped the Ultimate #17 Ligier past Ricci’s #18 M.Racing - YMR car at Stowe. The #3 United finished the afternoon behind the Ultimate, and the YMR Norma slid back to tenth in class."
+    ],
+    "cars": [
+     "17",
+     "18"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "A lap clear for United",
+    "text": [
+     "Falb and Rayhall took the flag in the #2 on 119 laps. The Ultimate Ligier was a lap down on 118, the same tally as a bunched group of five Ligiers behind it. For United the class win completed a weekend double after Albuquerque’s victory in LMP2. The class fastest lap, 1:56.474, went to Rayhall."
+    ],
+    "cars": [
+     "2"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "United’s double and a bunched order",
+    "text": [
+     "The #2 won on 119 laps. Matthieu and Jean-Baptiste Lahaye and Heriau took second for Ultimate’s #17, a lap down, ahead of United’s #3 (Patterson, Boyd and England), the AT Racing #9 of Talkanitsa, Talka Jr and Jensen, Cougnaud’s M.Racing - YMR #18, Inter Europol’s #13 and 360 Racing’s #6, all on 118 laps. RLR MSport’s #15 and Panis Barthez’s #16 were next on 117, and the best Norma, #19, was tenth on 116 laps.",
+     "The #7 Duqueine and #12 Eurointernational completed 116, the Oregon Norma #10 113 and Cool Racing’s #4 112, with By Speed Factory’s #5 on 104 laps. Beltoise and Hassid’s Duqueine #8 stopped after 41 laps and was not classified, and neither was Eurointernational’s #11.",
+     "The championship moves to Monza on 14 May, where Legeret was due to join the #8 line-up."
+    ],
+    "cars": [
+     "6",
+     "13",
+     "5"
+    ]
+   }
+  ]
+ },
+ "LMGTE": {
+  "title": "TF Sport open their ELMS account with a lap-clear Aston Martin win at Silverstone",
+  "dek": "Yoluc, Hankey and Thiim won on TF Sport’s series debut, a lap ahead of Proton’s Porsche, which beat Beechdean’s Aston Martin to second by about a second.",
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Pole beat the record by 1.8s",
+    "v": "Thiim’s 1:58.269 for TF Sport was 1.8 seconds inside the standing GTE lap record from 2014.",
+    "one": {
+     "label": "Sportscar365: Silverstone ELMS Weekend Notebook",
+     "url": "https://sportscar365.com/lemans/elms/silverstone-elms-weekend-notebook-2/"
+    }
+   },
+   {
+    "i": "🛞",
+    "t": "Dunlop for all",
+    "v": "The whole GTE field ran Dunlop for the third consecutive season, with a new soft slick available.",
+    "one": {
+     "label": "Sportscar365: Silverstone ELMS Weekend Notebook",
+     "url": "https://sportscar365.com/lemans/elms/silverstone-elms-weekend-notebook-2/"
+    }
+   },
+   {
+    "i": "⚠",
+    "t": "Drive-through for the #51",
+    "v": "The stewards judged Spirit of Race’s #51 Ferrari to blame for a Copse tangle with the TF Sport leader and gave it a drive-through.",
+    "one": {
+     "label": "DailySportsCar: United Snatches Win In 4H Silverstone Thriller",
+     "url": "https://www.dailysportscar.com/2017/04/15/united-snatches-win-in-4h-silverstone-thriller.html"
+    }
+   },
+   {
+    "i": "🔁",
+    "t": "Early Beechdean spin",
+    "v": "Beechdean’s #99 Aston Martin spun early on and fell to the back of the class before recovering to the podium.",
+    "one": {
+     "label": "DailySportsCar: United Snatches Win In 4H Silverstone Thriller",
+     "url": "https://www.dailysportscar.com/2017/04/15/united-snatches-win-in-4h-silverstone-thriller.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: DragonSpeed Takes Pole for 4H Silverstone",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-takes-pole-for-4h-silverstone/"
+   },
+   {
+    "label": "Sportscar365: United Autosports Wins Silverstone ELMS Thriller",
+    "url": "https://sportscar365.com/lemans/elms/united-autosports-wins-silverstone-thriller/"
+   },
+   {
+    "label": "Sportscar365: Silverstone ELMS Weekend Notebook",
+    "url": "https://sportscar365.com/lemans/elms/silverstone-elms-weekend-notebook-2/"
+   },
+   {
+    "label": "Sportscar365: Hirakawa Tops ELMS FP1 with Lap Record",
+    "url": "https://sportscar365.com/lemans/elms/hirakawa-tops-elms-fp1-with-lap-record/"
+   },
+   {
+    "label": "Sportscar365: Hanley Quickest in ELMS Free Practice at Silverstone",
+    "url": "https://sportscar365.com/lemans/elms/hanley-quickest-in-elms-free-practice-at-silverstone/"
+   },
+   {
+    "label": "DailySportsCar: Silverstone Preview: Brave New LMP2 World",
+    "url": "https://www.dailysportscar.com/2017/04/13/silverstone-preview-brave-new-lmp2-world.html"
+   },
+   {
+    "label": "DailySportsCar: Hirakawa Quickest In FP1 At Silverstone",
+    "url": "https://www.dailysportscar.com/2017/04/13/hirakawa-quickest-in-fp1-at-silverstone.html"
+   },
+   {
+    "label": "DailySportsCar: Hanley Puts DragonSpeed Top In FP2",
+    "url": "https://www.dailysportscar.com/2017/04/14/hanley-puts-dragonspeed-top-in-fp2.html"
+   },
+   {
+    "label": "DailySportsCar: Hanley Puts DragonSpeed On Pole",
+    "url": "https://www.dailysportscar.com/2017/04/14/hanley-puts-dragonspeed-on-pole.html"
+   },
+   {
+    "label": "DailySportsCar: United Snatches Win In 4H Silverstone Thriller",
+    "url": "https://www.dailysportscar.com/2017/04/15/united-snatches-win-in-4h-silverstone-thriller.html"
+   },
+   {
+    "label": "Sportscar365: Silverstone Friday Notebook",
+    "url": "https://sportscar365.com/lemans/wec/silverstone-friday-notebook-6/"
+   },
+   {
+    "label": "DailySportsCar: Thursday Paddock Notes",
+    "url": "https://www.dailysportscar.com/2017/04/13/thursday-paddock-notes-2.html"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Two new teams, a defending champion",
+    "text": [
+     "Six cars made up the LMGTE class, with two new teams. TF Sport arrived as the reigning Michelin GT3 Le Mans Cup champion for its first ELMS outing, and Spirit of Race, the AF Corse-run squad, entered two Ferrari 488 GTEs, a car that had not raced in the series before. Beechdean Aston Martin returned to defend the title, with Gunn in the Vantage alongside Howard and Turner.",
+     "Proton Competition brought only one Porsche 911 RSR, the #77 for Ried, Camathias and Cairoli, after a second car had been withdrawn. JMW kept faith with its older Ferrari 458 Italia, with Fannin joining Smith and Butcher. The whole class ran on Dunlop tyres for the third straight season, with a new soft slick on offer.",
+     "Several drivers had a busy Saturday ahead: Thiim, Turner, Ried and Cairoli were also entered in the WEC round at the same circuit the next day, while Griffin was set for the WEC, ELMS and British GT. In practice Thiim topped the first session on 1:58.771 for TF Sport, 0.812 clear of Turner, and Beechdean led the second on 2:00.517, with Spirit of Race’s Griffin and the Proton Porsche right behind."
+    ],
+    "cars": [
+     "77"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Aston Martin one-two on the grid",
+    "text": [
+     "Thiim put the TF Sport Aston Martin #90 on pole on 1:58.269, almost two tenths ahead of Gunn’s Beechdean #99, which made it an Aston Martin front row. The pole lap was 1.8 seconds inside the old GTE record, set in 2014.",
+     "Griffin was third, with the Spirit of Race #55 Ferrari on 1:59.791, followed by Cairoli’s Proton Porsche #77 on 2:00.379 and the second Spirit of Race Ferrari, #51, on 2:00.554. JMW’s #66 Ferrari 458 was last in class on 2:00.940."
+    ],
+    "cars": [
+     "90",
+     "99"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Scott jumps the Aston Martin",
+    "text": [
+     "Yoluc started from pole for TF Sport but lost the lead within a couple of laps to Scott, who had made a strong start from third in the #55 Spirit of Race Ferrari. The Beechdean car from the front row also lost ground early. JMW’s older Ferrari ran well in the early running, with Fannin third for a time before the car dropped back."
+    ],
+    "cars": [
+     "55",
+     "66"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–4",
+    "title": "Hankey’s spin and the fight for the podium",
+    "text": [
+     "TF Sport got the lead back through the first round of stops and built a gap of around fifty seconds. In the second hour Hankey spun in a tangle with a backmarker at Copse, which handed the lead to Camathias’s Porsche for a while. TF Sport regained control and drew clear, with Proton, Beechdean and Spirit of Race each running roughly half a minute apart behind.",
+     "Gunn climbed through the order in the Beechdean Aston Martin, passing Cameron’s Ferrari and Smith’s JMW car before handing to Turner, who ran about a second a lap quicker than Camathias and passed the Porsche into Copse. Proton’s better stop put Cairoli back ahead into the last hour."
+    ],
+    "cars": [
+     "51"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Gunn closes on the Porsche",
+    "text": [
+     "Thiim brought the Aston Martin home a lap clear. For second, Cairoli’s Porsche led into the last hour with Gunn on his heels, and the Beechdean driver cut the gap to about a second at the flag, which was not enough to take the place."
+    ],
+    "cars": []
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "TF Sport’s debut win",
+    "text": [
+     "TF Sport’s #90 won on 116 laps, a lap clear of the Proton Competition Porsche #77 (Ried, Camathias, Cairoli), the Beechdean AMR Aston Martin #99 (Howard, Gunn, Turner), and Spirit of Race’s #55 Ferrari (Cameron, Griffin, Scott), all on 115. JMW’s #66 was fifth on 114 and the second Spirit of Race car, #51, sixth on 113; all six finished. Cairoli set the class fastest lap, 2:00.946.",
+     "Hankey said he could not have asked for a better result first time out.",
+     "The ELMS next visited Monza on 14 May."
+    ],
+    "cars": []
+   }
+  ]
+ }
+}

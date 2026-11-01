@@ -1,0 +1,349 @@
+{
+ "LMP3": {
+  "title": "Falb and Rayhall win for United’s #2 as the pole-sitter fails to finish",
+  "dek": "Falb and Rayhall won LMP3 in United’s #2 Ligier by 2.4 seconds from Inter Europol’s Hippe after starting fifth in class, while pole-sitter 360 Racing was not classified.",
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "First pole for 360 Racing",
+    "v": "Kaiser’s 2:02.186 was 360 Racing’s first LMP3 pole of the season, found in the closing minutes of qualifying.",
+    "one": {
+     "label": "Sportscar365: DragonSpeed Locks Out Front Row for 4H Le Castellet",
+     "url": "https://sportscar365.com/lemans/elms/dragonspeed-locks-out-front-row-for-4h-le-castellet/"
+    }
+   },
+   {
+    "i": "🏆",
+    "t": "Second win of 2017 for the #2",
+    "v": "Falb and Rayhall took their second class win of the season and left Castellet 12 points clear of the #18 M.Racing – YMR Ligier in the standings.",
+    "one": {
+     "label": "DailySportsCar: SMP Racing Scores First Dallara P217 Win At Paul Ricard",
+     "url": "https://www.dailysportscar.com/2017/08/27/smp-racing-scores-first-dallara-p217-win-at-paul-ricard.html"
+    }
+   },
+   {
+    "i": "📈",
+    "t": "Inter Europol’s best result",
+    "v": "Second place was the Polish team’s best ELMS finish and its first podium.",
+    "one": {
+     "label": "DailySportsCar: SMP Racing Scores First Dallara P217 Win At Paul Ricard",
+     "url": "https://www.dailysportscar.com/2017/08/27/smp-racing-scores-first-dallara-p217-win-at-paul-ricard.html"
+    }
+   },
+   {
+    "i": "⚠",
+    "t": "Three LMP3 cars penalised",
+    "v": "RLR MSport’s #15, Eurointernational’s #12 and By Speed Factory’s #5 each received 30-second post-race penalties for Full Course Yellow infringements.",
+    "one": {
+     "label": "Sportscar365: Five Cars Penalized Post-Race; United Autosports Loses P2 Podium",
+     "url": "https://sportscar365.com/lemans/elms/five-cars-penalized-post-race/"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Lapierre Puts DragonSpeed on Top in FP1",
+    "url": "https://sportscar365.com/lemans/elms/lapierre-puts-dragonspeed-on-top-in-fp1/"
+   },
+   {
+    "label": "Sportscar365: DragonSpeed Fastest in Paul Ricard FP2",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-fastest-in-paul-ricard-fp2/"
+   },
+   {
+    "label": "Sportscar365: DragonSpeed Locks Out Front Row for 4H Le Castellet",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-locks-out-front-row-for-4h-le-castellet/"
+   },
+   {
+    "label": "Sportscar365: Paul Ricard Weekend Notebook",
+    "url": "https://sportscar365.com/lemans/elms/paul-ricard-weekend-notebook-3/"
+   },
+   {
+    "label": "Sportscar365: SMP Dallara Takes Maiden Win in 4H Le Castellet",
+    "url": "https://sportscar365.com/lemans/elms/smp-dallara-takes-maiden-win-in-4h-paul-ricard/"
+   },
+   {
+    "label": "Sportscar365: Five Cars Penalized Post-Race; United Autosports Loses P2 Podium",
+    "url": "https://sportscar365.com/lemans/elms/five-cars-penalized-post-race/"
+   },
+   {
+    "label": "DailySportsCar: 4H Le Castellet Preview: The Title Race Heads To France",
+    "url": "https://www.dailysportscar.com/2017/08/23/4h-le-castellet-preview-the-title-race-heads-to-france.html"
+   },
+   {
+    "label": "DailySportsCar: DragonSpeed Quickest In Opening Free Practice At Paul Ricard",
+    "url": "https://www.dailysportscar.com/2017/08/25/dragonspeed-quickest-in-opening-free-practice-at-paul-ricard.html"
+   },
+   {
+    "label": "DailySportsCar: DragonSpeed On Top Again In FP2",
+    "url": "https://www.dailysportscar.com/2017/08/26/dragonspeed-on-top-again-in-fp2.html"
+   },
+   {
+    "label": "DailySportsCar: DragonSpeed 1-2 In 4H Le Castellet Qualifying",
+    "url": "https://www.dailysportscar.com/2017/08/26/dragonspeed-1-2-in-4h-le-castellet-qualifying.html"
+   },
+   {
+    "label": "DailySportsCar: SMP Racing Scores First Dallara P217 Win At Paul Ricard",
+    "url": "https://www.dailysportscar.com/2017/08/27/smp-racing-scores-first-dallara-p217-win-at-paul-ricard.html"
+   },
+   {
+    "label": "DailySportsCar: United Autosports Loses LMP2 Podium For FCY Infringment",
+    "url": "https://www.dailysportscar.com/2017/08/27/united-autosports-loses-lmp2-podium-for-fcy-infringment.html"
+   },
+   {
+    "label": "ELMS: Postcard from Le Castellet",
+    "url": "https://www.europeanlemansseries.com/en/news/postcard-from-le-castellet-5f06dfd07ffc336a172c7edd/9896"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "A tight title race and a fourth Norma",
+    "text": [
+     "LMP3 arrived at Paul Ricard with four crews inside ten points. United Autosports’ #2 Ligier of Falb and Rayhall and the #17 Ultimate Ligier of Matthieu and Jean-Baptiste Lahaye and Heriau were level on 45 points, the #18 M.Racing – YMR Ligier of Cougnaud, Jung and Ricci had 43, and Mondini’s Eurointernational crew stood eight further back. United’s tally had been dented at the Red Bull Ring, where the #2 crossed the line first but lost the win to a post-race penalty.",
+     "The paddock talking point was the Norma M30. Duqueine Engineering swapped its second Ligier for an M30, the #8, with Nicolas Melin joining Beltoise and Légeret, which took the number of Normas in the series to four alongside the Duqueine #7, M.Racing – YMR’s #19 and Oregon Team’s #10. The track itself had changed too: a new chicane on the Mistral Straight, aimed at slowing the 2017-spec LMP2 cars, made LMP3 and GTE cars roughly eight to ten seconds a lap slower than on the old layout.",
+     "Practice was tight. RLR MSport’s Kapadia led the first session in the #15 Ligier, just 0.103 seconds clear of 360 Racing’s #6, with M.Racing – YMR’s Norma the first of its kind some seven tenths down. Boyd put United’s #3 on top in the second session, less than five hundredths ahead of Ehrlacher’s Norma, and the first eleven cars were covered by about a second. That session was red-flagged when Légeret put the Duqueine #8 into the barriers at Turn 2, and the #2 stayed in the garage to save its tyres."
+    ],
+    "cars": [
+     "8",
+     "17"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Kaiser pole in the final minute",
+    "text": [
+     "Ross Kaiser took pole for 360 Racing with a 2:02.186 in the #6 Ligier he shares with Woodward and Wells. RLR MSport’s Kapadia had held provisional pole on 2:02.471, but Kaiser moved from third to first in the closing minute to give the class an all-British front row. It was 360’s first pole of the season.",
+     "M.Racing – YMR filled the next two places, Cougnaud’s Ligier #18 on 2:02.608 ahead of Ehrlacher’s Norma #19 on 2:02.817. Rayhall put the title-chasing #2 fifth on 2:02.934, with Capo’s Eurointernational #12 less than two hundredths behind, so the top six were separated by less than eight tenths. Behind them Panis Barthez, Oregon, Eurointernational’s #11 and Ultimate’s #17 were all within a second of the pole time, while By Speed Factory’s #5 was almost five seconds off in 2:07.052."
+    ],
+    "cars": [
+     "6",
+     "19"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "A slow start for the eventual winner",
+    "text": [
+     "The four hours began at noon in hot, sunny conditions. Rayhall took the start for the #2 from fifth in class and was down to seventh during the opening hour. The team had gone for a low-downforce set-up that he later called a big mistake, but his stint turned around before the first change of drivers, as he picked his way through the field and handed over to Falb in the lead."
+    ],
+    "cars": [
+     "2"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Most of the field makes mistakes",
+    "text": [
+     "With Falb at the front, Inter Europol Competition became the main threat. Smiechowski and Hippe’s Ligier #13 started from 27th on the grid, 15th in class, but ran a trouble-free and quick race in which most of the other teams made errors and faltered. The low-downforce set-up meant the #2 had to be driven cleanly to get the most from it, and the lap times were not spectacular."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 4",
+    "title": "Hippe closes in, then the yellows come",
+    "text": [
+     "Hippe was charging towards the front and into Falb’s lead, but his charge was interrupted twice by Full Course Yellow periods for stranded LMP3 cars, which left him little time to catch the #2. With 15 minutes to go Falb was told the margin was down to six seconds and that he should push."
+    ],
+    "cars": [
+     "13"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Falb holds on by 2.4 seconds",
+    "text": [
+     "Falb took the chequered flag 2.418 seconds ahead of Hippe’s #13, which had come from 15th in class on the grid to claim second place. Cougnaud, Jung and Ricci were third in the #18, about 26 seconds from the lead, with Eurointernational’s #11 fourth and Panis Barthez’s #16 of Debard, Gachet and Bean fifth."
+    ],
+    "cars": [
+     "18"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "United’s second win and a long list of non-finishers",
+    "text": [
+     "The #2 won on 107 laps, as did the next five finishers: the #13, #18, #11, #16 and Ultimate’s #17, which was sixth. RLR MSport’s #15 and Eurointernational’s #12 were seventh and eighth on 106 laps, then By Speed Factory’s #5 on 103 and Cool Racing’s #4 on 98. Post-race, the #15, #12 and #5 each received 30-second penalties for speeding under Full Course Yellow. Seven cars were not classified, among them pole-sitter #6 with 88 laps, the Duqueine Normas #7 (75 laps) and #8 (42 laps) as well as the #19, #10, #3 and #9. Borga’s #7 nevertheless set the class fastest lap, a 2:04.268.",
+     "It was Falb and Rayhall’s second class win of the season after Silverstone, and it left the #2 12 points clear of the #18 with two rounds remaining. The ELMS moves on to Spa-Francorchamps on 24 September."
+    ],
+    "cars": [
+     "15",
+     "7",
+     "12"
+    ]
+   }
+  ]
+ },
+ "LMGTE": {
+  "title": "Spirit of Race’s #55 Ferrari turns pole into a second straight win",
+  "dek": "Cameron, Griffin and Scott won from pole in Spirit of Race’s #55 Ferrari by more than a minute from TF Sport’s Aston Martin, with JMW’s Ferrari third after running second for long spells.",
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Griffin’s pole by 0.370s",
+    "v": "Griffin improved to 2:04.202 on his final flying lap, 0.370 seconds quicker than Cairoli’s Proton Porsche.",
+    "one": {
+     "label": "DailySportsCar: DragonSpeed 1-2 In 4H Le Castellet Qualifying",
+     "url": "https://www.dailysportscar.com/2017/08/26/dragonspeed-1-2-in-4h-le-castellet-qualifying.html"
+    }
+   },
+   {
+    "i": "🏆",
+    "t": "Back-to-back wins",
+    "v": "Spirit of Race’s #55 had also won the previous round at the Red Bull Ring, making this its second consecutive class win.",
+    "one": {
+     "label": "Sportscar365: SMP Dallara Takes Maiden Win in 4H Le Castellet",
+     "url": "https://sportscar365.com/lemans/elms/smp-dallara-takes-maiden-win-in-4h-paul-ricard/"
+    }
+   },
+   {
+    "i": "⏱",
+    "t": "JMW’s final stop",
+    "v": "JMW’s Ferrari had to serve an extra 10 seconds at its final stop for a pit stop infringement, which let TF Sport take second.",
+    "one": {
+     "label": "DailySportsCar: SMP Racing Scores First Dallara P217 Win At Paul Ricard",
+     "url": "https://www.dailysportscar.com/2017/08/27/smp-racing-scores-first-dallara-p217-win-at-paul-ricard.html"
+    }
+   },
+   {
+    "i": "⚠",
+    "t": "Proton penalty",
+    "v": "Proton’s #77 Porsche received a 10-second penalty for mechanics remaining in the working area as it left the pit at its final stop.",
+    "one": {
+     "label": "Sportscar365: Five Cars Penalized Post-Race; United Autosports Loses P2 Podium",
+     "url": "https://sportscar365.com/lemans/elms/five-cars-penalized-post-race/"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Lapierre Puts DragonSpeed on Top in FP1",
+    "url": "https://sportscar365.com/lemans/elms/lapierre-puts-dragonspeed-on-top-in-fp1/"
+   },
+   {
+    "label": "Sportscar365: DragonSpeed Fastest in Paul Ricard FP2",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-fastest-in-paul-ricard-fp2/"
+   },
+   {
+    "label": "Sportscar365: DragonSpeed Locks Out Front Row for 4H Le Castellet",
+    "url": "https://sportscar365.com/lemans/elms/dragonspeed-locks-out-front-row-for-4h-le-castellet/"
+   },
+   {
+    "label": "Sportscar365: Paul Ricard Weekend Notebook",
+    "url": "https://sportscar365.com/lemans/elms/paul-ricard-weekend-notebook-3/"
+   },
+   {
+    "label": "Sportscar365: SMP Dallara Takes Maiden Win in 4H Le Castellet",
+    "url": "https://sportscar365.com/lemans/elms/smp-dallara-takes-maiden-win-in-4h-paul-ricard/"
+   },
+   {
+    "label": "Sportscar365: Five Cars Penalized Post-Race; United Autosports Loses P2 Podium",
+    "url": "https://sportscar365.com/lemans/elms/five-cars-penalized-post-race/"
+   },
+   {
+    "label": "DailySportsCar: 4H Le Castellet Preview: The Title Race Heads To France",
+    "url": "https://www.dailysportscar.com/2017/08/23/4h-le-castellet-preview-the-title-race-heads-to-france.html"
+   },
+   {
+    "label": "DailySportsCar: DragonSpeed Quickest In Opening Free Practice At Paul Ricard",
+    "url": "https://www.dailysportscar.com/2017/08/25/dragonspeed-quickest-in-opening-free-practice-at-paul-ricard.html"
+   },
+   {
+    "label": "DailySportsCar: DragonSpeed On Top Again In FP2",
+    "url": "https://www.dailysportscar.com/2017/08/26/dragonspeed-on-top-again-in-fp2.html"
+   },
+   {
+    "label": "DailySportsCar: DragonSpeed 1-2 In 4H Le Castellet Qualifying",
+    "url": "https://www.dailysportscar.com/2017/08/26/dragonspeed-1-2-in-4h-le-castellet-qualifying.html"
+   },
+   {
+    "label": "DailySportsCar: SMP Racing Scores First Dallara P217 Win At Paul Ricard",
+    "url": "https://www.dailysportscar.com/2017/08/27/smp-racing-scores-first-dallara-p217-win-at-paul-ricard.html"
+   },
+   {
+    "label": "DailySportsCar: United Autosports Loses LMP2 Podium For FCY Infringment",
+    "url": "https://www.dailysportscar.com/2017/08/27/united-autosports-loses-lmp2-podium-for-fcy-infringment.html"
+   },
+   {
+    "label": "ELMS: Postcard from Le Castellet",
+    "url": "https://www.europeanlemansseries.com/en/news/postcard-from-le-castellet-5f06dfd07ffc336a172c7edd/9896"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "TF Sport lead a six-car class",
+    "text": [
+     "Six GTE cars made the trip to Paul Ricard, all with the line-ups they had used at the Red Bull Ring. TF Sport’s Aston Martin #90 of Yoluc, Hankey and Thiim led the table on 59 points, six clear of JMW Motorsport’s Ferrari #66 of Fannin, Rob Smith and Cocker, with Smith fresh from winning the GTE Am class at the Le Mans 24 Hours in the same car. Spirit of Race’s #55 Ferrari, the Red Bull Ring winner, and Proton Competition’s #77 Porsche were tied 21 points behind TF Sport.",
+     "The new Mistral Straight chicane cost the GTE cars roughly eight to ten seconds a lap compared with the old layout. In practice, Spirit of Race’s Bertolini led the first session in the #51 Ferrari with a 2:05.961, with the two Astons among his nearest rivals, and Cairoli took the Porsche to the top of the second on a 2:05.753, ahead of the #55 of Griffin and Beechdean’s Turner."
+    ],
+    "cars": [
+     "66",
+     "90"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Griffin on pole, Spirit of Race with two in the top three",
+    "text": [
+     "Griffin took pole for the #55 with a 2:04.202, having first set a lap good enough for provisional pole and then bettered it on his last attempt. He said the heat meant the cars could not really race on the soft tyre, so the team had used it for qualifying and would manage tyres in the race. Cairoli was 0.370 seconds behind in the Proton Porsche on 2:04.572, with Bertolini’s sister Spirit of Race Ferrari third on 2:04.588.",
+     "Cocker put the JMW Ferrari fourth on 2:04.779, ahead of the two Aston Martins, TF Sport’s #90 (2:05.043) and Beechdean’s #99 (2:05.109), who were eight and nine tenths off the pole time."
+    ],
+    "cars": [
+     "55"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Ried leads, Scott hits back",
+    "text": [
+     "Proton’s Ried got the best of the start in the #77 Porsche and snatched the lead from the #55, but Scott fought back at the final corner a few laps later and took the place back. From there Spirit of Race controlled the pace at the front."
+    ],
+    "cars": [
+     "77"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "JMW chase, the Astons nurse damage",
+    "text": [
+     "Spirit of Race managed its tyres through the middle of the race, with Cameron and Scott handing the car to Griffin for the closing stint with a lead of more than a minute. JMW’s Ferrari ran second for most of the final two hours. Behind them, the TF Sport Aston Martin struggled for pace after front damage upset its aerodynamics, while Beechdean’s #99 also ran with a damaged dive plane after Howard made contact with a prototype."
+    ],
+    "cars": [
+     "99"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "TF Sport take second from JMW",
+    "text": [
+     "In the closing stages TF Sport recovered from its early damage to take second from the #66, while Griffin brought the Spirit of Race Ferrari home with the win in hand. JMW dropped to third."
+    ],
+    "cars": []
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "A comfortable win for the #55",
+    "text": [
+     "The #55 won on 106 laps, more than a minute ahead of the #90 of Yoluc, Hankey and Thiim, with the JMW #66 third. Spirit of Race’s sister Ferrari #51 of the Rodas and Bertolini was fourth, ahead of Beechdean’s #99, with the Proton #77 sixth, one lap down, after also receiving a 10-second post-race penalty for mechanics remaining in the working area at its final stop. Bertolini set the class fastest lap, a 2:07.426.",
+     "It was Spirit of Race’s second win in a row, after the Red Bull Ring. The ELMS next visits Spa-Francorchamps on 24 September."
+    ],
+    "cars": [
+     "51"
+    ]
+   }
+  ]
+ }
+}
