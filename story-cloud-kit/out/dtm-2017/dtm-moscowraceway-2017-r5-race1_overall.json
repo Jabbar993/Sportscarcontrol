@@ -1,0 +1,104 @@
+{
+  "title": "Rast leads an Audi one-two in Moscow Race 1",
+  "dek": "René Rast inherited pole from the penalised Marco Wittmann and led from start to finish at Moscow Raceway, beating Mike Rockenfeller by 0.770 seconds, with Wittmann recovering to third.",
+  "chapters": [
+    {
+      "k": "before",
+      "phase": "Build-up",
+      "title": "Halfway through the season, the table is tight",
+      "text": [
+        "The DTM reached the midpoint of its 18-race season at Moscow Raceway, where Saturday 22 July brought the ninth race of the year. Mattias Ekström of Audi Sport Team Abt Sportsline arrived leading the championship, narrowly ahead of Lucas Auer’s Mercedes-AMG. René Rast, the Audi Sport Team Rosberg rookie, was fifth in the standings but already knew what the top of the table felt like: his win at the Hungaroring in June had put him in front for a spell.",
+        "The previous round, at the Norisring, had left its mark. Mike Rockenfeller left that weekend with a broken foot and still travelled to Russia to race. Marco Wittmann, the reigning champion, arrived with a different kind of baggage, a grid penalty that would follow him into qualifying.",
+        "Success ballast was the other talking point of the weekend. Mercedes ran with 10 kg more than Audi and 5 kg more than BMW, and expected a difficult time in qualifying as a result. Each of the two races was scheduled for 55 minutes and included one mandatory tyre-change stop, with DRS available as an overtaking aid."
+      ],
+      "cars": ["5"]
+    },
+    {
+      "k": "before",
+      "phase": "Qualifying",
+      "title": "Wittmann fastest, but Rast starts on pole",
+      "text": [
+        "The 20-minute session built its order early. Rockenfeller set 1:27.932 after about five minutes to go top, Jamie Green answered with 1:27.676, and Rast went quicker still with 1:27.179, the best lap of the weekend up to that point. Wittmann then put BMW on top for the first time with a 1:27.035 at the halfway mark. The cars sat in the garages until five minutes from the end, and the final runs brought no big gains.",
+        "Wittmann’s lap stood as the fastest: 0.120 seconds clear of Rast’s 1:27.155 and 0.218 ahead of Rockenfeller. But he carried a five-place grid penalty for a third warning of the season, picked up at the Norisring, so pole passed to Rast and the champion lined up sixth. Rockenfeller, third on the sheet despite his injury, took the other front-row place. Augusto Farfus and Timo Glock gave BMW the second row, and Ekström started fifth.",
+        "Audi placed five of its six cars in the top ten and BMW four. Mercedes had the expected trouble: Gary Paffett, the best of them, was ninth on 1:27.538, half a second off the pace. Robert Wickens started 11th, Auer 13th, Edoardo Mortara 17th and Maro Engel 18th, 1.347 seconds slower than Wittmann."
+      ],
+      "cars": ["11", "53"]
+    },
+    {
+      "k": "turn",
+      "phase": "Opening laps",
+      "title": "Contact at the first corners ends Farfus’s race",
+      "text": [
+        "Rast made the best getaway from pole and stayed clear of the fighting behind him. Glock and Ekström went at each other from the first lap, the BMW squeezing the Audi wide at turn three and dropping Ekström to 11th; Glock was warned for it. Ekström recovered with an early pit stop, but his afternoon was a damage-limitation exercise.",
+        "At the end of lap two came the incident that shaped the podium. Farfus, running third, used DRS to go for Rockenfeller’s second place. Rockenfeller moved across to defend, the cars touched and Farfus was forced onto the grass. He kept the BMW going, but a right-front puncture sent him into the pits at the end of lap three, and he rejoined at the back. Rockenfeller was given a warning. Farfus completed 34 laps and did not take the flag.",
+        "Tom Blomqvist, who had picked up damage in the early scrapping, was out after 14 laps. At the front, Rast opened a gap of around a second and a half to Rockenfeller, and the two Audis had the lead to themselves."
+      ],
+      "cars": ["15", "16", "99"]
+    },
+    {
+      "k": "turn",
+      "phase": "Pit stops",
+      "title": "Early stoppers fade while Wickens rises",
+      "text": [
+        "The mandatory stop split the field. Maxime Martin, starting 14th, came in at the end of the first lap and then lost more time with a poor stop, finishing 16th. Several others also chose to pit early, a popular strategy that did not pay off for all of them. Rast and Rockenfeller were among the last to stop, around lap 15, and Rast had to bring his tyres up to temperature while Rockenfeller closed in.",
+        "The fight for third was more fluid. Glock passed Wittmann at the end of lap 11, but Wittmann, who had stopped a lap earlier, got the place back after the pit stops. Wickens, up from 11th on the grid after running wide at the start, stopped late and came out ahead of both BMWs. He set the race’s fastest lap, a 1:29.573 on lap 19, and held third for a time with Wittmann and Glock behind him."
+      ],
+      "cars": ["6", "36"]
+    },
+    {
+      "k": "turn",
+      "phase": "The finish",
+      "title": "Rast holds off Rockenfeller, Wittmann takes the last podium place",
+      "text": [
+        "While Rast got his new tyres up to temperature, Rockenfeller closed to within a second, but a full attack never materialised, and Rast crossed the line 0.770 seconds clear after 38 laps in 57:50.085. It was his second win of the season and put him back at the top of the standings on 99 points, four ahead of Auer (95) and six ahead of Ekström (93). Rockenfeller, racing on a broken foot, took his best result of the year.",
+        "Third place was settled late. Wickens held it for a long stretch, but Wittmann, who had managed his tyres better, got a good run out of the final corner and passed the Mercedes in the closing minutes, finishing 3.899 seconds behind Rast. Wickens was fourth, Glock fifth, Auer sixth, Paffett seventh and Ekström eighth, with Green, Engel and Duval completing the top eleven.",
+        "Farfus and Rockenfeller argued at length after the race. Farfus called the block extremely dangerous and felt a warning was too lenient, and BMW’s motorsport director Jens Marquardt agreed that a penalty would have been the right call. Rockenfeller said he felt Farfus had simply driven into him when he closed the door, but wanted to see the replay."
+      ],
+      "cars": ["33", "22"]
+    }
+  ],
+  "facts": [
+    {
+      "i": "🏁",
+      "t": "Rast’s second win of the season",
+      "v": "René Rast started from an inherited pole and led from lights to flag, finishing 0.770 seconds ahead of Mike Rockenfeller for an Audi one-two.",
+      "one": { "label": "Autosport: DTM Moscow: Audi driver Rene Rast triumphs in first race", "url": "https://www.autosport.com/dtm/news/130880/rast-secures-second-dtm-victory" }
+    },
+    {
+      "i": "🔁",
+      "t": "Fastest qualifier, third at the flag",
+      "v": "Marco Wittmann set the quickest qualifying lap but started sixth because of a five-place grid penalty, then won back third place late from Robert Wickens.",
+      "one": { "label": "Motorsport-Total: BMW mit Marco Wittmann in Moskau auf dem Podest", "url": "https://www.motorsport-total.com/dtm/news/bmw-mit-marco-wittmann-in-moskau-auf-dem-podest-17072210" }
+    },
+    {
+      "i": "⚠",
+      "t": "Racing on a broken foot",
+      "v": "Rockenfeller raced with a specially made bandage and a stiffer-soled race shoe after fracturing his foot at the Norisring, and took second place.",
+      "one": { "label": "Sport1: DTM: Audi-Doppelsieg in Moskau", "url": "https://www.sport1.de/motorsport/dtm/2017/07/dtm-audi-pilot-rene-rast-gewinnt-samstagsrennen-in-moskau" }
+    },
+    {
+      "i": "🛞",
+      "t": "Mercedes carried the most ballast",
+      "v": "Mercedes ran 10 kg more performance ballast than Audi and 5 kg more than BMW; Paffett in ninth was the best Mercedes in qualifying.",
+      "one": { "label": "Sport1: DTM: Rene Rast sichert sich die Pole Position in Moskau", "url": "https://www.sport1.de/news/motorsport/dtm/2017/07/dtm-rene-rast-sichert-sich-die-pole-position-in-moskau" }
+    },
+    {
+      "i": "📈",
+      "t": "Rast back on top at the halfway mark",
+      "v": "Rast’s win lifted him to 99 points, ahead of Lucas Auer on 95 and Mattias Ekström on 93.",
+      "one": { "label": "Autosport: DTM Moscow: Audi driver Rene Rast triumphs in first race", "url": "https://www.autosport.com/dtm/news/130880/rast-secures-second-dtm-victory" }
+    }
+  ],
+  "sources": [
+    { "label": "Autosport: DTM Moscow: Audi driver Rene Rast triumphs in first race", "url": "https://www.autosport.com/dtm/news/130880/rast-secures-second-dtm-victory" },
+    { "label": "Autosport: BMW DTM driver Farfus slams ‘dangerous’ Rockenfeller move at Moscow", "url": "https://www.autosport.com/dtm/news/bmw-dtm-driver-farfus-slams-dangerous-rockenfeller-move-at-moscow-4998786/4998786/" },
+    { "label": "Sport1: DTM: Audi-Doppelsieg in Moskau", "url": "https://www.sport1.de/motorsport/dtm/2017/07/dtm-audi-pilot-rene-rast-gewinnt-samstagsrennen-in-moskau" },
+    { "label": "Sport1: DTM: Rene Rast sichert sich die Pole Position in Moskau", "url": "https://www.sport1.de/news/motorsport/dtm/2017/07/dtm-rene-rast-sichert-sich-die-pole-position-in-moskau" },
+    { "label": "Motorsport.com (DE): DTM 2017 in Moskau: Marco Wittmann erzielt Pole-Position für BMW", "url": "https://de.motorsport.com/dtm/news/dtm-moskau-qualifying-bmw-wittmann-933492/933492/" },
+    { "label": "Motorsport-Total: BMW mit Marco Wittmann in Moskau auf dem Podest", "url": "https://www.motorsport-total.com/dtm/news/bmw-mit-marco-wittmann-in-moskau-auf-dem-podest-17072210" },
+    { "label": "RaceFans: One point in it as rookie chases DTM title", "url": "https://www.racefans.net/2017/07/24/one-point-in-it-as-rookie-chases-dtm-title/" },
+    { "label": "Racing24-7: Rene Rast in Russian domination", "url": "https://racing24-7.net/en/2017/07/22/rene-rast-i-russisk-dominans/" },
+    { "label": "Racingblog: DTM-Vorschau Moscow Raceway 2017", "url": "https://www.racingblog.de/2017/07/21/dtm-vorschau-moscow-raceway-2017-the-futures-in-the-air/" },
+    { "label": "Motorsport-Magazin: Übersicht: Das DTM-Strafregister 2017", "url": "https://www.motorsport-magazin.com/dtm/news-237609-uebersicht-das-dtm-strafregister-2017/" }
+  ]
+}

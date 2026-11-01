@@ -1,0 +1,77 @@
+{
+ "title": "Ekström wins Red Bull Ring Race 1 in an Audi podium sweep",
+ "dek": "Mattias Ekström won Race 1 at the Red Bull Ring for Audi Sport Team Abt Sportsline, passing pole-sitter Jamie Green late and finishing 0.398 seconds clear, as Nico Müller completed an Audi podium sweep.",
+ "chapters": [
+  {
+   "k": "before",
+   "phase": "Build-up",
+   "title": "A leader without a win and a level playing field",
+   "cars": ["22"],
+   "text": [
+    "The DTM reached the Red Bull Ring for the eighth round of 2017, the penultimate weekend of the season, with a championship leader who had yet to win. Mattias Ekström of Audi Sport Team Abt Sportsline led the table on 136 points, nine clear of Lucas Auer, yet the first fourteen races had been shared among ten different winners and the Swede was not one of them. Auer, who had won three of those races and was the spearhead of Mercedes, was racing at home. René Rast stood third on 124, with the reigning champion Marco Wittmann fourth on 115, 21 points off the lead.",
+    "The weekend was also the first without the performance weights that had been used to balance the three manufacturers. A push to drop them before Zandvoort had failed on an Audi veto, but the manufacturers agreed in mid-September to scrap them with immediate effect, and in Spielberg all 18 cars ran at the same 1,115 kilograms including the driver. Earlier in the year the difference between brands had stretched to as much as 25 kilograms. The first answer came in free practice, where Jamie Green of Audi Sport Team Rosberg was quickest in both sessions.",
+    "As usual each of the two races had its own qualifying session, and each ran for 55 minutes plus one lap."
+   ]
+  },
+  {
+   "k": "before",
+   "phase": "Qualifying",
+   "title": "Green edges Müller on the final lap",
+   "cars": ["53", "51", "11"],
+   "text": [
+    "Qualifying was the first competitive session since the weights were dropped, and Audi filled five of the first six places. Wittmann was the first to set a competitive time before Ekström and then Green took over; Green was fastest at half-distance, with four Audi team-mates behind him. Müller moved to the top in the closing minutes, and Green, who had come up 0.004 seconds short on his first attempt to improve, found a 1:21.973 as the chequered flag fell to take pole by 0.021 seconds.",
+    "Ekström took third on 1:22.046, with Wittmann splitting the Audis in fourth, 0.081 seconds off pole and the best of the BMW drivers. Mike Rockenfeller and Rast completed the top six, and Robert Wickens was seventh on 1:22.292 as the quickest Mercedes. BMW's Maxime Martin, Timo Glock and Augusto Farfus rounded out the top ten.",
+    "Mercedes had a poor session. Paul di Resta was eleventh, and Auer, the closest title challenger, was twelfth, 0.558 seconds off the pole time in front of his home crowd. Maro Engel was last of the 18 on 1:22.905. Ekström said afterwards that qualifying is not his greatest strength and that he was proud of the result, adding that his priority from third on the grid was to stay ahead of Wittmann at the start."
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "Opening laps",
+   "title": "Audi hold the front, Wickens leads the pack",
+   "cars": ["6", "36"],
+   "text": [
+    "The three Audis kept their places off the line. Green led into the first corner from Müller and Ekström, with Wittmann's BMW behind them, and the first laps were calm at the front. On the second lap Ekström passed Müller for second, and the interest was further back, where Wickens, seventh on the grid, had climbed to fourth by the end of the opening lap.",
+    "He spent the first stint fending off Wittmann and Rast, and behind that train Martin, Rockenfeller, Auer and Mortara ran within a few tenths of each other. Audi motorsport chief Dieter Gass later credited Wickens, who ran with a damaged car, with bottling up the field, so that everyone from fourth place back was closely bunched, and said overtaking had proved harder than he expected."
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "Pit stops",
+   "title": "Ekström stalks Green after the stops",
+   "cars": ["5"],
+   "text": [
+    "Green had built a lead of almost five seconds over Ekström when the Abt driver came in. Green stopped three laps later and was 4.6 seconds clear at the end of his first lap on new tyres, but Ekström took the gap down to about 1.2 seconds within four laps and then hovered around one and a half seconds for most of the remaining distance. Müller had got back ahead of Ekström in the pit cycle, only for the championship leader to retake second soon afterwards.",
+    "Further back Wickens and Wittmann stopped together and the Mercedes stayed in front. Rast, who came in slightly later, jumped both of them in the stops but could not hold them off on cold tyres, and the jostling left Wickens with damage to the trim on his left side."
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "The finish",
+   "title": "Ekström passes Green with four or five laps to go",
+   "cars": ["33", "99"],
+   "text": [
+    "With four or five laps remaining Green lost relative pace and Ekström went past into the lead. He took the flag after 40 laps in 57:00.812, 0.398 seconds ahead of Green, with Müller 0.602 seconds behind the winner and the three Audis finishing in formation. Green set the fastest lap of the race, a 1:23.742 on lap 7. Green said Ekström had simply been a little quicker at the end; Ekström said he had preferred to drive smartly rather than aggressively and that Green would probably have won had it come to a hard fight.",
+    "Wickens crossed the line 21.625 seconds behind in fourth, ahead of Wittmann, Martin, Rockenfeller, Auer, Mortara and Glock. Rast, caught up in the scramble behind Wickens, finished thirteenth and out of the points, and Farfus was the only driver who did not finish. Ekström's first win of the season took him to 162 points, 28 clear of Green, who moved up to second, with Auer 31 behind in third after finishing eighth."
+   ]
+  }
+ ],
+ "facts": [
+  {"i": "🔧", "t": "Weights abolished", "v": "Spielberg was the first round without performance weights, and all 18 cars ran at 1,115 kg including the driver.", "one": {"label": "Sport1: Ekström baut Gesamtführung aus", "url": "https://www.sport1.de/news/motorsport/dtm/2017/09/dtm-mattias-ekstroem-siegt-vor-jamie-green-in-spielberg"}},
+  {"i": "🥇", "t": "Ekström's first win of 2017", "v": "The championship leader took his first victory of the season, after the first fourteen races had gone to ten different winners.", "one": {"label": "Autosport: DTM points leader Ekstrom takes first win of 2017 at Red Bull Ring", "url": "https://www.autosport.com/dtm/news/131992/ekstrom-passes-green-for-first-2017-win"}},
+  {"i": "⏱", "t": "Green on pole and fastest", "v": "Green took pole with a 1:21.973, 0.021 seconds ahead of Müller, and set the fastest race lap, a 1:23.742 on lap 7.", "one": {"label": "Autosport: DTM Red Bull Ring: Jamie Green tops Audi-dominated qualifying", "url": "https://www.autosport.com/dtm/news/131987/green-tops-audidominated-qualifying-session"}},
+  {"i": "📈", "t": "Standings after Race 1", "v": "Ekström's 162 points put him 28 clear of Green and 31 ahead of Auer.", "one": {"label": "Sport1: Ekström baut Gesamtführung aus", "url": "https://www.sport1.de/news/motorsport/dtm/2017/09/dtm-mattias-ekstroem-siegt-vor-jamie-green-in-spielberg"}},
+  {"i": "🎯", "t": "Wickens' opening lap", "v": "Wickens went from seventh on the grid to fourth on the opening lap and finished there, 21.625 seconds behind the winner.", "one": {"label": "Autosport: DTM points leader Ekstrom takes first win of 2017 at Red Bull Ring", "url": "https://www.autosport.com/dtm/news/131992/ekstrom-passes-green-for-first-2017-win"}}
+ ],
+ "sources": [
+  {"label": "Autosport: DTM points leader Ekstrom takes first win of 2017 at Red Bull Ring", "url": "https://www.autosport.com/dtm/news/131992/ekstrom-passes-green-for-first-2017-win"},
+  {"label": "Autosport: DTM Red Bull Ring: Jamie Green tops Audi-dominated qualifying", "url": "https://www.autosport.com/dtm/news/131987/green-tops-audidominated-qualifying-session"},
+  {"label": "Autosport: DTM manufacturers agree to scrap performance weight immediately", "url": "https://www.autosport.com/dtm/news/131796/dtm-to-scrap-performance-ballast-immediately"},
+  {"label": "The Checkered Flag: DTM Scraps Performance Weights with Immediate Effect", "url": "https://www.thecheckeredflag.co.uk/2017/09/dtm-scraps-performance-weights-immediate-effect/"},
+  {"label": "Motorsport.com: DTM 2017 in Spielberg: Audi schenkt Mattias Ekström den Sieg", "url": "https://de.motorsport.com/dtm/news/dtm-spielberg-sieg-audi-ekstrom-956816/"},
+  {"label": "Motorsport-Total: DTM Spielberg: Green lässt Ekström gewinnen", "url": "http://www.motorsport-total.com/dtm/news/2017/09/dtm-spielberg-green-laesst-ekstroem-gewinnen-17092304.html"},
+  {"label": "Motorsport-Total: Ekström feiert ersten Saisonsieg und baut Tabellenführung aus", "url": "https://www.motorsport-total.com/dtm/news/ekstroem-feiert-ersten-saisonsieg-und-baut-tabellenfuehrung-aus-17092306"},
+  {"label": "Sport1: Ekström baut Gesamtführung aus", "url": "https://www.sport1.de/news/motorsport/dtm/2017/09/dtm-mattias-ekstroem-siegt-vor-jamie-green-in-spielberg"},
+  {"label": "Racingblog: DTM: Bericht Spielberg 2017 – Alles spricht für Audi", "url": "https://www.racingblog.de/2017/09/25/dtm-bericht-spielberg-2017-alles-spricht-fuer-audi/"},
+  {"label": "Motorsport-Magazin: DTM Spielberg 2017: Rast gewinnt und hält Titelkampf offen", "url": "https://www.motorsport-magazin.com/dtm/news-241638-dtm-red-bull-ring-2017-live-ticker-live-stream/"}
+ ]
+}

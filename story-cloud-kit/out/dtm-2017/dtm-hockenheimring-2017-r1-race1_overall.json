@@ -1,0 +1,156 @@
+{
+ "title": "Auer wins the Hockenheim opener from pole",
+ "dek": "Lucas Auer won the first DTM race of 2017 from pole for Mercedes-AMG, 1.942 seconds ahead of Timo Glock, with Mike Rockenfeller third after an early stop from 16th on the grid.",
+ "chapters": [
+  {
+   "k": "before",
+   "phase": "Build-up",
+   "title": "A season opener with a new rulebook",
+   "text": [
+    "The 2017 DTM season began at Hockenheim on Saturday 6 May, the first of two races that weekend, and a good deal of it was unfamiliar. Pit-to-car radio was heavily restricted, so drivers had to judge their tyres and their rivals on their own. The Hankook tyre was new and wore noticeably faster, and tyre blankets were banned, which meant the rubber could no longer be pre-heated in the garage. Qualifying now paid championship points to the top three, and safety-car restarts were to be run in the Indy style, in two tight rows.",
+    "Marco Wittmann arrived as reigning champion for BMW. Mercedes-AMG had a new face in Edoardo Mortara, Audi’s Phoenix team had a DTM rookie in Loïc Duval, and nobody knew what the new tyres would do over a full race distance. Lucas Auer put it plainly before the start: nobody knew what to expect in the long run. He had topped Saturday morning’s second practice session on 1:31.712, ahead of di Resta and Mortara."
+   ],
+   "cars": [
+    "11"
+   ]
+  },
+  {
+   "k": "before",
+   "phase": "Qualifying",
+   "title": "Auer alone under 1:31 on a Mercedes front row",
+   "text": [
+    "Auer improved on his practice best by 0.863 seconds in the 20-minute session and took the first pole of the season with a 1:30.849, the only lap under 1:31. Gary Paffett made it a Mercedes front row with 1:31.042, 0.193 seconds back, and Mortara was third at 0.271. The top three collected three, two and one championship points.",
+    "Timo Glock was the best of the rest, fourth for BMW Team RMG on 1:31.161, 0.312 seconds off, with Maxime Martin’s RBM BMW fifth. Paul di Resta and Maro Engel made it five Mercedes in the first seven. Audi had a difficult session: Nico Müller was its best car in eighth for Abt Sportsline, Mike Rockenfeller could only manage 16th, Mattias Ekström 17th on 1:32.082, and Duval was last of the 18 starters, 1.601 seconds from pole.",
+    "Wickens was tenth, Wittmann 11th and Jamie Green 12th, ahead of Bruno Spengler, René Rast and Augusto Farfus in 13th to 15th. For a first race on a new tyre with no radio and no blankets, the grid was a poor guide to the finishing order, as the afternoon would show."
+   ],
+   "cars": [
+    "22",
+    "2",
+    "77"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "Opening laps",
+   "title": "Auer escapes while Glock cuts through",
+   "text": [
+    "Auer made a good start and was quickly clear at the front. The busy man was Glock, who got past Mortara and then Paffett in the opening stages and said afterwards that he had a “mega fight” with the two Mercedes before he could break free. Paffett, who had started second, would finish seventh.",
+    "Further back there were two incidents, and both brought a drive-through penalty. Robert Wickens spun Tom Blomqvist in the early laps, and Green made contact with Engel. Both Wickens and Green were punished and slid down the order. Engel, who had started seventh, finished 17th; Green went from 12th on the grid to last, more than a minute behind the winner."
+   ],
+   "cars": [
+    "16",
+    "6",
+    "31"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "Pit stops",
+   "title": "Rockenfeller and Ekström play the long game",
+   "text": [
+    "The compulsory stop decided the afternoon. Rockenfeller, starting from 16th, opted for an unusual, early stop and was the first man into the pits, a call that put fresh tyres on his Phoenix Audi while the leaders were still running their first set. Ekström went the other way. He climbed from 17th into the points on his original tyres, stayed out until around lap 25 or 26, some nine laps longer than most, and was the last or nearly the last driver to stop.",
+    "The overcut worked. Ekström came out on fresher, faster rubber, set the fastest lap of the race, a 1:33.201 on lap 29, and moved up to fifth. Rast, 14th on the grid, was also in the leading group by the end. At the front, Auer retained the lead through the stops, though he said the second stint was much harder than the first: he felt uncomfortable on the new set and his tyres began to fall away."
+   ],
+   "cars": [
+    "99",
+    "5",
+    "33"
+   ]
+  },
+  {
+   "k": "turn",
+   "phase": "The finish",
+   "title": "Glock closes in, Auer holds on",
+   "text": [
+    "Over the last minutes Glock was all over the back of the leader, the two of them running almost wheel to wheel for several laps. Auer, by his own account, had virtually no tyre left and had to defend while driving flat out, and he never made the mistake Glock needed. He took the flag 1.942 seconds ahead after 36 laps in 57m23.598s, his second DTM victory. “By far the hardest and longest race of my life,” he said.",
+    "Rockenfeller was third, 3.351 seconds behind, and Mortara was only 0.633 seconds further back in fourth. Ekström was fifth, Rast sixth and Paffett seventh, and the first seven cars crossed the line inside 6.956 seconds of the winner. Wittmann, the champion, was 10th, one place better than his grid slot. Mercedes, BMW and Audi each had a car on the podium, and Auer left Hockenheim at the top of the drivers’ standings, with a second race still to come on Sunday."
+   ],
+   "cars": [
+    "48",
+    "3",
+    "53"
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "i": "🏁",
+   "t": "Seven cars inside seven seconds",
+   "v": "The first seven finishers crossed the line within 6.956 seconds of Lucas Auer, and the 36 laps took 57m23.598s.",
+   "one": {
+    "label": "Motorsport-Magazin: Hockenheim I, Race 1 result",
+    "url": "https://www.motorsport-magazin.com/dtm/ergebnisse/2017/session/hockenheim-i-rennen-1-25328.html"
+   }
+  },
+  {
+   "i": "⏱",
+   "t": "Only one lap under 1:31",
+   "v": "Auer’s 1:30.849 was the only qualifying lap under 1:31, and he beat his best from second practice by 0.863 seconds.",
+   "one": {
+    "label": "Motorsport-Total: Auer starts from pole",
+    "url": "https://www.motorsport-total.com/dtm/news/dtm-hockenheim-2017-auer-startet-von-pole-position-17050603"
+   }
+  },
+  {
+   "i": "🛞",
+   "t": "Rockenfeller from 16th to the podium",
+   "v": "Rockenfeller started 16th, was the first to stop for tyres and finished third, 3.351 seconds behind Auer.",
+   "one": {
+    "label": "GTspirit: Auer and Green victorious at Hockenheim",
+    "url": "https://gtspirit.com/2017/05/07/202595-2/"
+   }
+  },
+  {
+   "i": "🔁",
+   "t": "Ekström’s overcut",
+   "v": "Ekström started 17th, stopped for tyres later than almost everyone else and finished fifth, with the fastest lap of the race.",
+   "one": {
+    "label": "Motorsport-Total: Furioser DTM-Auftakt",
+    "url": "https://www.motorsport-total.com/dtm/news/furioser-dtm-auftakt-2017-auer-siegt-in-hockenheim-17050604"
+   }
+  },
+  {
+   "i": "📈",
+   "t": "Auer takes the points lead",
+   "v": "With three points for pole and 25 for the win, Auer led the standings on 28, ahead of Glock on 18 and Rockenfeller on 15.",
+   "one": {
+    "label": "LAOLA1: Auer triumphiert beim DTM-Auftakt",
+    "url": "https://www.laola1.at/de/red/motorsport/dtm/lucas-auer-beim-dtm-auftakt-in-hockenheim-auf-pole/"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "label": "Motorsport-Magazin: Live-Ticker Saisonauftakt in Hockenheim",
+   "url": "https://www.motorsport-magazin.com/dtm/news-237547-ticker-live-ticker-saisonauftakt-in-hockenheim/"
+  },
+  {
+   "label": "Motorsport-Total: DTM Hockenheim 2017, Auer startet von Pole-Position",
+   "url": "https://www.motorsport-total.com/dtm/news/dtm-hockenheim-2017-auer-startet-von-pole-position-17050603"
+  },
+  {
+   "label": "Motorsport-Total: Furioser DTM-Auftakt 2017, Auer siegt in Hockenheim",
+   "url": "https://www.motorsport-total.com/dtm/news/furioser-dtm-auftakt-2017-auer-siegt-in-hockenheim-17050604"
+  },
+  {
+   "label": "SPORT1: Auer triumphiert in Hockenheim",
+   "url": "https://www.sport1.de/news/motorsport/dtm/2017/05/dtm-2017-in-hockenheim"
+  },
+  {
+   "label": "motorline.cc: Auer triumphiert in Hockenheim",
+   "url": "https://www.motorline.cc/motorsport/2017/DTM/DTM-Hockenheim-Auer-triumphiert-in-Hockenheim-211079.html"
+  },
+  {
+   "label": "LAOLA1: Lucas Auer triumphiert beim DTM-Auftakt in Hockenheim",
+   "url": "https://www.laola1.at/de/red/motorsport/dtm/lucas-auer-beim-dtm-auftakt-in-hockenheim-auf-pole/"
+  },
+  {
+   "label": "GTspirit: DTM, Auer and Green victorious at Hockenheim season opener",
+   "url": "https://gtspirit.com/2017/05/07/202595-2/"
+  },
+  {
+   "label": "Motorsport-Magazin: Hockenheim I, Rennen 1 Ergebnis",
+   "url": "https://www.motorsport-magazin.com/dtm/ergebnisse/2017/session/hockenheim-i-rennen-1-25328.html"
+  }
+ ]
+}
