@@ -1,0 +1,272 @@
+{
+  "LMGTE": {
+    "title": "Bertolini turns a 21-point deficit into the LMGTE title",
+    "dek": "Bertolini, Shaitar and Zlobin won for SMP Racing and took the championship, overturning a 21-point deficit after the AF Corse leaders lost time with early damage.",
+    "chapters": [
+      {
+        "k": "before",
+        "phase": "Build-up",
+        "title": "Ferrari's title to lose",
+        "text": [
+          "The LMGTE championship arrived at Estoril with one crew firmly in control. Duncan Cameron, Matt Griffin and Michele Rugolo led the standings in the AF Corse Ferrari 458 Italia #55, 21 points clear of the SMP Racing Ferrari #72 of Andrea Bertolini, Viktor Shaitar and Sergey Zlobin. The margin was big enough that a finish in eighth place in class would secure the title even if the SMP car won.",
+          "Practice did little to suggest a decider. The #72 headed the class in the damp, red-flag-interrupted morning session on 1:39.162 and was quickest again in the dry afternoon, with Stuart Hall's Gulf Racing UK Aston Martin Vantage second on both occasions. In the afternoon only three hundredths of a second separated the top two. The #55 spent the second session eighth in class on a deliberately conservative run, while Gulf's other car, the new Porsche 911 RSR of Michael Wainwright, Adam Carroll and Benjamin Barker, used the time to gather mileage."
+        ],
+        "cars": ["55", "72"]
+      },
+      {
+        "k": "before",
+        "phase": "Qualifying",
+        "title": "Hall puts the Aston on pole",
+        "text": [
+          "Hall took pole for the Gulf Racing UK Aston Martin #85 with a 1:37.269, just ahead of Daniel Zampieri's JMW Motorsport Ferrari #66, which was 0.096s slower on 1:37.365. Griffin was third in the #55 on 1:37.416, one place ahead of Bertolini's #72 on 1:37.511, so the two title rivals started side by side on the second row.",
+          "Carroll placed the Gulf Porsche fifth on 1:37.988, with Pierre Kaffer's AT Racing Ferrari sixth and Soheil Ayari's Sofrev-ASP Ferrari seventh. Marco Cioci lined up eighth in the AF Corse Ferrari #54 on 1:38.604. Hall said the Aston ran the same Balance of Performance as at the Red Bull Ring, where it had also been quick, and that the team would ignore the title fight and concentrate on its own result."
+        ],
+        "cars": ["85", "66"]
+      },
+      {
+        "k": "turn",
+        "phase": "Hour 1",
+        "title": "The favourite is hit",
+        "text": [
+          "The title situation changed early. The leading #55 was hit by one of the ART Grand Prix McLarens from the GTC class and needed extensive repairs. Further problems followed once Griffin was in the car, and the crew that had needed only a modest result now faced the real possibility of throwing away the championship.",
+          "Up front, the field was left to the other Ferraris and the Gulf entries, with the SMP car, the Aston and the JMW Ferrari all in the mix."
+        ],
+        "cars": []
+      },
+      {
+        "k": "turn",
+        "phase": "Hours 2–3",
+        "title": "Gulf takes control",
+        "text": [
+          "With the #55 out of the picture, the Gulf Racing UK Aston Martin took charge, running in the lead through strong stints from Daniel Brown and Hall. The other Gulf car, the Porsche, shared the driving between Wainwright, Carroll and Barker.",
+          "JMW Motorsport's Daniel McKenzie and George Richardson stayed in contention through the middle of the race before handing the Ferrari to Zampieri for the closing stint."
+        ],
+        "cars": ["86"]
+      },
+      {
+        "k": "turn",
+        "phase": "The finish",
+        "title": "Bertolini hunts down the Aston",
+        "text": [
+          "The race swung in the final hour. Roald Goethe took the Aston for its closing stint and the lead began to slip, and Bertolini closed up and passed the Gulf car in the last 45 minutes or so. Once in front he held on, finishing ahead of the AF Corse Ferrari #54 of Piergiuseppe Perazzini, Cioci and Michael Lyons, while the JMW Ferrari completed an all-Ferrari podium.",
+          "The Aston, which had led for so long, fell to fifth in class behind the Gulf Porsche. Barker set the class fastest lap of the race with a 1:39.370."
+        ],
+        "cars": ["54"]
+      },
+      {
+        "k": "after",
+        "phase": "Aftermath",
+        "title": "SMP Racing's class win and title",
+        "text": [
+          "Bertolini, Shaitar and Zlobin won the class in the SMP Racing Ferrari #72 over 139 laps and took the LMGTE championship with it, wiping out the 21-point deficit they had carried into the weekend. The AF Corse #54 of Perazzini, Cioci and Lyons was second, and McKenzie, Richardson and Zampieri completed the podium for JMW Motorsport, all on the same lap, one down on the winner.",
+          "Carroll, Wainwright and Barker were fourth in the Gulf Porsche #86, with Hall, Goethe and Brown fifth in the Aston #85 and the AT Racing Ferrari #56 of Alexander Talkanitsa, Alexander Talkanitsa Jr and Kaffer sixth, all on 138 laps. The title-chasing #55 was classified well down the order, 23 laps behind the winner, and the Sofrev-ASP Ferrari #58 of Fabien Barthez, Anthony Pons and Ayari was not classified.",
+          "That was the end of the 2014 season; the series is due to reconvene at Silverstone in April 2015."
+        ],
+        "cars": ["56", "80"]
+      }
+    ],
+    "facts": [
+      {
+        "i": "🏆",
+        "t": "21 points overturned",
+        "v": "The SMP Racing Ferrari #72 took the class win and the LMGTE championship after starting the weekend 21 points behind the AF Corse #55.",
+        "one": {
+          "label": "Sportscar365: Sebastien Loeb Racing Wins Estoril, Signatech-Alpine Takes Title",
+          "url": "https://sportscar365.com/lemans/elms/sebastien-loeb-racing-wins-estoril-signatech-alpine-takes-title/"
+        }
+      },
+      {
+        "i": "🏁",
+        "t": "Pole by 0.096s",
+        "v": "Hall's 1:37.269 in the Gulf Aston Martin put it ahead of Zampieri's JMW Ferrari, with the title rivals Griffin and Bertolini third and fourth.",
+        "one": {
+          "label": "Sportscar365: Jota Sport Secures Fourth Pole of Season at Estoril",
+          "url": "https://sportscar365.com/lemans/elms/jota-sport-secures-fourth-season-pole-at-estoril/"
+        }
+      },
+      {
+        "i": "⚠",
+        "t": "Title favourite hit early",
+        "v": "The AF Corse #55 was struck by an ART Grand Prix McLaren early in the race and needed extensive repairs.",
+        "one": {
+          "label": "DailySportsCar: ELMS: Estoril, Race Report",
+          "url": "https://www.dailysportscar.com/2014/10/19/elms-estoril-race-report.html"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "label": "DailySportsCar: ELMS: Estoril, Race Report",
+        "url": "https://www.dailysportscar.com/2014/10/19/elms-estoril-race-report.html"
+      },
+      {
+        "label": "DailySportsCar: ELMS: Estoril, Qualifying Report",
+        "url": "https://www.dailysportscar.com/2014/10/19/elms-estoril-qualifying-report.html"
+      },
+      {
+        "label": "DailySportsCar: ELMS: Estoril, Free Practice 1 Report",
+        "url": "https://www.dailysportscar.com/2014/10/18/elms-estoril-free-practice-1-report.html"
+      },
+      {
+        "label": "DailySportsCar: ELMS: Estoril, Free Practice 2 Report",
+        "url": "https://www.dailysportscar.com/2014/10/18/elms-estoril-free-practice-2.html"
+      },
+      {
+        "label": "DailySportsCar: ELMS: Estoril, LMGTE & GTC Preview",
+        "url": "https://www.dailysportscar.com/2014/10/16/elms-estoril-lmgte-gtc-preview.html"
+      },
+      {
+        "label": "Sportscar365: Sebastien Loeb Racing Wins Estoril, Signatech-Alpine Takes Title",
+        "url": "https://sportscar365.com/lemans/elms/sebastien-loeb-racing-wins-estoril-signatech-alpine-takes-title/"
+      },
+      {
+        "label": "Sportscar365: Jota Sport Secures Fourth Pole of Season at Estoril",
+        "url": "https://sportscar365.com/lemans/elms/jota-sport-secures-fourth-season-pole-at-estoril/"
+      },
+      {
+        "label": "Sportscar365: Thiriet by TDS Quickest on Saturday at Estoril",
+        "url": "https://sportscar365.com/lemans/elms/thiriet-by-tds-quickest-on-saturday-at-estoril/"
+      }
+    ]
+  },
+  "GTC": {
+    "title": "Marc VDS's BMW wins GTC as SMP Racing take the title",
+    "dek": "Leinders, Palttala and Hassid won GTC by a lap for BMW Sport Trophy Marc VDS, while SMP Racing's Beretta, Markozov and Ladygin finished third and clinched the championship.",
+    "chapters": [
+      {
+        "k": "before",
+        "phase": "Build-up",
+        "title": "SMP close in on the GTC crown",
+        "text": [
+          "The GTC championship was close to settled before the weekend began. Olivier Beretta, David Markozov and Anton Ladygin led in the SMP Racing Ferrari 458 Italia GT3 #73 with an 18.5-point cushion, and the Danish trio of Johnny Laursen, Mikkel Mac and Jan Magnussen in the Formula Racing Ferrari #60, run by AF Corse, were the only realistic challengers. Their SMP team-mates in the #71, Luca Persiani, Aleksey Basov and Kirill Ladygin, were still mathematically alive but needed pole, victory and a retirement for the sister car.",
+          "The weekend's novelty was BMW Sport Trophy Marc VDS, which entered a BMW Z4 GT3 for Bas Leinders, Markus Palttala and Henry Hassid as a toe in the water ahead of a possible 2015 programme. Team Russia by Barwell also had a Z4 GT3 for Jonathan Cocker, Leonid Machitski and Timur Sardarov, while ART Grand Prix brought two McLaren MP4-12C GT3s.",
+          "Mika Salo set the pace in first practice for SMP in the #57 on 1:40.523, with Mac best of the Formula Racing crew. In the second session Persiani's 1:39.782 put the #71 on top, with Beretta's #73 second and the Barwell BMW third."
+        ],
+        "cars": ["73", "60", "57"]
+      },
+      {
+        "k": "before",
+        "phase": "Qualifying",
+        "title": "Persiani on pole, three makes in the top three",
+        "text": [
+          "Persiani took pole for the SMP Racing Ferrari #71 with a 1:38.783, 0.091s ahead of Kevin Korjus in the ART Grand Prix McLaren #98 on 1:38.874. Maxime Soulet put the Prospeed Competition Porsche #75 third on 1:38.996, so Ferrari, McLaren and Porsche filled the top three places.",
+          "Leinders was fourth in the Marc VDS BMW #87 on 1:39.134, followed by Mac in the Formula Racing Ferrari on 1:39.198, Alex Brundle in the second McLaren #99 and Andrea Montermini in the Ombra Racing Ferrari #92. The championship leaders played little part: Beretta qualified the #73 eighth in class on 1:39.495."
+        ],
+        "cars": ["71", "98", "87"]
+      },
+      {
+        "k": "turn",
+        "phase": "Hour 1",
+        "title": "Contact and a spin",
+        "text": [
+          "The first hour brought trouble for several of the main players. Laursen spun the Formula Racing Ferrari within the first five minutes, damaging the Danes' slim title chances, while the other ART McLaren, the #99, collided with an LMGTE Ferrari early on and was destined to have a long afternoon.",
+          "Markus Palttala started to build the Marc VDS BMW's advantage in the opening stint, getting past a brief off-track moment with a prototype."
+        ],
+        "cars": ["99"]
+      },
+      {
+        "k": "turn",
+        "phase": "Hours 2–3",
+        "title": "BMW in control",
+        "text": [
+          "Henry Hassid took over in the middle stint and kept the BMW out of trouble, with the Marc VDS car controlling the class from the front. The title-winning SMP Ferrari #73 ran a steady race behind, while the pole-sitting #71 ran in the leading group.",
+          "Behind them the Barwell BMW #78, the AF Corse Ferraris and the ART McLaren #98 fought for the minor places."
+        ],
+        "cars": ["78"]
+      },
+      {
+        "k": "turn",
+        "phase": "The finish",
+        "title": "Leinders brings it home",
+        "text": [
+          "Leinders took the BMW to the finish with a clean closing stint, one lap clear of the Formula Racing Ferrari of Mac, who had recovered from the early spin to take second. Persiani had been forced into a late pit stop in the #71 and was classified fourth in class, one place behind the title-winning #73.",
+          "Persiani set the fastest GTC lap of the race with a 1:40.145."
+        ],
+        "cars": ["95"]
+      },
+      {
+        "k": "after",
+        "phase": "Aftermath",
+        "title": "A BMW win and an SMP title",
+        "text": [
+          "Leinders, Palttala and Hassid won GTC in the BMW Sport Trophy Marc VDS Z4 GT3 #87 over 137 laps, one lap ahead of Laursen, Mac and Magnussen in the Formula Racing Ferrari #60, with Beretta, Markozov and Ladygin third in the SMP Racing Ferrari #73. Third and fourth places for the two SMP cars, with Persiani, Basov and Kirill Ladygin fourth in the #71, were enough to take the GTC championship for the Russian team.",
+          "Korjus, Grégoire Demoustier and Yann Goudy were fifth in the ART McLaren #98, ahead of the Barwell BMW #78 and the AF Corse Ferraris #95 and #63. Neither the Prospeed Porsche, which had qualified third, nor the second ART McLaren was classified.",
+          "Marc VDS said before the race that its appearance was an exercise to help decide a 2015 programme, with GTE, GT3 and LMP2 all under consideration."
+        ],
+        "cars": ["63", "75"]
+      }
+    ],
+    "facts": [
+      {
+        "i": "🏆",
+        "t": "SMP take the title",
+        "v": "Third and fourth places for the SMP Racing Ferraris were enough to win the GTC championship, with Beretta, Markozov and Ladygin starting the weekend 18.5 points clear.",
+        "one": {
+          "label": "Sportscar365: Sebastien Loeb Racing Wins Estoril, Signatech-Alpine Takes Title",
+          "url": "https://sportscar365.com/lemans/elms/sebastien-loeb-racing-wins-estoril-signatech-alpine-takes-title/"
+        }
+      },
+      {
+        "i": "🥇",
+        "t": "Marc VDS wins by a lap",
+        "v": "Leinders finished one lap ahead of Mac's Formula Racing Ferrari to give the Belgian team the win in a one-off appearance.",
+        "one": {
+          "label": "Sportscar365: Sebastien Loeb Racing Wins Estoril, Signatech-Alpine Takes Title",
+          "url": "https://sportscar365.com/lemans/elms/sebastien-loeb-racing-wins-estoril-signatech-alpine-takes-title/"
+        }
+      },
+      {
+        "i": "🔁",
+        "t": "Late stop for the pole-sitter",
+        "v": "Persiani had to make a late pit stop in the SMP Ferrari #71, which ended up fourth in class.",
+        "one": {
+          "label": "DailySportsCar: ELMS: Estoril, Race Report",
+          "url": "https://www.dailysportscar.com/2014/10/19/elms-estoril-race-report.html"
+        }
+      },
+      {
+        "i": "🌧",
+        "t": "Early spin for Formula Racing",
+        "v": "Laursen spun the Formula Racing Ferrari in the first five minutes, but the crew still recovered to finish second.",
+        "one": {
+          "label": "DailySportsCar: ELMS: Estoril, Race Report",
+          "url": "https://www.dailysportscar.com/2014/10/19/elms-estoril-race-report.html"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "label": "DailySportsCar: ELMS: Estoril, Race Report",
+        "url": "https://www.dailysportscar.com/2014/10/19/elms-estoril-race-report.html"
+      },
+      {
+        "label": "DailySportsCar: ELMS: Estoril, Qualifying Report",
+        "url": "https://www.dailysportscar.com/2014/10/19/elms-estoril-qualifying-report.html"
+      },
+      {
+        "label": "DailySportsCar: ELMS: Estoril, Free Practice 1 Report",
+        "url": "https://www.dailysportscar.com/2014/10/18/elms-estoril-free-practice-1-report.html"
+      },
+      {
+        "label": "DailySportsCar: ELMS: Estoril, Free Practice 2 Report",
+        "url": "https://www.dailysportscar.com/2014/10/18/elms-estoril-free-practice-2.html"
+      },
+      {
+        "label": "DailySportsCar: ELMS: Estoril, LMGTE & GTC Preview",
+        "url": "https://www.dailysportscar.com/2014/10/16/elms-estoril-lmgte-gtc-preview.html"
+      },
+      {
+        "label": "Sportscar365: Sebastien Loeb Racing Wins Estoril, Signatech-Alpine Takes Title",
+        "url": "https://sportscar365.com/lemans/elms/sebastien-loeb-racing-wins-estoril-signatech-alpine-takes-title/"
+      },
+      {
+        "label": "Sportscar365: Jota Sport Secures Fourth Pole of Season at Estoril",
+        "url": "https://sportscar365.com/lemans/elms/jota-sport-secures-fourth-season-pole-at-estoril/"
+      },
+      {
+        "label": "Sportscar365: Marc VDS Returns to ELMS, Evaluating 2015 Options",
+        "url": "https://sportscar365.com/lemans/elms/marc-vds-evaluating-2015-options/"
+      }
+    ]
+  }
+}
