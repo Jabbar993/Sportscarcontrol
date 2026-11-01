@@ -1,0 +1,460 @@
+{
+ "LMPC": {
+  "title": "Pons and Ayari win LMPC as Chatin and Hirsch clinch the title in second",
+  "dek": "Pons and Ayari won the LMPC finale four laps clear after their title-chasing team-mates lost time with a restart problem, but Chatin and Hirsch still finished second and took the crown.",
+  "facts": [
+   {
+    "i": "🔧",
+    "t": "Starter motor failure",
+    "v": "The #49 Oreca stopped at its first pit stop with a failed starter motor and had to be taken into the paddock for repairs.",
+    "one": {
+     "label": "Motorsport.com: Signatech Alpine duo take 2013 title in drama filled finale at Paul Ricard",
+     "url": "https://www.motorsport.com/elms/news/signatech-alpine-duo-take-2013-title-in-drama-filled-finale-at-paul-ricard/440963/"
+    }
+   },
+   {
+    "i": "🏁",
+    "t": "Pole by 2.559s",
+    "v": "Chatin’s 1:52.052 gave the #49 pole, more than two and a half seconds clear of the sister #48.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Paul Ricard, Qualifying Report and Starting Drivers",
+     "url": "https://www.dailysportscar.com/2013/09/28/elms-paul-ricard-qualifying-and-starting-drivers.html"
+    }
+   },
+   {
+    "i": "📈",
+    "t": "A 24-point cushion",
+    "v": "The #49 arrived at the finale 24 points ahead of the #48, with 25 on offer for a win.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Paul Ricard, Qualifying Report and Starting Drivers",
+     "url": "https://www.dailysportscar.com/2013/09/28/elms-paul-ricard-qualifying-and-starting-drivers.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Friday Morning Notes",
+    "url": "https://www.dailysportscar.com/2013/09/27/elms-paul-ricard-friday-morning.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Free Practice 1 Report",
+    "url": "https://www.dailysportscar.com/2013/09/27/elms-paul-ricard-free-practice-1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2013/09/27/elms-paul-ricard-free-practice-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Qualifying Report and Starting Drivers",
+    "url": "https://www.dailysportscar.com/2013/09/28/elms-paul-ricard-qualifying-and-starting-drivers.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Quick Race Report",
+    "url": "https://www.dailysportscar.com/2013/09/28/elms-paul-ricard-quick-race-report.html"
+   },
+   {
+    "label": "DailySportsCar: 2014 ELMS Calendar Announced, 5 x 4 Hour Races",
+    "url": "https://www.dailysportscar.com/2013/09/28/2014-elms-calendar-announced-5-x-4-hour-races.html"
+   },
+   {
+    "label": "Sportscar365: 26 Entries for Paul Ricard",
+    "url": "https://sportscar365.com/lemans/elms/26-entries-for-paul-ricard/"
+   },
+   {
+    "label": "Sportscar365: Murphy Takes Win, Signatech Alpine Crowned LMP2 Champions",
+    "url": "https://sportscar365.com/lemans/elms/murphy-takes-win-signatech-alpine-crowned-lmp2-champions/"
+   },
+   {
+    "label": "Motorsport.com: Signatech Alpine duo take 2013 title in drama filled finale at Paul Ricard",
+    "url": "https://www.motorsport.com/elms/news/signatech-alpine-duo-take-2013-title-in-drama-filled-finale-at-paul-ricard/440963/"
+   },
+   {
+    "label": "Autosport: Paul Ricard ELMS: Murphy wins as Signatech takes title",
+    "url": "https://www.autosport.com/wec/news/paul-ricard-elms-murphy-wins-as-signatech-takes-title-4469206/4469206/"
+   },
+   {
+    "label": "DailySportsCar: 2013 Champions: ELMS",
+    "url": "https://www.dailysportscar.com/2013/10/03/2013-champions-elms.html"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Two cars, one title",
+    "text": [
+     "Only two LMPC cars made it to Paul Ricard, both from Team Endurance Challenge, so the class championship was settled between team-mates. The Algarve Pro Racing Team stayed away because Cornelius Jones was unavailable, leaving the Formula Le Mans Orecas of Chatin and Hirsch (#49) and Pons and Ayari (#48) to fight it out alone.",
+     "The #49 arrived as points leader, and the sums were simple: Chatin and Hirsch needed to reach the flag, while Pons and Ayari could only take the title if their rivals failed to finish and they did not. Practice leaned towards the leaders at first, the #49 a clear 1.2 seconds up in the opening session, before Ayari beat the sister car by 1.4 seconds in the second. Hirsch brushed that aside, saying the #48 had been running qualifying simulations on new tyres and little fuel, and that his own crew was working towards a consistent car for the race. He was also driving a different chassis from the one he normally used, which he said felt slightly different."
+    ],
+    "cars": [
+     "49"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Chatin on pole by two and a half seconds",
+    "text": [
+     "Chatin put the #49 on LMPC pole with a 1:52.052, ninth on the grid overall and ahead of every GT car. Pons was 2.559 seconds slower in the #48 with a 1:54.611, tenth. Both Orecas started behind the eight LMP2 cars, with no other LMPC runner to help or hinder them, so the title would come down to reliability and clean running rather than a head-to-head scrap. Chatin took the start for the #49 and Pons for the #48."
+    ],
+    "cars": [
+     "48"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Chatin builds a gap",
+    "text": [
+     "Chatin led LMPC from the start and had opened a comfortable lead of about six seconds over Pons when the #48 spun at pit entry, giving the leader further breathing space. The #49 looked on course for a win that would have sealed the championship in style."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "The #49 will not restart",
+    "text": [
+     "The first pit stop changed everything. The #49 would not restart and the car was taken into the paddock for repairs; around ten minutes of work passed before it finally fired up and Hirsch rejoined. By then Ayari, in the #48, had inherited a lead that nothing else in the class could threaten. From that point the race was about survival for the champions-elect, who needed only to keep the Oreca running to the flag, while the sister car simply kept lapping."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Second and last, but champions",
+    "text": [
+     "Ayari took the flag for the #48 after 90 laps, comfortably clear. Hirsch brought the #49 home on 86, four laps adrift and last in class, but classified, which was all the title required. The delay had cost Chatin and Hirsch the race win, not the championship."
+    ],
+    "cars": []
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Pons and Ayari win, Chatin and Hirsch take the title",
+    "text": [
+     "Pons and Ayari won LMPC on 90 laps, eighth overall, four laps ahead of Chatin and Hirsch, whose #49 completed 86 laps in 21st place overall. Chatin set the class fastest lap, 1:54.084.",
+     "Second place was precisely what Chatin and Hirsch needed. They were crowned 2013 LMPC champions, with Team Endurance Challenge winning the race and the championship in the same afternoon. The weekend also brought the announcement of next year’s ELMS calendar: five rounds, each stretched from three hours to four, opening at Silverstone in April."
+    ],
+    "cars": []
+   }
+  ]
+ },
+ "LMGTE": {
+  "title": "RAM’s Ferrari wins from pole to flag and takes the GTE crown",
+  "dek": "Mowlem and Griffin led RAM Racing’s #52 Ferrari from pole to the flag, a lap clear of JMW’s Ferrari, to win the race and clinch the GTE title in the team’s first season.",
+  "facts": [
+   {
+    "i": "🏆",
+    "t": "Title with a win",
+    "v": "RAM Racing’s third GTE win of the year clinched the teams’ and drivers’ titles, as well as a place at Le Mans 2014.",
+    "one": {
+     "label": "Sportscar365: Murphy Takes Win, Signatech Alpine Crowned LMP2 Champions",
+     "url": "https://sportscar365.com/lemans/elms/murphy-takes-win-signatech-alpine-crowned-lmp2-champions/"
+    }
+   },
+   {
+    "i": "⛽",
+    "t": "Short fill for the #53",
+    "v": "A miscommunication gave the #53 less than a full fuel load at its second stop, and a splash-and-dash with six minutes left dropped it from third to fifth.",
+    "one": {
+     "label": "RAM Racing: RAM Racing celebrates two titles and a race win at Paul Ricard",
+     "url": "https://www.johnnymowlem.com/latest-news/ram-racing-celebrates-two-titles-and-a-race-win-at-paul-ricard"
+    }
+   },
+   {
+    "i": "🚩",
+    "t": "Late stop-and-go",
+    "v": "A late stop-and-go for a pit-lane infringement cost AF Corse’s #55 a place on the podium.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Paul Ricard, Quick Race Report",
+     "url": "https://www.dailysportscar.com/2013/09/28/elms-paul-ricard-quick-race-report.html"
+    }
+   },
+   {
+    "i": "🎯",
+    "t": "33 points clear",
+    "v": "Mowlem and Griffin finished the season 33 points ahead of Proton’s Ried in the drivers’ standings.",
+    "one": {
+     "label": "RAM Racing: RAM Racing celebrates two titles and a race win at Paul Ricard",
+     "url": "https://www.johnnymowlem.com/latest-news/ram-racing-celebrates-two-titles-and-a-race-win-at-paul-ricard"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Friday Morning Notes",
+    "url": "https://www.dailysportscar.com/2013/09/27/elms-paul-ricard-friday-morning.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Free Practice 1 Report",
+    "url": "https://www.dailysportscar.com/2013/09/27/elms-paul-ricard-free-practice-1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2013/09/27/elms-paul-ricard-free-practice-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Qualifying Report and Starting Drivers",
+    "url": "https://www.dailysportscar.com/2013/09/28/elms-paul-ricard-qualifying-and-starting-drivers.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Quick Race Report",
+    "url": "https://www.dailysportscar.com/2013/09/28/elms-paul-ricard-quick-race-report.html"
+   },
+   {
+    "label": "Sportscar365: 26 Entries for Paul Ricard",
+    "url": "https://sportscar365.com/lemans/elms/26-entries-for-paul-ricard/"
+   },
+   {
+    "label": "Sportscar365: Murphy Takes Win, Signatech Alpine Crowned LMP2 Champions",
+    "url": "https://sportscar365.com/lemans/elms/murphy-takes-win-signatech-alpine-crowned-lmp2-champions/"
+   },
+   {
+    "label": "Motorsport.com: 26 cars on the grid for the ELMS finale at the Paul Ricard Circuit",
+    "url": "https://www.motorsport.com/elms/news/26-cars-on-the-grid-for-the-elms-finale-at-the-paul-ricard-circuit/440775/"
+   },
+   {
+    "label": "Motorsport.com: Signatech Alpine duo take 2013 title in drama filled finale at Paul Ricard",
+    "url": "https://www.motorsport.com/elms/news/signatech-alpine-duo-take-2013-title-in-drama-filled-finale-at-paul-ricard/440963/"
+   },
+   {
+    "label": "Autosport: Paul Ricard ELMS: Murphy wins as Signatech takes title",
+    "url": "https://www.autosport.com/wec/news/paul-ricard-elms-murphy-wins-as-signatech-takes-title-4469206/4469206/"
+   },
+   {
+    "label": "RAM Racing: RAM Racing celebrates two titles and a race win at Paul Ricard",
+    "url": "https://www.johnnymowlem.com/latest-news/ram-racing-celebrates-two-titles-and-a-race-win-at-paul-ricard"
+   },
+   {
+    "label": "DailySportsCar: 2013 Champions: ELMS",
+    "url": "https://www.dailysportscar.com/2013/10/03/2013-champions-elms.html"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "RAM need only a fourth place",
+    "text": [
+     "Eight GTE cars came to the finale, five Ferraris and three Porsches, and the title was RAM Racing’s to lose. Mowlem and Griffin’s #52 led the points by 23 over Ried in Proton Competition’s Porsche, which Tandy and Bachler shared with him and which had won in Hungary, and a fourth place would have been enough for the Ferrari even if everything else went wrong. The top two teams in the standings were also due to receive invitations to the 2014 Le Mans 24 Hours, and the #52 could not drop below second.",
+     "Behind them the #55 AF Corse Ferrari of Perazzini, Cioci and Leo was hunting a place on the championship podium, while JMW’s #66 Ferrari of Bertolini and Camathias had taken pole in Hungary. Practice showed the Ferraris at home on the long Mistral straight. Bertolini topped the first session in the #66 on 1:57.854, and Griffin turned the order around in the second with a 1:56.847, ahead of Bertolini, with Tandy’s Porsche nearly a second further back in third and the sister RAM Ferrari fourth. Griffin said the straight suited the Ferrari’s aerodynamics, even if the Porsche was happier in the slow corners."
+    ],
+    "cars": [
+     "77",
+     "66"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Griffin takes pole by five hundredths",
+    "text": [
+     "Griffin took pole in the #52 with a 1:55.374, RAM’s third of the season. Bertolini traded top spot with him throughout and ended just 0.053 seconds behind in the #66. Cioci was next for AF Corse in the #55, about half a second off the pole time, with Jeannette fourth in the sister RAM Ferrari, the #53, on a 1:56.132.",
+     "Tandy’s 1:56.390 put the Proton Porsche #77 fifth, as close as a Porsche could get to the Ferrari front of the class. The other two Porsches could not get ahead of the leading GTC Ferraris, and the AF Corse #54 qualified last in GTE on a 1:58.381."
+    ],
+    "cars": [
+     "52",
+     "55"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Camathias leads for a lap",
+    "text": [
+     "Griffin led away from pole, but Camathias in the JMW Ferrari briefly took the lead early on. Griffin took it straight back before the end of the lap and then never lost it again."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "RAM stay in control",
+    "text": [
+     "As the drivers changed, the order behind the #52 shuffled. Bertolini took over the #66 from Camathias and moved back up to second, a lap adrift of the Ferrari that Mowlem was now driving. Further back, the #53 and the Proton Porsche moved up the order, and Montecalvo ran a strong double stint in the #53 that took it to second in class. A short fuel fill at the second stop for that car, however, meant a splash-and-dash with just six minutes left and dropped it from third to fifth."
+    ],
+    "cars": [
+     "53"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "One lap clear",
+    "text": [
+     "Mowlem brought the #52 home a full lap ahead of the field. JMW’s #66 was second, and Proton’s #77 completed the podium, enough to secure second place in the points and a place at Le Mans. AF Corse’s #55 was fourth, all three on 89 laps, and the #53 fifth on 88."
+    ],
+    "cars": []
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "RAM sweep the titles in year one",
+    "text": [
+     "The #52 won on 90 laps, ninth overall. The #66, #77 and #55 followed on 89, with the #53 fifth on 88 and the Prospeed Porsche #75 and IMSA Performance Matmut Porsche #67 on 87. The AF Corse #54 was eighth, on 86.",
+     "It was RAM Racing’s third GTE win of the year and with it came the teams’ and drivers’ titles in its first season, plus an invitation to Le Mans 2014. Griffin pointed to the team’s work behind a result that might have looked easy from the outside. Proton’s second place in the standings earned a Le Mans entry of its own. The ELMS will return next season with all rounds lengthened to four hours."
+    ],
+    "cars": [
+     "75",
+     "67",
+     "54"
+    ]
+   }
+  ]
+ },
+ "GTC": {
+  "title": "SMP Racing’s #69 Ferrari wins again to clinch the GTC title",
+  "dek": "Babini, Shaitar and Kirill Ladygin took SMP Racing’s #69 Ferrari to a fourth win in four starts, a lap clear of the sister #72, and clinched the GTC title.",
+  "facts": [
+   {
+    "i": "🏆",
+    "t": "Four from four",
+    "v": "SMP Racing’s #69 won every race it started since joining the championship at Imola, then took the class title at the finale.",
+    "one": {
+     "label": "Sportscar365: Murphy Takes Win, Signatech Alpine Crowned LMP2 Champions",
+     "url": "https://sportscar365.com/lemans/elms/murphy-takes-win-signatech-alpine-crowned-lmp2-champions/"
+    }
+   },
+   {
+    "i": "👥",
+    "t": "Biggest GTC grid",
+    "v": "Eight cars started, the largest GTC field of the season.",
+    "one": {
+     "label": "Sportscar365: 26 Entries for Paul Ricard",
+     "url": "https://sportscar365.com/lemans/elms/26-entries-for-paul-ricard/"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Sensor problem for the #62",
+    "v": "A valve sensor problem ended AF Corse’s title challenge in the #62 Ferrari.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Paul Ricard, Quick Race Report",
+     "url": "https://www.dailysportscar.com/2013/09/28/elms-paul-ricard-quick-race-report.html"
+    }
+   },
+   {
+    "i": "🏁",
+    "t": "Pole by 0.026s",
+    "v": "Salo’s #68 took pole on 1:57.012, just 26 thousandths ahead of the sister #69.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Paul Ricard, Qualifying Report and Starting Drivers",
+     "url": "https://www.dailysportscar.com/2013/09/28/elms-paul-ricard-qualifying-and-starting-drivers.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Friday Morning Notes",
+    "url": "https://www.dailysportscar.com/2013/09/27/elms-paul-ricard-friday-morning.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Free Practice 1 Report",
+    "url": "https://www.dailysportscar.com/2013/09/27/elms-paul-ricard-free-practice-1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2013/09/27/elms-paul-ricard-free-practice-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Qualifying Report and Starting Drivers",
+    "url": "https://www.dailysportscar.com/2013/09/28/elms-paul-ricard-qualifying-and-starting-drivers.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Paul Ricard, Quick Race Report",
+    "url": "https://www.dailysportscar.com/2013/09/28/elms-paul-ricard-quick-race-report.html"
+   },
+   {
+    "label": "Sportscar365: 26 Entries for Paul Ricard",
+    "url": "https://sportscar365.com/lemans/elms/26-entries-for-paul-ricard/"
+   },
+   {
+    "label": "Sportscar365: Murphy Takes Win, Signatech Alpine Crowned LMP2 Champions",
+    "url": "https://sportscar365.com/lemans/elms/murphy-takes-win-signatech-alpine-crowned-lmp2-champions/"
+   },
+   {
+    "label": "Motorsport.com: 26 cars on the grid for the ELMS finale at the Paul Ricard Circuit",
+    "url": "https://www.motorsport.com/elms/news/26-cars-on-the-grid-for-the-elms-finale-at-the-paul-ricard-circuit/440775/"
+   },
+   {
+    "label": "Motorsport.com: Signatech Alpine duo take 2013 title in drama filled finale at Paul Ricard",
+    "url": "https://www.motorsport.com/elms/news/signatech-alpine-duo-take-2013-title-in-drama-filled-finale-at-paul-ricard/440963/"
+   },
+   {
+    "label": "DailySportsCar: 2013 Champions: ELMS",
+    "url": "https://www.dailysportscar.com/2013/10/03/2013-champions-elms.html"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "SMP’s unbeaten Ferrari",
+    "text": [
+     "Eight cars lined up in GTC, the biggest field of the season, and the title was SMP Racing’s to win. Its #69 Ferrari 458 Italia GT3 of Babini, Shaitar and Kirill Ladygin had won all three races it started since joining at Imola. AF Corse’s #62 of Rizzoli, Gai and Casè was second in the standings and the only realistic threat, with the Ecurie Ecosse BMW #79 of Millroy, Smith and Quaife, who joined for the finale, hanging on to an outside chance.",
+     "SMP brought three Ferraris, as it had at Imola, including Mika Salo in the #68 with Rotenberg and Anton Ladygin, and the #72 of Markozov, Frolov and Persiani. DKR Engineering’s BMW Z4 #85 and Scuderia Villorba Corse’s Ferrari #86 were class debutants, and Peter Kox’s Lamborghini #60 returned after a luckless Hungary. In practice Hiesse set the pace in the opening session in the Villorba Ferrari with a 1:58.702, while DKR’s Lecuyer crashed at Turn 7 with about quarter of an hour left, bringing out a red flag and costing the car vital running. The #69 held the top spot over the #62 through the second session."
+    ],
+    "cars": [
+     "69",
+     "62"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Salo takes pole by 0.026 seconds",
+    "text": [
+     "Salo put the #68 on GTC pole with a 1:57.012, only 0.026 seconds ahead of the #69 (1:57.038). Villorba’s debut kept improving, as Hiesse took third on the grid (1:57.866) ahead of the SMP #72 (1:57.952). Rizzoli was fifth in the #62 with a 1:58.097, disappointed to have lost time in the first sector, ahead of the Lamborghini (1:58.185).",
+     "The BMWs filled the back row. Ecurie Ecosse’s #79 led them on 1:58.944, ahead of DKR’s #85 on 2:00.273, which had missed most of Friday’s running after its practice crash."
+    ],
+    "cars": [
+     "68",
+     "86",
+     "79"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "The lead changes hands",
+    "text": [
+     "Anton Ladygin started from pole in the #68 and Kirill Ladygin from second in the #69, with the rest of the class lined up behind. The lead of the class changed hands among several cars in the early running, with the #62 staying close to the leaders."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "SMP take control",
+    "text": [
+     "By the middle of the race the #69 was in front, with the sister #72 behind it. The AF Corse #62 had stayed close for a long while, but a problem dropped it out of contention and it finished seventh in class, six laps behind the winner. The Kox Lamborghini stopped after 61 laps and was not classified."
+    ],
+    "cars": [
+     "72"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Villorba pass Ecosse for third",
+    "text": [
+     "The #69 took the flag a lap ahead of the #72 to complete SMP’s one-two. Scuderia Villorba Corse took third place in the closing moments when it passed Ecurie Ecosse’s BMW, ending a debut weekend on the podium."
+    ],
+    "cars": []
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "SMP win the class and the title",
+    "text": [
+     "The #69 won on 88 laps, 14th overall. The #72 and Villorba’s #86 followed on 87, the Ecosse #79 was fourth on 86, and SMP’s #68 and DKR’s #85 completed 85. AF Corse’s #62 was seventh on 82, and the Kox Lamborghini #60 was not classified.",
+     "The result gave SMP Racing a fourth win from four starts and the GTC title for the team and for Babini, Shaitar and Kirill Ladygin in the team’s first season in the series. Next year’s ELMS will run four hours at each of its five rounds."
+    ],
+    "cars": [
+     "60"
+    ]
+   }
+  ]
+ }
+}

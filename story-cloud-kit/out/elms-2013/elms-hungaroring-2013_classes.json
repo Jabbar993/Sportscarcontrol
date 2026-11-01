@@ -1,0 +1,456 @@
+{
+ "LMGTE": {
+  "title": "Proton’s Porsche wins a changeable GTE race in Hungary",
+  "dek": "Ried, Bachler and Tandy won GTE for Proton Competition by a lap from RAM Racing’s Ferrari after pole-sitting JMW fell away and IMSA Performance Matmut’s early leader was penalised.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Five Ferraris against three Porsches",
+    "text": [
+     "The 3 Hours of the Hungaroring was the penultimate round of the 2013 European Le Mans Series, and GTE came to Budapest as a Ferrari stronghold: five 458 Italias against three Porsche 911 GT3 RSRs. RAM Racing’s pair set the pace in the standings. Johnny Mowlem and Matt Griffin in the #52 were close enough to a driver title to clinch it in Hungary, while Gunnar Jeannette and Frank Montecalvo in the other RAM car were fending off JMW Motorsport’s Andrea Bertolini and Joël Camathias (#66) for second.",
+     "AF Corse ran the #54 for Yannick Mallegol, Jean-Marc Bachelier and Howard Blank and the #55 for Piergiuseppe Perazzini, Marco Cioci and Federico Leo. The Porsches came from IMSA Performance Matmut (Patrice Milesi and Jean-Karl Vernay), Prospeed Competition (François Perrodo and Emmanuel Collard) and Proton Competition, whose #77 carried three drivers: Christian Ried, Klaus Bachler and Nicholas Tandy. Friday belonged to JMW. Bertolini topped both sessions, ending on 1:44.844, about half a second clear of RAM’s second car, with Proton third in class."
+    ],
+    "cars": [
+     "52",
+     "66"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Bertolini five seconds clear in the wet",
+    "text": [
+     "Heavy rain turned Saturday morning’s 20-minute GT session into a scramble, and the GTC Ferraris, helped by their ABS brakes, filled four of the top five places overall. Within GTE, though, Bertolini was in a class of his own. His 2:19.363 on Dunlop wet tyres put the JMW Ferrari on class pole, more than five seconds ahead of Tandy’s 2:24.568 for Proton, and he reckoned a 2:17 was there before the red flag.",
+     "Vernay (2:30.589), Collard (2:31.706), Mowlem (2:34.872), Jeannette (2:47.476) and Leo (2:51.096) completed the order. Mowlem spun three times on his out-lap, after which RAM pulled both of its cars back into the garage. Mallegol put the #54 into the gravel almost as soon as the session began and never set a time."
+    ],
+    "cars": [
+     "77",
+     "54"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Vernay leads, JMW drops back",
+    "text": [
+     "Vernay made the strongest start on a track that was cold, wet and slowly drying, and the IMSA Performance Matmut Porsche built a comfortable lead through its first stint. Camathias lost the pole position at the start for JMW, whose Ferrari slid down the class and never recovered the promise of Friday. As the surface came in, Griffin, Leo and Ried began to move forward. Tandy took over the Proton from Ried at around the 50-minute mark, and when Vernay stopped soon afterwards, Griffin and Leo briefly held a Ferrari one-two."
+    ],
+    "cars": [
+     "67"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 2",
+    "title": "A yellow-flag penalty hands over the lead",
+    "text": [
+     "Vernay’s earlier work came undone in the second hour. The IMSA Performance Matmut Porsche served a stop-and-hold plus one-minute penalty for passing under a local yellow flag, and Proton took the class lead. RAM’s fortunes dipped as well, as Griffin was left out on tyres past their best and Mowlem made an unscheduled stop to replace a mirror. Perazzini in the AF Corse #55 and Collard in the Prospeed Porsche came through as a result."
+    ],
+    "cars": [
+     "75"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 3",
+    "title": "Tandy’s lead holds, RAM gambles on wets",
+    "text": [
+     "Tandy pulled away and Bachler took the Proton through the final stint without handing the lead back. Behind, Mowlem passed Milesi on the main straight to reclaim second and Cioci held third for AF Corse. With about 40 minutes left a fresh sprinkle of rain fell, and Jeannette went to wets in RAM’s other car, a gamble that proved wrong and cost places once he returned for slicks."
+    ],
+    "cars": [
+     "53"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "A lap in hand for Proton",
+    "text": [
+     "Proton took the flag with 93 laps, a lap ahead of RAM’s #52, with the AF Corse #55 third on the same lap count as the Ferrari ahead. Prospeed finished fourth, ahead of the IMSA Performance Matmut car that had led the early running."
+    ],
+    "cars": [
+     "55"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Proton’s strategy pays, the title waits",
+    "text": [
+     "Proton Competition’s Ried, Bachler and Tandy won ahead of Mowlem and Griffin and the AF Corse trio of Perazzini, Cioci and Leo. Perrodo and Collard were fourth, Milesi and Vernay fifth and Jeannette and Montecalvo sixth, all two laps down. JMW’s Bertolini and Camathias and AF Corse’s Mallegol, Bachelier and Blank were not classified, on 68 and 73 laps against the winners’ 93.",
+     "Tandy put the win down to a near-perfect strategy: Proton started on wets, was among the first to switch to slicks and made no mistakes in the pits, even though the Ferraris were quicker in the dry and in the heaviest rain. The result kept the team in the title hunt, and no GTE champion was settled in Hungary. The season finishes at Paul Ricard on 27–28 September."
+    ],
+    "cars": []
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Pole by five seconds",
+    "v": "Bertolini’s 2:19.363 in the rain was more than five seconds quicker than Tandy’s 2:24.568 in second place.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Hungaroring, Qualifying Report",
+     "url": "https://www.dailysportscar.com/2013/09/14/elms-hungaroring-qualifying.html"
+    }
+   },
+   {
+    "i": "🚩",
+    "t": "Penalty for a local yellow",
+    "v": "Vernay and the IMSA Performance Matmut Porsche served a stop-and-hold plus one-minute penalty for passing under a local yellow, which gave Proton the class lead in the second hour.",
+    "one": {
+     "label": "Sportscar365: Signatech Alpine Dominates Hungaroring",
+     "url": "https://sportscar365.com/lemans/elms/signatech-alpine-dominates-hungaroring/"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Costly stop for JMW",
+    "v": "The JMW Ferrari lost nearly ten minutes to an engine-bay problem, which ended its chances of a result.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Hungaroring, Race Report",
+     "url": "https://www.dailysportscar.com/2013/09/17/elms-hungaroring-race-report.html"
+    }
+   },
+   {
+    "i": "📈",
+    "t": "Points after Hungary",
+    "v": "After the race RAM Racing’s #52 had 88 points and Proton Competition 65, with 26 available at Paul Ricard for a win and a pole.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Hungaroring, Race Report",
+     "url": "https://www.dailysportscar.com/2013/09/17/elms-hungaroring-race-report.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Signatech Alpine Dominates Hungaroring",
+    "url": "https://sportscar365.com/lemans/elms/signatech-alpine-dominates-hungaroring/"
+   },
+   {
+    "label": "Sportscar365: Hartley, Murphy Prototypes on Pole in Hungary",
+    "url": "https://sportscar365.com/lemans/elms/hartley-murphy-prototypes-on-pole-in-hungary/"
+   },
+   {
+    "label": "Sportscar365: Jota Tops Friday Practice in Hungary",
+    "url": "https://sportscar365.com/lemans/elms/jota-tops-friday-practice-in-hungary/"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Race Report",
+    "url": "https://www.dailysportscar.com/2013/09/17/elms-hungaroring-race-report.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Quick Race Report",
+    "url": "https://www.dailysportscar.com/2013/09/14/elms-hungaroring-quick-race-report.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Qualifying Report",
+    "url": "https://www.dailysportscar.com/2013/09/14/elms-hungaroring-qualifying.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2013/09/13/elms-hungaroring-free-practice-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Free Practice 1 Report",
+    "url": "https://www.dailysportscar.com/2013/09/13/elms-hungaroring-free-practice-1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Preview",
+    "url": "https://www.dailysportscar.com/2013/09/10/elms-hungaroring-preview.html"
+   }
+  ]
+ },
+ "LMPC": {
+  "title": "Chatin and Hirsch cruise to a 14-lap LMPC win",
+  "dek": "Paul Loup Chatin and Gary Hirsch won LMPC by 14 laps from their Team Endurance Challenge team-mates and finished eighth overall, while Algarve Pro Racing’s Oreca was not classified.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "A three-car class with a title in sight",
+    "text": [
+     "LMPC reached the Hungaroring as the smallest class on the grid, with three Oreca FLM09s. Team Endurance Challenge ran two of them. The #49 of Paul Loup Chatin and Gary Hirsch led the standings, and the #48 of Anthony Pons and Soheil Ayari was still in contention for the title. The entry list had Alex Loan alongside Chatin in place of Hirsch, but Hirsch was back in the car for Friday’s practice. The Algarve Pro Racing Team completed the class with Cornelius Jones and Nicky Catsburg.",
+     "Catsburg topped the morning session, about eight tenths clear of Chatin. In the afternoon Ayari was fastest with 1:40.659, and the #49 was third in class, with Hirsch getting most of the running."
+    ],
+    "cars": [
+     "49"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Pole by nearly three seconds",
+    "text": [
+     "Wet conditions and a string of red flags made qualifying a lottery for the prototypes, and Chatin handled it best in the class. His 2:13.959 gave the #49 pole and a place sixth on the combined timesheet, ahead of LMP2 cars such as the Thiriet by TDS and Morand entries. The Team Endurance Challenge sister car was almost three seconds slower on 2:16.927 but was still ninth overall, faster than any of the GT cars. Jones took qualifying duty for Algarve Pro Racing and went into the gravel at Turn 10 on his out-lap, so the #46 set no time."
+    ],
+    "cars": [
+     "46"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Hirsch among the prototypes",
+    "text": [
+     "The race began on a wet track that was beginning to dry. Hirsch made the most of an LMP2 opponent taking a tight line at the first corner and ran fourth overall in the opening laps. The #48 was less fortunate and ran into early problems that cost it a great deal of time."
+    ],
+    "cars": [
+     "48"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Controlling the class",
+    "text": [
+     "From there Hirsch and Chatin controlled the class. The track never dried completely, with intermittent rain through the afternoon and a fresh sprinkle with about 40 minutes remaining, but the #49 held its pace while mixing it with the LMP2 runners. The Algarve Pro Racing car was never a factor in the class order."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "Eighth overall",
+    "text": [
+     "The #49 took the flag eighth overall, completing 93 laps, 14 clear of its sister car. Team Endurance Challenge’s #48 completed 79 laps."
+    ],
+    "cars": []
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "The title waits for Paul Ricard",
+    "text": [
+     "Chatin and Hirsch won LMPC on 93 laps, with Pons and Ayari second, 14 laps down. Jones and Catsburg were not classified, having completed 58 laps, 35 fewer than the winners.",
+     "Hirsch said the championship would have to wait a little longer but welcomed the chance to fight with the LMP2 cars, and Chatin said the aim had been to finish first in class. The title was left to be settled at Paul Ricard on 27–28 September."
+    ],
+    "cars": []
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏆",
+    "t": "Fourteen laps clear",
+    "v": "The #49 of Chatin and Hirsch finished 14 laps ahead of the second-placed Team Endurance Challenge car.",
+    "one": {
+     "label": "Sportscar365: Signatech Alpine Dominates Hungaroring",
+     "url": "https://sportscar365.com/lemans/elms/signatech-alpine-dominates-hungaroring/"
+    }
+   },
+   {
+    "i": "⏱",
+    "t": "Pole by nearly three seconds",
+    "v": "Chatin’s 2:13.959 was nearly three seconds faster than the next LMPC car, making it sixth fastest of all the cars.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Hungaroring, Qualifying Report",
+     "url": "https://www.dailysportscar.com/2013/09/14/elms-hungaroring-qualifying.html"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Ayari’s early delay",
+    "v": "Ayari’s #48 lost 16 minutes after an early incident but continued to finish second in class.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Hungaroring, Race Report",
+     "url": "https://www.dailysportscar.com/2013/09/17/elms-hungaroring-race-report.html"
+    }
+   },
+   {
+    "i": "🧭",
+    "t": "Algarve’s finale in doubt",
+    "v": "Algarve Pro Racing’s Paul Ricard appearance was uncertain because of drivers’ commitments, unless drivers with budgets could be found.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Hungaroring, Free Practice 1 Report",
+     "url": "https://www.dailysportscar.com/2013/09/13/elms-hungaroring-free-practice-1.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Signatech Alpine Dominates Hungaroring",
+    "url": "https://sportscar365.com/lemans/elms/signatech-alpine-dominates-hungaroring/"
+   },
+   {
+    "label": "Sportscar365: Hartley, Murphy Prototypes on Pole in Hungary",
+    "url": "https://sportscar365.com/lemans/elms/hartley-murphy-prototypes-on-pole-in-hungary/"
+   },
+   {
+    "label": "Sportscar365: Jota Tops Friday Practice in Hungary",
+    "url": "https://sportscar365.com/lemans/elms/jota-tops-friday-practice-in-hungary/"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Race Report",
+    "url": "https://www.dailysportscar.com/2013/09/17/elms-hungaroring-race-report.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Quick Race Report",
+    "url": "https://www.dailysportscar.com/2013/09/14/elms-hungaroring-quick-race-report.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Qualifying Report",
+    "url": "https://www.dailysportscar.com/2013/09/14/elms-hungaroring-qualifying.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2013/09/13/elms-hungaroring-free-practice-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Free Practice 1 Report",
+    "url": "https://www.dailysportscar.com/2013/09/13/elms-hungaroring-free-practice-1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Preview",
+    "url": "https://www.dailysportscar.com/2013/09/10/elms-hungaroring-preview.html"
+   }
+  ]
+ },
+ "GTC": {
+  "title": "SMP Racing’s Ferraris finish one-two in GTC",
+  "dek": "Babini, Shaitar and Ladygin won SMP Racing’s third GTC race of the season after the team’s two Ferraris swapped places on the penultimate lap, with AF Corse third and Ecurie Ecosse not classified.",
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Three crews in a title fight",
+    "text": [
+     "GTC was shaping up as the closest title fight in the series. Ecurie Ecosse’s BMW Z4 (Ollie Millroy, Joe Twyman and Alasdair McCaig, with Twyman in for Andrew Smith) led the standings. AF Corse’s Ferrari 458 of Andrea Rizzoli, Stefano Gai and Lorenzo Casé was close behind after three second places. SMP Racing’s #69 (Fabio Babini, Viktor Shaitar and Kirill Ladygin) had missed the opening round but won the other two it entered.",
+     "SMP also brought a sister car, the #72 for Devi Markozov, Alexander Frolov and Luca Persiani. Kox Racing’s Lamborghini Gallardo gained Dennis Retera alongside Peter Kox and Nico Pronk, and Easyrace was a new entry with an all-Italian crew of Tommaso Rocca, Diego Romanini and Fabio Mancini. SMP held the two fastest GTC times in Friday practice."
+    ],
+    "cars": [
+     "79",
+     "72"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "GTC beats GTE in the rain",
+    "text": [
+     "In a soaked, red-flagged session shared with GTE, the GTC Ferraris came out on top, with four of the first five places going to GTC. Casé set 2:17.878 to put AF Corse on class pole, the fastest of all the GT cars. Shaitar was second in class on 2:19.524, less than two tenths slower than the quickest GTE car, and Mancini third for Easyrace on 2:20.996. Kox was fourth on 2:22.799, despite several spins and a heavy hit on the barrier on the way.",
+     "Ecurie Ecosse’s BMW was fifth in class on 2:43.465. The #72 SMP Ferrari did not set a time after Frolov damaged the front of the car and the car could not take further part in the session."
+    ],
+    "cars": [
+     "62",
+     "83",
+     "60"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Slicks at the start, wets after 20 minutes",
+    "text": [
+     "The two title favourites made the same gamble. AF Corse and SMP both started on slicks, and both lost time in the opening 20 minutes until AF Corse called Rizzoli in for wets. The Easyrace Ferrari led the class early. McCaig, by contrast, enjoyed a strong first stint in the Ecurie Ecosse BMW and passed several cars off the start while the Ferrari rivals sat on slicks."
+    ],
+    "cars": [
+     "69"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "SMP’s second car leads",
+    "text": [
+     "The #72 led the class for the second half of the race, apparently on a different strategy from its sister car. At the halfway point the AF Corse #62 had the upper hand over the #69, Gai about four seconds ahead of Shaitar, but AF Corse lost the lead and about a further 11 seconds. Easyrace slipped back after its early lead. The Ecurie Ecosse BMW was out of the running with about 25 minutes left and ended up not classified."
+    ],
+    "cars": []
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "A swap on the penultimate lap",
+    "text": [
+     "On the penultimate lap the two SMP cars swapped places, with the #69 taking the lead from its sister car. Babini took the chequered flag to give the team a 1–2 and the class win."
+    ],
+    "cars": []
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "SMP takes the lead from Ecurie Ecosse",
+    "text": [
+     "SMP Racing’s Babini, Shaitar and Ladygin were credited with the win on 90 laps, with the #72 of Markozov, Frolov and Persiani second and AF Corse’s Rizzoli, Gai and Casé third on the same lap count. Easyrace’s Rocca, Romanini and Mancini were fourth, two laps down. Ecurie Ecosse was not classified on 77 laps, 13 behind the winners, and the Kox Racing Lamborghini retired.",
+     "Babini called it his third ELMS win with these drivers, noting that Ladygin had a hard time on the wrong tyres at the start before the switch to wets. The title would be decided at Paul Ricard on 27–28 September."
+    ],
+    "cars": []
+   }
+  ],
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Pole in the rain",
+    "v": "Casé’s 2:17.878 was the fastest time of any GT car, almost 1.5 seconds quicker than the best GTE time.",
+    "one": {
+     "label": "Sportscar365: Hartley, Murphy Prototypes on Pole in Hungary",
+     "url": "https://sportscar365.com/lemans/elms/hartley-murphy-prototypes-on-pole-in-hungary/"
+    }
+   },
+   {
+    "i": "🔁",
+    "t": "Win to the championship contender",
+    "v": "The two SMP Ferraris swapped on the penultimate lap, with the #69 credited with the win and taking the lead of the championship.",
+    "one": {
+     "label": "Sportscar365: Signatech Alpine Dominates Hungaroring",
+     "url": "https://sportscar365.com/lemans/elms/signatech-alpine-dominates-hungaroring/"
+    }
+   },
+   {
+    "i": "⚠",
+    "t": "Clash costs Ecurie Ecosse",
+    "v": "The Ecurie Ecosse BMW was put out 25 minutes from the end in a clash with a GTE AF Corse Ferrari, whose driver was fined and warned over his future conduct.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Hungaroring, Race Report",
+     "url": "https://www.dailysportscar.com/2013/09/17/elms-hungaroring-race-report.html"
+    }
+   },
+   {
+    "i": "📈",
+    "t": "Points after Hungary",
+    "v": "After the race SMP Racing’s #69 had 75 points, AF Corse 70 and Ecurie Ecosse 55.",
+    "one": {
+     "label": "DailySportsCar: ELMS: Hungaroring, Race Report",
+     "url": "https://www.dailysportscar.com/2013/09/17/elms-hungaroring-race-report.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: Signatech Alpine Dominates Hungaroring",
+    "url": "https://sportscar365.com/lemans/elms/signatech-alpine-dominates-hungaroring/"
+   },
+   {
+    "label": "Sportscar365: Hartley, Murphy Prototypes on Pole in Hungary",
+    "url": "https://sportscar365.com/lemans/elms/hartley-murphy-prototypes-on-pole-in-hungary/"
+   },
+   {
+    "label": "Sportscar365: Jota Tops Friday Practice in Hungary",
+    "url": "https://sportscar365.com/lemans/elms/jota-tops-friday-practice-in-hungary/"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Race Report",
+    "url": "https://www.dailysportscar.com/2013/09/17/elms-hungaroring-race-report.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Quick Race Report",
+    "url": "https://www.dailysportscar.com/2013/09/14/elms-hungaroring-quick-race-report.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Qualifying Report",
+    "url": "https://www.dailysportscar.com/2013/09/14/elms-hungaroring-qualifying.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2013/09/13/elms-hungaroring-free-practice-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Free Practice 1 Report",
+    "url": "https://www.dailysportscar.com/2013/09/13/elms-hungaroring-free-practice-1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Hungaroring, Preview",
+    "url": "https://www.dailysportscar.com/2013/09/10/elms-hungaroring-preview.html"
+   }
+  ]
+ }
+}

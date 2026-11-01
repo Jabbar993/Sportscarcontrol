@@ -1,0 +1,423 @@
+{
+ "LMPC": {
+  "title": "Team Endurance Challenge win again as Algarve debut on the podium",
+  "dek": "Hirsch and Chatin won LMPC in Team Endurance Challenge’s #49 Oreca, with Verdonck’s sister car second and the debuting Algarve Pro Racing Team third.",
+  "facts": [
+   {
+    "i": "🏁",
+    "t": "Pole for the newcomers",
+    "v": "Catsburg’s 1:28.234 gave the Algarve Pro Racing Team pole on its series debut; track-limit offences cost the #47 and #49 their quickest laps and promoted the Portuguese car.",
+    "one": {
+     "label": "Qualifying report update",
+     "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-qualifying-update.html"
+    }
+   },
+   {
+    "i": "🏆",
+    "t": "Second win of the season",
+    "v": "Hirsch and Chatin won for the second time in 2013 in the #49 Team Endurance Challenge Oreca FLM09.",
+    "one": {
+     "label": "TDS Dominates Red Bull Ring",
+     "url": "https://sportscar365.com/lemans/elms/tds-dominates-red-bull-ring/"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Early stop for the #48",
+    "v": "Ayari’s #48 stopped after only eight minutes of the race, which took it out of contention for the podium.",
+    "one": {
+     "label": "Red Bull Ring race report",
+     "url": "https://www.dailysportscar.com/2013/07/22/elms-red-bull-ring-race-report.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: TDS Dominates Red Bull Ring",
+    "url": "https://sportscar365.com/lemans/elms/tds-dominates-red-bull-ring/"
+   },
+   {
+    "label": "Sportscar365: Race Performance Quickest on Friday in Austria",
+    "url": "https://sportscar365.com/lemans/elms/race-performance-quickest-on-friday-in-austria/"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Preview",
+    "url": "https://www.dailysportscar.com/2013/07/13/elms-red-bull-ring-preview-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Free Practice 1 Report",
+    "url": "https://www.dailysportscar.com/2013/07/19/elms-red-bull-ring-free-practice-1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2013/07/19/elms-red-bull-ring-free-practice-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Qualifying Report",
+    "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-qualifying.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Qualifying Report (update)",
+    "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-qualifying-update.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Quick Race Report",
+    "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-quick-race-report.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Race Report",
+    "url": "https://www.dailysportscar.com/2013/07/22/elms-red-bull-ring-race-report.html"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "A fourth car joins the class",
+    "text": [
+     "LMPC arrived at the Red Bull Ring with four cars, one more than the usual three-car turnout from Team Endurance Challenge. The French team brought its Oreca FLM09s as before: the #49 of Chatin and Hirsch, the #47 of Loan and Verdonck, and the #48 of Pons and Ayari. The newcomer was the Portuguese Algarve Pro Racing Team, which made its European Le Mans Series debut with the #46 for Cornelius Jones and Catsburg.",
+     "Friday practice pointed to a close contest. Catsburg set the class best in the opening session with a 1:29.080, 0.099 seconds quicker than Hirsch in the #49, and Verdonck topped the afternoon session with a 1:28.988, only 0.024 clear of Catsburg. It was hot, with air temperatures around 30 degrees, and the teams worked from awnings in the paddock because the pit garages belonged to the Renault series sharing the weekend."
+    ],
+    "cars": [
+     "46"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Catsburg takes a debut pole",
+    "text": [
+     "Verdonck and Ayari were the first cars out for the 20-minute prototype session, setting their first timed laps three minutes in with the track to themselves. The class order changed in small steps throughout, and Catsburg’s 1:28.234 in the #46 stood as the fastest official time, handing the newcomers pole on their series debut. Verdonck’s #47 (1:28.394) was second and Chatin’s #49 (1:28.635) third, with Ayari’s #48 (1:28.770) fourth, so only 0.536 seconds separated the four cars."
+    ],
+    "cars": [
+     "47"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Ayari stops early, Chatin sets the pace",
+    "text": [
+     "The three-hour race started at 16:30 local time. Ayari’s #48 was in trouble early, stopping after only eight minutes, and the delay took the car out of the fight for the class podium. Out front Chatin was quick and consistent in the #49, building a comfortable lead before handing over to Hirsch."
+    ],
+    "cars": [
+     "48"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "Hirsch holds Verdonck at bay",
+    "text": [
+     "Hirsch kept the #49 in front. The only pressure came late, when Verdonck tried to erode the gap in the closing stint of the #47 but never got within five seconds. The Algarve #46 held third on the road, while the #48 ran on in fourth after its early delay."
+    ],
+    "cars": [
+     "49"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "A one-two for Team Endurance Challenge",
+    "text": [
+     "Hirsch took the flag first in the #49 after 118 laps, with Verdonck’s #47 on the same lap in second. The Algarve #46 completed 116 laps for third, the new team’s first podium in the series on its debut weekend, while Pons and Ayari’s #48 took fourth on 115 laps."
+    ],
+    "cars": []
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Second win of the year for Hirsch and Chatin",
+    "text": [
+     "Gary Hirsch and Paul Chatin won LMPC for Team Endurance Challenge, their second victory of the 2013 season, in a car that finished seventh overall. Alex Loan and Nicolas Verdonck completed the team’s one-two in the #47, eighth overall on the same 118 laps, while Cornelius Jones and Nicky Catsburg were third for the Algarve Pro Racing Team, two laps behind the winners and ninth overall.",
+     "Anthony Pons and Soheil Ayari finished fourth in the #48, three laps down after the early stop. The class moves on to the Hungaroring on 14 September."
+    ],
+    "cars": []
+   }
+  ]
+ },
+ "LMGTE": {
+  "title": "RAM’s #52 Ferrari wins by over a minute as JMW slow",
+  "dek": "Mowlem and Griffin won LMGTE in RAM Racing’s #52 Ferrari by more than a minute after JMW’s leader lost pace; Bertolini and Camathias took second, RAM’s #53 third.",
+  "facts": [
+   {
+    "i": "⚠",
+    "t": "Track limits trim the grid",
+    "v": "Jeannette’s best laps were removed for exceeding track limits, dropping RAM’s #53 two places on the grid behind the IMSA and Prospeed Porsches.",
+    "one": {
+     "label": "Qualifying report update",
+     "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-qualifying-update.html"
+    }
+   },
+   {
+    "i": "🔧",
+    "t": "Seat belt costs Proton two laps",
+    "v": "A broken seat belt at the first stop of Proton’s #77 cost around three minutes and two laps, leaving Tandy, Ried and Roda eighth in class.",
+    "one": {
+     "label": "Red Bull Ring race report",
+     "url": "https://www.dailysportscar.com/2013/07/22/elms-red-bull-ring-race-report.html"
+    }
+   },
+   {
+    "i": "🏆",
+    "t": "Ferrari podium sweep",
+    "v": "RAM’s #52, JMW’s #66 and RAM’s #53 gave Ferrari all three class podium places, with the winner more than a minute clear.",
+    "one": {
+     "label": "TDS Dominates Red Bull Ring",
+     "url": "https://sportscar365.com/lemans/elms/tds-dominates-red-bull-ring/"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: TDS Dominates Red Bull Ring",
+    "url": "https://sportscar365.com/lemans/elms/tds-dominates-red-bull-ring/"
+   },
+   {
+    "label": "Sportscar365: Race Performance Quickest on Friday in Austria",
+    "url": "https://sportscar365.com/lemans/elms/race-performance-quickest-on-friday-in-austria/"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Preview",
+    "url": "https://www.dailysportscar.com/2013/07/13/elms-red-bull-ring-preview-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Free Practice 1 Report",
+    "url": "https://www.dailysportscar.com/2013/07/19/elms-red-bull-ring-free-practice-1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2013/07/19/elms-red-bull-ring-free-practice-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Qualifying Report",
+    "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-qualifying.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Qualifying Report (update)",
+    "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-qualifying-update.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Quick Race Report",
+    "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-quick-race-report.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Race Report",
+    "url": "https://www.dailysportscar.com/2013/07/22/elms-red-bull-ring-race-report.html"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Nine cars, two marques",
+    "text": [
+     "LMGTE had nine cars, split between five Ferrari 458 Italias and four Porsche 911 GT3 RSRs. The Ferrari camp was unchanged: RAM Racing ran the #52 for Mowlem and Griffin and the #53 for Jeannette and Montecalvo, JMW Motorsport had the #66 for Bertolini and Camathias, and AF Corse fielded the #54 and #55 with three-driver line-ups. Among the Porsches, IMSA Performance Matmut’s #67 had Vernay alongside Milesi, Prospeed’s #75 saw Collard back with Perrodo, and Proton Competition ran two cars: the #77 for Ried, Roda and Tandy and the all-Austrian #88 for Felbermayr, Felbermayr Sr. and Bachler.",
+     "Friday practice was tight. Leo’s AF Corse #55 headed the first session on 1:30.993, 0.039 seconds ahead of Bertolini’s JMW, and in the second Bertolini went fastest on 1:30.486, 0.082 seconds clear of Tandy’s #77, with Mowlem about three tenths off in third. Eight of the nine cars finished that session inside 0.798 seconds of each other."
+    ],
+    "cars": [
+     "67",
+     "75",
+     "88"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Tandy puts the Proton Porsche on pole",
+    "text": [
+     "Tandy took pole for Proton’s #77 with a 1:29.391, 0.122 seconds quicker than Bertolini’s JMW #66 (1:29.513), and Mowlem’s RAM #52 (1:29.629) was third. Vernay in the IMSA #67 (1:29.800) and Collard in the Prospeed #75 (1:30.068) were next, ahead of Jeannette’s RAM #53 on 1:30.103, Cioci in the #55 (1:30.187) and Mallegol in the #54 (1:30.865), with Bachler’s #88 on 1:31.466. The first seven cars were covered by 0.796 seconds."
+    ],
+    "cars": [
+     "77"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Jeannette surges, Camathias leads",
+    "text": [
+     "Jeannette made an excellent start from sixth on the grid and was up to second, ahead of team-mate Griffin, with both RAM cars looking for a way past Camathias, who led in JMW’s #66. Griffin had been pushed wide at Turn 2 on the opening lap and lost places and had to come back."
+    ],
+    "cars": [
+     "66",
+     "53"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "JMW fades, RAM take over",
+    "text": [
+     "The JMW lost pace towards the end of Camathias’s first stint, which let the RAM cars through, and after the stops Griffin led in the #52. The lead was never seriously challenged again. Bertolini drove a strong stint to hunt down and pass Montecalvo for second, the #53 having been delayed by a contact with a prototype at the final corner.",
+     "At the first stop of Proton’s #77, a broken seat belt cost around three minutes and two laps, and despite good drives from Ried, Roda and Tandy the car could only recover to eighth in class."
+    ],
+    "cars": [
+     "52"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "RAM win by more than a minute",
+    "text": [
+     "Mowlem and Griffin’s #52 took the flag first in class after 116 laps, more than a minute ahead of Bertolini and Camathias in the #66 on the same lap. Jeannette and Montecalvo’s #53 completed the Ferrari podium one lap down. AF Corse’s #55 was fourth, and in the last eight minutes Collard got the Prospeed Porsche past the all-Austrian Proton #88 to take fifth."
+    ],
+    "cars": [
+     "55"
+    ]
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "A Ferrari sweep and a seat belt",
+    "text": [
+     "Johnny Mowlem and Matt Griffin won LMGTE for RAM Racing, finishing tenth overall, with JMW’s Andrea Bertolini and Joël Camathias second and RAM team-mates Gunnar Jeannette and Frank Montecalvo third. Ferrari held all three class podium places. Fourth was AF Corse’s #55, followed by Prospeed’s #75, Proton’s #88, IMSA’s #67, Proton’s #77 and AF Corse’s #54, which completed 112 laps.",
+     "Griffin said he had been edged wide at Turn 2 at the start and had to come back from there, and that he was surprised how strong the Ferraris were on a circuit that looked as if it should suit the Porsches. Ried said the seat belt problem at the first stop cost two laps and that luck in the championship had been poor for Proton since Silverstone. The class returns at the Hungaroring on 14 September."
+    ],
+    "cars": [
+     "54"
+    ]
+   }
+  ]
+ },
+ "GTC": {
+  "title": "SMP’s #69 takes GTC after AF Corse’s extra stop",
+  "dek": "Babini, Shaitar and Ladygin won GTC for SMP Racing’s #69 Ferrari, inheriting the lead when AF Corse’s #62 needed an extra stop, with Ecurie Ecosse’s BMW third.",
+  "facts": [
+   {
+    "i": "🔁",
+    "t": "Second win in a row",
+    "v": "SMP Racing’s #69 Ferrari followed its Imola victory with another GTC win, again for Babini, Shaitar and Ladygin.",
+    "one": {
+     "label": "TDS Dominates Red Bull Ring",
+     "url": "https://sportscar365.com/lemans/elms/tds-dominates-red-bull-ring/"
+    }
+   },
+   {
+    "i": "🛞",
+    "t": "Tyre rub for the #62",
+    "v": "Something rubbing on the right rear tyre of AF Corse’s #62 on Casé’s out lap with 30 minutes left forced an extra stop and handed the lead to the #69.",
+    "one": {
+     "label": "Red Bull Ring race report",
+     "url": "https://www.dailysportscar.com/2013/07/22/elms-red-bull-ring-race-report.html"
+    }
+   },
+   {
+    "i": "⚠",
+    "t": "Lamborghini drops back",
+    "v": "Kox’s best laps were removed for exceeding track limits, dropping Kox Racing’s Lamborghini to the back of the grid.",
+    "one": {
+     "label": "Qualifying report update",
+     "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-qualifying-update.html"
+    }
+   }
+  ],
+  "sources": [
+   {
+    "label": "Sportscar365: TDS Dominates Red Bull Ring",
+    "url": "https://sportscar365.com/lemans/elms/tds-dominates-red-bull-ring/"
+   },
+   {
+    "label": "Sportscar365: Race Performance Quickest on Friday in Austria",
+    "url": "https://sportscar365.com/lemans/elms/race-performance-quickest-on-friday-in-austria/"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Preview",
+    "url": "https://www.dailysportscar.com/2013/07/13/elms-red-bull-ring-preview-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Free Practice 1 Report",
+    "url": "https://www.dailysportscar.com/2013/07/19/elms-red-bull-ring-free-practice-1.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Free Practice 2 Report",
+    "url": "https://www.dailysportscar.com/2013/07/19/elms-red-bull-ring-free-practice-2.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Qualifying Report",
+    "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-qualifying.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Qualifying Report (update)",
+    "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-qualifying-update.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Quick Race Report",
+    "url": "https://www.dailysportscar.com/2013/07/20/elms-red-bull-ring-quick-race-report.html"
+   },
+   {
+    "label": "DailySportsCar: ELMS: Red Bull Ring, Race Report",
+    "url": "https://www.dailysportscar.com/2013/07/22/elms-red-bull-ring-race-report.html"
+   }
+  ],
+  "chapters": [
+   {
+    "k": "before",
+    "phase": "Build-up",
+    "title": "Imola winners return",
+    "text": [
+     "GTC had five cars at the Red Bull Ring. SMP Racing ran two Ferrari 458 GT3s, the #69 of Babini, Shaitar and Ladygin, which had won the previous round at Imola, and the #72 of Markozov, Frolov and Persiani. AF Corse’s #62 Ferrari was driven by Rizzoli, Gai and Casé, Kox Racing had the sole Lamborghini Gallardo for Kox and Pronk, and Ecurie Ecosse the only BMW Z4 for Millroy, Smith and McCaig.",
+     "Shaitar was quickest of the class in the first practice session with a 1:32.188 in the #69. In the afternoon Persiani headed the order on 1:31.940, 0.333 seconds ahead of the AF Corse Ferrari, and four cars, the #72, #62, #60 and #79, were covered by just 0.370 seconds, with the #69 a second and a half further back."
+    ],
+    "cars": [
+     "69"
+    ]
+   },
+   {
+    "k": "before",
+    "phase": "Qualifying",
+    "title": "Persiani on pole by 0.036s",
+    "text": [
+     "Ladygin set the early benchmark for SMP with a 1:30.741, but Persiani went quicker late on to take pole in the #72 with a 1:30.705, just 0.036 seconds ahead of the #69. Rizzoli secured third in the AF Corse #62 with a 1:30.836, while Millroy’s BMW (1:31.765) and Kox’s Lamborghini (1:31.797) completed the five-car grid."
+    ],
+    "cars": [
+     "72"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hour 1",
+    "title": "Two cars break clear",
+    "text": [
+     "The #62 and #69 had the race to themselves almost from the start. Gai and Ladygin began the duel, running in that order, and within 30 minutes the pair had pulled clear of the rest of the class."
+    ],
+    "cars": [
+     "62"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "Hours 2–3",
+    "title": "AF Corse’s extra stop hands over the lead",
+    "text": [
+     "AF Corse’s #62 was ahead until something began rubbing on its right rear tyre on Casé’s out lap with 30 minutes to go, which forced an extra stop. It was fixed quickly, but the delay gave the lead to the #69, which was right behind. Babini said the SMP car had lost the lead through a mistake at the first driver change, and that Shaitar’s fast stint had not been enough to close the gap, but on fresh tyres he was quicker than the #62 and was in touch when it hit trouble. Further back, Ecurie Ecosse’s BMW ran a solid race to third."
+    ],
+    "cars": [
+     "79"
+    ]
+   },
+   {
+    "k": "turn",
+    "phase": "The finish",
+    "title": "SMP win for the second time",
+    "text": [
+     "The #69 took the flag after 114 laps, one lap clear of Rizzoli, Gai and Casé in the #62, which had led for much of the race. Ecurie Ecosse’s BMW was third on 112 laps, two laps behind the winner."
+    ],
+    "cars": []
+   },
+   {
+    "k": "after",
+    "phase": "Aftermath",
+    "title": "Back-to-back wins for the #69",
+    "text": [
+     "Fabio Babini, Viktor Shaitar and Kirill Ladygin won GTC for SMP Racing for the second race in a row after Imola, finishing 18th overall. Andrea Rizzoli, Stefano Gai and Lorenzo Casé were second for AF Corse, a lap down, and Ollie Millroy, Andrew Smith and McCaig took the BMW’s third place in Ecurie Ecosse’s only car.",
+     "Kox Racing’s Lamborghini of Peter Kox and Nico Pronk was fourth, ahead of SMP’s #72 (Markozov, Frolov, Persiani), both on 112 laps. Babini called it a fantastic result and the team’s second win in the series. GTC next races at the Hungaroring on 14 September."
+    ],
+    "cars": [
+     "60"
+    ]
+   }
+  ]
+ }
+}
